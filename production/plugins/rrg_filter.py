@@ -92,3 +92,67 @@ class RRGFilterPlugin(FilterPlugin):
             df["passed_rrg"] = True
 
         return df
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Standalone JdK Relative Rotation Graph Analyzer")
+    parser.add_argument("--as-of-date", type=str, default="2026-08-28", help="Analysis date (YYYY-MM-DD)")
+    args = parser.parse_args()
+
+    as_of_date = args.as_of_date
+    base_dir = Path("/storage/emulated/0/Documents/Project MIP")
+    uni_path = base_dir / "data/universe/nifty500_pit_universe.parquet"
+    bench_path = base_dir / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"
+
+    print("\n" + "=" * 70)
+    print(f"🌀  JdK RELATIVE ROTATION GRAPH (RRG) ANALYZER — AS OF {as_of_date}")
+    print("=" * 70)
+
+    # Load benchmark
+    b_df = pd.read_csv(bench_path)
+    b_df["date"] = b_df["date"].astype(str)
+    bench_map = dict(zip(b_df["date"], b_df["close"]))
+
+    # Load universe bars for past 200 days
+    dt = pd.to_datetime(as_of_date)
+    start_str = (dt - pd.Timedelta(days=200)).strftime("%Y-%m-%d")
+    bars = pd.read_parquet(uni_path, filters=[("date", ">=", start_str), ("date", "<=", as_of_date)])
+    active = set(bars[bars["date"] == as_of_date]["symbol"].unique())
+    bars = bars[bars["symbol"].isin(active)].copy()
+    bars = bars.sort_values(by=["symbol", "date"]).reset_index(drop=True)
+    bars["benchmark_close"] = bars["date"].map(bench_map).fillna(1.0)
+
+    plugin = RRGFilterPlugin(enabled=False)
+    bars = plugin.evaluate(bars, as_of_date=as_of_date)
+    snap = bars[bars["date"] == as_of_date].copy()
+
+    total = len(snap)
+    print(f"Universe Scanned: {total:,} active scrips\n")
+
+    print(f"{'QUADRANT':<12}{'COUNT':<8}{'PCT':<8}{'STATUS'}")
+    print("-" * 55)
+    for q, bias in [
+        ("LEADING", "🟢 Outperforming Benchmark (Ratio >= 100, Mom >= 100)"),
+        ("IMPROVING", "🟢 Accelerating into Leadership (Ratio < 100, Mom >= 100)"),
+        ("WEAKENING", "🟡 Decelerating (Ratio >= 100, Mom < 100)"),
+        ("LAGGING", "🔴 Underperforming Benchmark (Ratio < 100, Mom < 100)"),
+    ]:
+        cnt = (snap["rrg_quadrant"] == q).sum()
+        pct = (cnt / total) * 100.0 if total > 0 else 0.0
+        print(f"{q:<12}{cnt:>5d}   {pct:>5.1f}%   {bias}")
+    print("-" * 55)
+
+    # Top Leading
+    lead = snap[snap["rrg_quadrant"] == "LEADING"].sort_values(by="rrg_rs_ratio", ascending=False).head(10)
+    print("\nTOP 10 LEADING SCRIPS BY RS-RATIO:")
+    print(f"{'SYMBOL':<12}{'PRICE':<10}{'RS-RATIO':<12}{'RS-MOMENTUM'}")
+    print("-" * 50)
+    for _, r in lead.iterrows():
+        print(f"{r['symbol']:<12}₹{r['close']:<9.1f}{r['rrg_rs_ratio']:<12.1f}{r['rrg_rs_momentum']:.1f}")
+    print("=" * 70 + "\n")
+
+
+if __name__ == "__main__":
+    main()
+

@@ -3,7 +3,7 @@
   "strategy": "Dual-Momentum NIFTY 500 Rule-Based Framework",
   "evaluation_period": "2016-01-04 to 2026-08-31",
   "verification_suite": "Institutional 32-Gate Suite (Phases 7A, 7B, 7C, 7D)",
-  "timestamp": "2026-09-26T13:46:31.197199+00:00",
+  "timestamp": "2026-09-26T18:33:24.274199+00:00",
   "is_proven": true,
   "verdict": "PROVEN - INSTITUTIONAL GO",
   "core_metrics": {

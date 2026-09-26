@@ -131,4 +131,13 @@
 - [x] Task 5: End-to-End Verification & Live Dispatch (Full scanner execution, `--dry-run` character count 3,831 / 4,096, live Telegram dispatch SUCCESS)
 - [x] **Standing Gate HALT-12: Final Auditor Review on Sector Rotation Engine & Telegram Broadcast (CLEARED & CLOSED in HALT_12_RULING.md)**
 
+## Directive DIR-PROD-UNIFIED-TUI-02: Unified Quantitative Workstation, Interactive Backtester, NSE Sector Sync & Runbook
+- [x] Task 1: Interactive Custom Strategy Backtester (`production/run_custom_backtest.py`, 8 interactive prompts, fast memory parquet lookup, tearsheet + CSV exports)
+- [x] Task 2: Official NSE Sector Classification Syncer (`production/sync_nse_sectors.py`, 22 NSE industries mapped to 12 sectors, 100% coverage of 1,039 scrips, `symbol_sector_map.json`)
+- [x] Task 3: Unified Interactive Terminal Dashboard (`run_mip.py`, ANSI colorized 18-option menu, signal/interrupt handling, `--option` CLI support)
+- [x] Task 4: Comprehensive Operator Runbook (`HOW_TO_RUN.md`, mirrored to `/sdcard/Documents/deliverables/HOW_TO_RUN.md`, non-technical everyday playbook + backtest walkthrough + indicator reference)
+- [x] Task 5: End-to-End Verification & Smoke Testing (Verified options [2], [6], [12], [14], [18], backtester batch mode verified with CAGR 22.49% vs BM 10.52%)
+- [ ] **Standing Gate HALT-13: Final Auditor Review on Unified Quantitative Workstation & Documentation (ACTIVE — Awaiting Auditor Ruling)**
+
+
 

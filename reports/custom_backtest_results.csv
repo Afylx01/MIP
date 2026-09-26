@@ -1,0 +1,2 @@
+start_date,end_date,top_n,ranking_metric,exit_buffer_rank,regime_filter,friction_mult,initial_capital,strategy_cagr,benchmark_cagr,alpha,sharpe_ratio,sortino_ratio,calmar_ratio,max_drawdown,max_underwater_days,total_trades,win_rate_pct,profit_factor,avg_holding_days,final_value,net_profit,total_friction_paid
+2016-01-01,2026-08-31,20,Volar Score,40,20 EMA Bull,1.0,10000000.0,22.49,10.52,11.97,1.02,1.35,0.66,34.24,734,567,45.15,2.11,118.9,87012834.75,77012834.75,3062377.98
