@@ -29,7 +29,21 @@ from typing import Dict, List, Optional, Set, Tuple
 import pandas as pd
 import numpy as np
 
-BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
+def get_base_dir() -> Path:
+    """Dynamically resolves Project MIP root across Windows and Linux."""
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        return Path(os.environ["PROJECT_MIP_DIR"])
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if android_path.exists():
+        return android_path
+    cur = Path(__file__).resolve()
+    for p in [cur] + list(cur.parents):
+        if (p / "run_mip.py").exists() or (p / "data/universe").exists():
+            return p
+    return cur.parent.parent if cur.parent.name in ["production", "scripts"] else cur.parent
+
+
+BASE_DIR = get_base_dir()
 DATA_DIR = BASE_DIR / "data"
 UNIVERSE_PARQUET = DATA_DIR / "universe/nifty500_pit_universe.parquet"
 BENCHMARK_CSV = BASE_DIR / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"

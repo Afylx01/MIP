@@ -28,10 +28,34 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
+def get_base_dir() -> Path:
+    """Dynamically resolves Project MIP root across Windows and Linux."""
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        return Path(os.environ["PROJECT_MIP_DIR"])
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if android_path.exists():
+        return android_path
+    cur = Path(__file__).resolve()
+    for p in [cur] + list(cur.parents):
+        if (p / "run_mip.py").exists() or (p / "data/universe").exists():
+            return p
+    return cur.parent.parent if cur.parent.name in ["production", "scripts"] else cur.parent
+
+
+def get_deliverables_mirror_dir(base_dir: Path) -> Path:
+    """Resolves deliverables mirror directory safely across environments."""
+    sdcard_mirror = Path("/sdcard/Documents/deliverables")
+    if sdcard_mirror.exists() and sdcard_mirror.is_dir():
+        return sdcard_mirror
+    local_mirror = base_dir / "deliverables"
+    local_mirror.mkdir(parents=True, exist_ok=True)
+    return local_mirror
+
+
+BASE_DIR = get_base_dir()
 PHASE7_DATA = BASE_DIR / "deliverables/phase_7/data_csv"
 REPORTS_DIR = BASE_DIR / "reports"
-MIRROR_DIR = Path("/sdcard/Documents/deliverables")
+MIRROR_DIR = get_deliverables_mirror_dir(BASE_DIR)
 OUTPUT_HTML = REPORTS_DIR / "mip_institutional_tearsheet.html"
 MIRROR_HTML = MIRROR_DIR / "mip_institutional_tearsheet.html"
 

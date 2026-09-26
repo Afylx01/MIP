@@ -101,7 +101,15 @@ def main():
     args = parser.parse_args()
 
     as_of_date = args.as_of_date
-    base_dir = Path("/storage/emulated/0/Documents/Project MIP")
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        base_dir = Path(os.environ["PROJECT_MIP_DIR"])
+    elif android_path.exists():
+        base_dir = android_path
+    else:
+        cur = Path(__file__).resolve()
+        base_dir = cur.parent.parent.parent
+
     uni_path = base_dir / "data/universe/nifty500_pit_universe.parquet"
     bench_path = base_dir / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"
 

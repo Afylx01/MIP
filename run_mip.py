@@ -19,8 +19,24 @@ import argparse
 from pathlib import Path
 from typing import List, Optional
 
-BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
-PYTHON_EXE = "/usr/bin/python3"
+
+def get_base_dir() -> Path:
+    """Dynamically resolves Project MIP root across Windows and Linux."""
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        return Path(os.environ["PROJECT_MIP_DIR"])
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if android_path.exists():
+        return android_path
+    cur = Path(__file__).resolve()
+    for p in [cur] + list(cur.parents):
+        if (p / "run_mip.py").exists() or (p / "data/universe").exists():
+            return p
+    return cur.parent
+
+
+BASE_DIR = get_base_dir()
+PYTHON_EXE = sys.executable or "python3"
+
 
 # ANSI Colors & Styling
 BOLD = "\033[1m"
@@ -136,17 +152,22 @@ MENU_ITEMS = {
 
 
 def clear_screen():
-    """Clears terminal screen cleanly."""
-    sys.stdout.write("\033[H\033[J")
-    sys.stdout.flush()
+    """Clears terminal screen cleanly across Linux and Windows."""
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        sys.stdout.write("\033[H\033[J")
+        sys.stdout.flush()
 
 
 def print_banner():
     """Prints institutional terminal header."""
+    sys_tag = "Windows 10/11 (x86_64/ARM64)" if os.name == "nt" else "Samsung Galaxy S23 (PRoot Ubuntu ARM64)"
     print(f"{CYAN}{BOLD}========================================================================================{RESET}")
     print(f"{GREEN}{BOLD}🏛️   PROJECT MIP — INSTITUTIONAL QUANTITATIVE RESEARCH & TRADING DESK{RESET}")
-    print(f"{DIM}Samsung Galaxy S23 (PRoot Ubuntu ARM64) | System Engine: {PYTHON_EXE}{RESET}")
+    print(f"{DIM}{sys_tag} | System Engine: {PYTHON_EXE}{RESET}")
     print(f"{CYAN}{BOLD}========================================================================================{RESET}")
+
 
 
 def print_menu():

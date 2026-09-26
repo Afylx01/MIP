@@ -15,6 +15,8 @@ import requests
 try:
     from dotenv import load_dotenv
     load_dotenv('/sdcard/Documents/Project MIP/.env')
+    load_dotenv(Path(__file__).resolve().parent.parent / '.env')
+    load_dotenv(Path.cwd() / '.env')
     load_dotenv('/root/.env')
 except ImportError:
     pass

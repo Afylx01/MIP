@@ -33,9 +33,13 @@
       "rrg_rs_ratio": 104.16,
       "rrg_rs_momentum": 100.55,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 3,
+      "candidate_share": 15.0,
+      "candidates": [
+        "CUPID",
+        "LAURUSLABS",
+        "SHILPAMED"
+      ],
       "composite_score": 14.76,
       "rank": 1
     },
@@ -53,9 +57,12 @@
       "rrg_rs_ratio": 104.15,
       "rrg_rs_momentum": 99.33,
       "rrg_quadrant": "WEAKENING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 2,
+      "candidate_share": 10.0,
+      "candidates": [
+        "ATHERENERG",
+        "SANSERA"
+      ],
       "composite_score": 12.58,
       "rank": 2
     },
@@ -73,9 +80,16 @@
       "rrg_rs_ratio": 102.67,
       "rrg_rs_momentum": 100.63,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 6,
+      "candidate_share": 30.0,
+      "candidates": [
+        "AVALON",
+        "CPPLUS",
+        "DIACABS",
+        "MTARTECH",
+        "RRKABEL",
+        "TDPOWERSYS"
+      ],
       "composite_score": 10.37,
       "rank": 3
     },
@@ -93,9 +107,12 @@
       "rrg_rs_ratio": 101.19,
       "rrg_rs_momentum": 100.45,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 2,
+      "candidate_share": 10.0,
+      "candidates": [
+        "FEDERALBNK",
+        "MCX"
+      ],
       "composite_score": 7.16,
       "rank": 4
     },
@@ -113,9 +130,11 @@
       "rrg_rs_ratio": 101.54,
       "rrg_rs_momentum": 99.51,
       "rrg_quadrant": "WEAKENING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 1,
+      "candidate_share": 5.0,
+      "candidates": [
+        "SKYGOLD"
+      ],
       "composite_score": 6.1,
       "rank": 5
     },
@@ -133,9 +152,13 @@
       "rrg_rs_ratio": 101.61,
       "rrg_rs_momentum": 100.16,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 3,
+      "candidate_share": 15.0,
+      "candidates": [
+        "ACUTAAS",
+        "AETHER",
+        "GRWRHITECH"
+      ],
       "composite_score": 5.07,
       "rank": 6
     },
@@ -153,9 +176,11 @@
       "rrg_rs_ratio": 104.38,
       "rrg_rs_momentum": 102.37,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 1,
+      "candidate_share": 5.0,
+      "candidates": [
+        "WELCORP"
+      ],
       "composite_score": 3.63,
       "rank": 7
     },
@@ -173,9 +198,12 @@
       "rrg_rs_ratio": 100.57,
       "rrg_rs_momentum": 100.91,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 2,
+      "candidate_share": 10.0,
+      "candidates": [
+        "HFCL",
+        "STLTECH"
+      ],
       "composite_score": 3.3,
       "rank": 8
     },
@@ -275,9 +303,13 @@
       "rrg_rs_ratio": 104.16,
       "rrg_rs_momentum": 100.55,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 3,
+      "candidate_share": 15.0,
+      "candidates": [
+        "CUPID",
+        "LAURUSLABS",
+        "SHILPAMED"
+      ],
       "composite_score": 14.76,
       "rank": 1
     },
@@ -295,9 +327,12 @@
       "rrg_rs_ratio": 104.15,
       "rrg_rs_momentum": 99.33,
       "rrg_quadrant": "WEAKENING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 2,
+      "candidate_share": 10.0,
+      "candidates": [
+        "ATHERENERG",
+        "SANSERA"
+      ],
       "composite_score": 12.58,
       "rank": 2
     },
@@ -315,9 +350,16 @@
       "rrg_rs_ratio": 102.67,
       "rrg_rs_momentum": 100.63,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 6,
+      "candidate_share": 30.0,
+      "candidates": [
+        "AVALON",
+        "CPPLUS",
+        "DIACABS",
+        "MTARTECH",
+        "RRKABEL",
+        "TDPOWERSYS"
+      ],
       "composite_score": 10.37,
       "rank": 3
     },
@@ -335,9 +377,12 @@
       "rrg_rs_ratio": 101.19,
       "rrg_rs_momentum": 100.45,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 2,
+      "candidate_share": 10.0,
+      "candidates": [
+        "FEDERALBNK",
+        "MCX"
+      ],
       "composite_score": 7.16,
       "rank": 4
     },
@@ -355,9 +400,11 @@
       "rrg_rs_ratio": 101.54,
       "rrg_rs_momentum": 99.51,
       "rrg_quadrant": "WEAKENING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 1,
+      "candidate_share": 5.0,
+      "candidates": [
+        "SKYGOLD"
+      ],
       "composite_score": 6.1,
       "rank": 5
     },
@@ -375,9 +422,13 @@
       "rrg_rs_ratio": 101.61,
       "rrg_rs_momentum": 100.16,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 3,
+      "candidate_share": 15.0,
+      "candidates": [
+        "ACUTAAS",
+        "AETHER",
+        "GRWRHITECH"
+      ],
       "composite_score": 5.07,
       "rank": 6
     },
@@ -395,9 +446,11 @@
       "rrg_rs_ratio": 104.38,
       "rrg_rs_momentum": 102.37,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 1,
+      "candidate_share": 5.0,
+      "candidates": [
+        "WELCORP"
+      ],
       "composite_score": 3.63,
       "rank": 7
     },
@@ -415,9 +468,12 @@
       "rrg_rs_ratio": 100.57,
       "rrg_rs_momentum": 100.91,
       "rrg_quadrant": "LEADING",
-      "candidate_count": 0,
-      "candidate_share": 0.0,
-      "candidates": [],
+      "candidate_count": 2,
+      "candidate_share": 10.0,
+      "candidates": [
+        "HFCL",
+        "STLTECH"
+      ],
       "composite_score": 3.3,
       "rank": 8
     },
@@ -502,5 +558,5 @@
       "rank": 12
     }
   ],
-  "timestamp": "2026-09-26T18:37:18.535348"
+  "timestamp": "2026-09-26T19:14:53.488748"
 }

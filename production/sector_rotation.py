@@ -27,12 +27,37 @@ from typing import Dict, List, Optional
 import pandas as pd
 import numpy as np
 
-BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
+def get_base_dir() -> Path:
+    """Dynamically resolves Project MIP root across Windows and Linux."""
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        return Path(os.environ["PROJECT_MIP_DIR"])
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if android_path.exists():
+        return android_path
+    cur = Path(__file__).resolve()
+    for p in [cur] + list(cur.parents):
+        if (p / "run_mip.py").exists() or (p / "data/universe").exists():
+            return p
+    return cur.parent.parent if cur.parent.name in ["production", "scripts"] else cur.parent
+
+
+def get_deliverables_mirror_dir(base_dir: Path) -> Path:
+    """Resolves deliverables mirror directory safely across environments."""
+    sdcard_mirror = Path("/sdcard/Documents/deliverables")
+    if sdcard_mirror.exists() and sdcard_mirror.is_dir():
+        return sdcard_mirror
+    local_mirror = base_dir / "deliverables"
+    local_mirror.mkdir(parents=True, exist_ok=True)
+    return local_mirror
+
+
+BASE_DIR = get_base_dir()
 DATA_DIR = BASE_DIR / "data"
 UNIVERSE_PARQUET = DATA_DIR / "universe/nifty500_pit_universe.parquet"
 BENCHMARK_CSV = BASE_DIR / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"
 DEFAULT_OUTPUT_JSON = BASE_DIR / "deliverables/phase_8/data_csv/sector_rotation_live.json"
-MIRROR_OUTPUT_JSON = Path("/sdcard/Documents/deliverables/sector_rotation_live.json")
+MIRROR_OUTPUT_JSON = get_deliverables_mirror_dir(BASE_DIR) / "sector_rotation_live.json"
+
 
 PROD_DIR = BASE_DIR / "production"
 if str(PROD_DIR) not in sys.path:

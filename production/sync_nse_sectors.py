@@ -45,11 +45,35 @@ from pathlib import Path
 from typing import Dict, List, Optional
 import pandas as pd
 
-BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
+def get_base_dir() -> Path:
+    """Dynamically resolves Project MIP root across Windows and Linux."""
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        return Path(os.environ["PROJECT_MIP_DIR"])
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if android_path.exists():
+        return android_path
+    cur = Path(__file__).resolve()
+    for p in [cur] + list(cur.parents):
+        if (p / "run_mip.py").exists() or (p / "data/universe").exists():
+            return p
+    return cur.parent.parent if cur.parent.name in ["production", "scripts"] else cur.parent
+
+
+def get_deliverables_mirror_dir(base_dir: Path) -> Path:
+    """Resolves deliverables mirror directory safely across environments."""
+    sdcard_mirror = Path("/sdcard/Documents/deliverables")
+    if sdcard_mirror.exists() and sdcard_mirror.is_dir():
+        return sdcard_mirror
+    local_mirror = base_dir / "deliverables"
+    local_mirror.mkdir(parents=True, exist_ok=True)
+    return local_mirror
+
+
+BASE_DIR = get_base_dir()
 DATA_DIR = BASE_DIR / "data"
 UNIVERSE_PARQUET = DATA_DIR / "universe/nifty500_pit_universe.parquet"
 OUTPUT_JSON = DATA_DIR / "universe/symbol_sector_map.json"
-MIRROR_JSON = Path("/sdcard/Documents/deliverables/symbol_sector_map.json")
+MIRROR_JSON = get_deliverables_mirror_dir(BASE_DIR) / "symbol_sector_map.json"
 LOCAL_CACHE_CSV = DATA_DIR / "raw_reference/ind_niftytotalmarket_list.csv"
 
 PROD_DIR = BASE_DIR / "production"

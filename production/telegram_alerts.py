@@ -32,7 +32,21 @@ from typing import Dict, List, Optional
 import pandas as pd
 import numpy as np
 
-BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
+def get_base_dir() -> Path:
+    """Dynamically resolves Project MIP root across Windows and Linux."""
+    if "PROJECT_MIP_DIR" in os.environ and Path(os.environ["PROJECT_MIP_DIR"]).exists():
+        return Path(os.environ["PROJECT_MIP_DIR"])
+    android_path = Path("/storage/emulated/0/Documents/Project MIP")
+    if android_path.exists():
+        return android_path
+    cur = Path(__file__).resolve()
+    for p in [cur] + list(cur.parents):
+        if (p / "run_mip.py").exists() or (p / "data/universe").exists():
+            return p
+    return cur.parent.parent if cur.parent.name in ["production", "scripts"] else cur.parent
+
+
+BASE_DIR = get_base_dir()
 DEFAULT_SCREENER_CSV = BASE_DIR / "deliverables/phase_8/data_csv/screener_output_live.csv"
 DEFAULT_BREADTH_JSON = BASE_DIR / "deliverables/phase_8/data_csv/market_breadth_live.json"
 DEFAULT_SECTOR_JSON = BASE_DIR / "deliverables/phase_8/data_csv/sector_rotation_live.json"
@@ -323,12 +337,13 @@ def dispatch_telegram_alert(
         print("==========================================================================\n")
         return msg
 
-    print("Dispatching Telegram alert via telegram-notify...")
-    cmd = [
-        str(TELEGRAM_NOTIFY_BIN),
-        "--html",
-        "-m", msg
-    ]
+    print("Dispatching Telegram alert...")
+    if TELEGRAM_NOTIFY_BIN.exists() and os.access(str(TELEGRAM_NOTIFY_BIN), os.X_OK):
+        cmd = [str(TELEGRAM_NOTIFY_BIN), "--html", "-m", msg]
+    else:
+        # Cross-platform fallback using sys.executable and local scripts/telegram_notify.py
+        fallback_script = BASE_DIR / "scripts/telegram_notify.py"
+        cmd = [sys.executable or "python3", str(fallback_script), "--html", "-m", msg]
     res = subprocess.run(cmd, capture_output=True, text=True)
     if res.returncode == 0:
         print("✅ Telegram alert dispatched successfully!")

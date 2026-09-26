@@ -137,7 +137,16 @@
 - [x] Task 3: Unified Interactive Terminal Dashboard (`run_mip.py`, ANSI colorized 18-option menu, signal/interrupt handling, `--option` CLI support)
 - [x] Task 4: Comprehensive Operator Runbook (`HOW_TO_RUN.md`, mirrored to `/sdcard/Documents/deliverables/HOW_TO_RUN.md`, non-technical everyday playbook + backtest walkthrough + indicator reference)
 - [x] Task 5: End-to-End Verification & Smoke Testing (Verified options [2], [6], [12], [14], [18], backtester batch mode verified with CAGR 22.49% vs BM 10.52%)
-- [ ] **Standing Gate HALT-13: Final Auditor Review on Unified Quantitative Workstation & Documentation (ACTIVE — Awaiting Auditor Ruling)**
+- [x] **Standing Gate HALT-13: Final Auditor Review on Unified Quantitative Workstation & Documentation (CLEARED & CLOSED)**
+
+## Directive DIR-PROD-PORTABILITY-01: Cross-Platform Portability, Termux Reinstall Bootstrapper & One-Click Launcher
+- [x] Task 1: Self-Healing Termux Bootstrapper & One-Click Launcher (`start_mip.sh`, storage check, auto-install proot-distro & Ubuntu rootfs, python probe, shortcuts at `~/start.sh` and `~/.shortcuts/MIP`)
+- [x] Task 2: Cross-Platform Dynamic Path & Interpreter Resolution (Decoupled `/storage/emulated/0/...` & `/usr/bin/python3` via `get_base_dir()`, `sys.executable`, and safe deliverables mirror across 12 files)
+- [x] Task 3: Windows One-Click Batch Launcher (`run_mip.bat`, Python PATH detection, auto-install `requirements.txt`, cross-platform console clearing)
+- [x] Task 4: Standard Dependency Manifest (`requirements.txt`, pandas, pyarrow, numpy, requests, python-dotenv)
+- [x] Task 5: Comprehensive Operator Runbook Updates (`HOW_TO_RUN.md`, Sections 1.1 & 1.2 added, Termux:Widget 1-tap setup guide, Windows 10/11 double-click guide, mirrored to shared storage)
+- [ ] **Standing Gate HALT-14: Final Auditor Review on Cross-Platform Portability & Bootstrapper Suite (ACTIVE — Awaiting Auditor Ruling)**
+
 
 
 

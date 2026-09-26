@@ -1,20 +1,26 @@
 # 🏛️ PROJECT MIP — INSTITUTIONAL OPERATOR RUNBOOK
 ## Plain-English Guide to the Quantitative Momentum Workstation, Backtesting Lab & Live Execution Desk
 
-**Platform**: Samsung Galaxy S23 (PRoot Ubuntu Linux ARM64, Python 3.12.3)  
-**Workspace**: `/storage/emulated/0/Documents/Project MIP`  
-**Shared Deliverables**: `/sdcard/Documents/deliverables/`  
-**Master Dashboard**: `python3 run_mip.py`  
+**Platform**: Dual-Platform — Samsung Galaxy S23 (PRoot Ubuntu Linux ARM64) AND Windows 10/11 (x86_64 / ARM64)  
+**Workspace**: `/storage/emulated/0/Documents/Project MIP` (Linux) or root repo directory (Windows)  
+**Shared Deliverables**: `/sdcard/Documents/deliverables/` (mirrored locally to `deliverables/`)  
+**Master Dashboard**: `python3 run_mip.py` (Linux) or `run_mip.bat` (Windows)  
 
 ---
 
 ## 1. Quick Start: The One-Line Command
 
-To launch the full quantitative trading desk and interactive workstation, open your Termux PRoot Ubuntu terminal and run:
+To launch the full quantitative trading desk and interactive workstation, open your terminal and run:
 
+**On Linux / Termux PRoot Ubuntu**:
 ```bash
 cd "/storage/emulated/0/Documents/Project MIP"
 python3 run_mip.py
+```
+
+**On Windows (CMD or PowerShell)**:
+```cmd
+run_mip.bat
 ```
 
 This opens the interactive **18-Option Quantitative Terminal Menu**:
@@ -63,6 +69,56 @@ Select an option [0-18]:
 > python3 run_mip.py --option 6    # Launch custom backtester directly
 > python3 run_mip.py --option 16   # Regenerate HTML tearsheet directly
 > ```
+
+---
+
+## 1.1 One-Click Self-Healing Launcher for Termux (`start_mip.sh`)
+
+If you ever uninstall and reinstall Termux, Android will preserve your project files in `/storage/emulated/0/Documents/Project MIP`, but Termux's internal container and packages will be wiped.
+
+Project MIP includes a **self-healing bootstrapper** (`start_mip.sh`):
+
+### How to Run:
+In the Termux native shell, type:
+```bash
+./start.sh
+```
+or
+```bash
+bash "/storage/emulated/0/Documents/Project MIP/start_mip.sh"
+```
+
+### What It Does:
+1. **Verifies Android Storage**: Checks access to `/storage/emulated/0`; calls `termux-setup-storage` if access hasn't been granted yet.
+2. **Auto-Installs `proot-distro` & Ubuntu**: Detects if PRoot Ubuntu exists. If absent, installs it automatically.
+3. **Installs Quantitative Dependencies**: Probes Ubuntu for `pandas`, `pyarrow`, `numpy`, `requests`, and `python-dotenv`. If missing, installs all packages via Ubuntu `apt`.
+4. **Configures Global Symlinks**: Sets up `/usr/local/bin/telegram-notify`.
+5. **Idempotent & Instant**: If already installed, skips all checks and boots into `run_mip.py` in **under 0.5 seconds**.
+
+### Android Home Screen 1-Tap Widget:
+`start_mip.sh` automatically creates `~/.shortcuts/MIP`. To launch Project MIP in 1 tap:
+1. Install **Termux:Widget** from F-Droid.
+2. Long-press on your Samsung home screen and select **Widgets -> Termux:Widget**.
+3. Select **MIP**.
+4. You now have a single-tap home screen shortcut that boots the workstation directly!
+
+---
+
+## 1.2 Running on Windows 10 / 11 (`run_mip.bat`)
+
+Project MIP features full cross-platform path resolution and runs identically on Windows (CMD or PowerShell):
+
+### Prerequisites:
+- Python 3.10+ installed on Windows.
+- Ensure **"Add Python to PATH"** was checked during the Python installer.
+
+### Launching:
+1. Open the Project MIP folder on your Windows machine.
+2. Double-click `run_mip.bat` (or open Command Prompt / PowerShell in the folder and type `run_mip.bat`).
+3. On first run, `run_mip.bat` automatically verifies Python and installs any missing packages from `requirements.txt`.
+4. The dashboard launches with native Windows console screen clearing (`cls`) and dynamic base directory resolution.
+
+All 18 options, backtests, and HTML reports run identically on Windows!
 
 ---
 
