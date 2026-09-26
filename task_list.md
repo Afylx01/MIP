@@ -121,4 +121,4 @@
 - [x] Task 2: Refactor Scanner to Always Run Breadth & RRG (`production/scanner.py`, `screener_output_live.csv`)
 - [x] Task 3: Upgrade Telegram Alert Formatter & Dispatcher (`production/telegram_alerts.py`, Breadth + RRG + Top 20 table)
 - [x] Task 4: End-to-End Test & Verification (`--dry-run` PASS, live Telegram alert dispatched, Msg ID 174)
-- [ ] **Standing Gate HALT-11: Final Auditor Review on Market Breadth & RRG Alert Suite (UNTICKED, OPEN)**
+- [x] **Standing Gate HALT-11: Final Auditor Review on Market Breadth & RRG Alert Suite (CLEARED & CLOSED in HALT_11_RULING.md)**
