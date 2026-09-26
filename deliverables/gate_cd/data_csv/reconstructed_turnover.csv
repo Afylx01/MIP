@@ -1,0 +1,2 @@
+start_date,end_date,start_constituent_count,end_constituent_count,removed_constituent_count,added_constituent_count,common_constituent_count,start_mapped_symbols,end_mapped_symbols,symbols_removed,symbols_added,symbols_common,gross_turnover_pct
+2016-01-04,2020-09-14,500,501,163,164,337,437,480,101,144,336,32.67

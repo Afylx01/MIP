@@ -1,0 +1,33 @@
+path	bytes	sha256	what_it_proves
+data/adjusted_bhavcopy_bars_modern.parquet	34374586	98e36e6aca1c9b4e75c42aae6b75ba5772dcec0f200baea2ffdfda90f714a6fd	Artifact supporting Phase 6 execution
+data/corrections.parquet	9231	0edec75a63f4eadd271901d1023b34ef4f3ee32144669d497b0f6e991d06587e	Artifact supporting Phase 6 execution
+data/index_events.parquet	65497	7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a	Artifact supporting Phase 6 execution
+data/index_events_modern.parquet	20313	53a611eafe9dd4edf5390c46c388b361e1f950aba607af69df3e41c20b452667	Artifact supporting Phase 6 execution
+data/symbol_map.parquet	100724	014e2d9401645c406ea91193f8d45528593693298c0ea301ad53dfcdec77f885	Artifact supporting Phase 6 execution
+deliverables/phase_6/DIGEST.md	8265	a04a780df3f35044e92019b08267d42cec2c4bab5f469ea1b250ddd0d8110604	Phase 6 executive digest detailing podcast momentum backtester performance, comparative metrics, drawdown reduction, and Standing Rule R-3 / R-6 verification
+deliverables/phase_6/data_csv/comparative_strategy_metrics.csv	1391	2dee2a2deeed2568f163ec63facc0d7c699e142f2919d236c0cdacec8dcd740a	Comparative strategy performance metrics across Run 1 (Baseline), Run 2 (E1 RS), Run 3 (Full Strategy with E4 Regime Filter + Friction), and Benchmark
+deliverables/phase_6/data_csv/drawdown_regime_analysis.csv	645	680b84bf508d1118f6651e11b54413e0f811d0d792c7d995bbc61045847c59ad	Drawdown regime analysis proving the effectiveness of the 200 EMA cash filter during major market drawdowns
+deliverables/phase_6/raw/rule_r3_r6_summary.txt	2485	3f866fc19ce543f9abb88a8caac3f3d220b825001852ff6730facb6a054f65b4	Summary log proving Standing Rule R-3 accounting identity (residual == 0.00) and Standing Rule R-6 byte-identical reproducibility across all runs
+deliverables/phase_6/raw/run1_baseline_pass1.txt	5187	d7165c7cf000d6ab1fbbe4bd6e7b833e31f8e74807407ba58d7fc98585bf7779	Run 1 (Baseline Momentum) Pass 1 raw execution log and trade records
+deliverables/phase_6/raw/run1_baseline_pass2.txt	5187	d7165c7cf000d6ab1fbbe4bd6e7b833e31f8e74807407ba58d7fc98585bf7779	Run 1 (Baseline Momentum) Pass 2 raw execution log verifying byte-identical reproducibility (Rule R-6)
+deliverables/phase_6/raw/run2_e1_rs_pass1.txt	5177	8f8723f79d47eb9dc94f89bedac2cf176b1b9495b131350ffc0b793f215d5d5e	Run 2 (Momentum + E1 RS) Pass 1 raw execution log and trade records
+deliverables/phase_6/raw/run2_e1_rs_pass2.txt	5177	8f8723f79d47eb9dc94f89bedac2cf176b1b9495b131350ffc0b793f215d5d5e	Run 2 (Momentum + E1 RS) Pass 2 raw execution log verifying byte-identical reproducibility (Rule R-6)
+deliverables/phase_6/raw/run3_full_strategy_pass1.txt	5221	89a50eeb1854f42b5c0277d9c10caf1e071a34d22f6ed59f447f6787494968d7	Run 3 (Full Strategy: E1 RS + E4 Regime Cash Filter + Friction) Pass 1 raw execution log and trade records
+deliverables/phase_6/raw/run3_full_strategy_pass2.txt	5221	89a50eeb1854f42b5c0277d9c10caf1e071a34d22f6ed59f447f6787494968d7	Run 3 (Full Strategy: E1 RS + E4 Regime Cash Filter + Friction) Pass 2 raw execution log verifying byte-identical reproducibility (Rule R-6)
+deliverables/phase_6/scripts/generate_evidence_index.py	4995	e8630f179d3bb1b3c8b5a4b2d8a1c796083184fed6fa8d0cb41eeed3d7f302b7	Script generating Phase 6 EVIDENCE_INDEX.tsv and SHA256SUMS manifests
+deliverables/phase_6/scripts/podcast_backtest_runner.py	17690	e9cf8f6fb28b9e67f5bc5dc6c7bdd33f6a1b31df81648f18cc95d4bfe0af041d	Phase 6 multi-cycle backtest execution runner script
+deliverables/phase_6/task_list.md	2699	8ccc96b558d9e8181660945f4f29500fb764ba75dac895820c3d70b7b53b577c	Phase 6 roadmap tracking progress across modular package architecture, multi-cycle backtest runs, and standing gate HALT-6
+indian_backtest/__init__.py	580	f490c9b10b34551a280d86f42009811bfe9abd1912796edbc4054aa4b8fc736f	Modular production package source component: __init__.py
+indian_backtest/analytics/auditor_assert.py	1342	c58131a942d6533de4c03b4610daae78aab72fbcb1586e84f328d19e6a81c94c	Modular production package source component: auditor_assert.py
+indian_backtest/analytics/metrics.py	3087	28fd03df774daef3c3ea2066a4d9d33e1362857d07d7b548445ea5ce0261315d	Modular production package source component: metrics.py
+indian_backtest/analytics/tearsheet.py	3686	35a3ccf1df4c025293704dfebd5f83b93efb5bd5a6e411fdd3b80459e22e106d	Modular production package source component: tearsheet.py
+indian_backtest/data/bhavcopy_reader.py	5066	ad10413149baf82b96c32d3fa6fa1ce7239b4b4ceaadeefb4339a85254ca326d	Modular production package source component: bhavcopy_reader.py
+indian_backtest/data/calendar_manager.py	1945	f9187daa6c8b75e3b1843fa938675ad9ee65333c62a612ea4559faa0091f73e7	Modular production package source component: calendar_manager.py
+indian_backtest/data/universe_manager.py	5149	2091a9a5ed5fd00317c670e526ebfa6d7711de0292f6b4e749143194e06ae57c	Modular production package source component: universe_manager.py
+indian_backtest/engine/execution.py	2357	67273a5c7fbe28dd96a973a1424361fa5990e25bd5874648542099323adf7973	Modular production package source component: execution.py
+indian_backtest/engine/portfolio.py	4525	58ae545aa824ddead608b4ea42ad73c912214d1da8e1b68898a9a5aaa1da55d8	Modular production package source component: portfolio.py
+indian_backtest/engine/rebalancer.py	3950	eafe8f7acf57b5097976c281ec8c9d0941b6817f726e2b4b404230d9a2ae61c8	Modular production package source component: rebalancer.py
+indian_backtest/engine/regime_filter.py	1371	1d4940e1c1a46fe186f28f7bf8838557c0ed06c2da0f5af632396820d2bad4d8	Modular production package source component: regime_filter.py
+indian_backtest/indicators/moving_averages.py	570	6bd06b76790fc211f6e0de1f6cdd529def1d37b58c97bf23777584c236919721	Modular production package source component: moving_averages.py
+indian_backtest/indicators/price_extremes.py	676	3fd47828a6173be7539ac82076a60a2e3d5e4c42bd0418160cabca31c54e3709	Modular production package source component: price_extremes.py
+indian_backtest/indicators/relative_strength.py	848	f9d99f89d78d6b8ad1c9bead61b90dfffe7dcb7839b49fe3bcf820f478777891	Modular production package source component: relative_strength.py

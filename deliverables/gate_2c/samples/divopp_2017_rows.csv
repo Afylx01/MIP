@@ -1,0 +1,12 @@
+excel_row,sheet,index_col,effective_date,date_cell_type,scrip_name,action
+124,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2016-11-15,datetime,Reliance Capital Ltd.,Inclusion into Index
+125,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2016-11-15,datetime,Tata Steel Ltd.,Inclusion into Index
+126,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2016-11-15,datetime,Tech Mahindra Ltd.,Inclusion into Index
+127,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2016-11-15,datetime,Torrent Pharmaceuticals Ltd.,Inclusion into Index
+128,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-09-05,datetime,Reliance Capital Ltd.,Exclusion from Index
+129,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-09-05,datetime,National Aluminium Co. Ltd.,Inclusion into Index
+130,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-09-05,datetime,Reliance Capital Ltd.,Exclusion from Index
+131,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-09-05,datetime,National Aluminium Co. Ltd.,Inclusion into Index
+132,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-12-29,datetime,ACC Ltd.,Exclusion from Index
+133,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-12-29,datetime,CARE Ratings Ltd.,Exclusion from Index
+134,Nifty Dividend Opportunities 50,Nifty Dividend Opportunities 50,2017-12-29,datetime,GHCL Ltd.,Exclusion from Index

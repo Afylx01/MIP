@@ -1,0 +1,151 @@
+{
+  "as_of_date": "2026-08-24",
+  "initial_capital": 10000000.0,
+  "cash_balance": 221.61,
+  "holdings": {
+    "CUPID": {
+      "shares": 1751,
+      "avg_cost_price": 285.5,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 1,
+      "friction_paid": 1522.67
+    },
+    "MTARTECH": {
+      "shares": 70,
+      "avg_cost_price": 6962.5,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 2,
+      "friction_paid": 1484.49
+    },
+    "STLTECH": {
+      "shares": 794,
+      "avg_cost_price": 626.5999755859375,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 3,
+      "friction_paid": 1515.39
+    },
+    "ATHERENERG": {
+      "shares": 340,
+      "avg_cost_price": 1469.4000244140625,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 4,
+      "friction_paid": 1521.71
+    },
+    "CPPLUS": {
+      "shares": 143,
+      "avg_cost_price": 3500.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 5,
+      "friction_paid": 1524.47
+    },
+    "SANSERA": {
+      "shares": 128,
+      "avg_cost_price": 3876.89990234375,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 6,
+      "friction_paid": 1511.5
+    },
+    "HFCL": {
+      "shares": 2186,
+      "avg_cost_price": 229.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 7,
+      "friction_paid": 1524.75
+    },
+    "WELCORP": {
+      "shares": 215,
+      "avg_cost_price": 2290.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 8,
+      "friction_paid": 1499.64
+    },
+    "SKYGOLD": {
+      "shares": 620,
+      "avg_cost_price": 808.4000244140625,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 9,
+      "friction_paid": 1526.62
+    },
+    "RRKABEL": {
+      "shares": 170,
+      "avg_cost_price": 2920.89990234375,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 10,
+      "friction_paid": 1512.45
+    },
+    "TDPOWERSYS": {
+      "shares": 649,
+      "avg_cost_price": 775.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 11,
+      "friction_paid": 1532.01
+    },
+    "LAURUSLABS": {
+      "shares": 276,
+      "avg_cost_price": 1800.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 12,
+      "friction_paid": 1513.2
+    },
+    "FEDERALBNK": {
+      "shares": 1380,
+      "avg_cost_price": 360.45001220703125,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 13,
+      "friction_paid": 1515.09
+    },
+    "GRANULES": {
+      "shares": 580,
+      "avg_cost_price": 856.5,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 14,
+      "friction_paid": 1513.11
+    },
+    "TMB": {
+      "shares": 567,
+      "avg_cost_price": 878.9500122070312,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 15,
+      "friction_paid": 1517.96
+    },
+    "ACUTAAS": {
+      "shares": 157,
+      "avg_cost_price": 3189.10009765625,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 16,
+      "friction_paid": 1525.04
+    },
+    "AETHER": {
+      "shares": 306,
+      "avg_cost_price": 1633.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 17,
+      "friction_paid": 1522.03
+    },
+    "AVALON": {
+      "shares": 228,
+      "avg_cost_price": 2183.800048828125,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 18,
+      "friction_paid": 1516.57
+    },
+    "DIACABS": {
+      "shares": 1399,
+      "avg_cost_price": 364.0,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 19,
+      "friction_paid": 1551.08
+    },
+    "KTKBANK": {
+      "shares": 1516,
+      "avg_cost_price": 328.29998779296875,
+      "entry_date": "2026-08-24",
+      "rank_at_entry": 20,
+      "friction_paid": 1515.95
+    }
+  },
+  "closed_trades": [],
+  "cumulative_realized_pnl": -30365.73,
+  "cumulative_friction": 30365.73,
+  "peak_value": 10000000.0
+}

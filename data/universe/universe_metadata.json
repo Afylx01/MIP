@@ -1,0 +1,28 @@
+{
+  "universe_name": "NIFTY 500 Point-in-Time Survivorship-Free Database",
+  "file_name": "nifty500_pit_universe.parquet",
+  "sha256_hash": "4191ec63ba21b2d9c7a3e0d8a91b21c68353cfa7a1fbbe40d17229c7b43123f1",
+  "total_bars": 2137630,
+  "unique_symbols": 1039,
+  "active_symbols": 972,
+  "delisted_symbols": 67,
+  "start_date": "2007-01-02",
+  "end_date": "2026-08-31",
+  "schema": {
+    "date": "string (YYYY-MM-DD)",
+    "symbol": "string (NSE Ticker)",
+    "open": "float64 (Adjusted Open Price)",
+    "high": "float64 (Adjusted High Price)",
+    "low": "float64 (Adjusted Low Price)",
+    "close": "float64 (Adjusted Close Price)",
+    "volume": "float64 (Traded Quantity)",
+    "is_delisted": "bool (True if graveyard constituent)"
+  },
+  "invariants_verified": [
+    "unique_(symbol, date)_keys",
+    "chronological_monotonic_sorting",
+    "zero_null_prices",
+    "positive_prices_guaranteed"
+  ],
+  "last_updated": "2026-09-26 15:23:18"
+}

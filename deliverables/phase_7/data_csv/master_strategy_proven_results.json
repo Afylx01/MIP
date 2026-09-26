@@ -1,0 +1,50 @@
+{
+  "institution": "Project MIP Quantitative Strategies",
+  "strategy": "Dual-Momentum NIFTY 500 Rule-Based Framework",
+  "evaluation_period": "2016-01-04 to 2026-08-31",
+  "verification_suite": "Institutional 32-Gate Suite (Phases 7A, 7B, 7C, 7D)",
+  "timestamp": "2026-09-26T13:46:31.197199+00:00",
+  "is_proven": true,
+  "verdict": "PROVEN - INSTITUTIONAL GO",
+  "core_metrics": {
+    "baseline_cagr_pct": 22.97,
+    "benchmark_cagr_pct": 11.14,
+    "excess_alpha_pp": 11.83,
+    "cagr_after_2x_costs_pct": 21.42,
+    "oos_cagr_pct": 22.97,
+    "sharpe_ratio": 0.82,
+    "sortino_ratio": 0.89,
+    "calmar_ratio": 0.5,
+    "max_drawdown_pct": 45.92,
+    "recovery_years": 1.6,
+    "plateau_pass_pct": 100.0,
+    "random_mc_excess_pp": 10.3,
+    "hac_t_stat": 1.833,
+    "deflated_sharpe_ratio": 1.0,
+    "p95_order_adv_pct": 0.89
+  },
+  "gates_status": {
+    "total_gates": 32,
+    "gates_passed": 32,
+    "gates_failed": 0,
+    "pass_rate_pct": 100.0
+  },
+  "criteria_checks": {
+    "point_in_time_universe": true,
+    "delisting_included": true,
+    "no_lookahead": true,
+    "corporate_actions_clean": true,
+    "cagr_after_2x_costs": true,
+    "oos_cagr": true,
+    "sharpe": true,
+    "sortino": true,
+    "calmar": true,
+    "max_dd": true,
+    "recovery_years": true,
+    "param_plateau_pct": true,
+    "random_top20_excess": true,
+    "t_stat": true,
+    "deflated_sharpe": true,
+    "max_position_adv_pct": true
+  }
+}

@@ -1,0 +1,52 @@
+================================================================================
+PHASE 5.5.M-1 — GATE 4: COVERAGE RE-MEASUREMENT & PASS VALIDATION
+Timestamp: 2026-09-24T17:21:08.317632+00:00
+================================================================================
+
+--- 1. Loading Datasets ---
+Loaded index events: 2,493 events
+Loaded symbol map: 1,448 scrips (Mapped: 763)
+Loaded adjusted bars: 753,046 bars across 711 symbols and 1154 dates.
+Constructed price lookup table: 753,046 valid (symbol, date) entries.
+Loaded Gate 2c baseline table: 57 snapshots.
+Loaded Phase A-3 comparison table: 57 snapshots.
+
+--- 2. Re-Measuring Coverage across 57 Monthly Snapshots ---
+Exported monthly coverage comparison table: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/monthly_coverage_comparison_v2.csv (57 rows, 5,106 bytes)
+
+================================================================================
+PHASE 5.5.M-1 SUMMARY STATISTICS & THRESHOLD EVALUATION
+================================================================================
+Gate 2c Baseline Joint Coverage Median: 24.56%
+Phase A-3 Joint Coverage Median:        59.92%
+Phase M-1 Mapped Fraction Median:       90.77% (min: 86.43%, max: 94.37%)
+Phase M-1 Price-Covered Median:         86.25% (min: 82.04%, max: 90.49%)
+Phase M-1 Unflagged Median:             89.78% (min: 85.03%, max: 94.17%)
+Phase M-1 Joint Coverage Median:        86.25% (min: 82.04%, max: 90.49%)
+Coverage Gain over Gate 2c Baseline:    +61.69 percentage points
+Coverage Gain over Phase A-3:           +26.33 percentage points
+
+--- Specific Milestone Snapshots ---
+Snapshot 2016-01-04 (Snapshot #1):
+  Total constituents:     501
+  Gate 2c Joint:          74 / 501 (14.77%)
+  Phase A-3 Joint:        54.09%
+  Phase M-1 Mapped:       433 / 501 (86.43%)
+  Phase M-1 Price:        411 / 501 (82.04%)
+  Phase M-1 Joint:        411 / 501 (82.04%)
+  Delta over Gate 2c:     +67.27%
+  Delta over Phase A-3:   +27.95%
+Snapshot 2020-09-01 (Snapshot #57):
+  Total constituents:     515
+  Gate 2c Joint:          154 / 515 (29.90%)
+  Phase A-3 Joint:        64.66%
+  Phase M-1 Mapped:       486 / 515 (94.37%)
+  Phase M-1 Price:        465 / 515 (90.29%)
+  Phase M-1 Joint:        465 / 515 (90.29%)
+  Delta over Gate 2c:     +60.39%
+  Delta over Phase A-3:   +25.63%
+
+--- §1 Acceptance Threshold Check ---
+VERDICT: >>> PASS <<< (Phase M-1 Median Joint Coverage 86.25% >= 85.0% threshold)
+
+ASSERTION PASSED: Median Joint Coverage satisfies the strict PASS threshold (>= 85.0%).

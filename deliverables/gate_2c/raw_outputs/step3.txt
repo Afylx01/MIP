@@ -1,0 +1,89 @@
+================================================================================
+PHASE 5.5 — GATE 2c: STEP 3 (BACKTESTABLE-WINDOW REPORT — NIFTY500 ONLY)
+================================================================================
+Loaded NIFTY500 events: 2493 events
+Loaded symbol map v3: 1448 scrips
+Loaded trading calendar: 4649 dates (2007-09-17 to 2026-08-31)
+
+================================================================================
+[3.1] WINDOW DERIVATION
+================================================================================
+Derivation details:
+  First cached NSEI bar in 2015: 2015-01-02
+  252-bar warm-up period: 2015-01-02 to 2016-01-13 (exactly 252 trading bars)
+  window_start: 2016-01-14 (the 253rd cached NSEI bar on or after 2015-01-01)
+  window_end:   2020-09-14 (covered_end of NIFTY500 in index_events)
+
+Exported window fractions table to: deliverables/gate_2c/data_csv/window_fractions.csv (57 snapshots)
+
+================================================================================
+[3.2] WINDOW FRACTIONS SUMMARY (MONTHLY SNAPSHOTS)
+================================================================================
+Snapshot count in window: 57
+Mapped Fraction       : min = 54.69%, median = 60.51%
+Price-Covered Fraction: min = 17.37%, median = 28.54%
+Both Fraction         : min = 14.77%, median = 24.56%
+Snapshots with Both < 80%: 57 / 57 (100.0%)
+
+================================================================================
+[3.3] SPECIFIC MILESTONE SNAPSHOTS (COUNTS & FRACTIONS)
+================================================================================
+
+Snapshot: 2016-01-04 (First Trading Day of 2016) — Total Members: 501
+  Mapped       : 274 / 501 (54.69%)
+  Price-Covered:  87 / 501 (17.37%)
+  Both         :  74 / 501 (14.77%)
+
+Snapshot: 2018-01-01 (First Trading Day of 2018) — Total Members: 507
+  Mapped       : 303 / 507 (59.76%)
+  Price-Covered: 139 / 507 (27.42%)
+  Both         : 118 / 507 (23.27%)
+
+Snapshot: 2020-09-14 (covered_end (Final Rebalance in Event Log)) — Total Members: 515
+  Mapped       : 337 / 515 (65.44%)
+  Price-Covered: 177 / 515 (34.37%)
+  Both         : 153 / 515 (29.71%)
+
+================================================================================
+[3.4] REBALANCE COUNT & MANDATORY DISCLOSURE LINE
+================================================================================
+Number of monthly rebalance snapshots in window (2016-01 to 2020-09): 57
+
+REQUIRED DISCLOSURE LINE:
+  Universe reconstruction incomplete in 57 of 57 snapshots.
+  SURVIVORSHIP NOTE: Local price data represents a survivor-only cache spanning 750 current
+  surviving entities. Delisted constituents, past merger targets, and defunct historical members
+  lack historical price bars in the cache. Full point-in-time backtesting across this window
+  is therefore unachievable without acquiring historical daily Bhavcopy archives for delisted entities.
+
+================================================================================
+[3.5] FULL HISTORICAL RANGE 1998–2020 (LABELLED: NOT BACKTESTABLE)
+================================================================================
+
+Total historical snapshots (1998-08 to 2020-09): 266 snapshots
+Sample historical snapshots (labelled NOT BACKTESTABLE):
+| date        | status             | total  | mapped          | price_covered   | both            |
+|-------------|--------------------|--------|-----------------|-----------------|-----------------|
+| 1998-08-01  | NOT BACKTESTABLE   | 500    | 133/500 (26.6%) | 52/500 (10.4%)  | 42/500 (8.4%)   |
+| 2000-08-01  | NOT BACKTESTABLE   | 500    | 144/500 (28.8%) | 58/500 (11.6%)  | 46/500 (9.2%)   |
+| 2002-08-01  | NOT BACKTESTABLE   | 500    | 175/500 (35.0%) | 61/500 (12.2%)  | 48/500 (9.6%)   |
+| 2004-08-01  | NOT BACKTESTABLE   | 500    | 201/500 (40.2%) | 59/500 (11.8%)  | 47/500 (9.4%)   |
+| 2006-08-01  | NOT BACKTESTABLE   | 500    | 213/500 (42.6%) | 60/500 (12.0%)  | 48/500 (9.6%)   |
+| 2008-08-01  | NOT BACKTESTABLE   | 500    | 230/500 (46.0%) | 61/500 (12.2%)  | 48/500 (9.6%)   |
+| 2010-08-02  | NOT BACKTESTABLE   | 500    | 241/500 (48.2%) | 68/500 (13.6%)  | 55/500 (11.0%)  |
+| 2012-08-01  | NOT BACKTESTABLE   | 500    | 248/500 (49.6%) | 71/500 (14.2%)  | 59/500 (11.8%)  |
+| 2014-08-01  | NOT BACKTESTABLE   | 500    | 257/500 (51.4%) | 74/500 (14.8%)  | 60/500 (12.0%)  |
+| 2016-08-01  | NOT BACKTESTABLE   | 503    | 285/503 (56.66%) | 113/503 (22.47%) | 96/503 (19.09%) |
+| 2018-08-01  | NOT BACKTESTABLE   | 509    | 308/509 (60.51%) | 146/509 (28.68%) | 125/509 (24.56%) |
+| 2020-08-03  | NOT BACKTESTABLE   | 515    | 337/515 (65.44%) | 178/515 (34.56%) | 154/515 (29.9%) |
+
+Reason 1998–2020 is NOT BACKTESTABLE:
+  1. Price coverage prior to 2015 is zero for >85% of constituents (cache begins 2015 for 640 symbols).
+  2. Prior to 2007, price coverage is strictly 0.0% across all 500 constituents (zero cache bars).
+  3. Point-in-time backtesting across 1998–2020 would suffer extreme survivorship bias and missing data.
+
+Copied script to deliverables/gate_2c/scripts/step3_backtestable_window.py
+
+================================================================================
+STEP 3 COMPLETE
+================================================================================

@@ -1,0 +1,100 @@
+================================================================================
+PHASE 5.5.A-2 — GATE 1: FETCH CA CALENDAR & BHAVCOPIES
+Timestamp: 2026-09-24T14:42:34.026579+00:00
+================================================================================
+Loading cached CA slice 2016 from ca_raw_2016.json...
+  -> Loaded 2,106 raw records for 2016
+Loading cached CA slice 2017 from ca_raw_2017.json...
+  -> Loaded 2,025 raw records for 2017
+Loading cached CA slice 2018 from ca_raw_2018.json...
+  -> Loaded 2,012 raw records for 2018
+Loading cached CA slice 2019 from ca_raw_2019.json...
+  -> Loaded 2,148 raw records for 2019
+Loading cached CA slice 2020 from ca_raw_2020.json...
+  -> Loaded 1,182 raw records for 2020
+
+Total parsed corporate action events (splits/bonuses): 214
+
+Gate 1 Calendar Statistics:
+  Total records: 214
+  Distinct symbols: 192
+  Distinct dates: 180
+  Date range: 2016-01-05 to 2020-08-24
+  Action breakdown: {'bonus': 134, 'split': 80}
+  Persisted Parquet: /sdcard/Documents/Project MIP/data/verification/halt1b_p_a2/ca_calendar_raw.parquet (7,961 bytes)
+  Persisted CSV: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a2/data_csv/ca_calendar.csv (35,541 bytes)
+
+================================================================================
+GATE 1 PART 2: FETCHING REFERENCE BHAVCOPIES FOR GATE 4 UNIT TESTS
+================================================================================
+Confirmed test event: INFY on 2018-09-04 | bonus | ratio=1.0000
+Confirmed test event: TCS on 2018-05-31 | bonus | ratio=1.0000
+Confirmed test event: RELIANCE on 2017-09-07 | bonus | ratio=1.0000
+Confirmed test event: WIPRO on 2019-03-06 | bonus | ratio=0.3333
+Confirmed test event: MOLDTKPAC on 2016-02-17 | split | ratio=2.0000
+
+Total candidate trading dates to check across 5 event windows: 55
+  Downloaded Bhavcopy: cm10FEB2016bhav.csv.zip (58,483 bytes)
+  Downloaded Bhavcopy: cm11FEB2016bhav.csv.zip (58,940 bytes)
+  Downloaded Bhavcopy: cm12FEB2016bhav.csv.zip (59,160 bytes)
+  Downloaded Bhavcopy: cm15FEB2016bhav.csv.zip (58,120 bytes)
+  Downloaded Bhavcopy: cm16FEB2016bhav.csv.zip (57,912 bytes)
+  Downloaded Bhavcopy: cm17FEB2016bhav.csv.zip (57,914 bytes)
+  Downloaded Bhavcopy: cm18FEB2016bhav.csv.zip (57,817 bytes)
+  Downloaded Bhavcopy: cm19FEB2016bhav.csv.zip (57,025 bytes)
+  Downloaded Bhavcopy: cm22FEB2016bhav.csv.zip (57,306 bytes)
+  Downloaded Bhavcopy: cm23FEB2016bhav.csv.zip (57,304 bytes)
+  Downloaded Bhavcopy: cm24FEB2016bhav.csv.zip (57,187 bytes)
+  Downloaded Bhavcopy: cm31AUG2017bhav.csv.zip (64,721 bytes)
+  Downloaded Bhavcopy: cm01SEP2017bhav.csv.zip (64,647 bytes)
+  Downloaded Bhavcopy: cm04SEP2017bhav.csv.zip (65,481 bytes)
+  Downloaded Bhavcopy: cm05SEP2017bhav.csv.zip (64,931 bytes)
+  Downloaded Bhavcopy: cm06SEP2017bhav.csv.zip (65,090 bytes)
+  Downloaded Bhavcopy: cm07SEP2017bhav.csv.zip (65,538 bytes)
+  Downloaded Bhavcopy: cm08SEP2017bhav.csv.zip (65,161 bytes)
+  Downloaded Bhavcopy: cm11SEP2017bhav.csv.zip (65,604 bytes)
+  Downloaded Bhavcopy: cm12SEP2017bhav.csv.zip (65,646 bytes)
+  Downloaded Bhavcopy: cm13SEP2017bhav.csv.zip (65,205 bytes)
+  Downloaded Bhavcopy: cm14SEP2017bhav.csv.zip (64,752 bytes)
+  Downloaded Bhavcopy: cm24MAY2018bhav.csv.zip (67,938 bytes)
+  Downloaded Bhavcopy: cm25MAY2018bhav.csv.zip (68,000 bytes)
+  Downloaded Bhavcopy: cm28MAY2018bhav.csv.zip (68,190 bytes)
+  Downloaded Bhavcopy: cm29MAY2018bhav.csv.zip (68,129 bytes)
+  Downloaded Bhavcopy: cm30MAY2018bhav.csv.zip (67,802 bytes)
+  Downloaded Bhavcopy: cm31MAY2018bhav.csv.zip (67,898 bytes)
+  Downloaded Bhavcopy: cm01JUN2018bhav.csv.zip (68,916 bytes)
+  Downloaded Bhavcopy: cm04JUN2018bhav.csv.zip (68,678 bytes)
+  Downloaded Bhavcopy: cm05JUN2018bhav.csv.zip (68,770 bytes)
+  Downloaded Bhavcopy: cm06JUN2018bhav.csv.zip (68,448 bytes)
+  Downloaded Bhavcopy: cm07JUN2018bhav.csv.zip (68,401 bytes)
+  Downloaded Bhavcopy: cm28AUG2018bhav.csv.zip (68,836 bytes)
+  Downloaded Bhavcopy: cm29AUG2018bhav.csv.zip (68,760 bytes)
+  Downloaded Bhavcopy: cm30AUG2018bhav.csv.zip (68,949 bytes)
+  Downloaded Bhavcopy: cm31AUG2018bhav.csv.zip (69,252 bytes)
+  Downloaded Bhavcopy: cm03SEP2018bhav.csv.zip (70,324 bytes)
+  Downloaded Bhavcopy: cm04SEP2018bhav.csv.zip (69,390 bytes)
+  Downloaded Bhavcopy: cm05SEP2018bhav.csv.zip (69,409 bytes)
+  Downloaded Bhavcopy: cm06SEP2018bhav.csv.zip (68,568 bytes)
+  Downloaded Bhavcopy: cm07SEP2018bhav.csv.zip (69,610 bytes)
+  Downloaded Bhavcopy: cm10SEP2018bhav.csv.zip (69,239 bytes)
+  Downloaded Bhavcopy: cm11SEP2018bhav.csv.zip (69,424 bytes)
+  Downloaded Bhavcopy: cm26FEB2019bhav.csv.zip (67,577 bytes)
+  Downloaded Bhavcopy: cm27FEB2019bhav.csv.zip (67,630 bytes)
+  Downloaded Bhavcopy: cm28FEB2019bhav.csv.zip (66,835 bytes)
+  Downloaded Bhavcopy: cm01MAR2019bhav.csv.zip (68,102 bytes)
+  Downloaded Bhavcopy: cm05MAR2019bhav.csv.zip (70,280 bytes)
+  Downloaded Bhavcopy: cm06MAR2019bhav.csv.zip (70,179 bytes)
+  Downloaded Bhavcopy: cm07MAR2019bhav.csv.zip (68,776 bytes)
+  Downloaded Bhavcopy: cm08MAR2019bhav.csv.zip (68,424 bytes)
+  Downloaded Bhavcopy: cm11MAR2019bhav.csv.zip (69,418 bytes)
+  Downloaded Bhavcopy: cm12MAR2019bhav.csv.zip (69,797 bytes)
+  Downloaded Bhavcopy: cm13MAR2019bhav.csv.zip (69,142 bytes)
+
+Successfully downloaded / verified 55 daily Bhavcopy archives.
+
+Saved raw bars for test events to /sdcard/Documents/Project MIP/deliverables/halt1b_p_a2/samples/test_events_raw_bars.csv (275 bars)
+{'INFY': 55, 'MOLDTKPAC': 55, 'RELIANCE': 55, 'TCS': 55, 'WIPRO': 55}
+
+================================================================================
+GATE 1 EXIT: SUCCESS — CA CALENDAR PERSISTED AND GATE 4 DATA CAPTURED
+================================================================================

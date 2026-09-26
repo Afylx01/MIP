@@ -1,0 +1,22 @@
+path	bytes	sha256	what_it_proves
+data/corrections.parquet	9231	0edec75a63f4eadd271901d1023b34ef4f3ee32144669d497b0f6e991d06587e	Approved corrections table dynamically applied during replay (all 16 status = 'approved')
+data/index_events.parquet	65497	7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a	Append-only index events source dataset unaltered (9,121 rows)
+data/symbol_map.parquet	91649	ce9cc73605fcf8cd8b60cd384187dafc9ea9c74235e7cea7f317a2cb851b5154	Symbol map providing active scrip resolution (763 active scrips)
+deliverables/gate_cd/DIGEST.md	11323	03af33fe3126bf92d9daf0802b1462dec2ad7702e7fd5bf1842faaabb4ed1486	Phase 5.5 Gates C & D executive summary digest with continuity metrics, backtest comparisons, and evidence pointers
+deliverables/gate_cd/GATE_CD_RULING.md	10734	cac37019a21000423bf0cf23098c4bcd99660853a70838a85d6de0cc83b4821f	Artifact supporting Phase 5.5 Gates C & D execution
+deliverables/gate_cd/NEXT_TASK.md	6247	adc524e5c9a90111049791980ef122d2146e3b38a7df84592fdf4cd73431e2a0	Artifact supporting Phase 5.5 Gates C & D execution
+deliverables/gate_cd/SHA256SUMS.txt	1950	137d8f96d4eda49df8c322eba363ffa8a9367b9a1d40e8c59d8581fb8e91276d	Artifact supporting Phase 5.5 Gates C & D execution
+deliverables/gate_cd/data_csv/backtest_comparison_metrics.csv	860	eff09b6e64a286b5cd73e653093cdea78897aee4e437501649162bf3ccf5dc38	Gate D comparative backtest performance metrics comparing survivor Run (a) to point-in-time Run (b)
+deliverables/gate_cd/data_csv/gate_c_continuity_summary.csv	629	fc94be7d4af57fd8fd6a597edaf517b05e5a3727eee6232b6b1206e7bf1dd494	Gate C continuity audit metrics across all 7 broad market indices proving NIFTY500 0 orphans/duplicates
+deliverables/gate_cd/data_csv/holdings_attribution.csv	13421	4eae12e75a39d3c9e33348b5fdd4619767d157eb99e5a95485604ccaa0e6f470	Gate D symbol-level holdings attribution detailing PnL divergence driven by universe differences
+deliverables/gate_cd/data_csv/price_gaps.csv	476	7de7da3d305e22693d3ffd40a52a1f7959c5777343657e60914b8bb011da8388	Gate D price coverage audit proving zero snapshots have >20 symbols with >30% missing Bhavcopy bars
+deliverables/gate_cd/data_csv/reconstructed_turnover.csv	313	3771f4a6e6c9268db1a55aeb0755a94cd15a05bd676afc0273e0d7039261ce50	Gate D point-in-time universe reconstruction turnover metrics comparing 2016-01-04 start to 2020-09-14 end
+deliverables/gate_cd/raw/gate_c_continuity.txt	6647	89a2ec0e24226fc35ebd6070e9bc1b769dd12b849ad8588a5c3d75feae10cd2b	Gate C raw stdout: multi-index continuity audit across 7 broad market indices
+deliverables/gate_cd/raw/gate_d_backtest_run_a.txt	4727	658e920cf4f269ff8ff084a7ea5ac84f615f407d4d67d768e6384c781c8f345b	Gate D raw stdout: Run (a) baseline backtest execution report, trade log, and R-3 identity verification
+deliverables/gate_cd/raw/gate_d_backtest_run_b.txt	4723	501c998f3d073c3ab4201e8d34329af3cf028ca30a747e7c39a6fd44e31ed886	Gate D raw stdout: Run (b) dynamic backtest execution report, trade log, and R-3 identity verification
+deliverables/gate_cd/raw/gate_d_reconstruct.txt	2519	0c6ddc5f6310164830cacd9ea0ec987618b9818aacb99c14ed19228792770d82	Gate D raw stdout: universe reconstruction and Bhavcopy price gap audit
+deliverables/gate_cd/scripts/gate_c_continuity.py	11027	d02b9d23aaef9d240db321b098882a786bbe122d4898cf77a5d59d67228211fa	Gate C script auditing index event continuity across all 7 broad market indices
+deliverables/gate_cd/scripts/gate_d_backtest_runner.py	23763	95ae3e56811f98c16f8270b88fe6fa9bff0b57130917a0729d5b7241032f522b	Gate D script executing comparative baseline backtests under frozen strategy rules
+deliverables/gate_cd/scripts/gate_d_reconstruct.py	11137	9d0b5666ee4fccb48f0d67b3f5ca27f5c87cf9c304aaf5954a2b2de558b49014	Gate D script reconstructing universe membership and auditing Bhavcopy price gaps
+deliverables/gate_cd/scripts/generate_evidence_index.py	4319	6ebbf2cbf08f5355abde2d78d9e2d6b78f8c7d94cc7c0cbdd020f7cf8eea3203	Script generating Phase 5.5 Gates C & D EVIDENCE_INDEX.tsv manifest
+deliverables/gate_cd/task_list.md	2134	ab8b651c43f56009c1d82f6e934da86dd0b7702700ec680b39e39a3b2278d5a7	Phase 5.5 Gates C & D roadmap tracking progress across gates (HALT-4 open)

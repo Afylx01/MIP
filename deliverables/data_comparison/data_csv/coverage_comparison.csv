@@ -1,0 +1,1150 @@
+symbol,scrip_name,yfinance_ticker,in_bhavcopy,in_yfinance,yf_bars_count,status
+20MICRONS,20 Microns Ltd,20MICRONS.NS,True,True,4415,available
+360ONE,360 ONE WAM LIMITED,360ONE.NS,True,True,1722,available
+3IINFOLTD,3i Infotech Ltd.,3IINFOLTD.NS,False,True,4852,available
+3MINDIA,3M India Ltd.,3MINDIA.NS,True,True,4851,available
+63MOONS,63 Moons Technologies Ltd.,63MOONS.NS,True,True,4853,available
+A2ZINFRA,Era Infra Engineering Ltd.,A2ZINFRA.NS,False,True,3872,available
+AADHARHFC,Aadhar Housing Finance Limited,AADHARHFC.NS,True,True,573,available
+AARTIDRUGS,Aarti Drugs Ltd.,AARTIDRUGS.NS,True,True,4853,available
+AARTIIND,Aarti Industries Ltd.,AARTIIND.NS,True,True,4853,available
+AARTIPHARM,AARTIPHARM,AARTIPHARM.NS,True,True,888,available
+AAVAS,Aavas Financiers Ltd.,AAVAS.NS,True,True,1954,available
+ABAN,Aban Offshore Ltd.,ABAN.NS,True,True,4853,available
+ABB,ABB India Ltd.,ABB.NS,True,True,4853,available
+ABBOTINDIA,Abbott India Ltd.,ABBOTINDIA.NS,True,True,4853,available
+ABCAPITAL,Aditya Birla Capital Ltd.,ABCAPITAL.NS,True,True,2226,available
+ABDL,Allied Blenders and Distillers Limited,ABDL.NS,True,True,540,available
+ABFRL,Aditya Birla Fashion and Retail Ltd.,ABFRL.NS,True,True,3239,available
+ABLBL,Aditya Birla Lifestyle Brands Limited,ABLBL.NS,True,True,298,available
+ABNUVO,Aditya Birla Nuvo Ltd.,ABNUVO.NS,False,False,0,delisted_or_not_found
+ABREL,Aditya Birla Real Estate Limited,ABREL.NS,True,True,4853,available
+ABSLAMC,Aditya Birla Sun Life AMC Limited,ABSLAMC.NS,True,True,1212,available
+ACC,ACC Ltd.,ACC.NS,True,True,4853,available
+ACCELYA,Accelya Kale Solutions Ltd.,ACCELYA.NS,False,True,4853,available
+ACE,Action Construction Equipment Limited,ACE.NS,True,True,4853,available
+ACI,ACI,ACI.NS,True,True,936,available
+ACMESOLAR,Acme Solar Holdings Limited,ACMESOLAR.NS,True,True,448,available
+ACUTAAS,Acutaas Chemicals Limited,ACUTAAS.NS,True,True,1231,available
+ADANIENSOL,Adani Energy Solutions Limited,ADANIENSOL.NS,True,True,2739,available
+ADANIENT,Adani Enterprises Ltd.,ADANIENT.NS,True,True,4853,available
+ADANIGREEN,Adani Green Energy Ltd.,ADANIGREEN.NS,True,True,2029,available
+ADANIPORTS,Adani Ports and Special Economic Zone Ltd.,ADANIPORTS.NS,True,True,4628,available
+ADANIPOWER,Adani Power Ltd.,ADANIPOWER.NS,True,True,4205,available
+ADOR,Ador Welding Ltd.,ADOR.NS,False,True,4853,available
+ADSL,Allied Digital Services Ltd.,ADSL.NS,True,True,4714,available
+ADVENZYMES,Advanced Enzyme Tech Ltd.,ADVENZYMES.NS,True,True,2494,available
+AEGISLOG,Aegis Logistics Ltd.,AEGISLOG.NS,True,True,4851,available
+AEGISVOPAK,Aegis Vopak Terminals Limited,AEGISVOPAK.NS,True,True,314,available
+AEQUS,AEQUS,AEQUS.NS,True,True,182,available
+AETHER,AETHER,AETHER.NS,True,True,1052,available
+AFCONS,Afcons Infrastructure Limited,AFCONS.NS,True,True,455,available
+AFFLE,Affle (India) Ltd.,AFFLE.NS,True,True,1749,available
+AFSL,Indiabulls Financial Services Ltd.,AFSL.NS,False,True,911,available
+AGARWALEYE,AGARWALEYE,AGARWALEYE.NS,True,True,389,available
+AHLEAST,Asian Hotels Ltd. - Hotels,AHLEAST.NS,False,True,3963,available
+AHLUCONT,Ahluwalia Contracts (India) Ltd.,AHLUCONT.NS,True,True,4129,available
+AIAENG,AIA Engineering Ltd.,AIAENG.NS,True,True,4851,available
+AIIL,Authum Investment & Infrastructure Limited,AIIL.NS,True,True,588,available
+AJANTPHARM,Ajanta Pharmaceuticals Ltd.,AJANTPHARM.NS,True,True,4852,available
+AKSHOPTFBR,Aksh Optifibre Ltd.,AKSHOPTFBR.NS,True,True,4852,available
+AKUMS,AKUMS,AKUMS.NS,True,True,514,available
+AKZOINDIA,Akzo Nobel India Ltd.,AKZOINDIA.NS,True,False,0,delisted_or_not_found
+ALEMBICLTD,Alembic Ltd.,ALEMBICLTD.NS,False,True,4857,available
+ALIVUS,ALIVUS,ALIVUS.NS,True,True,1255,available
+ALKEM,Alkem Laboratories Ltd.,ALKEM.NS,True,True,2642,available
+ALKYLAMINE,Alkyl Amines Chemicals Ltd.,ALKYLAMINE.NS,True,True,4629,available
+ALLCARGO,Allcargo Logistics Ltd.,ALLCARGO.NS,True,True,4853,available
+ALOKINDS,Alok Industries Ltd.,ALOKINDS.NS,True,True,4853,available
+AMARAJABAT,Amara Raja Batteries Ltd.,AMARAJABAT.NS,True,False,0,delisted_or_not_found
+AMARJOTHI,Malwa Cotton Spinning Mills Ltd.,AMARJOTHI.NS,False,True,15,available
+AMBALALSA,Ambalal Sarabhai Enterprises Ltd.,AMBALALSA.NS,False,True,93,available
+AMBER,Amber Enterprises India Ltd.,AMBER.NS,True,True,2123,available
+AMBUJACEM,Ambuja Cements Ltd.,AMBUJACEM.NS,True,True,4853,available
+AMTEKINDIA,Amtek India Ltd.,AMTEKINDIA.NS,False,False,0,delisted_or_not_found
+ANANDRATHI,Anand Rathi Wealth Limited,ANANDRATHI.NS,True,True,1169,available
+ANANTRAJ,Anant Raj Industries Ltd.,ANANTRAJ.NS,True,True,4853,available
+ANDHRSUGAR,Andhra Sugars Ltd.,ANDHRSUGAR.NS,False,True,4853,available
+ANGELONE,Angel One Limited,ANGELONE.NS,True,True,1465,available
+ANSALAPI,Ansal Properties & Infrastructure Ltd.,ANSALAPI.NS,True,True,4851,available
+ANTHEM,Anthem Biosciences Limited,ANTHEM.NS,True,True,279,available
+ANUP,ANUP,ANUP.NS,True,True,1854,available
+ANURAS,Anupam Rasayan India Limited,ANURAS.NS,True,True,1346,available
+APARINDS,Apar Industries Ltd.,APARINDS.NS,True,True,4853,available
+APLAPOLLO,APL Apollo Tubes Ltd.,APLAPOLLO.NS,True,True,3633,available
+APLLTD,Alembic Pharmaceuticals Ltd.,APLLTD.NS,True,True,3688,available
+APOLLO,APOLLO,APOLLO.NS,True,True,2128,available
+APOLLOHOSP,Apollo Hospitals Enterprise Ltd.,APOLLOHOSP.NS,True,True,4853,available
+APOLLOTYRE,Apollo Tyres Ltd.,APOLLOTYRE.NS,True,True,4853,available
+APTECHT,Aptech Ltd.,APTECHT.NS,False,True,4853,available
+APTUS,Aptus Value Housing Finance India Limited,APTUS.NS,True,True,1245,available
+ARCHIES,Archies Ltd.,ARCHIES.NS,True,True,4851,available
+ARE&M,Amara Raja Energy & Mobility Limited,ARE&M.NS,True,True,4853,available
+ARSHIYA,Arshiya International Ltd.,ARSHIYA.NS,False,True,4127,available
+ARVIND,Arvind Ltd,ARVIND.NS,True,True,4853,available
+ARVINDFASN,Arvind Fashions Ltd.,ARVINDFASN.NS,True,True,1851,available
+ASAHIINDIA,Asahi India Glass Ltd.,ASAHIINDIA.NS,True,True,4857,available
+ASHAPURMIN,ASHAPURMIN,ASHAPURMIN.NS,True,True,4853,available
+ASHIANA,Ashiana Housing Ltd.,ASHIANA.NS,True,True,3744,available
+ASHIMASYN,Ashima Ltd.,ASHIMASYN.NS,True,True,4853,available
+ASHOKA,Ashoka Buildcon Ltd.,ASHOKA.NS,True,True,3920,available
+ASHOKLEY,Ashok Leyland Finance Ltd.,ASHOKLEY.NS,True,True,4853,available
+ASIANHOTNR,Asian Hotels (North) Ltd.,ASIANHOTNR.NS,False,True,4851,available
+ASIANPAINT,Asian Paints India Ltd.,ASIANPAINT.NS,True,True,4853,available
+ASKAUTOLTD,ASKAUTOLTD,ASKAUTOLTD.NS,True,True,693,available
+ASTERDM,Aster DM Healthcare Ltd.,ASTERDM.NS,True,True,2105,available
+ASTRAL,Astral Poly Technik Ltd.,ASTRAL.NS,True,True,4801,available
+ASTRAMICRO,Astra Microwave Products Ltd.,ASTRAMICRO.NS,True,True,4853,available
+ATGL,Adani Gas Ltd.,ATGL.NS,True,True,1935,available
+ATHERENERG,Ather Energy Limited,ATHERENERG.NS,True,True,333,available
+ATLANTAELE,ATLANTAELE,ATLANTAELE.NS,True,True,230,available
+ATLASCYCLE,Atlas Cycle (Haryana) Ltd.,ATLASCYCLE.NS,False,True,4850,available
+ATUL,Atul Ltd.,ATUL.NS,True,True,4853,available
+AUBANK,AU Small Finance Bank Ltd.,AUBANK.NS,True,True,2262,available
+AURIONPRO,AURIONPRO,AURIONPRO.NS,True,True,4853,available
+AUROPHARMA,Aurobindo Pharma Ltd.,AUROPHARMA.NS,True,True,4852,available
+AUTOAXLES,Automotive Axles Ltd.,AUTOAXLES.NS,True,True,4852,available
+AUTOIND,Autoline Industries Ltd.,AUTOIND.NS,True,True,4833,available
+AVALON,AVALON,AVALON.NS,True,True,837,available
+AVANTIFEED,Avanti Feeds Ltd.,AVANTIFEED.NS,True,True,4112,available
+AVL,AVL,AVL.NS,True,True,451,available
+AWFIS,AWFIS,AWFIS.NS,True,True,563,available
+AWL,AWL Agri Business Limited,AWL.NS,True,True,1130,available
+AXISBANK,Axis Bank Ltd.,AXISBANK.NS,True,True,4853,available
+AXISCADES,AXISCADES,AXISCADES.NS,True,True,4854,available
+AZAD,AZAD,AZAD.NS,True,True,664,available
+BAJAJ-AUTO,Bajaj Auto Ltd,BAJAJ-AUTO.NS,True,True,4853,available
+BAJAJCON,Bajaj Corp Ltd.,BAJAJCON.NS,True,True,3960,available
+BAJAJELEC,Bajaj Electricals Ltd,BAJAJELEC.NS,True,True,4644,available
+BAJAJFINSV,Bajaj Finserv Ltd.,BAJAJFINSV.NS,True,True,4853,available
+BAJAJHFL,Bajaj Housing Finance Limited,BAJAJHFL.NS,True,True,489,available
+BAJAJHIND,Bajaj Hindusthan Ltd.,BAJAJHIND.NS,True,True,4853,available
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd.,BAJAJHLDNG.NS,True,True,4853,available
+BAJFINANCE,Bajaj Finance Ltd.,BAJFINANCE.NS,True,True,4853,available
+BALAJITELE,Balaji Telefilms Ltd.,BALAJITELE.NS,True,True,4852,available
+BALAMINES,BALAMINES,BALAMINES.NS,True,True,4790,available
+BALKRISHNA,AP Paper Mills Ltd.,BALKRISHNA.NS,False,True,2741,available
+BALKRISIND,Balkrishna Industries Ltd.,BALKRISIND.NS,True,True,4852,available
+BALMLAWRIE,Balmer Lawrie & Co. Ltd.,BALMLAWRIE.NS,True,True,4853,available
+BALRAMCHIN,Balrampur Chini Mills Ltd.,BALRAMCHIN.NS,True,True,4853,available
+BALUFORGE,BALUFORGE,BALUFORGE.NS,True,True,584,available
+BANARISUG,Bannari Amman Sugars Ltd.,BANARISUG.NS,False,True,4852,available
+BANCOINDIA,Banco Products (India) Ltd.,BANCOINDIA.NS,True,True,4852,available
+BANDHANBNK,Bandhan Bank Ltd.,BANDHANBNK.NS,True,True,2085,available
+BANKBARODA,Bank of Baroda,BANKBARODA.NS,True,True,4853,available
+BANKINDIA,Bank Of India,BANKINDIA.NS,True,True,4853,available
+BASF,BASF India Ltd.,BASF.NS,True,True,4853,available
+BATAINDIA,Bata India Ltd.,BATAINDIA.NS,True,True,4853,available
+BAYERCROP,Bayer Cropscience India Ltd. -Erstwhile,BAYERCROP.NS,True,True,4113,available
+BBL,Bharat Bijlee Ltd.,BBL.NS,False,True,4853,available
+BBOX,BBOX,BBOX.NS,True,True,4853,available
+BBTC,Bombay Burmah Trading Corporation Ltd.,BBTC.NS,True,True,4853,available
+BDL,Bharat Dynamics Ltd.,BDL.NS,True,True,2087,available
+BECTORFOOD,BECTORFOOD,BECTORFOOD.NS,True,True,1408,available
+BEL,Bharat Electronics Ltd.,BEL.NS,True,True,4853,available
+BELRISE,Belrise Industries Limited,BELRISE.NS,True,True,317,available
+BEML,BEML Ltd.,BEML.NS,True,True,4853,available
+BENGALASM,Assam Company India Ltd.,BENGALASM.NS,False,True,10,available
+BEPL,Bhansali Engineering Polymers Ltd.,BEPL.NS,True,True,4853,available
+BERGEPAINT,Berger Paints India Ltd.,BERGEPAINT.NS,True,True,4853,available
+BFUTILITIE,BF Utilities Ltd.,BFUTILITIE.NS,True,True,4773,available
+BGRENERGY,BGR Energy Systems Ltd,BGRENERGY.NS,True,True,4601,available
+BHARATFIN,SKS Microfinance Ltd.,BHARATFIN.NS,True,False,0,delisted_or_not_found
+BHARATFORG,Bharat Forge Limited,BHARATFORG.NS,True,True,4852,available
+BHARATRAS,Bharat Rasayan Ltd.,BHARATRAS.NS,True,True,4852,available
+BHARTIARTL,Bharti Airtel Ltd.,BHARTIARTL.NS,True,True,4853,available
+BHARTIHEXA,Bharti Hexacom Limited,BHARTIHEXA.NS,True,True,594,available
+BHEL,Bharat Heavy Electricals Ltd.,BHEL.NS,True,True,4853,available
+BIKAJI,Bikaji Foods International Limited,BIKAJI.NS,True,True,939,available
+BINDALAGRO,Oswal Chemicals & Fertilizers Ltd.,BINDALAGRO.NS,True,False,0,delisted_or_not_found
+BIOCON,Biocon Ltd.,BIOCON.NS,True,True,4853,available
+BIOFILCHEM,Orchid Chemicals & Pharmaceuticals Ltd.,BIOFILCHEM.NS,False,True,2249,available
+BIRLACORPN,Birla Corporation Ltd.,BIRLACORPN.NS,True,True,4853,available
+BLACKBUCK,BLACKBUCK,BLACKBUCK.NS,True,True,442,available
+BLISSGVS,Bliss GVS Pharma Ltd.,BLISSGVS.NS,True,True,3977,available
+BLKASHYAP,B L Kashyap & Sons Ltd.,BLKASHYAP.NS,True,True,4853,available
+BLS,BLS International Services Limited,BLS.NS,True,True,2526,available
+BLUEDART,Blue Dart Express Ltd.,BLUEDART.NS,True,True,4853,available
+BLUEJET,Blue Jet Healthcare Limited,BLUEJET.NS,True,True,702,available
+BLUESTARCO,Blue Star Infotech Ltd.,BLUESTARCO.NS,True,True,4853,available
+BLUESTONE,BLUESTONE,BLUESTONE.NS,True,True,258,available
+BOMDYEING,Bombay Dyeing & Manufacturing Co. Ltd.,BOMDYEING.NS,True,True,4853,available
+BORORENEW,BORORENEW,BORORENEW.NS,True,True,2045,available
+BOSCHLTD,Bosch Ltd.,BOSCHLTD.NS,True,True,4852,available
+BPCL,Bharat Petroleum Corporation Ltd.,BPCL.NS,True,True,4853,available
+BPL,BPL Engineering Ltd.,BPL.NS,True,True,4853,available
+BRIGADE,Brigade Enterprises Ltd.,BRIGADE.NS,True,True,4606,available
+BRITANNIA,Britannia Industries Ltd.,BRITANNIA.NS,True,True,4853,available
+BSE,BSE Ltd.,BSE.NS,True,True,2368,available
+BSL,BSL Ltd.,BSL.NS,True,True,4851,available
+BSOFT,Birlasoft Ltd.,BSOFT.NS,True,True,4854,available
+BURNPUR,India Cement Ltd.,BURNPUR.NS,False,True,4603,available
+CADILAHC,Cadila Healthcare Ltd.,CADILAHC.NS,True,False,0,delisted_or_not_found
+CAMLINFINE,Camlin Fine Sciences Ltd.,CAMLINFINE.NS,True,True,2869,available
+CAMPUS,CAMPUS,CAMPUS.NS,True,True,1071,available
+CAMS,Computer Age Management Services Limited,CAMS.NS,True,True,1465,available
+CANBK,Canara Bank,CANBK.NS,True,True,4853,available
+CANFINHOME,Can Fin Homes Ltd.,CANFINHOME.NS,True,True,4853,available
+CANHLIFE,Canara HSBC Life Insurance Company Limited,CANHLIFE.NS,True,True,218,available
+CAPILLARY,CAPILLARY,CAPILLARY.NS,True,True,195,available
+CAPLIPOINT,Caplin Point Laboratories Ltd.,CAPLIPOINT.NS,True,True,3009,available
+CARBORUNIV,Carborundum Universal Ltd.,CARBORUNIV.NS,True,True,4852,available
+CARERATING,CARE Ltd.,CARERATING.NS,True,True,3378,available
+CARTRADE,Cartrade Tech Limited,CARTRADE.NS,True,True,1247,available
+CASTROLIND,Castrol (India) Ltd.,CASTROLIND.NS,True,True,4853,available
+CCAVENUE,CCAVENUE,CCAVENUE.NS,True,True,2575,available
+CCL,CCL Products (I) Ltd.,CCL.NS,True,True,4853,available
+CDSL,Central Depository Services (India) Ltd.,CDSL.NS,True,True,2269,available
+CEATLTD,Ceat Ltd.,CEATLTD.NS,True,True,4582,available
+CELLO,CELLO,CELLO.NS,True,True,697,available
+CEMPRO,Cemindia Projects Limited,CEMPRO.NS,True,True,4853,available
+CENTENKA,Century Enka Ltd.,CENTENKA.NS,True,True,4852,available
+CENTRALBK,Central Bank of India,CENTRALBK.NS,True,True,4696,available
+CENTURYPLY,Century Plyboards (India) Ltd.,CENTURYPLY.NS,True,True,4852,available
+CERA,Cera Sanitaryware Ltd,CERA.NS,True,True,4643,available
+CESC,CESC Ltd.,CESC.NS,True,True,4853,available
+CGCL,Capri Global Capital Ltd.,CGCL.NS,True,True,3909,available
+CGPOWER,CG Power and Industrial Solutions Ltd.,CGPOWER.NS,True,True,4853,available
+CHALET,Chalet Hotels Ltd.,CHALET.NS,True,True,1870,available
+CHAMBLFERT,Chambal Fertilizers & Chemicals Ltd.,CHAMBLFERT.NS,True,True,4853,available
+CHEMCON,Ciba Speciality Chemicals (India) Ltd.,CHEMCON.NS,False,True,1464,available
+CHEMPLASTS,Chemplast Sanmar Ltd.,CHEMPLASTS.NS,False,True,1245,available
+CHENNPETRO,Chennai Petroleum Corporation Ltd.,CHENNPETRO.NS,True,True,4853,available
+CHOICEIN,Choice International Limited,CHOICEIN.NS,True,True,1088,available
+CHOLAFIN,Cholamandalam Investment and Finance Company Ltd.,CHOLAFIN.NS,True,True,4853,available
+CHOLAHLDNG,TI Financial Holdings Ltd.,CHOLAHLDNG.NS,True,True,4853,available
+CIEINDIA,Mahindra CIE Automotive Ltd.,CIEINDIA.NS,True,True,4687,available
+CINEVISTA,Cinevista Ltd.,CINEVISTA.NS,True,True,4852,available
+CIPLA,Cipla Ltd.,CIPLA.NS,True,True,4853,available
+CLEAN,Clean Science and Technology Limited,CLEAN.NS,True,True,1269,available
+CMSINFO,CMSINFO,CMSINFO.NS,True,True,1156,available
+COALINDIA,Coal India Ltd.,COALINDIA.NS,True,True,3905,available
+COCHINSHIP,Cochin Shipyard Ltd.,COCHINSHIP.NS,True,True,2239,available
+COFFEEDAY,Coffee Day Enterprises Ltd.,COFFEEDAY.NS,True,True,2676,available
+COFORGE,Coforge Limited,COFORGE.NS,True,True,4853,available
+COHANCE,Cohance Lifesciences Limited,COHANCE.NS,True,True,1607,available
+COLPAL,Colgate Palmolive (I) Ltd,COLPAL.NS,True,True,4853,available
+CONCOR,Container Corporation of India Ltd.,CONCOR.NS,True,True,4853,available
+CONCORDBIO,Concord Biotech Limited,CONCORDBIO.NS,True,True,752,available
+CONSOFINVT,Consolidated Finvest & Holdings Ltd.,CONSOFINVT.NS,True,True,4850,available
+COROMANDEL,Coromandel International Ltd.,COROMANDEL.NS,True,True,4853,available
+CORONA,CORONA,CORONA.NS,True,True,178,available
+CORPBANK,Corporation Bank,CORPBANK.NS,True,False,0,delisted_or_not_found
+CPPLUS,Aditya Infotech Limited,CPPLUS.NS,True,True,268,available
+CRAFTSMAN,Craftsman Automation Limited,CRAFTSMAN.NS,True,True,1344,available
+CRAMC,CRAMC,CRAMC.NS,True,True,219,available
+CREATIVEYE,Creative Eye Ltd.,CREATIVEYE.NS,True,True,4850,available
+CREDITACC,CreditAccess Grameen Ltd.,CREDITACC.NS,True,True,1983,available
+CRISIL,CRISIL Ltd.,CRISIL.NS,True,True,4853,available
+CRIZAC,CRIZAC,CRIZAC.NS,True,True,287,available
+CROMPTON,Crompton Greaves Consumer Electricals Ltd.,CROMPTON.NS,True,True,2549,available
+CSBBANK,CSB Bank Ltd.,CSBBANK.NS,True,True,1673,available
+CUB,City Union Bank Ltd.,CUB.NS,True,True,4853,available
+CUMMINSIND,Cummins India Ltd.,CUMMINSIND.NS,True,True,4853,available
+CUPID,CUPID,CUPID.NS,True,True,2463,available
+CYBERTECH,Cybertech Systems & Software Ltd.,CYBERTECH.NS,True,True,4852,available
+CYIENT,Cyient Ltd.,CYIENT.NS,True,True,4853,available
+DABUR,Dabur India Ltd.,DABUR.NS,True,True,4853,available
+DALBHARAT,Dalmia Bharat Ltd.,DALBHARAT.NS,True,True,1902,available
+DALMIASUG,Dalmia Bharat Sugar and Industries Ltd.,DALMIASUG.NS,True,True,4851,available
+DATAMATICS,DATAMATICS,DATAMATICS.NS,True,True,4853,available
+DATAPATTNS,Data Patterns (India) Limited,DATAPATTNS.NS,True,True,1161,available
+DBCORP,D.B.Corp Ltd.,DBCORP.NS,True,True,4114,available
+DBL,Dilip Buildcon Ltd.,DBL.NS,True,True,2484,available
+DBREALTY,D B Realty Ltd.,DBREALTY.NS,True,True,4081,available
+DCAL,Dishman Carbogen Amcis Ltd.,DCAL.NS,True,True,4853,available
+DCBBANK,DCB Bank Ltd.,DCBBANK.NS,True,True,4853,available
+DCMSHRIRAM,DCM Shriram Consolidated Ltd.,DCMSHRIRAM.NS,True,True,4852,available
+DCW,DCW Ltd.,DCW.NS,True,True,4853,available
+DEEPAKFERT,Deepak Fertilisers & Petrochemicals Corp. Ltd.,DEEPAKFERT.NS,True,True,4853,available
+DEEPAKNTR,Deepak Nitrite Ltd.,DEEPAKNTR.NS,True,True,3930,available
+DELHIVERY,Delhivery Limited,DELHIVERY.NS,True,True,1060,available
+DELTACORP,Delta Corp Ltd.,DELTACORP.NS,True,True,4644,available
+DEN,Den Networks Ltd.,DEN.NS,True,True,4140,available
+DEVYANI,Devyani International Limited,DEVYANI.NS,True,True,1250,available
+DHAMPURSUG,Dhampur Sugar Mills Ltd.,DHAMPURSUG.NS,True,True,4853,available
+DHANBANK,Dhanlaxmi Bank Ltd.,DHANBANK.NS,True,True,4853,available
+DHANI,Indiabulls Securities Ltd.,DHANI.NS,False,False,0,delisted_or_not_found
+DHANUKA,Dhanuka Agritech Ltd.,DHANUKA.NS,True,True,3742,available
+DHFL,Dewan Housing Finance Corporation Ltd.,DHFL.NS,True,False,0,delisted_or_not_found
+DIACABS,DIACABS,DIACABS.NS,True,True,3931,available
+DICIND,DIC India Ltd.,DICIND.NS,True,True,4851,available
+DIGJAMLMTD,Digjam Ltd.,DIGJAMLMTD.NS,False,True,4850,available
+DISHMAN,Dishman Pharmaceuticals & Chemicals Ltd.,DISHMAN.NS,True,False,0,delisted_or_not_found
+DISHTV,Dish TV India Ltd.,DISHTV.NS,True,True,4782,available
+DIVISLAB,Divi's Laboratories Ltd.,DIVISLAB.NS,True,True,4852,available
+DIXON,Dixon Technologies (India) Ltd.,DIXON.NS,True,True,2215,available
+DLF,DLF Ltd.,DLF.NS,True,True,4728,available
+DMART,Avenue Supermarts Ltd.,DMART.NS,True,True,2338,available
+DOMS,DOMS Industries Limited,DOMS.NS,True,True,668,available
+DONEAR,Donear Industries Ltd.,DONEAR.NS,True,True,4852,available
+DREDGECORP,Dredging Corporation of India Ltd.,DREDGECORP.NS,True,True,4853,available
+DRREDDY,Dr. Reddy's Laboratories Ltd.,DRREDDY.NS,True,True,4853,available
+DSKULKARNI,D.S. Kulkarni Developers Ltd.,DSKULKARNI.NS,False,True,4850,available
+DTIL,Jay Shree Tea & Industries Ltd.,DTIL.NS,False,True,2868,available
+DWARKESH,Dwarikesh Sugar Industrial Ltd.,DWARKESH.NS,False,True,4852,available
+DYNAMATECH,Dynamatic Technologies Ltd.,DYNAMATECH.NS,True,True,4852,available
+ECLERX,eClerx Services Ltd.,ECLERX.NS,True,True,4606,available
+EDELWEISS,Edelweiss Financial Services Ltd.,EDELWEISS.NS,True,True,4617,available
+EICHERMOT,Eicher Ltd.,EICHERMOT.NS,True,True,4853,available
+EIDPARRY,E.I.D. Parry (India) Ltd.,EIDPARRY.NS,True,True,4852,available
+EIEL,EIEL,EIEL.NS,True,True,438,available
+EIHOTEL,EIH Ltd.,EIHOTEL.NS,True,True,4853,available
+EKC,Everest Kanto Cylinder Ltd.,EKC.NS,True,True,4852,available
+ELECON,Elecon Engineering Co. Ltd.,ELECON.NS,True,True,4853,available
+ELECTCAST,Electrosteel Castings Ltd.,ELECTCAST.NS,True,True,4853,available
+ELGIEQUIP,Elgi Equipments Ltd.,ELGIEQUIP.NS,True,True,4853,available
+ELGIRUBCO,Elgi Rubber Company Ltd.,ELGIRUBCO.NS,False,True,4605,available
+ELLEN,ELLEN,ELLEN.NS,True,True,292,available
+EMAMILTD,Emami Ltd.,EMAMILTD.NS,True,True,4853,available
+EMBDL,EMBDL,EMBDL.NS,True,True,4853,available
+EMCURE,Emcure Pharmaceuticals Limited,EMCURE.NS,True,True,534,available
+EMIL,EMIL,EMIL.NS,True,True,960,available
+EMMVEE,Emmvee Photovoltaic Power Limited,EMMVEE.NS,True,True,198,available
+ENDURANCE,Endurance Technologies Ltd.,ENDURANCE.NS,True,True,2442,available
+ENERGYDEV,Infrastructure Development Finance Company Limited,ENERGYDEV.NS,False,True,4642,available
+ENGINERSIN,Engineers India Ltd.,ENGINERSIN.NS,True,True,4853,available
+ENIL,Entertainment Network India Ltd.,ENIL.NS,True,True,4852,available
+ENRIN,Siemens Energy India Limited,ENRIN.NS,True,True,301,available
+ENTERO,ENTERO,ENTERO.NS,True,True,629,available
+EPL,EPL,EPL.NS,True,True,4852,available
+EQUITASBNK,EQUITASBNK,EQUITASBNK.NS,True,True,1445,available
+ERIS,Eris Lifesciences Ltd.,ERIS.NS,True,True,2267,available
+ESABINDIA,ESAB India Ltd.,ESABINDIA.NS,True,True,4851,available
+ESCORTS,Escorts Ltd.,ESCORTS.NS,True,True,4853,available
+ESSARSHPNG,Essar Shipping Ports & Logistics Ltd.,ESSARSHPNG.NS,False,True,3652,available
+ETERNAL,ETERNAL LIMITED,ETERNAL.NS,True,True,1266,available
+ETHOSLTD,ETHOSLTD,ETHOSLTD.NS,True,True,1055,available
+EUREKAFORB,EUREKAFORB,EUREKAFORB.NS,True,True,491,available
+EUROTEXIND,Kemrock Industries and Exports Ltd.,EUROTEXIND.NS,False,True,4850,available
+EVEREADY,Eveready Industries India Ltd.,EVEREADY.NS,True,True,4852,available
+EVERESTIND,Everest Industries Ltd.,EVERESTIND.NS,True,True,4851,available
+EXCELINDUS,Excel Industries Ltd.- Arrangement,EXCELINDUS.NS,False,True,4851,available
+EXIDEIND,Exide Industries Ltd.,EXIDEIND.NS,True,True,4853,available
+FACT,Fertilisers and Chemicals Travancore Ltd.,FACT.NS,True,True,4853,available
+FAGBEARING,Fag Bearings India Ltd.,FAGBEARING.NS,True,False,0,delisted_or_not_found
+FCONSUMER,Future Consumer Enterprise Ltd.,FCONSUMER.NS,True,True,3658,available
+FDC,FDC Ltd.,FDC.NS,True,True,4852,available
+FEDERALBNK,Federal Bank Ltd.,FEDERALBNK.NS,True,True,4853,available
+FEDFINA,FEDFINA,FEDFINA.NS,True,True,683,available
+FEL,Future Enterprises Ltd.,FEL.NS,False,True,4851,available
+FIEMIND,FIEMIND,FIEMIND.NS,True,True,4853,available
+FINCABLES,Finolex Cables Ltd.,FINCABLES.NS,True,True,4853,available
+FINEORG,Fine Organic Industries Ltd.,FINEORG.NS,True,True,2019,available
+FINPIPE,Finolex Industries Ltd.,FINPIPE.NS,True,True,4851,available
+FIRSTCRY,Brainbees Solutions Limited,FIRSTCRY.NS,True,True,512,available
+FIVESTAR,Five-Star Business Finance Limited,FIVESTAR.NS,True,True,936,available
+FLEXITUFF,Flexituff International Ltd.,FLEXITUFF.NS,True,True,3666,available
+FLFL,Future Lifestyle Fashions Ltd.,FLFL.NS,True,True,3186,available
+FLUOROCHEM,Gujarat Fluorochemicals Ltd.,FLUOROCHEM.NS,True,True,1706,available
+FMGOETZE,Federal-Mogul Goetze (India) Ltd.,FMGOETZE.NS,True,True,4851,available
+FORCEMOT,FORCE MOTORS LTD,FORCEMOT.NS,True,True,1703,available
+FORTIS,Fortis Healthcare Ltd.,FORTIS.NS,True,True,4769,available
+FOSECOIND,Foseco India Ltd.,FOSECOIND.NS,False,True,4852,available
+FSL,Firstsource Solutions Ltd.,FSL.NS,True,True,4819,available
+GABRIEL,Gabriel India Ltd.,GABRIEL.NS,True,True,4853,available
+GAEL,Gujarat Ambuja Exports Ltd.,GAEL.NS,True,True,4853,available
+GAIL,GAIL (India) Ltd.,GAIL.NS,True,True,4853,available
+GALAXYSURF,Galaxy Surfactants Ltd.,GALAXYSURF.NS,True,True,2114,available
+GALLANTT,Gallantt Ispat Limited,GALLANTT.NS,True,True,4852,available
+GANESHBE,Ganesh Benzoplast Ltd.,GANESHBE.NS,False,True,1228,available
+GANGESSECU,India Securities Ltd.,GANGESSECU.NS,False,True,2246,available
+GARFIBRES,Garware Technical Fibres Ltd.,GARFIBRES.NS,True,True,4852,available
+GATEWAY,Gateway Distriparks Ltd.,GATEWAY.NS,False,True,1102,available
+GAYAPROJ,Gayatri Projects Ltd.,GAYAPROJ.NS,True,True,3707,available
+GEOJITFSL,Geojit BNP Paribas Financial Services Ltd.,GEOJITFSL.NS,True,True,4852,available
+GEPIL,Alstom India Ltd.,GEPIL.NS,True,False,0,delisted_or_not_found
+GESHIP,Great Eastern Shipping Co. Ltd.,GESHIP.NS,True,True,4853,available
+GHCL,GHCL Ltd.,GHCL.NS,True,True,4853,available
+GICHSGFIN,GIC Housing Finance Ltd.,GICHSGFIN.NS,True,True,4852,available
+GICRE,General Insurance Corporation of India,GICRE.NS,True,True,2190,available
+GILLETTE,Gillette India Ltd.,GILLETTE.NS,True,True,4853,available
+GIPCL,Gujarat Industries Power Co. Ltd.,GIPCL.NS,True,True,4853,available
+GLAND,Gland Pharma Limited,GLAND.NS,True,True,1430,available
+GLAXO,Glaxo (India) Ltd.,GLAXO.NS,True,True,4853,available
+GLENMARK,Glenmark Pharmaceuticals Ltd.,GLENMARK.NS,True,True,4853,available
+GLFL,Gujarat Lease Financing Ltd.,GLFL.NS,True,True,4850,available
+GLOBOFFS,Global Offshore Services Ltd.,GLOBOFFS.NS,True,False,0,delisted_or_not_found
+GMDCLTD,Gujarat Mineral Development Corporation Ltd.,GMDCLTD.NS,True,True,4853,available
+GMMPFAUDLR,GMM Pfaudler Ltd.,GMMPFAUDLR.NS,True,True,2100,available
+GMRAIRPORT,GMR AIRPORTS LIMITED,GMRAIRPORT.NS,True,True,4853,available
+GMRINFRA,GMR Infrastructure Ltd.,GMRINFRA.NS,True,False,0,delisted_or_not_found
+GMRP&UI,GMRP&UI,GMRP&UI.NS,True,True,1101,available
+GNFC,Gujarat Narmada Valley Fertilizers and Chemicals Ltd.,GNFC.NS,True,True,4853,available
+GNRL,Reliance Natural Resources Ltd.,GNRL.NS,False,True,10,available
+GODFRYPHLP,Godfrey Phillips India Ltd.,GODFRYPHLP.NS,True,True,4853,available
+GODIGIT,Go Digit General Insurance Limited,GODIGIT.NS,True,True,567,available
+GODREJAGRO,Godrej Agrovet Ltd.,GODREJAGRO.NS,True,True,2196,available
+GODREJCP,Godrej Consumer Products Ltd.,GODREJCP.NS,True,True,4853,available
+GODREJIND,Godrej Industries Ltd.,GODREJIND.NS,True,True,4853,available
+GODREJPROP,Godrej Properties Ltd.,GODREJPROP.NS,True,True,4116,available
+GOKEX,Gokaldas Exports Ltd.,GOKEX.NS,True,True,4853,available
+GOKULAGRO,GOKULAGRO,GOKULAGRO.NS,True,True,2588,available
+GOLDENTOBC,Golden Tobacco Ltd.,GOLDENTOBC.NS,True,True,4851,available
+GOODYEAR,Goodyear India Ltd.,GOODYEAR.NS,False,True,4273,available
+GPIL,Godawari Power And Ispat limited,GPIL.NS,True,True,4853,available
+GPPL,Gujarat Pipavav Port Ltd.,GPPL.NS,True,True,3944,available
+GRANULES,Granules India Ltd.,GRANULES.NS,True,True,4852,available
+GRAPHITE,Graphite India Ltd.,GRAPHITE.NS,True,True,4853,available
+GRASIM,Grasim Industries Ltd.,GRASIM.NS,True,True,4853,available
+GRAVITA,Gravita India Limited,GRAVITA.NS,True,True,3898,available
+GREAVESCOT,Greaves Cotton Ltd.,GREAVESCOT.NS,True,True,4853,available
+GREENPLY,Greenply Industries Ltd.,GREENPLY.NS,True,True,4853,available
+GRINDWELL,Grindwell Norton Ltd.,GRINDWELL.NS,True,True,4852,available
+GROWW,Billionbrains Garage Ventures Limited,GROWW.NS,True,True,202,available
+GRSE,Garden Reach Shipbuilders & Engineers Ltd.,GRSE.NS,True,True,1943,available
+GRWRHITECH,GRWRHITECH,GRWRHITECH.NS,True,True,1133,available
+GSFC,Gujarat State Fertilizers & Chemicals Ltd.,GSFC.NS,True,True,4853,available
+GSKCONS,GlaxoSmithkline Consumer Healthcare Ltd.,GSKCONS.NS,True,False,0,delisted_or_not_found
+GSPL,Gujarat State Petronet Ltd.,GSPL.NS,True,False,0,delisted_or_not_found
+GTL,GTL Ltd.,GTL.NS,True,True,4853,available
+GTLINFRA,GTL Infrastructure Ltd.,GTLINFRA.NS,True,True,4853,available
+GUJALKALI,Gujarat Alkalies & Chemicals Ltd.,GUJALKALI.NS,True,True,4852,available
+GULFOILLUB,Gulf Oil India Ltd.-Old,GULFOILLUB.NS,True,True,2983,available
+GVKPIL,GVK Power & Infrastructures Ltd.,GVKPIL.NS,True,True,4853,available
+GVPIL,GE Power India Ltd.,GVPIL.NS,False,True,4853,available
+GVT&D,Alstom T&D India Ltd.,GVT&D.NS,True,True,4853,available
+HAL,Hindustan Aeronautics Ltd.,HAL.NS,True,True,2083,available
+HAPPSTMNDS,HAPPSTMNDS,HAPPSTMNDS.NS,True,True,1476,available
+HARRMALAYA,Harrisons Malayalam Ltd.,HARRMALAYA.NS,True,True,4853,available
+HATHWAY,Hathway Cable & Datacom Ltd.,HATHWAY.NS,True,True,4080,available
+HATSUN,Hatsun Agro Product Ltd.,HATSUN.NS,True,True,3010,available
+HAVELLS,Havell's India Ltd.,HAVELLS.NS,True,True,4853,available
+HBLENGINE,HBL Engineering Limited,HBLENGINE.NS,True,True,4851,available
+HCC,Hindustan Construction Co. Ltd.,HCC.NS,True,True,4853,available
+HCG,HCG,HCG.NS,True,True,2577,available
+HCL-INSYS,HCL Infosystems Ltd,HCL-INSYS.NS,True,True,4853,available
+HCLTECH,HCL Technologies Ltd.,HCLTECH.NS,True,True,4854,available
+HDBFS,HDB Financial Services Limited,HDBFS.NS,True,True,292,available
+HDFC,Housing Development Finance Corporation Ltd.,HDFC.NS,True,False,0,delisted_or_not_found
+HDFCAMC,HDFC Asset Management Company Ltd.,HDFCAMC.NS,True,True,1994,available
+HDFCBANK,HDFC Bank Ltd.,HDFCBANK.NS,True,True,4853,available
+HDFCLIFE,HDFC Life Insurance Company Ltd.,HDFCLIFE.NS,True,True,2173,available
+HDIL,Housing Development and Infrastructure Ltd.,HDIL.NS,True,True,4713,available
+HEG,HEG Limited,HEG.NS,True,True,4853,available
+HEIDELBERG,HeidelbergCement India Ltd.,HEIDELBERG.NS,True,True,4853,available
+HEMIPROP,HEMIPROP,HEMIPROP.NS,True,True,1452,available
+HERITGFOOD,Heritage Foods Ltd.,HERITGFOOD.NS,True,True,4853,available
+HEROMOTOCO,Hero Honda Motors Limited,HEROMOTOCO.NS,True,True,4853,available
+HEXT,Hexaware Technologies Ltd.,HEXT.NS,True,True,379,available
+HFCL,Himachal Fut Com Ltd.,HFCL.NS,True,True,4853,available
+HGINFRA,H.E.G. Ltd.,HGINFRA.NS,True,True,2097,available
+HGS,iGate Global Solutions Ltd.,HGS.NS,False,True,4852,available
+HIKAL,Hikal Ltd.,HIKAL.NS,True,True,4852,available
+HIMATSEIDE,Himatsingka Seide Ltd.,HIMATSEIDE.NS,True,True,4853,available
+HINDALCO,Hindalco Industries Ltd.,HINDALCO.NS,True,True,4853,available
+HINDCOPPER,Hindustan Copper Ltd.,HINDCOPPER.NS,True,True,4113,available
+HINDOILEXP,Hindustan Oil Exploration Co. Ltd.,HINDOILEXP.NS,False,True,4853,available
+HINDPETRO,Hindustan Petroleum Corporation Ltd.,HINDPETRO.NS,True,True,4853,available
+HINDUNILVR,Hindustan Unilever Ltd.,HINDUNILVR.NS,True,True,4853,available
+HINDZINC,Hindustan Zinc Ltd.,HINDZINC.NS,True,True,4853,available
+HMAAGRO,Agro Dutch Industries Ltd.,HMAAGRO.NS,False,True,783,available
+HMT,HMT Ltd.,HMT.NS,True,True,4851,available
+HMVL,Hindustan Media Vent Ltd.,HMVL.NS,True,True,3978,available
+HOMEFIRST,Home First Finance Company India Limited,HOMEFIRST.NS,True,True,1380,available
+HONASA,Honasa Consumer Limited,HONASA.NS,True,True,697,available
+HONAUT,Honeywell Automation India Ltd.,HONAUT.NS,True,True,4851,available
+HONDAPOWER,Honda SIEL Power Products Ltd.,HONDAPOWER.NS,False,True,4851,available
+HSCL,Himadri Speciality Chemical Ltd.,HSCL.NS,True,True,4813,available
+HTMEDIA,HT Media Ltd.,HTMEDIA.NS,True,True,4851,available
+HUBTOWN,Hubtown Ltd.,HUBTOWN.NS,True,True,4829,available
+HUDCO,Housing & Urban Development Corporation Ltd.,HUDCO.NS,True,True,2298,available
+HYUNDAI,Hyundai Motor India Limited,HYUNDAI.NS,True,True,464,available
+IBREALEST,Indiabulls Real Estate Ltd.,IBREALEST.NS,True,False,0,delisted_or_not_found
+IBULHSGFIN,Indiabulls Housing Finance Ltd.,IBULHSGFIN.NS,True,False,0,delisted_or_not_found
+IBULISL,Indiabulls Integrated Services Ltd.,IBULISL.NS,True,False,0,delisted_or_not_found
+ICICIAMC,ICICI Prudential Asset Management Company Limited,ICICIAMC.NS,True,True,175,available
+ICICIBANK,ICICI Bank Ltd,ICICIBANK.NS,True,True,4853,available
+ICICIGI,ICICI Lombard General Insurance Company Ltd.,ICICIGI.NS,True,True,2208,available
+ICICIPRULI,ICICI Prudential Life Insurance Company Ltd.,ICICIPRULI.NS,True,True,2454,available
+ICIL,Indo Count Industries Ltd.,ICIL.NS,True,True,4853,available
+ICRA,ICRA Ltd.,ICRA.NS,True,True,4783,available
+IDBI,IDBI Bank Ltd.,IDBI.NS,True,True,4853,available
+IDEA,Idea Cellular Ltd.,IDEA.NS,True,True,4808,available
+IDFCFIRSTB,IDFC Bank Ltd.,IDFCFIRSTB.NS,True,True,2673,available
+IEX,Indian Energy Exchange Ltd.,IEX.NS,True,True,2192,available
+IFBIND,IFB Industries Ltd.,IFBIND.NS,True,True,4853,available
+IFCI,IFCI Ltd.,IFCI.NS,True,True,4853,available
+IGARASHI,Igarashi Motors India Ltd.,IGARASHI.NS,True,True,4853,available
+IGIL,International Gemological Institute Limited,IGIL.NS,True,True,417,available
+IGL,Indraprastha Gas Ltd.,IGL.NS,True,True,4853,available
+IIFL,IIFL Finance Ltd.,IIFL.NS,True,True,4853,available
+IIFLCAPS,IIFLCAPS,IIFLCAPS.NS,True,True,1721,available
+IIFLWAM,IIFL Wealth Management Ltd.,IIFLWAM.NS,True,False,0,delisted_or_not_found
+IKS,Inventurus Knowledge Solutions Limited,IKS.NS,True,True,423,available
+IL&FSENGG,IL&FS Engineering and Construction Company Ltd.,IL&FSENGG.NS,True,True,4648,available
+IL&FSTRANS,IL&FS Transportation Networks Ltd.,IL&FSTRANS.NS,True,True,4057,available
+IMFA,Indian Metals & Ferro Alloys Ltd.,IMFA.NS,True,True,3978,available
+INDGN,Indegene Limited,INDGN.NS,True,True,575,available
+INDHOTEL,Indian Hotels Co. Ltd.,INDHOTEL.NS,True,True,4853,available
+INDIACEM,India Cements Ltd.,INDIACEM.NS,True,True,4853,available
+INDIAGLYCO,India Glycols Ltd.,INDIAGLYCO.NS,True,True,4853,available
+INDIAMART,Indiamart Intermesh Ltd.,INDIAMART.NS,True,True,1774,available
+INDIANB,Indian Bank,INDIANB.NS,True,True,4814,available
+INDIANCARD,Indian Card Clothing Co. Ltd.,INDIANCARD.NS,True,True,4851,available
+INDIASHLTR,INDIASHLTR,INDIASHLTR.NS,True,True,667,available
+INDIGO,InterGlobe Aviation Ltd.,INDIGO.NS,True,True,2670,available
+INDIGOPNTS,INDIGOPNTS,INDIGOPNTS.NS,True,True,1382,available
+INDNIPPON,India Nippon Electricals Ltd.,INDNIPPON.NS,True,True,4852,available
+INDOCO,Indoco Remedies Ltd.,INDOCO.NS,True,True,4853,available
+INDORAMA,Indo Rama Synthetics (India) Ltd. - Old,INDORAMA.NS,False,True,4853,available
+INDOSTAR,IndoStar Capital Finance Ltd.,INDOSTAR.NS,True,True,2049,available
+INDRAMEDCO,Indraprastha Medical Corporation Ltd.,INDRAMEDCO.NS,True,True,4853,available
+INDSWFTLAB,Ind-Swift Laboratories Ltd.,INDSWFTLAB.NS,True,True,4852,available
+INDUSINDBK,IndusInd Bank Ltd.,INDUSINDBK.NS,True,True,4853,available
+INDUSTOWER,Indus Towers Limited,INDUSTOWER.NS,True,True,3377,available
+INFOMEDIA,Infomedia Press Ltd.,INFOMEDIA.NS,False,True,4851,available
+INFRATEL,Bharti Infratel Ltd.,INFRATEL.NS,True,False,0,delisted_or_not_found
+INFY,Infosys Ltd.,INFY.NS,True,True,4853,available
+INGERRAND,Ingersoll Rand (India) Ltd.,INGERRAND.NS,True,True,4853,available
+INOXGREEN,INOXGREEN,INOXGREEN.NS,True,True,935,available
+INOXINDIA,INOXINDIA,INOXINDIA.NS,True,True,667,available
+INOXLEISUR,Inox Leisure Ltd.,INOXLEISUR.NS,True,False,0,delisted_or_not_found
+INOXWIND,Inox Wind Ltd.,INOXWIND.NS,True,True,2818,available
+INTELLECT,Intellect Design Arena Ltd.,INTELLECT.NS,True,True,2892,available
+IOB,Indian Overseas Bank,IOB.NS,True,True,4853,available
+IOC,Indian Oil Corporation Ltd.,IOC.NS,True,True,4853,available
+IONEXCHANG,Ion Exchange (India) Ltd.,IONEXCHANG.NS,True,True,1119,available
+IPCALAB,Ipca Laboratories Ltd.,IPCALAB.NS,True,True,4852,available
+IPRINGLTD,IP Rings Ltd.,IPRINGLTD.NS,False,True,15,available
+IRB,IRB Infrastructure Developers Ltd.,IRB.NS,True,True,4566,available
+IRCON,IRCON International Ltd.,IRCON.NS,True,True,1959,available
+IRCTC,Indian Railway Catering And Tourism Corporation Ltd.,IRCTC.NS,True,True,1708,available
+IREDA,Indian Renewable Energy Development Agency Limited,IREDA.NS,True,True,684,available
+IRFC,Indian Railway Finance Corporation Limited,IRFC.NS,True,True,1384,available
+ISTLTD,S.B.& T. International Ltd.,ISTLTD.NS,False,True,10,available
+ITC,I T C Ltd.,ITC.NS,True,True,4853,available
+ITCHOTELS,ITC Hotels Ltd.,ITCHOTELS.NS,True,True,395,available
+ITDC,India Tourism Development Corporation Ltd.,ITDC.NS,True,True,2391,available
+ITI,ITI Ltd.,ITI.NS,True,True,4853,available
+IXIGO,IXIGO,IXIGO.NS,True,True,551,available
+J&KBANK,Jammu & Kashmir Bank Ltd.,J&KBANK.NS,True,True,4853,available
+JAGRAN,Jagran Prakashan Ltd.,JAGRAN.NS,True,True,4852,available
+JAGSNPHARM,Jagsonpal Pharmaceuticals Ltd.,JAGSNPHARM.NS,True,True,4853,available
+JAIBALAJI,Jai Balaji Industries Ltd.,JAIBALAJI.NS,True,True,4853,available
+JAICORPLTD,Jai Corp Ltd.,JAICORPLTD.NS,True,True,4853,available
+JAINREC,Jain Resource Recycling Limited,JAINREC.NS,True,True,227,available
+JAMNAAUTO,Jamna Auto Industries Ltd.,JAMNAAUTO.NS,True,True,3881,available
+JAYNECOIND,JAYNECOIND,JAYNECOIND.NS,True,True,4853,available
+JBCHEPHARM,J.B. Chemicals & Pharmaceuticals Ltd.,JBCHEPHARM.NS,True,False,0,delisted_or_not_found
+JBMA,JBM Auto Limited,JBMA.NS,True,True,4853,available
+JINDALHIS,Jindal Stainless (Hisar) Ltd.,JINDALHIS.NS,False,False,0,delisted_or_not_found
+JINDALPHOT,Jindal Photo Ltd.,JINDALPHOT.NS,False,True,4851,available
+JINDALPOLY,Jindal Poly Films Ltd.,JINDALPOLY.NS,True,True,4853,available
+JINDALSAW,Jindal Saw Ltd.,JINDALSAW.NS,True,True,4853,available
+JINDALSTEL,Jindal Iron & Steel Co. Ltd.,JINDALSTEL.NS,True,True,4853,available
+JIOFIN,Jio Financial Services Limited,JIOFIN.NS,True,True,751,available
+JISLDVREQS,Jain Irrigation Systems Ltd.,JISLDVREQS.NS,False,True,3641,available
+JKCEMENT,J.K. Cement Ltd.,JKCEMENT.NS,True,True,4853,available
+JKIL,J.Kumar Infraprojects Ltd.,JKIL.NS,True,True,4575,available
+JKLAKSHMI,JK Lakshmi Cement Ltd.,JKLAKSHMI.NS,True,True,4853,available
+JKPAPER,JK Paper Ltd.,JKPAPER.NS,True,True,4852,available
+JKTYRE,JK Tyre & Industries Ltd.,JKTYRE.NS,True,True,4853,available
+JLHL,JLHL,JLHL.NS,True,True,731,available
+JMFINANCIL,JM Financial Ltd.,JMFINANCIL.NS,True,True,4853,available
+JPASSOCIAT,Jaiprakash Associates Ltd.,JPASSOCIAT.NS,False,False,0,delisted_or_not_found
+JPPOWER,Jaiprakash Power Ventures Ltd.,JPPOWER.NS,True,True,4853,available
+JSFB,JSFB,JSFB.NS,True,True,632,available
+JSL,Jindal Stainless Ltd.,JSL.NS,True,True,4853,available
+JSLL,JSLL,JSLL.NS,True,True,1073,available
+JSWCEMENT,JSW Cement Limited,JSWCEMENT.NS,True,True,261,available
+JSWDULUX,JSW Dulux Limited,JSWDULUX.NS,True,True,4853,available
+JSWENERGY,JSW Energy Ltd.,JSWENERGY.NS,True,True,4116,available
+JSWHL,JSW Holdings Ltd.,JSWHL.NS,True,True,4853,available
+JSWINFRA,JSW Infrastructure Limited,JSWINFRA.NS,True,True,722,available
+JSWSTEEL,JSW ISPAT Steel Limited,JSWSTEEL.NS,True,True,4853,available
+JTEKTINDIA,JTEKT India Ltd.,JTEKTINDIA.NS,True,True,4853,available
+JUBILANT,Jubilant Life Sciences Ltd.,JUBILANT.NS,True,False,0,delisted_or_not_found
+JUBLFOOD,Jubilant Foodworks Ltd.,JUBLFOOD.NS,True,True,4092,available
+JUBLINGREA,Jubilant Ingrevia Limited,JUBLINGREA.NS,True,True,1350,available
+JUBLPHARMA,Jubilant Pharmova Limited,JUBLPHARMA.NS,True,True,4852,available
+JUSTDIAL,Justdial Ltd.,JUSTDIAL.NS,True,True,3269,available
+JWL,Jupiter Wagons Limited,JWL.NS,True,True,3918,available
+JYOTHYLAB,Jyothy Laboratories Ltd.,JYOTHYLAB.NS,True,True,4612,available
+JYOTICNC,Jyoti CNC Automation Limited,JYOTICNC.NS,True,True,651,available
+JYOTISTRUC,Jyoti Structures Ltd.,JYOTISTRUC.NS,True,True,4852,available
+KAJARIACER,Kajaria Ceramics Ltd.,KAJARIACER.NS,True,True,4853,available
+KAKATCEM,Kakatiya Cement Sugar & Industries Ltd.,KAKATCEM.NS,True,True,4852,available
+KALPATPOWR,Kalpataru Power Transmission Ltd.,KALPATPOWR.NS,True,False,0,delisted_or_not_found
+KALYANKJIL,Kalyan Jewellers India Limited,KALYANKJIL.NS,True,True,1345,available
+KANSAINER,Kansai Nerolac Paints Ltd.,KANSAINER.NS,True,True,4851,available
+KARURVYSYA,ING Vysya Bank Ltd.,KARURVYSYA.NS,True,True,4853,available
+KAUSHALYA,Infrastructure Development Finance Co. Ltd.,KAUSHALYA.NS,False,True,4613,available
+KAYNES,Kaynes Technology India Limited,KAYNES.NS,True,True,936,available
+KCP,KCP Ltd.,KCP.NS,True,True,4852,available
+KEC,Kec International Ltd.,KEC.NS,True,True,4853,available
+KEI,KEI Industries Ltd.,KEI.NS,True,True,4853,available
+KENNAMET,Kennametal India Ltd.,KENNAMET.NS,True,True,1165,available
+KESORAMIND,Kesoram Industries Ltd.,KESORAMIND.NS,True,True,4853,available
+KFINTECH,Kfin Technologies Limited,KFINTECH.NS,True,True,909,available
+KIMS,Krishna Institute of Medical Sciences Limited,KIMS.NS,True,True,1284,available
+KIOCL,KIOCL Ltd.,KIOCL.NS,True,True,2414,available
+KIRLOSBROS,Kirloskar Brothers Ltd.,KIRLOSBROS.NS,True,True,4853,available
+KIRLOSENG,Kirloskar Oil Eng Ltd.,KIRLOSENG.NS,True,True,4852,available
+KIRLOSIND,Kirloskar Industries Ltd.,KIRLOSIND.NS,False,True,4852,available
+KIRLPNU,KIRLPNU,KIRLPNU.NS,True,True,831,available
+KITEX,Kitex Garments Ltd.,KITEX.NS,True,True,3438,available
+KKCL,Kewal Kiran Clothing Ltd.,KKCL.NS,True,True,4851,available
+KNRCON,KNR Constructions Ltd.,KNRCON.NS,True,True,4571,available
+KOHINOOR,Kohinoor Foods Ltd.,KOHINOOR.NS,False,True,4850,available
+KOLTEPATIL,Kolte-Patil Developers Ltd.,KOLTEPATIL.NS,True,True,4614,available
+KOPRAN,Kopran Ltd.,KOPRAN.NS,False,True,4853,available
+KOTAKBANK,Kotak Mahindra Bank Ltd.,KOTAKBANK.NS,True,True,4853,available
+KOTHARIPRO,Kothari Products Ltd.,KOTHARIPRO.NS,True,True,4852,available
+KPIGREEN,KPIGREEN,KPIGREEN.NS,True,True,1264,available
+KPIL,Kalpataru Projects International Limited,KPIL.NS,True,True,4852,available
+KPITTECH,KPIT Technologies Ltd.,KPITTECH.NS,True,True,1824,available
+KPRMILL,K.P.R. Mill Ltd.,KPRMILL.NS,True,True,4691,available
+KRBL,KRBL Ltd.,KRBL.NS,True,True,4852,available
+KREBSBIO,Krebs Biochemicals Ltd.,KREBSBIO.NS,False,True,2434,available
+KRN,KRN,KRN.NS,True,True,477,available
+KSB,KSB Ltd.,KSB.NS,True,True,4853,available
+KSCL,Kaveri Seed Company Ltd.,KSCL.NS,True,True,4664,available
+KSL,Kalyani Steels Ltd.,KSL.NS,False,True,4407,available
+KTKBANK,Karnataka Bank Ltd.,KTKBANK.NS,True,True,4853,available
+KWALITY,Kwality Ltd.,KWALITY.NS,True,False,0,delisted_or_not_found
+LALPATHLAB,Dr. Datsons Labs Ltd.,LALPATHLAB.NS,True,True,2643,available
+LAOPALA,La Opala RG Ltd.,LAOPALA.NS,True,True,4803,available
+LATENTVIEW,Latent View Analytics Limited,LATENTVIEW.NS,True,True,1184,available
+LAURUSLABS,Laurus Labs Ltd.,LAURUSLABS.NS,True,True,2401,available
+LAXMIMACH,Lakshmi Machine Works Ltd.,LAXMIMACH.NS,True,False,0,delisted_or_not_found
+LEMONTREE,Lemon Tree Hotels Ltd.,LEMONTREE.NS,True,True,2078,available
+LENSKART,Lenskart Solutions Limited,LENSKART.NS,True,True,204,available
+LFIC,Industrial Finance Corporation Of India Ltd.,LFIC.NS,False,True,3993,available
+LGBBROSLTD,LG Balakrishnan & Bros Ltd.,LGBBROSLTD.NS,True,True,4605,available
+LGEINDIA,LG Electronics India Limited,LGEINDIA.NS,True,True,221,available
+LICHSGFIN,LIC Housing Finance Ltd.,LICHSGFIN.NS,True,True,4853,available
+LICI,Life Insurance Corporation Of India,LICI.NS,True,True,1065,available
+LINDEINDIA,Linde India Ltd.,LINDEINDIA.NS,True,True,4853,available
+LLOYDSENGG,LLOYDSENGG,LLOYDSENGG.NS,True,True,2502,available
+LLOYDSENT,LLOYDSENT,LLOYDSENT.NS,True,True,466,available
+LLOYDSME,Lloyds Metals & Engineers Ltd.,LLOYDSME.NS,True,True,775,available
+LODHA,Lodha Developers Limited,LODHA.NS,True,True,1332,available
+LOTUSDEV,LOTUSDEV,LOTUSDEV.NS,True,True,267,available
+LOVABLE,Lovable Lingerie Ltd.,LOVABLE.NS,True,True,3809,available
+LT,Larsen & Toubro Infotech Ltd.,LT.NS,True,True,4853,available
+LTF,L&T Finance Holdings Ltd.,LTF.NS,True,True,3712,available
+LTFOODS,LT Foods Limited,LTFOODS.NS,True,True,4853,available
+LTIM,LTIM,LTIM.NS,True,False,0,delisted_or_not_found
+LTM,LTM Limited,LTM.NS,False,True,2501,available
+LTTS,L&T Technology Services Ltd.,LTTS.NS,True,True,2458,available
+LUMAXIND,Lumax Industries Ltd.,LUMAXIND.NS,True,True,4852,available
+LUMAXTECH,LUMAXTECH,LUMAXTECH.NS,True,True,4842,available
+LUPIN,Lupin Laboratories Ltd,LUPIN.NS,True,True,4853,available
+LUXIND,Lux Industries Ltd.,LUXIND.NS,True,True,2659,available
+LXCHEM,LXCHEM,LXCHEM.NS,True,True,1346,available
+M&M,Mahindra & Mahindra Ltd.,M&M.NS,True,True,4853,available
+M&MFIN,Mahindra & Mahindra Financial Services Ltd.,M&MFIN.NS,True,True,4853,available
+MADRASFERT,Madras Fertilizers Ltd.,MADRASFERT.NS,True,True,4851,available
+MAFATIND,Mafatlal Industries Ltd.,MAFATIND.NS,False,True,92,available
+MAHABANK,Bank of Maharashtra,MAHABANK.NS,True,True,4853,available
+MAHLIFE,Mahindra Lifespace Developers Ltd.,MAHLIFE.NS,True,True,4853,available
+MAHLOG,Mahindra Logistics Ltd.,MAHLOG.NS,True,True,2178,available
+MAHSCOOTER,Maharashtra Scooters Ltd.,MAHSCOOTER.NS,True,True,4852,available
+MAHSEAMLES,Maharashtra Seamless Ltd.,MAHSEAMLES.NS,True,True,4853,available
+MANALIPETC,Manali Petrochemicals Ltd.,MANALIPETC.NS,False,True,4853,available
+MANAPPURAM,Manappuram Finance Ltd.,MANAPPURAM.NS,True,True,3995,available
+MANGLMCEM,Mangalam Cement Ltd.,MANGLMCEM.NS,True,True,4851,available
+MANINDS,Man Industries (India) Ltd.,MANINDS.NS,True,True,4853,available
+MANINFRA,Man Infraconstruction Ltd.,MANINFRA.NS,True,True,4070,available
+MANKIND,Mankind Pharma Limited,MANKIND.NS,True,True,822,available
+MANORAMA,MANORAMA,MANORAMA.NS,True,True,1032,available
+MANYAVAR,MANYAVAR,MANYAVAR.NS,True,True,1123,available
+MAPMYINDIA,C.E. Info Systems Limited,MAPMYINDIA.NS,True,True,1163,available
+MARALOVER,Maral Overseas Ltd.,MARALOVER.NS,True,True,4851,available
+MARICO,Marico Ltd.,MARICO.NS,True,True,4853,available
+MARKSANS,Marksans Pharma Ltd.,MARKSANS.NS,True,True,4853,available
+MARUTI,Maruti Suzuki India Ltd.,MARUTI.NS,True,True,4853,available
+MASFIN,MAS Financial Services Ltd.,MASFIN.NS,True,True,2194,available
+MASTEK,Mastek Ltd.,MASTEK.NS,True,True,4853,available
+MAXHEALTH,Max Healthcare Institute Limited,MAXHEALTH.NS,True,True,1495,available
+MAXIND,Max India Ltd.,MAXIND.NS,True,True,1488,available
+MAYURUNIQ,Mayur Uniquoters Ltd.,MAYURUNIQ.NS,True,True,3436,available
+MAZDOCK,Mazagon Dock Shipbuilders Limited,MAZDOCK.NS,True,True,1460,available
+MCLEODRUSS,McLeod Russel India Ltd.,MCLEODRUSS.NS,True,True,4851,available
+MCX,Multi Commodity Exchange of India Ltd.,MCX.NS,True,True,3574,available
+MEDANTA,Global Health Limited,MEDANTA.NS,True,True,937,available
+MEDPLUS,MEDPLUS,MEDPLUS.NS,True,True,1160,available
+MEESHO,Meesho Limited,MEESHO.NS,True,True,182,available
+MERCK,Merck Ltd.,MERCK.NS,True,False,0,delisted_or_not_found
+METROPOLIS,Metropolis Healthcare Ltd.,METROPOLIS.NS,True,True,1827,available
+MFSL,Max Financial Services Ltd.,MFSL.NS,True,True,4853,available
+MGL,Mahanagar Gas Ltd.,MGL.NS,True,True,2513,available
+MHRIL,Mahindra Holidays & Resorts India Ltd.,MHRIL.NS,True,True,4230,available
+MIDHANI,Mishra Dhatu Nigam Ltd.,MIDHANI.NS,True,True,2081,available
+MINDACORP,Minda Corporation Ltd.,MINDACORP.NS,True,True,3567,available
+MINDTREE,MindTree Ltd.,MINDTREE.NS,True,False,0,delisted_or_not_found
+MIRZAINT,Mirza International Ltd.,MIRZAINT.NS,True,True,4852,available
+MMTC,MMTC Ltd.,MMTC.NS,True,True,4113,available
+MODIRUBBER,Modi Rubber Ltd.,MODIRUBBER.NS,True,True,2025,available
+MODTHREAD,Modern Threads (India) Ltd.,MODTHREAD.NS,False,True,628,available
+MOIL,MOIL Ltd.,MOIL.NS,True,True,3878,available
+MOREPENLAB,Morepen Laboratories Ltd.,MOREPENLAB.NS,False,True,4853,available
+MOTHERSON,Samvardhana Motherson International Limited,MOTHERSON.NS,True,True,4853,available
+MOTHERSUMI,Motherson Sumi Systems Ltd.,MOTHERSUMI.NS,True,False,0,delisted_or_not_found
+MOTILALOFS,Motilal Oswal Financial Services Ltd.,MOTILALOFS.NS,True,True,4681,available
+MPHASIS,MphasiS Ltd.,MPHASIS.NS,True,True,4853,available
+MPSLTD,MPS Ltd.,MPSLTD.NS,True,True,4851,available
+MRF,MRF Ltd.,MRF.NS,True,True,4852,available
+MRPL,Bongaigaon Refinery & Petrochemicals Ltd.,MRPL.NS,True,True,4853,available
+MSTCLTD,MSTCLTD,MSTCLTD.NS,True,True,1837,available
+MSUMI,Motherson Sumi Wiring India Limited,MSUMI.NS,True,True,1098,available
+MTARTECH,MTARTECH,MTARTECH.NS,True,True,1354,available
+MTEDUCARE,MT Educare Ltd.,MTEDUCARE.NS,True,True,3550,available
+MTNL,Mahanagar Telephone Nigam Ltd.,MTNL.NS,True,True,4853,available
+MUKANDLTD,Mukand Ltd.- Old,MUKANDLTD.NS,False,True,4853,available
+MUKTAARTS,Mukta Arts Ltd,MUKTAARTS.NS,True,True,4852,available
+MUNJALAU,Munjal Auto Industries Ltd.,MUNJALAU.NS,False,True,4852,available
+MUNJALSHOW,Munjal Showa Ltd.,MUNJALSHOW.NS,True,True,4853,available
+MUTHOOTFIN,Muthoot Finance Ltd.,MUTHOOTFIN.NS,True,True,3782,available
+NAHARCAP,CFL Capital Financial Services Ltd.,NAHARCAP.NS,False,True,4554,available
+NAHARINDUS,Nahar Industrial Enterprises Ltd.,NAHARINDUS.NS,False,True,4852,available
+NAHARPOLY,Nahar Poly Films Ltd.,NAHARPOLY.NS,False,True,4851,available
+NAHARSPING,Nahar Spinning Mills Ltd.,NAHARSPING.NS,False,True,4852,available
+NAM-INDIA,Nippon Life India Asset Management Ltd.,NAM-INDIA.NS,True,True,2182,available
+NATCOPHARM,NATCO Pharma Ltd.,NATCOPHARM.NS,True,True,4853,available
+NATIONALUM,National Aluminium Co. Ltd.,NATIONALUM.NS,True,True,4853,available
+NAUKRI,Info Edge (India) Ltd.,NAUKRI.NS,True,True,4853,available
+NAVA,NAVA LIMITED,NAVA.NS,True,True,4853,available
+NAVINFLUOR,Navin Fluorine International Ltd.,NAVINFLUOR.NS,True,True,4751,available
+NAVKARCORP,Navkar Corporation Ltd.,NAVKARCORP.NS,True,True,2711,available
+NAVNETEDUL,Navneet Education Ltd.,NAVNETEDUL.NS,True,True,4853,available
+NAZARA,NAZARA,NAZARA.NS,True,True,1344,available
+NBCC,NBCC (India) Ltd.,NBCC.NS,True,True,3552,available
+NCC,NCC Ltd.,NCC.NS,True,True,4853,available
+NDRAUTO,Lakshmi Auto Components Ltd.- Delisted,NDRAUTO.NS,False,True,1510,available
+NELCO,NELCO Ltd.,NELCO.NS,False,True,4853,available
+NEOGEN,NEOGEN,NEOGEN.NS,True,True,1814,available
+NESCO,NESCO Ltd.,NESCO.NS,True,True,4536,available
+NESTLEIND,Nestle India Limited,NESTLEIND.NS,True,True,4853,available
+NETWEB,Netweb Technologies India Limited,NETWEB.NS,True,True,767,available
+NETWORK18,Network18 Media & Investments Ltd.,NETWORK18.NS,True,True,4853,available
+NEULANDLAB,Neuland Laboratories Limited,NEULANDLAB.NS,True,True,4412,available
+NEWGEN,Newgen Software Technologies Limited,NEWGEN.NS,True,True,2124,available
+NEXTMEDIA,Next Mediaworks Ltd.,NEXTMEDIA.NS,True,True,4851,available
+NFL,National Fertilizers Ltd.,NFL.NS,True,True,4853,available
+NH,Narayana Hrudayalaya Ltd.,NH.NS,True,True,2634,available
+NHPC,NHPC Ltd.,NHPC.NS,True,True,4197,available
+NIACL,The New India Assurance Company Ltd.,NIACL.NS,True,True,2177,available
+NIBL,NRB Bearings Ltd.,NIBL.NS,False,True,3302,available
+NIITLTD,NIIT Ltd.,NIITLTD.NS,True,True,4853,available
+NIITTECH,NIIT Technologies Ltd.,NIITTECH.NS,True,False,0,delisted_or_not_found
+NILKAMAL,Nilkamal Ltd.,NILKAMAL.NS,True,True,4851,available
+NIRAJISPAT,Ispat Industries Ltd.,NIRAJISPAT.NS,False,True,612,available
+NIVABUPA,Niva Bupa Health Insurance Company Limited,NIVABUPA.NS,True,True,446,available
+NLCINDIA,NLC India Ltd.,NLCINDIA.NS,True,True,4853,available
+NMDC,NMDC Ltd.,NMDC.NS,True,True,4561,available
+NOCIL,NOCIL Ltd.,NOCIL.NS,True,True,4853,available
+NOIDATOLL,Noida-Toll Bridge Co. Ltd.,NOIDATOLL.NS,True,True,4852,available
+NOVARTIND,Novartis India Ltd,NOVARTIND.NS,False,True,883,available
+NSLNISP,NMDC Steel Limited,NSLNISP.NS,True,True,873,available
+NTPC,NTPC Ltd.,NTPC.NS,True,True,4853,available
+NTPCGREEN,NTPC Green Energy Limited,NTPCGREEN.NS,True,True,440,available
+NUVAMA,Nuvama Wealth Management Limited,NUVAMA.NS,True,True,726,available
+NUVOCO,Nuvoco Vistas Corporation Limited,NUVOCO.NS,True,True,1246,available
+NYKAA,FSN E-Commerce Ventures Limited,NYKAA.NS,True,True,1192,available
+OBEROIRLTY,Oberoi Realty Ltd.,OBEROIRLTY.NS,True,True,3915,available
+OFSS,Oracle Financial Services Software Ltd.,OFSS.NS,True,True,4853,available
+OIL,Essar Oil Ltd.,OIL.NS,True,True,4178,available
+OILCOUNTUB,Oil Country Tubular Ltd.,OILCOUNTUB.NS,True,True,4852,available
+OLAELEC,Ola Electric Mobility Limited,OLAELEC.NS,True,True,514,available
+OLECTRA,Olectra Greentech Limited,OLECTRA.NS,True,True,4853,available
+OMAXAUTO,Omax Autos Ltd.,OMAXAUTO.NS,True,True,4852,available
+OMAXE,Omaxe Ltd.,OMAXE.NS,True,True,4702,available
+ONELIFECAP,Onelife Capital Advisors Ltd.,ONELIFECAP.NS,True,True,3669,available
+ONESOURCE,Onesource Specialty Pharma Limited,ONESOURCE.NS,True,True,399,available
+ONGC,Oil & Natural Gas Corporation Ltd.,ONGC.NS,True,True,4853,available
+ONMOBILE,OnMobile Global Ltd.,ONMOBILE.NS,True,True,4570,available
+ONWARDTEC,Onward Technologies Ltd.,ONWARDTEC.NS,True,True,4851,available
+OPTIEMUS,OPTIEMUS,OPTIEMUS.NS,True,True,2241,available
+ORBTEXP,Orbit Corporation Ltd.,ORBTEXP.NS,False,True,3164,available
+ORCHPHARMA,Orchid Pharma Ltd.,ORCHPHARMA.NS,False,True,4852,available
+ORIENTBANK,Oriental Bank of Commerce,ORIENTBANK.NS,True,False,0,delisted_or_not_found
+ORIENTCEM,Orient Cement Ltd.,ORIENTCEM.NS,True,True,3241,available
+ORIENTELEC,Orient Electric Ltd.,ORIENTELEC.NS,True,True,2054,available
+ORIENTHOT,Oriental Hotels Ltd.,ORIENTHOT.NS,True,True,4853,available
+ORIENTPPR,Orient Paper & Industries Ltd.,ORIENTPPR.NS,True,True,4852,available
+ORIENTTECH,Orient Information Technologies Ltd.,ORIENTTECH.NS,False,True,502,available
+ORKLAINDIA,ORKLAINDIA,ORKLAINDIA.NS,True,True,206,available
+OSWALAGRO,Oswal Agro Mills Ltd.,OSWALAGRO.NS,True,True,1968,available
+OSWALPUMPS,OSWALPUMPS,OSWALPUMPS.NS,True,True,300,available
+PAGEIND,Page Industries Ltd.,PAGEIND.NS,True,True,4801,available
+PANACEABIO,Panacea Biotec Ltd.,PANACEABIO.NS,True,True,4853,available
+PARADEEP,Paradeep Phosphates Limited,PARADEEP.NS,True,True,1057,available
+PARAGMILK,Parag Milk Foods Ltd.,PARAGMILK.NS,True,True,2545,available
+PARAS,PARAS,PARAS.NS,True,True,1218,available
+PARKHOSPS,PARKHOSPS,PARKHOSPS.NS,True,True,177,available
+PATANJALI,Patanjali Foods Limited,PATANJALI.NS,True,True,4853,available
+PATELENG,Patel Engineering Ltd.,PATELENG.NS,True,True,4853,available
+PAYTM,One 97 Communications Limited,PAYTM.NS,True,True,1186,available
+PCBL,PCBL Chemical Limited,PCBL.NS,True,True,4853,available
+PCJEWELLER,PC Jeweller Ltd.,PCJEWELLER.NS,True,True,3378,available
+PDMJEPAPER,Paper Products Ltd.,PDMJEPAPER.NS,False,True,2577,available
+PEL,Piramal Enterprises Ltd.,PEL.NS,True,False,0,delisted_or_not_found
+PENIND,Pennar Industries Ltd.,PENIND.NS,True,True,3891,available
+PENINLAND,Peninsula Land Ltd.,PENINLAND.NS,True,True,4853,available
+PERSISTENT,Persistent Systems Ltd.,PERSISTENT.NS,True,True,4055,available
+PETRONET,Petronet LNG Ltd.,PETRONET.NS,True,True,4853,available
+PFC,Power Finance Corporation Ltd.,PFC.NS,True,True,4818,available
+PFIZER,Pfizer Ltd.,PFIZER.NS,True,True,4852,available
+PFOCUS,Prime Focus Ltd,PFOCUS.NS,True,True,4852,available
+PGEL,PG Electroplast Limited,PGEL.NS,True,True,3684,available
+PGHH,Procter & Gamble Hygiene & Health Care Ltd.,PGHH.NS,True,True,4852,available
+PGHL,Procter & Gamble Health Ltd.,PGHL.NS,True,True,4851,available
+PGIL,Pearl Global Industries Ltd.,PGIL.NS,True,True,4823,available
+PHOENIXLTD,Phoenix Mills Ltd.,PHOENIXLTD.NS,True,True,4777,available
+PHOENXINTL,Phoenix International Ltd.,PHOENXINTL.NS,False,True,10,available
+PICCADIL,PICCADIL,PICCADIL.NS,True,True,292,available
+PIDILITIND,Pidilite Industries Ltd.,PIDILITIND.NS,True,True,4853,available
+PIIND,PI Industries Ltd.,PIIND.NS,True,True,3754,available
+PINELABS,Pine Labs Limited,PINELABS.NS,True,True,200,available
+PIRAMALFIN,Piramal Finance Limited,PIRAMALFIN.NS,True,True,205,available
+PNB,Punjab & National Bank,PNB.NS,True,True,4853,available
+PNBGILTS,PNB Gilts Ltd.,PNBGILTS.NS,True,True,4853,available
+PNBHOUSING,PNB Housing Finance Ltd.,PNBHOUSING.NS,True,True,2430,available
+PNCINFRA,PNC Infratech Ltd.,PNCINFRA.NS,True,True,2787,available
+PNGJL,PNGJL,PNGJL.NS,True,True,488,available
+POLICYBZR,PB Fintech Limited,POLICYBZR.NS,True,True,1188,available
+POLYCAB,Polycab India Ltd.,POLYCAB.NS,True,True,1826,available
+POLYMED,Poly Medicure Ltd.,POLYMED.NS,True,True,3638,available
+POONAWALLA,Poonawalla Fincorp Limited,POONAWALLA.NS,True,True,4853,available
+POWERGRID,Power Grid Corporation of India Ltd.,POWERGRID.NS,True,True,4664,available
+POWERINDIA,Hitachi Energy India Limited,POWERINDIA.NS,True,True,1593,available
+POWERMECH,POWERMECH,POWERMECH.NS,True,True,2720,available
+PPLPHARMA,Piramal Pharma Limited,PPLPHARMA.NS,True,True,958,available
+PRAJIND,Praj Industries Ltd.,PRAJIND.NS,True,True,4853,available
+PRAKASH,Prakash Industries Ltd.,PRAKASH.NS,True,True,4853,available
+PREMIER,Premier Ltd.,PREMIER.NS,True,True,4850,available
+PREMIERENE,Premier Energies Limited,PREMIERENE.NS,True,True,498,available
+PRESTIGE,Prestige Estates Projects Ltd.,PRESTIGE.NS,True,True,3911,available
+PRICOLLTD,Pricol Ltd.,PRICOLLTD.NS,True,True,4852,available
+PRIMESECU,Prime Securities Ltd.,PRIMESECU.NS,False,True,4851,available
+PRISMCEM,Prism Cement Ltd.,PRISMCEM.NS,True,False,0,delisted_or_not_found
+PRIVISCL,PRIVISCL,PRIVISCL.NS,True,True,2798,available
+PRSMJOHNSN,PRSMJOHNSN,PRSMJOHNSN.NS,True,True,4851,available
+PRUDENT,PRUDENT,PRUDENT.NS,True,True,1061,available
+PSB,Punjab & Sind Bank,PSB.NS,True,True,3868,available
+PTC,PTC India Ltd.,PTC.NS,True,True,4853,available
+PTCIL,PTC Industries Limited,PTCIL.NS,True,True,799,available
+PUNJABCHEM,Punjab Chemicals & Crop Protection Ltd.,PUNJABCHEM.NS,False,True,4806,available
+PURVA,Puravankara Ltd.,PURVA.NS,True,True,4688,available
+PVP,PVP Ventures Ltd.,PVP.NS,True,True,4850,available
+PVR,PVR Ltd.,PVR.NS,True,False,0,delisted_or_not_found
+PVRINOX,PVR INOX Limited,PVRINOX.NS,True,True,4852,available
+PWL,Physicswallah Limited,PWL.NS,True,True,198,available
+QPOWER,QPOWER,QPOWER.NS,True,True,377,available
+QUESS,Quess Corp Ltd.,QUESS.NS,True,True,2508,available
+RADICO,Radico Khaitan Ltd,RADICO.NS,True,True,4852,available
+RADIOCITY,Music Broadcast Ltd.,RADIOCITY.NS,True,True,2339,available
+RAILTEL,Railtel Corporation Of India Limited,RAILTEL.NS,True,True,1364,available
+RAIN,Rain Industries Ltd,RAIN.NS,True,True,4853,available
+RAINBOW,Rainbow Childrens Medicare Limited,RAINBOW.NS,True,True,1069,available
+RAJESHEXPO,Rajesh Exports Ltd.,RAJESHEXPO.NS,True,True,4853,available
+RAJRILTD,Indian Rayon & Industries Ltd.,RAJRILTD.NS,False,True,4849,available
+RAJTV,Raj Television Network Ltd.,RAJTV.NS,True,True,4802,available
+RALLIS,Rallis India Ltd.,RALLIS.NS,True,True,4853,available
+RAMANEWS,Shree Rama Newsprint Ltd.,RAMANEWS.NS,False,True,4851,available
+RAMCOCEM,The Ramco Cements Ltd.,RAMCOCEM.NS,True,True,4852,available
+RAMCOIND,Ramco Industries Ltd.,RAMCOIND.NS,True,True,4853,available
+RAMCOSYS,Ramco Systems Ltd.,RAMCOSYS.NS,True,True,4853,available
+RANBAXY,RANBAXY,RANBAXY.NS,False,False,0,delisted_or_not_found
+RATEGAIN,RATEGAIN,RATEGAIN.NS,True,True,1165,available
+RATNAMANI,Ratnamani Metals & Tubes Ltd.,RATNAMANI.NS,True,True,4852,available
+RAYMOND,Raymond Ltd.,RAYMOND.NS,True,True,4853,available
+RAYMONDLSL,RAYMONDLSL,RAYMONDLSL.NS,True,True,496,available
+RBA,RBA,RBA.NS,True,True,1415,available
+RBLBANK,RBL Bank Ltd.,RBLBANK.NS,True,True,2473,available
+RCF,Rashtriya Chemicals & Fertilizers Ltd.,RCF.NS,True,True,4853,available
+RCOM,Reliance Communications Ltd.,RCOM.NS,True,True,4852,available
+RECLTD,REC Ltd.,RECLTD.NS,True,True,4555,available
+REDINGTON,Redington (India) Ltd.,REDINGTON.NS,True,True,4823,available
+REDTAPE,REDTAPE,REDTAPE.NS,True,True,756,available
+REFEX,REFEX,REFEX.NS,True,True,4135,available
+REGENCERAM,Regency Ceramics Ltd.,REGENCERAM.NS,True,True,4850,available
+RELAXO,Relaxo Footwears Ltd.,RELAXO.NS,True,True,3751,available
+RELCAPITAL,Reliance Capital Ltd.,RELCAPITAL.NS,False,False,0,delisted_or_not_found
+RELIANCE,Reliance Industries Ltd.,RELIANCE.NS,True,True,4853,available
+RELIGARE,Religare Enterprises Ltd.,RELIGARE.NS,True,True,4631,available
+RELINFRA,Reliance Infrastructure Ltd.,RELINFRA.NS,True,True,4853,available
+RENUKA,Shree Renuka Sugars Ltd.,RENUKA.NS,True,True,4853,available
+REPCOHOME,Repco Home Finance Ltd.,REPCOHOME.NS,True,True,3313,available
+RESPONIND,Responsive Industries Ltd.,RESPONIND.NS,True,True,3907,available
+RHFL,Reliance Home Finance Ltd.,RHFL.NS,True,True,2211,available
+RHIM,RHI MAGNESITA INDIA LIMITED,RHIM.NS,True,True,3572,available
+RICOAUTO,Rico Auto Industries Ltd.,RICOAUTO.NS,True,True,4853,available
+RIIL,Reliance Industrial Infrastructure Ltd.,RIIL.NS,True,True,4853,available
+RITES,RITES Ltd.,RITES.NS,True,True,2018,available
+RKFORGE,Ramkrishna Forgings Ltd.,RKFORGE.NS,True,True,4853,available
+RNAVAL,Pipavav Defence and Offshore Engineering Company Ltd.,RNAVAL.NS,True,False,0,delisted_or_not_found
+ROUTE,ROUTE,ROUTE.NS,True,True,1474,available
+RPOWER,Reliance Power Ltd.,RPOWER.NS,True,True,4576,available
+RRKABEL,R R Kabel Limited,RRKABEL.NS,True,True,728,available
+RSSOFTWARE,R. S. Software (India) Ltd.,RSSOFTWARE.NS,True,True,4853,available
+RSWM,RSWM Ltd.,RSWM.NS,True,True,4852,available
+RTNINDIA,RTNINDIA,RTNINDIA.NS,True,True,3476,available
+RTNPOWER,Indiabulls Power Ltd.,RTNPOWER.NS,True,True,4158,available
+RUBICON,RUBICON,RUBICON.NS,True,True,217,available
+RUPA,Rupa & Company Ltd.,RUPA.NS,True,True,3637,available
+RVNL,Rail Vikas Nigam Ltd.,RVNL.NS,True,True,1829,available
+SAATVIKGL,SAATVIKGL,SAATVIKGL.NS,True,True,232,available
+SADBHAV,Sadbhav Engineering Ltd,SADBHAV.NS,True,True,4851,available
+SADBHIN,Sadbhav Infrastructure Project Ltd.,SADBHIN.NS,True,True,2705,available
+SAFARI,SAFARI,SAFARI.NS,True,True,1726,available
+SAGILITY,SAGILITY LIMITED,SAGILITY.NS,True,True,449,available
+SAIL,Gas Authority of India Limited,SAIL.NS,True,True,4853,available
+SAILIFE,Sai Life Sciences Limited,SAILIFE.NS,True,True,425,available
+SAKHTISUG,Sakthi Sugars Ltd.,SAKHTISUG.NS,True,True,4852,available
+SAMHI,SAMHI,SAMHI.NS,True,True,728,available
+SAMMAANCAP,Sammaan Capital Limited,SAMMAANCAP.NS,True,True,3235,available
+SANDESH,Sandesh Ltd.,SANDESH.NS,False,True,4851,available
+SANDUMA,SANDUMA,SANDUMA.NS,True,True,738,available
+SANOFI,Sanofi India Ltd.,SANOFI.NS,True,True,4852,available
+SANOFICONR,Smithkline Beecham Consumer Healthcare Ltd.,SANOFICONR.NS,True,True,489,available
+SANSERA,SANSERA,SANSERA.NS,True,True,1223,available
+SAPPHIRE,Sapphire Foods India Limited,SAPPHIRE.NS,True,True,1186,available
+SARDAEN,Sarda Energy & Minerals Limited,SARDAEN.NS,True,True,4136,available
+SAREGAMA,Saregama India Ltd,SAREGAMA.NS,True,True,4852,available
+SAURASHCEM,Saurashtra Cement Ltd.,SAURASHCEM.NS,False,True,622,available
+SBBJ,State Bank of Bikaner & Jaipur Ltd.,SBBJ.NS,True,False,0,delisted_or_not_found
+SBFC,SBFC Finance Limited,SBFC.NS,True,True,753,available
+SBICARD,SBI Cards and Payment Services Ltd.,SBICARD.NS,True,True,1603,available
+SBILIFE,SBI Life Insurance Company Ltd.,SBILIFE.NS,True,True,2205,available
+SBIN,State Bank of India,SBIN.NS,True,True,4853,available
+SCHAEFFLER,Schaeffler India Ltd.,SCHAEFFLER.NS,True,True,4853,available
+SCHNEIDER,Schneider Electric Infrastructure Ltd.,SCHNEIDER.NS,True,True,3567,available
+SCI,Shipping Corporation of India Ltd.,SCI.NS,True,True,4853,available
+SEAMECLTD,SEAMEC Ltd.,SEAMECLTD.NS,True,True,4851,available
+SENCO,SENCO,SENCO.NS,True,True,776,available
+SESHAPAPER,Seshasayee Paper & Boards Ltd.,SESHAPAPER.NS,True,True,4852,available
+SFL,Sheela Foam Ltd.,SFL.NS,True,True,2406,available
+SHAILY,SHAILY,SHAILY.NS,True,True,1093,available
+SHAKTIPUMP,SHAKTIPUMP,SHAKTIPUMP.NS,True,True,3664,available
+SHANKARA,Shankara Building Products Ltd.,SHANKARA.NS,True,True,2326,available
+SHANTIGEAR,Shanthi Gears Ltd.,SHANTIGEAR.NS,True,True,4852,available
+SHARDACROP,Sharda Cropchem Ltd.,SHARDACROP.NS,True,True,2946,available
+SHARDAMOTR,Motor Industries Co. Ltd.,SHARDAMOTR.NS,False,True,2714,available
+SHAREINDIA,SHAREINDIA,SHAREINDIA.NS,True,True,1474,available
+SHILPAMED,Shilpa Medicare Ltd.,SHILPAMED.NS,True,True,4136,available
+SHK,S H Kelkar and Company Ltd.,SHK.NS,True,True,2669,available
+SHOPERSTOP,Shoppers Stop Ltd.,SHOPERSTOP.NS,True,True,4853,available
+SHREECEM,Shree Cement Ltd.,SHREECEM.NS,True,True,4853,available
+SHREEPUSHK,Godavari Fertilisers & Chemicals Ltd.,SHREEPUSHK.NS,False,True,2710,available
+SHREERAMA,Shree Rama Multi Tech Ltd.,SHREERAMA.NS,True,True,4852,available
+SHRIPISTON,SHRIPISTON,SHRIPISTON.NS,True,True,2529,available
+SHRIRAMFIN,Shriram City Union Finance Ltd.,SHRIRAMFIN.NS,True,True,4853,available
+SHYAMMETL,Shyam Metalics and Energy Limited,SHYAMMETL.NS,True,True,1286,available
+SHYAMTEL,Shyam Telecom Ltd.,SHYAMTEL.NS,False,True,4850,available
+SIEMENS,Siemens Ltd.,SIEMENS.NS,True,True,4852,available
+SIGNATURE,Signatureglobal (India) Limited,SIGNATURE.NS,True,True,723,available
+SIL,Standard Industries Ltd.- Delisted,SIL.NS,False,True,4851,available
+SIMPLEXINF,Simplex Infrastructures Ltd.,SIMPLEXINF.NS,True,True,4851,available
+SITICABLE,Siti Cable Network Ltd.,SITICABLE.NS,True,False,0,delisted_or_not_found
+SITINET,Siti Networks Ltd.,SITINET.NS,True,True,4846,available
+SIYSIL,Garden Silk Mills Ltd.,SIYSIL.NS,False,True,4853,available
+SJVN,SJVN Ltd.,SJVN.NS,True,True,4024,available
+SKFINDIA,SKF India Ltd.,SKFINDIA.NS,True,True,4853,available
+SKFINDUS,SKFINDUS,SKFINDUS.NS,True,True,182,available
+SKIPPER,SKIPPER,SKIPPER.NS,True,True,2785,available
+SKYGOLD,SKYGOLD,SKYGOLD.NS,True,True,903,available
+SMARTWORKS,SMARTWORKS,SMARTWORKS.NS,True,True,280,available
+SMLMAH,SMLMAH,SMLMAH.NS,True,True,4853,available
+SNOWMAN,Snowman Logistics Ltd.,SNOWMAN.NS,True,True,2954,available
+SOBHA,Sobha Developers Ltd.,SOBHA.NS,True,True,4852,available
+SOLARINDS,Solar Industries India Ltd.,SOLARINDS.NS,True,True,4852,available
+SOMANYCERA,Somany Ceramics Ltd.,SOMANYCERA.NS,True,True,4851,available
+SONACOMS,Sona BLW Precision Forgings Limited,SONACOMS.NS,True,True,1286,available
+SONATSOFTW,Sonata Software Ltd.,SONATSOFTW.NS,True,True,4853,available
+SOUTHBANK,South Indian Bank Ltd.,SOUTHBANK.NS,True,True,4853,available
+SPANDANA,Spandana Sphoorty Financial Ltd.,SPANDANA.NS,True,True,1744,available
+SPARC,Sun Pharma Advanced Research Company Ltd.,SPARC.NS,True,True,4853,available
+SPIC,Southern Petrochemicals Industries Corporation Ltd.,SPIC.NS,True,True,4852,available
+SPLPETRO,Supreme Petrochem Ltd.,SPLPETRO.NS,True,True,4853,available
+SRF,SRF Ltd.,SRF.NS,True,True,4853,available
+SRTRANSFIN,Shriram Transport Finance Co. Ltd.,SRTRANSFIN.NS,True,False,0,delisted_or_not_found
+STAR,Strides Arcolab Ltd.,STAR.NS,True,True,4853,available
+STARCEMENT,Star Cement Ltd.,STARCEMENT.NS,True,True,2276,available
+STARHEALTH,Star Health and Allied Insurance Company Limited,STARHEALTH.NS,True,True,1171,available
+STCINDIA,State Trading Corporation of India Ltd.,STCINDIA.NS,False,True,4853,available
+STLTECH,Sterlite Technologies Ltd.,STLTECH.NS,True,True,4853,available
+STYL,STYL,STYL.NS,True,True,230,available
+STYRENIX,STYRENIX,STYRENIX.NS,True,True,4853,available
+SUBEXLTD,Subex Ltd.,SUBEXLTD.NS,False,True,4853,available
+SUBROS,Subros Ltd.,SUBROS.NS,True,True,4852,available
+SUDARSCHEM,Sudarshan Chemical Industries Ltd.,SUDARSCHEM.NS,True,True,4852,available
+SUDEEPPHRM,SUDEEPPHRM,SUDEEPPHRM.NS,True,True,190,available
+SUMICHEM,Sumitomo Chemical India Ltd.,SUMICHEM.NS,True,True,1636,available
+SUMMITSEC,Summit Securities Ltd.- Old,SUMMITSEC.NS,False,True,4140,available
+SUNCLAY,Sundaram Clayton Ltd.,SUNCLAY.NS,False,True,660,available
+SUNDARMFIN,Sundaram Finance Ltd.,SUNDARMFIN.NS,True,True,4853,available
+SUNDRMBRAK,Rane Brake Linings Ltd. -old,SUNDRMBRAK.NS,True,True,4853,available
+SUNDRMFAST,Sundram Fasteners Ltd.,SUNDRMFAST.NS,True,True,4852,available
+SUNPHARMA,Ranbaxy Laboratories Ltd.,SUNPHARMA.NS,True,True,4853,available
+SUNTECK,Sunteck Realty Ltd.,SUNTECK.NS,True,True,4149,available
+SUNTV,Sun TV Network Ltd.,SUNTV.NS,True,True,4853,available
+SUPRAJIT,Suprajit Engineering Ltd.,SUPRAJIT.NS,True,True,4852,available
+SUPREMEIND,Supreme Industries Ltd.,SUPREMEIND.NS,True,True,4853,available
+SUPREMEINF,Supreme Infrastructure India Ltd.,SUPREMEINF.NS,True,True,4654,available
+SUPRIYA,SUPRIYA,SUPRIYA.NS,True,True,1158,available
+SURYALAXMI,Suryalakshmi Cotton Mills Ltd.,SURYALAXMI.NS,False,True,4851,available
+SURYAROSNI,Surya Roshni Ltd.,SURYAROSNI.NS,True,True,4853,available
+SUVEN,Suven Life Sciences Ltd.,SUVEN.NS,True,True,4853,available
+SUZLON,Suzlon Energy Ltd.,SUZLON.NS,True,True,4853,available
+SWANCORP,SWAN CORP LIMITED,SWANCORP.NS,True,True,3520,available
+SWANENERGY,Swan Energy Ltd.,SWANENERGY.NS,True,False,0,delisted_or_not_found
+SWARAJENG,Swaraj Engines Ltd.,SWARAJENG.NS,True,True,4851,available
+SWIGGY,Swiggy Limited,SWIGGY.NS,True,True,448,available
+SWSOLAR,Sterling And Wilson Solar Ltd.,SWSOLAR.NS,True,True,1743,available
+SYMPHONY,Symphony Ltd.,SYMPHONY.NS,True,True,3754,available
+SYNGENE,Syngene International Ltd.,SYNGENE.NS,True,True,2732,available
+SYRMA,Syrma SGS Technology Limited,SYRMA.NS,True,True,994,available
+TAJGVK,Taj GVK Hotels & Resorts Ltd.,TAJGVK.NS,True,True,4853,available
+TAKE,Take Solutions Ltd.,TAKE.NS,True,True,4690,available
+TANLA,TANLA,TANLA.NS,True,True,4850,available
+TARC,TARC,TARC.NS,True,True,1411,available
+TARIL,Transformers And Rectifiers (India) Limited,TARIL.NS,True,True,4607,available
+TASTYBITE,Tasty Bite Eatables Ltd.,TASTYBITE.NS,True,True,2335,available
+TATACAP,Tata Capital Limited,TATACAP.NS,True,True,222,available
+TATACHEM,Tata Chemicals Ltd.,TATACHEM.NS,True,True,4853,available
+TATACOMM,Tata Communications Ltd.,TATACOMM.NS,True,True,4853,available
+TATACONSUM,Tata Consumer Products Ltd.,TATACONSUM.NS,True,True,4853,available
+TATAELXSI,Tata Elxsi Ltd.,TATAELXSI.NS,True,True,4853,available
+TATAGLOBAL,Tata Global Beverages Ltd.,TATAGLOBAL.NS,True,False,0,delisted_or_not_found
+TATAINVEST,Tata Investment Corporation Ltd.,TATAINVEST.NS,True,True,4853,available
+TATAMOTORS,Tata Motors Ltd.,TATAMOTORS.NS,True,False,0,delisted_or_not_found
+TATAMTRDVR,Tata Motors Ltd DVR,TATAMTRDVR.NS,True,False,0,delisted_or_not_found
+TATAPOWER,Tata Power Co. Ltd.,TATAPOWER.NS,True,True,4853,available
+TATASTEEL,Tata Steel Ltd.,TATASTEEL.NS,True,True,4853,available
+TATASTLBSL,Tata Steel BSL Ltd.,TATASTLBSL.NS,True,False,0,delisted_or_not_found
+TATATECH,Tata Technologies Limited,TATATECH.NS,True,True,683,available
+TBOTEK,TBO Tek Limited,TBOTEK.NS,True,True,573,available
+TBZ,Tribhovandas Bhimji Zaveri Ltd.,TBZ.NS,True,True,3534,available
+TCI,Transport Corporation of India Ltd.,TCI.NS,True,True,4852,available
+TCIEXP,TCI Express Ltd.,TCIEXP.NS,True,True,2401,available
+TCS,Tata Consultancy Services Ltd.,TCS.NS,True,True,4853,available
+TDPOWERSYS,TD Power Systems Ltd.,TDPOWERSYS.NS,True,True,3696,available
+TEAMLEASE,Teamlease Services Ltd.,TEAMLEASE.NS,True,True,2607,available
+TECHM,Satyam Computer Services Ltd.,TECHM.NS,True,True,4853,available
+TECHNOE,Techno Electric & Engineering Company Ltd.,TECHNOE.NS,True,True,4793,available
+TEGA,Tega Industries Limited,TEGA.NS,True,True,1169,available
+TEJASNET,Tejas Networks Limited,TEJASNET.NS,True,True,2272,available
+TENNIND,Tenneco Clean Air India Limited,TENNIND.NS,True,True,197,available
+TEXINFRA,Texmaco Infrastructure & Holdings Ltd.,TEXINFRA.NS,True,True,4852,available
+TEXRAIL,Texmaco Rail & Eng. Ltd.,TEXRAIL.NS,True,True,4854,available
+TFCILTD,Tourism Finance Corporation of India Ltd.,TFCILTD.NS,False,True,4853,available
+THANGAMAYL,THANGAMAYL,THANGAMAYL.NS,True,True,4084,available
+THELEELA,Leela Palaces Hotels & Resorts Limited,THELEELA.NS,True,True,313,available
+THERMAX,Thermax Ltd.,THERMAX.NS,True,True,4852,available
+THOMASCOOK,Thomas Cook (India) Ltd.,THOMASCOOK.NS,True,True,4853,available
+THYROCARE,Thyrocare Technologies Ltd.,THYROCARE.NS,True,True,2553,available
+TI,Tilaknagar Industries Ltd.,TI.NS,True,True,3983,available
+TIINDIA,Tube Investments of India Ltd.,TIINDIA.NS,True,True,2184,available
+TIMETECHNO,Time Technoplast Ltd.,TIMETECHNO.NS,True,True,4744,available
+TIMKEN,Timken India Ltd.,TIMKEN.NS,True,True,4852,available
+TIPSMUSIC,TIPSMUSIC,TIPSMUSIC.NS,True,True,4853,available
+TIRUMALCHM,Thirumalai Chemicals Ltd.,TIRUMALCHM.NS,False,True,4852,available
+TITAGARH,TITAGARH RAIL SYSTEMS LIMITED,TITAGARH.NS,True,True,4531,available
+TITAN,Titan Company Ltd.,TITAN.NS,True,True,4853,available
+TMB,TMB,TMB.NS,True,True,980,available
+TMCV,Tata Motors Limited,TMCV.NS,True,True,202,available
+TMPV,Tata Motors Passenger Vehicles Limited,TMPV.NS,True,True,4853,available
+TNPETRO,Tamilnadu Petroproducts Ltd.,TNPETRO.NS,False,True,4853,available
+TNPL,Tamil Nadu Newsprint & Papers Ltd.,TNPL.NS,True,True,4852,available
+TORNTPHARM,Torrent Pharmaceuticals Ltd.,TORNTPHARM.NS,True,True,4853,available
+TORNTPOWER,Torrent Power AEC Ltd.,TORNTPOWER.NS,True,True,4853,available
+TRANSPEK,Transpek Industry Ltd.,TRANSPEK.NS,False,True,93,available
+TRANSRAILL,TRANSRAILL,TRANSRAILL.NS,True,True,419,available
+TRAVELFOOD,Travel Food Services Limited,TRAVELFOOD.NS,True,True,284,available
+TREEHOUSE,Tree House Education & Accessories Ltd.,TREEHOUSE.NS,True,True,3702,available
+TRENT,Trent Ltd.,TRENT.NS,True,True,4853,available
+TRIDENT,Trident Ltd.,TRIDENT.NS,True,True,4853,available
+TRIGYN,Trigyn Technologies Ltd.,TRIGYN.NS,True,True,4852,available
+TRITURBINE,Triveni Turbine Ltd.,TRITURBINE.NS,True,True,3663,available
+TRIVENI,Triveni Engineering & Industries Ltd.,TRIVENI.NS,True,True,4853,available
+TSFINV,TSFINV,TSFINV.NS,True,True,2085,available
+TTKPRESTIG,TTK Prestige Ltd.,TTKPRESTIG.NS,True,True,4853,available
+TTML,Tata Teleservices (Maharashtra) Ltd.,TTML.NS,True,True,4853,available
+TV18BRDCST,TV18 Broadcast Ltd.,TV18BRDCST.NS,True,False,0,delisted_or_not_found
+TVSELECT,TVS Electronics Ltd. - Merge,TVSELECT.NS,False,True,4852,available
+TVSMOTOR,TVS Motor Co Ltd.,TVSMOTOR.NS,True,True,4853,available
+TVSSCS,TVSSCS,TVSSCS.NS,True,True,748,available
+TVSSRICHAK,TVS Srichakra Ltd.,TVSSRICHAK.NS,True,True,4824,available
+TVTODAY,TV Today Network Ltd.,TVTODAY.NS,True,True,4852,available
+UBL,United Breweries (Holdings) Ltd.,UBL.NS,True,True,4463,available
+UCOBANK,UCO Bank,UCOBANK.NS,True,True,4853,available
+UFLEX,UFLEX Ltd.,UFLEX.NS,True,True,4852,available
+UFO,UFO Moviez India Ltd.,UFO.NS,True,True,2794,available
+UJJIVAN,Ujjivan Financial Services Ltd.,UJJIVAN.NS,True,False,0,delisted_or_not_found
+UJJIVANSFB,Ujjivan Small Finance Bank Ltd.,UJJIVANSFB.NS,True,True,1667,available
+ULTRACEMCO,UltraTech Cement Ltd.,ULTRACEMCO.NS,True,True,4853,available
+UNICHEMLAB,Unichem Laboratories Ltd.,UNICHEMLAB.NS,True,True,4853,available
+UNIONBANK,Union Bank of India,UNIONBANK.NS,True,True,4853,available
+UNITDSPR,United Spirits Ltd.,UNITDSPR.NS,True,True,4853,available
+UNITECH,Unitech Ltd.,UNITECH.NS,True,True,4853,available
+UNITEDBNK,United Bank of India,UNITEDBNK.NS,True,False,0,delisted_or_not_found
+UNOMINDA,Minda Industries Ltd.,UNOMINDA.NS,True,True,4832,available
+UPL,UPL Ltd.,UPL.NS,True,True,4853,available
+URBANCO,Urban Company Limited,URBANCO.NS,True,True,239,available
+USHAMART,Usha (India) Ltd.,USHAMART.NS,True,True,4853,available
+UTIAMC,UTI Asset Management Company Limited,UTIAMC.NS,True,True,1459,available
+UTLSOLAR,UTLSOLAR,UTLSOLAR.NS,True,True,196,available
+UTTAMSUGAR,Uttam Sugar Mills Ltd.,UTTAMSUGAR.NS,True,True,4853,available
+V2RETAIL,V2 Retail Ltd.,V2RETAIL.NS,True,True,4729,available
+VAIBHAVGBL,Vaibhav Global Ltd.,VAIBHAVGBL.NS,True,True,4852,available
+VAKRANGEE,Vakrangee Ltd.,VAKRANGEE.NS,True,True,4853,available
+VARDMNPOLY,Vardhman Polytex Ltd.,VARDMNPOLY.NS,False,True,4852,available
+VARROC,Varroc Engineering Ltd.,VARROC.NS,True,True,2013,available
+VBL,Varun Beverages Ltd.,VBL.NS,True,True,2429,available
+VEDL,Sesa Sterlite Ltd.,VEDL.NS,True,True,4853,available
+VENKEYS,Venky's (India) Ltd.,VENKEYS.NS,True,True,4852,available
+VESUVIUS,Vesuvius India Ltd.,VESUVIUS.NS,True,True,4852,available
+VGUARD,V-Guard Industries Ltd.,VGUARD.NS,True,True,4553,available
+VHL,Vardhman Holdings Ltd.,VHL.NS,False,True,4852,available
+VIJAYA,Vijaya Diagnostic Centre Limited,VIJAYA.NS,True,True,1230,available
+VIKRAMSOLR,VIKRAMSOLR,VIKRAMSOLR.NS,True,True,254,available
+VINATIORGA,Vinati Organics Ltd.,VINATIORGA.NS,True,True,4223,available
+VINDHYATEL,Vindhya Telelinks Ltd.,VINDHYATEL.NS,True,True,4853,available
+VINYLINDIA,Vinyl Chemicals (India) Ltd.,VINYLINDIA.NS,False,True,4603,available
+VIPIND,V.I.P. Industries Ltd.,VIPIND.NS,True,True,4852,available
+VISAKAIND,Visaka Industries Ltd.,VISAKAIND.NS,True,True,4852,available
+VIVIDHA,Visagar Polytex Ltd.,VIVIDHA.NS,True,True,3279,available
+VIYASH,VIYASH,VIYASH.NS,True,True,2590,available
+VLSFINANCE,VLS Finance Ltd.,VLSFINANCE.NS,True,True,4851,available
+VMART,V-Mart Retail Ltd.,VMART.NS,True,True,3338,available
+VMM,Vishal Mega Mart Limited,VMM.NS,True,True,425,available
+VOLTAMP,VOLTAMP,VOLTAMP.NS,True,True,4853,available
+VOLTAS,Voltas Ltd.,VOLTAS.NS,True,True,4853,available
+VRLLOG,VRL Logistics Ltd.,VRLLOG.NS,True,True,2803,available
+VSTIND,VST Industries Ltd.,VSTIND.NS,True,True,4853,available
+VTL,Vardhman Textiles Ltd.,VTL.NS,True,True,4853,available
+WAAREEENER,Waaree Energies Limited,WAAREEENER.NS,True,True,460,available
+WAAREERTL,WAAREERTL,WAAREERTL.NS,True,True,348,available
+WABAG,Va Tech Wabag Ltd.,WABAG.NS,True,True,3921,available
+WABCOINDIA,WABCO India Ltd.,WABCOINDIA.NS,True,False,0,delisted_or_not_found
+WAKEFIT,WAKEFIT,WAKEFIT.NS,True,True,178,available
+WEBELSOLAR,WEBELSOLAR,WEBELSOLAR.NS,True,True,4765,available
+WELCORP,Welspun Corp Ltd.,WELCORP.NS,True,True,4853,available
+WELENT,WELENT,WELENT.NS,True,True,4853,available
+WELSPUNIND,Welspun India Ltd.,WELSPUNIND.NS,True,False,0,delisted_or_not_found
+WELSPUNLIV,Welspun Living Limited,WELSPUNLIV.NS,True,True,4853,available
+WESTLIFE,WESTLIFE,WESTLIFE.NS,True,True,1743,available
+WEWORK,WEWORK,WEWORK.NS,True,True,221,available
+WHEELS,Wheels India Ltd.,WHEELS.NS,True,True,4853,available
+WHIRLPOOL,Whirlpool of India Ltd.,WHIRLPOOL.NS,True,True,4853,available
+WINDMACHIN,Windsor Machines Ltd.,WINDMACHIN.NS,False,True,4852,available
+WIPRO,Wipro Ltd.,WIPRO.NS,True,True,4853,available
+WOCKPHARMA,Wockhardt Ltd.,WOCKPHARMA.NS,True,True,4853,available
+WONDERLA,Wonderla Holidays Ltd.,WONDERLA.NS,True,True,3040,available
+WSTCSTPAPR,West Coast Paper Mills Ltd.,WSTCSTPAPR.NS,True,True,4852,available
+YATHARTH,YATHARTH,YATHARTH.NS,True,True,760,available
+YESBANK,Yes Bank Ltd.,YESBANK.NS,True,True,4853,available
+ZAGGLE,ZAGGLE,ZAGGLE.NS,True,True,728,available
+ZEEL,Zee Entertainment Enterprises Ltd.,ZEEL.NS,True,True,4853,available
+ZEELEARN,Zee Learn Ltd.,ZEELEARN.NS,True,True,3875,available
+ZEEMEDIA,Zee Media Corporation Ltd.,ZEEMEDIA.NS,True,True,4852,available
+ZENSARTECH,Zensar Technologies Limited,ZENSARTECH.NS,True,True,4853,available
+ZENTEC,Zen Technologies Limited,ZENTEC.NS,True,True,2824,available
+ZFCVINDIA,ZF Commercial Vehicle Control Systems India Limited,ZFCVINDIA.NS,True,True,4853,available
+ZODIACLOTH,Zodiac Clothing Co. Ltd.,ZODIACLOTH.NS,True,True,4851,available
+ZUARIIND,Zuari Industries Ltd.,ZUARIIND.NS,False,True,4852,available
+ZYDUSLIFE,Zydus Lifesciences Limited,ZYDUSLIFE.NS,True,True,4853,available
+ZYDUSWELL,Zydus Wellness Ltd.,ZYDUSWELL.NS,True,True,4150,available

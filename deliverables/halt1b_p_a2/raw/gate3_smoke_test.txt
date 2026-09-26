@@ -1,0 +1,6 @@
+Raw 1-day return across ex-date: -50.00%
+Adjusted 1-day return across ex-date: 0.00%
+Smoke test PASSED: 5-bar series with 1-event bonus is continuous.
+Smoke test PASSED: Split and NaN preservation verified.
+
+ALL ADJUSTER SMOKE TESTS PASSED.

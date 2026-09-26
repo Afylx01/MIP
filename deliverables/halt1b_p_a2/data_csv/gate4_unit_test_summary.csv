@@ -1,0 +1,6 @@
+symbol,ex_date,action_type,ratio,raw_t_minus_1_close,raw_ex_close,raw_return_pct,adj_t_minus_1_close,adj_ex_close,adj_return_pct,status
+INFY,2018-09-04,bonus,1.0,1434.25,737.15,-48.60%,717.125,737.15,2.79%,PASS
+TCS,2018-05-31,bonus,1.0,3514.1,1741.05,-50.46%,1757.05,1741.05,-0.91%,PASS
+RELIANCE,2017-09-07,bonus,1.0,1645.4,818.1,-50.28%,822.7,818.1,-0.56%,PASS
+WIPRO,2019-03-06,bonus,0.3333333333333333,363.6,277.45,-23.69%,272.70000000000005,277.45,1.74%,PASS
+MOLDTKPAC,2016-02-17,split,2.0,237.45,121.2,-48.96%,118.725,121.2,2.08%,PASS

@@ -1,0 +1,34 @@
+================================================================================
+PHASE 5.5.M-1 — GATE 2: MEDIUM-CONFIDENCE & CORPORATE RENAME RESOLUTION
+Timestamp: 2026-09-24T17:00:40.321226+00:00
+================================================================================
+Loaded symbol map: 1448 scrips.
+
+Constructed curated review file: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/gate2_curated_review.csv (122 rows, 27,298 bytes).
+Exported approved scrips summary: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/approved_scrips_summary.csv (122 rows).
+
+--- Executing scripts/apply_symbol_map_review.py on Curated Review ---
+================================================================================
+APPLY SYMBOL MAP REVIEW TOOL (HARDENED)
+================================================================================
+Reading review file: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/gate2_curated_review.csv
+
+Created backup at: data/symbol_map_backup_20260924_170046.parquet
+Updated data/symbol_map.parquet successfully.
+Appended 122 change record(s) to data/symbol_map_changes.parquet.
+
+--- Changes Applied by Tier ---
+  HIGH: 15
+  MEDIUM: 62
+  LOW: 45
+
+
+Updated Symbol Map mapping_status counts:
+  auto        : 571
+  unresolved  : 481
+  proposed    : 204
+  approved    : 192
+
+================================================================================
+GATE 2 EXIT: SUCCESS — 122 CORPORATE RENAMES & MEDIUM TIER SCRIPS APPROVED
+================================================================================

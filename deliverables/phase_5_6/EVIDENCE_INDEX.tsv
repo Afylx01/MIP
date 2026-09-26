@@ -1,0 +1,13 @@
+path	bytes	sha256	what_it_proves
+data/adjusted_bhavcopy_bars_modern.parquet	34374586	98e36e6aca1c9b4e75c42aae6b75ba5772dcec0f200baea2ffdfda90f714a6fd	Modern adjusted Bhavcopy daily price bars (2020-09-15 to 2026-08-31, 952,666 bars)
+data/corrections.parquet	9231	0edec75a63f4eadd271901d1023b34ef4f3ee32144669d497b0f6e991d06587e	Approved corrections table dynamically applied during replay (all 16 status = 'approved')
+data/index_events.parquet	65497	7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a	Append-only historical index events source dataset unaltered (9,121 rows, SHA256 7a15cfae...)
+data/index_events_modern.parquet	20313	53a611eafe9dd4edf5390c46c388b361e1f950aba607af69df3e41c20b452667	Modern era index events dataset (2020-09 to 2026-08, 459 events)
+data/symbol_map.parquet	100724	014e2d9401645c406ea91193f8d45528593693298c0ea301ad53dfcdec77f885	Symbol map providing active scrip resolution including all modern constituents (1,614 scrips)
+deliverables/phase_5_6/DIGEST.md	4636	aee2c4243742b3a19a8e009a8ad567b0324c8afedca2786d20e54ab93e9e4b31	Phase 5.6 executive summary digest detailing modern era extension, step transition across 2020-09-14, and joint Bhavcopy coverage audit
+deliverables/phase_5_6/data_csv/modern_snapshot_coverage.csv	2717	49b36376f2fd55c7694146af6168f1d6b246bc50469efda1a3e7cec387a41113	Gate 5.6-A point-in-time constituent coverage across 71 modern monthly snapshots proving median coverage >= 85.0%
+deliverables/phase_5_6/raw/gate_5_6a_continuity.txt	3049	4a81baa69a3b66f3f839aba7ceea408938bcaff85998325f9b80c79ef0fe241d	Gate 5.6-A raw execution log: step-transition continuity, [500, 501] constituent bounds, and coverage audit
+deliverables/phase_5_6/scripts/build_modern_datasets.py	12277	e51ec81a19dd780e0e4bcc239b2f5e4f38953409ba1c89e0aba0581dfd0c3f7d	Phase 5.6 builder script generating modern events and extracting modern adjusted Bhavcopy bars
+deliverables/phase_5_6/scripts/gate_5_6a_continuity_coverage.py	11313	f8eea03435c29f118ad40ba648e72b6658b1f79d1bf9e34ee0a1778808dbdb32	Gate 5.6-A verification script auditing modern continuity and snapshot price coverage
+deliverables/phase_5_6/scripts/generate_evidence_index.py	4342	4b057d48ebb5f7b51cc99b58d8a0aefc82c4620fbf85343d2993ec8119302593	Script generating Phase 5.6 EVIDENCE_INDEX.tsv manifest
+deliverables/phase_5_6/task_list.md	1134	c57e8182008258d50a63c7770a1473235284a4bc4b8b502da2f1f1c44f199f05	Phase 5.6 roadmap tracking progress across modern index event and Bhavcopy ingestion gates

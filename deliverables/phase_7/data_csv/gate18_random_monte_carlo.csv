@@ -1,0 +1,16 @@
+metric,value
+Actual Strategy CAGR (%),22.97
+Benchmark CAGR (%),11.14
+Median Random Portfolio CAGR (%),12.67
+Mean Random Portfolio CAGR (%),12.6
+Std Dev Random CAGR (%),2.3
+5th Percentile Random CAGR (%),8.83
+25th Percentile Random CAGR (%),11.01
+75th Percentile Random CAGR (%),14.16
+95th Percentile Random CAGR (%),16.5
+Min Random CAGR (%),5.92
+Max Random CAGR (%),20.21
+Excess Return over Random Median (pp),10.3
+Empirical p-value,0.0
+Total Monte Carlo Simulations,1000
+Gate 18 Compliance Status,PASS

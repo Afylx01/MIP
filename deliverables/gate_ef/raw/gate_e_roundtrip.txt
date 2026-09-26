@@ -1,0 +1,64 @@
+================================================================================
+PHASE 5.5 GATES E & F — GATE E: ROUND-TRIP BI-DIRECTIONAL SNAPSHOT REPLAY
+Timestamp: 2026-09-25T16:19:35.123834+00:00
+Deterministic RNG Seed: 42
+================================================================================
+
+--- 1. Standing Rule R-1: Append-Only Event Log Integrity Check ---
+File: data/index_events.parquet
+  Observed SHA-256: 7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a
+  Expected SHA-256: 7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a
+  Integrity Status: VERIFIED UNALTERED (Standing Rule R-1 STRICT PASS)
+  Total Index Events: 9,121 rows (expected 9,121)
+  Loaded Corrections: 16 approved rules
+  Loaded 14 corporate rename linkages
+  Loaded Symbol Map:  1,448 scrips
+  Total NIFTY500 Events: 2,493 events (1998-08-01 to 2020-09-14)
+
+--- 2. Forward Replay Baseline & Rename-Consuming Event Tracking ---
+Covered End Snapshot (2020-09-14): 501 active constituents
+Tracked Rename-Consuming Rows: 14 events: [1817, 1871, 2008, 2023, 2087, 2117, 2182, 2237, 2249, 2299, 2327, 2332, 2416, 2493]
+
+--- 3. Three-Date Deterministic Sampling (Fixed Seed = 42) ---
+Sampled Test Dates across 22-year event log:
+  Sample #1 [Early History (1998–2005)]: 2003-09-05
+  Sample #2 [Mid History (2006–2013)]: 2012-05-21
+  Sample #3 [Late History (2014–2020)]: 2015-12-14
+
+Executing Bi-Directional Replay for Sample #1 (2003-09-05):
+  Forward Replay Constituent Count:  500
+  Backward Replay Constituent Count: 500
+  Symmetric Difference Count:        0
+  Mathematical Equivalence Status:   PASSED (Set-Identical)
+  Exported Membership Manifest: data/verification/membership_2003-09-05.txt (500 scrips, SHA256 fa2df90401cb5d01...)
+
+Executing Bi-Directional Replay for Sample #2 (2012-05-21):
+  Forward Replay Constituent Count:  500
+  Backward Replay Constituent Count: 500
+  Symmetric Difference Count:        0
+  Mathematical Equivalence Status:   PASSED (Set-Identical)
+  Exported Membership Manifest: data/verification/membership_2012-05-21.txt (500 scrips, SHA256 992810da9fce21e9...)
+
+Executing Bi-Directional Replay for Sample #3 (2015-12-14):
+  Forward Replay Constituent Count:  500
+  Backward Replay Constituent Count: 500
+  Symmetric Difference Count:        0
+  Mathematical Equivalence Status:   PASSED (Set-Identical)
+  Exported Membership Manifest: data/verification/membership_2015-12-14.txt (500 scrips, SHA256 4aba4a29a49f6985...)
+
+--- 4. End-Boundary Continuity Audit on covered_end (2020-09-14) ---
+Membership as-of Eve of Covered End (2020-09-13): 501 constituents
+Events effective exactly on covered_end (2020-09-14): 2 events
+  Applying Event -> Row 2495: IN 'JTEKT India Ltd.'
+  Applying Event -> Row 2496: OUT 'Asahi India Glass Ltd.'
+Resulting Set Count after applying 2020-09-14 events: 501
+Snapshot Count at covered_end (2020-09-14):          501
+Set Difference with covered_end Snapshot:                    0
+End-Boundary Continuity Status:                             PASSED (Strictly Continuous)
+
+--- 5. Exporting Gate E Summary Evidence ---
+Exported summary CSV: deliverables/gate_ef/data_csv/gate_e_roundtrip_summary.csv (4 records)
+
+================================================================================
+GATE E STEP 1 COMPLETE: ROUND-TRIP BI-DIRECTIONAL REPLAY & BOUNDARY AUDIT (PASS)
+================================================================================

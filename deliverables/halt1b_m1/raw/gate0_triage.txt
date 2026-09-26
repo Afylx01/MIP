@@ -1,0 +1,36 @@
+================================================================================
+PHASE 5.5.M-1 — GATE 0: NIFTY500 PENDING SCRIP TRIAGE & IMPACT RANKING
+Timestamp: 2026-09-24T16:52:15.489093+00:00
+================================================================================
+
+--- 1. Loading Snapshots & Index Events ---
+Loaded 57 monthly snapshots (2016-01-04 to 2020-09-01).
+Loaded NIFTY500 index events: 2,493 events.
+
+--- 2. Replaying Snapshots & Computing Scrip Frequency ---
+Total unique constituent scrips in 57 snapshots: 734
+
+--- 3. Cross-Referencing with Symbol Map & Review Tiers ---
+Constituent breakdown:
+  Currently Mapped (auto/approved):     435 (59.3%)
+  Pending Review (proposed/unresolved): 299 (40.7%)
+
+Pending Scrips by Source Tier:
+  unresolved          : 132 scrips (44.1%)
+  review_high         :  84 scrips (28.1%)
+  review_medium       :  72 scrips (24.1%)
+  review_low          :   8 scrips (2.7%)
+  unknown             :   3 scrips (1.0%)
+
+Exported ranked pending scrips table: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/nifty500_pending_scrips_ranked.csv (299 rows, 29,075 bytes)
+
+--- 4. Potential Coverage Analysis by Tier ---
+Current Base Mapped Fraction Median: 60.51%
+  Simulation [Base Only                                    ]: Median Mapped = 60.51% (min: 54.69%, max: 65.44%)
+  Simulation [+ Review High (84 scrips)                    ]: Median Mapped = 72.50% (min: 68.79%, max: 77.28%)
+  Simulation [+ Review High + Medium (156 scrips)          ]: Median Mapped = 82.71% (min: 78.04%, max: 86.80%)
+  Simulation [+ All Pending (High + Med + Unres + Low) (299 scrips)]: Median Mapped = 100.00% (min: 100.00%, max: 100.00%)
+
+================================================================================
+GATE 0 EXIT: PENDING SCRIPS TRIAGED — 299 SCRIPS ISOLATED AND RANKED
+================================================================================

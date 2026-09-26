@@ -1,0 +1,33 @@
+================================================================================
+TASK 2: MAXIMUM BHAVCOPY CONSOLIDATION (2007–2026)
+Timestamp: 2026-09-25T18:37:16.248738+00:00
+================================================================================
+
+--- 1. Ingesting Source Datasets ---
+Loading official adjusted bars (v2): adjusted_bhavcopy_bars_v2.parquet...
+  v2 shape: (753046, 7), dates: 2016-01-04 to 2020-09-14, symbols: 711
+Loading modern adjusted bars: adjusted_bhavcopy_bars_modern.parquet...
+  mod shape: (952666, 7), dates: 2020-09-15 to 2026-08-31, symbols: 750
+Loading dense price cache: price_cache_export.parquet...
+  cache shape: (1831372, 7), dates: 2007-01-02 to 2026-08-31, symbols: 750
+
+--- 2. Executing Priority Merging & Deduplication ---
+Combined official adjusted bars (2016-2026): 1,705,712 bars across 1039 symbols
+Price cache backfill bars (prior to 2016 + non-overlapping): 431,918 bars
+Total raw merged bars: 2,137,630
+
+--- 3. Verifying Quality Invariants ---
+Duplicate (symbol, date) keys: 0
+Consolidated Date Horizon: 2007-01-02 to 2026-08-31
+Total Unique Symbols:     1,039
+Total Unique Trading Days: 4,857 days
+Total Price Bars:          2,137,630 bars
+
+--- 4. Persisting Consolidated Dataset ---
+Exported: /storage/emulated/0/Documents/Project MIP/data/adjusted_bhavcopy_max_2007_2026.parquet
+File Size: 68,061,592 bytes (64.91 MB)
+SHA-256:   d83ad78e162661fdd8ca54247c125783104d6912eaab34530ba641802b7b21e7
+
+================================================================================
+TASK 2 COMPLETE: MAXIMUM BHAVCOPY CONSOLIDATION SUCCESSFUL (PASS)
+================================================================================

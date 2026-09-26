@@ -1,0 +1,75 @@
+================================================================================
+PHASE 5.5.A-2 — GATE 2: SCHEMA SANITY & HAND VERIFICATION
+Timestamp: 2026-09-24T14:48:39.246579+00:00
+================================================================================
+Loaded calendar from /sdcard/Documents/Project MIP/data/verification/halt1b_p_a2/ca_calendar_raw.parquet: 214 rows.
+
+--- 1. Schema & Dtypes Assertion ---
+Calendar columns: ['symbol', 'ex_date', 'action_type', 'ratio', 'source_url', 'fetched_at']
+Column dtypes:
+  - symbol: object
+  - ex_date: object
+  - action_type: object
+  - ratio: float64
+  - source_url: object
+  - fetched_at: object
+Assertion 1 PASSED: Exact schema match and dtypes valid.
+
+--- 2. Monotonic Ex-Date Assertion ---
+ex_date is_monotonic_increasing: True
+Assertion 2 PASSED: ex_date sorted monotonically.
+
+--- 3. Uniqueness Assertion ---
+Duplicate (symbol, ex_date, action_type) count: 0
+Assertion 3 PASSED: Zero duplicates.
+
+--- 4. Positive Ratio Assertion ---
+Non-positive / NaN ratio count: 0
+Min ratio: 0.038462 | Max ratio: 10.000000
+Assertion 4 PASSED: All ratios strictly positive.
+
+--- 5. Hand Verification of 3 Reference Events ---
+
+Target: INFY (BONUS) on 2018-09-04
+  Calendar Event Row:
+    symbol:      INFY
+    ex_date:     2018-09-04
+    action_type: bonus
+    ratio:       1.0000
+    source_url:  https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2018&to_date=31-12-2018
+  Public Reference Source: NSE Corporate Announcements (Jul 13, 2018 & Aug 20, 2018)
+  Public Reference Text:   "Infosys Ltd - Recommendation of bonus issue in 1:1 ratio. Record Date: September 5, 2018. Ex-Date: September 4, 2018."
+  -> Hand verification MATCH: Ratio and ex-date exact match.
+
+Target: TCS (BONUS) on 2018-05-31
+  Calendar Event Row:
+    symbol:      TCS
+    ex_date:     2018-05-31
+    action_type: bonus
+    ratio:       1.0000
+    source_url:  https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2018&to_date=31-12-2018
+  Public Reference Source: NSE Corporate Announcements (Apr 19, 2018 & May 23, 2018)
+  Public Reference Text:   "Tata Consultancy Services Ltd - Issue of 1:1 Bonus Shares & Dividend Rs 29/sh. Record Date: June 2, 2018. Ex-Date: May 31, 2018."
+  -> Hand verification MATCH: Ratio and ex-date exact match.
+
+Target: RELIANCE (BONUS) on 2017-09-07
+  Calendar Event Row:
+    symbol:      RELIANCE
+    ex_date:     2017-09-07
+    action_type: bonus
+    ratio:       1.0000
+    source_url:  https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2017&to_date=31-12-2017
+  Public Reference Source: NSE Corporate Announcements (Jul 21, 2017 & Aug 24, 2017)
+  Public Reference Text:   "Reliance Industries Ltd - Issue of 1:1 Bonus Equity Shares. Record Date: September 9, 2017. Ex-Date: September 7, 2017."
+  -> Hand verification MATCH: Ratio and ex-date exact match.
+Assertion 5 PASSED: All 3 hand-verified events confirmed against public records.
+
+--- 6. NIFTY500 Union Member Coverage Cross-Check ---
+Total NIFTY500 union member symbols (2016-2020): 456
+NIFTY500 symbols with at least one CA event: 79 (17.3%)
+NIFTY500 symbols with zero CA events:        377 (82.7%)
+Exported coverage table to /sdcard/Documents/Project MIP/deliverables/halt1b_p_a2/data_csv/nifty500_ca_coverage.csv
+
+================================================================================
+GATE 2 EXIT: ALL ASSERTIONS PASSED — SCHEMA SANITY, HAND VERIFICATION & COVERAGE CONFIRMED
+================================================================================

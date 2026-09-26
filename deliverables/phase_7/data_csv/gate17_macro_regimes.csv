@@ -1,0 +1,7 @@
+regime_name,start_date,end_date,trading_days,snapshots,description,strategy_return_pct,benchmark_return_pct,excess_return_pp,max_drawdown_pct,recovery_duration_years,sharpe_ratio,closed_trades,regime_status,rule_r3_residual
+2008 Global Financial Crisis,2008-01-01,2008-12-31,246,12,Liquidity freeze & acute market crash,-43.69,-51.84,8.15,46.8,1.0,-2.4,43,PASS,2.7939677238464355e-09
+2009–2010 Post-GFC V-Recovery,2009-01-01,2010-12-31,494,24,Rapid global cyclical stimulus rebound,74.62,42.07,32.55,50.61,0.27,1.08,44,PASS,0.0
+2011–2013 Stagnant Bear / Choppy Sideways,2011-01-01,2013-12-31,742,36,"High inflation, policy paralysis, rupee depreciation",5.51,0.79,4.72,25.17,1.81,0.37,111,PASS,3.725290298461914e-09
+2014–2017 Midcap Momentum Bull Run,2014-01-01,2017-12-31,984,48,Sweeping electoral mandate & broad economic reform rally,41.54,13.56,27.98,27.29,1.05,1.81,159,PASS,0.0
+2018–2019 NBFC Liquidity Crisis & Smallcap Meltdown,2018-01-01,2019-12-31,489,24,"IL&FS collapse, credit freeze & smallcap divergence",-6.89,4.74,-11.63,25.51,1.98,-0.4,101,PASS,0.0
+2020 COVID Crash & 2021–2026 Supercycle,2020-01-01,2026-08-31,1654,80,Acute pandemic shock followed by multi-year secular bull market,38.89,10.72,28.17,35.56,1.66,1.62,323,PASS,1.4901161193847656e-08

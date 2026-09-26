@@ -1,0 +1,42 @@
+================================================================================
+PHASE 5.5 GATES A & B — GATE 2: CHRONOLOGICAL SNAPSHOT SANITY REPLAY
+Timestamp: 2026-09-25T05:51:47.242763+00:00
+================================================================================
+
+--- 1. Ingesting Events and Approved Corrections ---
+Loaded NIFTY500 index events: 2,493 events
+Loaded approved corrections: 16 rules (all status = 'approved')
+Constructed 14 reverse rename linkages and 14 forward rename linkages.
+
+--- 2. Full History Chronological Forward Replay ---
+Full History Continuity Audit Results (1998-08-01 to 2020-09-14):
+  Total Events Processed:   2,493
+  Orphan OUT Count:         0 (expected: 0)
+  Duplicate IN Count:       0 (expected: 0)
+  Final Active Membership:  501 constituents
+Assertion 1 PASSED: Exactly 0 orphan OUTs across entire 22-year event log.
+Assertion 2 PASSED: Exactly 0 duplicate INs across entire 22-year event log.
+
+--- 3. Monthly Snapshot Sanity Evaluation across 57 Snapshots ---
+Loaded 57 monthly snapshot dates (2016-01-04 to 2020-09-01)
+Exported complete snapshot constituents manifest: deliverables/gate_ab/data_csv/snapshot_constituents_57.csv (28,554 rows, 1,903,061 bytes)
+Exported snapshot summary: deliverables/gate_ab/data_csv/gate_b_snapshot_summary.csv (57 rows)
+
+================================================================================
+GATE B CONSTITUENT COUNT INVARIANTS & BOUNDARY VERIFICATION
+================================================================================
+Snapshot Constituent Count Distribution:
+  Min Count:    500
+  Median Count: 501.0
+  Max Count:    501
+  Statutory Range: [490, 515]
+  100% of Snapshots within Range: True
+Assertion 3 PASSED: Constituent count strictly within statutory range [490, 515] across all 57 monthly snapshots.
+
+Sample Milestone Snapshots:
+  Snapshot 2016-01-04 (Snap #1): Constituents = 500, Joint Covered = 410 (Range Valid: True)
+  Snapshot 2020-09-01 (Snap #57): Constituents = 501, Joint Covered = 458 (Range Valid: True)
+
+================================================================================
+GATE B COMPLETE: REPLAY CONTINUITY & SNAPSHOT SANITY VERIFIED (PASS)
+================================================================================

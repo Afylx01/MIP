@@ -1,0 +1,6 @@
+universe_name,universe_size,strategy_cagr_pct,benchmark_cagr_pct,excess_cagr_pp,max_drawdown_pct,sharpe_ratio,trades_count,beat_threshold,rule_r3_residual
+NIFTY 50,50,9.65,11.14,-1.49,56.61,0.43,818,FAIL,-1.1175870895385742e-08
+NIFTY Next 50,50,9.87,11.14,-1.27,46.41,0.5,1243,FAIL,-7.450580596923828e-09
+NIFTY Midcap 150,150,22.18,11.14,11.04,39.98,0.93,1004,PASS,7.450580596923828e-08
+NIFTY Smallcap 250,187,31.51,11.14,20.37,29.07,1.35,834,PASS,-2.9802322387695312e-08
+NIFTY 500,437,22.97,11.14,11.83,45.92,0.82,557,PASS,-1.4901161193847656e-08

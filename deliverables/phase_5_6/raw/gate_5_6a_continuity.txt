@@ -1,0 +1,58 @@
+================================================================================
+PHASE 5.6 — GATE 5.6-A: MODERN ERA CONTINUITY & BHAVCOPY COVERAGE AUDIT
+Timestamp: 2026-09-25T17:27:51.177877+00:00
+================================================================================
+
+--- 1. Standing Rule R-1: Historical Event Log Integrity Check ---
+File: data/index_events.parquet
+  Observed SHA-256: 7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a
+  Expected SHA-256: 7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a
+  Integrity Status: VERIFIED UNALTERED (Standing Rule R-1 STRICT PASS)
+  Historical Events: 9,121 rows (1998-08-01 to 2020-09-14)
+  Modern Events:     459 rows (2021-03-31 to 2026-08-31)
+  Modern Row Range:  2497 to 2955
+  Symbol Map Scrips: 1,614 total resolved scrips
+  Modern Bhavcopy Bars: 952,666 bars across 750 symbols
+  Modern Date Range:    2020-09-15 to 2026-08-31 (1478 trading days)
+
+--- 2. Step-Transition Continuity across 2020-09-14 Boundary ---
+Active Constituents at covered_end (2020-09-14): 501
+Auditing transition across 12 modern semi-annual reviews:
+  Review 2021-03-31: IN=122, OUT=122 -> Active Count = 501
+  Review 2021-09-30: IN=12, OUT=12 -> Active Count = 501
+  Review 2022-03-31: IN=13, OUT=13 -> Active Count = 501
+  Review 2022-09-30: IN= 6, OUT= 6 -> Active Count = 501
+  Review 2023-03-31: IN= 7, OUT= 7 -> Active Count = 501
+  Review 2023-09-29: IN=10, OUT=10 -> Active Count = 501
+  Review 2024-03-28: IN= 7, OUT= 7 -> Active Count = 501
+  Review 2024-09-30: IN=12, OUT=12 -> Active Count = 501
+  Review 2025-03-28: IN=14, OUT=14 -> Active Count = 501
+  Review 2025-09-30: IN=12, OUT=12 -> Active Count = 501
+  Review 2026-03-27: IN=14, OUT=14 -> Active Count = 501
+  Review 2026-08-31: IN= 0, OUT= 1 -> Active Count = 500
+
+Transition Invariants:
+  Total Orphan OUTs:    0 (expected: 0)
+  Total Duplicate INs:  0 (expected: 0)
+  Final 2026 Count:     500 constituents (expected: 500)
+Step-Transition Continuity Status: PASSED (100% Continuous, [500, 501] constituent bounds upheld)
+
+--- 3. Modern Point-in-Time Joint Bhavcopy Coverage Audit ---
+Auditing coverage across 71 monthly snapshots (2020-10-01 to 2026-08-03)...
+Exported modern coverage metrics to: deliverables/phase_5_6/data_csv/modern_snapshot_coverage.csv
+
+Coverage Audit Findings across 71 Modern Snapshots:
+  Median Joint Coverage: 90.62% (Threshold: >= 85.0%)
+  Mean Joint Coverage:   90.37%
+  Min Joint Coverage:    75.25%
+  Max Joint Coverage:    99.60%
+  Snapshots >= 85.0%:    65 / 71 (91.5%)
+
+--- Acceptance Assertions ---
+Assertion 1 PASSED: Median joint coverage 90.62% strictly exceeds >= 85.0% threshold.
+Assertion 2 PASSED: Append-only rule R-1 verified permanently unaltered.
+Assertion 3 PASSED: Zero orphan OUTs and zero duplicate INs across all 12 modern reviews.
+
+================================================================================
+GATE 5.6-A COMPLETE: MODERN ERA EXTENSION VERIFIED (PASS)
+================================================================================

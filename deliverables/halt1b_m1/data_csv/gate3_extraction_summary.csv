@@ -1,0 +1,12 @@
+metric,value
+existing_a3_raw_rows,459194
+existing_a3_symbols,432
+needed_symbols_count,300
+newly_extracted_symbols,279
+newly_extracted_bars,293852
+combined_v2_total_rows,753046
+combined_v2_total_symbols,711
+combined_v2_total_dates,1154
+adjusted_v2_rows,753046
+adjusted_v2_size_bytes,12603586
+ca_calendar_sha256,7661328ecfbf26828ce14950401474847de0f7919886b3085500eddc3b93b8d0

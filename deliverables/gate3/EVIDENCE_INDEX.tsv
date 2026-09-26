@@ -1,0 +1,17 @@
+path	bytes	sha256	what_it_proves
+data/corrections.parquet	9311	08ab36133e595a5d2f9ec1d881e31704502e27fdf03cb476acc8d54d75921bdb	Gate 2 append-only corrections proposal table in Parquet (all status = 'proposed')
+data/corrections_report.md	7882	46a4ac02db47588991d0cf09bfb6200bd9ea3dd5b3dcc3c66f80479d4d258b90	Gate 2 comprehensive narrative report detailing root causes and verification evidence for all 16 rules
+deliverables/gate3/DIGEST.md	12321	c5b01e9f0efdf01800c2832d8538bd92678550765ea53d9259477e275ca47a36	Phase 5.5 Gate 3 executive summary digest with gate claims, continuity metrics, and evidence pointers
+deliverables/gate3/data_csv/forensic_reconciliation.csv	7686	c375f8067efe50ccee7368731ac389b8b36066fea6f6d7c3cb1336eacee20b46	Gate 1 forensic reconciliation linking every orphan/duplicate anomaly to verified corporate actions & circulars
+deliverables/gate3/data_csv/proposed_corrections.csv	5804	04bcafb6f815bdfce9b8b3954b92815561adfbc3698a0f24d98ceb8cbb7076c4	Gate 2 compiled table of 16 proposed corrections in human-readable CSV format
+deliverables/gate3/data_csv/simulation_rebalance_counts.csv	1836	ae3b5c97ad4991b3805a486cb36abf3842ff605c2d09c400e8f3371e5f40ce4b	Gate 3 constituent count distribution across 57 snapshots verifying compliance with [490, 515]
+deliverables/gate3/data_csv/unresolved_anomalies.csv	1529	49658d132f52b7dbeb711fb79b679501bf6c09ad473993639887dc847a877de8	Gate 0 audit isolating all 15 orphan OUTs and 1 duplicate IN from raw Excel replay
+deliverables/gate3/raw/gate0_anomalies_audit.txt	3730	5e5d9c7e8696312540a9e5ceb7d54a26616a6db42f152a47f65e8bfb5d6b4a3a	Gate 0 raw stdout: anomaly ingestion, raw Excel replay, and quarantine identification
+deliverables/gate3/raw/gate2_build_corrections.txt	2103	f4bf8d2bebdf185fcbbd74bb87c6e91f535c15134441d2db65682dcdb4e5cd33	Gate 2 raw stdout: compilation of data/corrections.parquet with Rule R-11 proposed status validation
+deliverables/gate3/raw/gate3_simulated_replay.txt	2035	7f315c58f69d1d7937d0e50f7235337159b9f22e92092c90814145af2a22006d	Gate 3 raw stdout: simulated replay proving 0 orphan OUTs, 0 duplicate INs, and count range [500, 501]
+deliverables/gate3/scripts/gate0_anomalies_audit.py	7257	e52981b5f1a720f59840c25fa21f5bde274467be91bc5fcc1654c470bac52ddd	Gate 0 script isolating anomalies and replaying raw workbook events
+deliverables/gate3/scripts/gate1_forensic_reconciliation.py	15906	25acfa8069162ea881492be6f3226968511c14e4524085dba7d9ccd6823182cf	Gate 1 script documenting verifiable corporate action evidence for each anomaly
+deliverables/gate3/scripts/gate2_build_corrections.py	16566	be705922b2e814e4fb1bc7c6e879bef49863ef0fa14ceabdc489e71809388e0e	Gate 2 script compiling data/corrections.parquet and generating report
+deliverables/gate3/scripts/gate3_simulated_replay.py	10732	f979451d109dfbdad9cba00f73f88c6b0ed7e2eaef5833aa744e4dff6f98f276	Gate 3 script executing simulated replay and asserting continuity invariants
+deliverables/gate3/scripts/generate_evidence_index.py	4126	b47a5dcef0b6531b896c0ab79203b46056eac7c5f261f211b8974fe90f75e039	Script compiling Phase 5.5 Gate 3 EVIDENCE_INDEX.tsv manifest
+deliverables/gate3/task_list.md	877	ca68de364fde44525a4515cbe9c569696233d5e91aa6b74c2d4dcdc488c4b201	Phase 5.5 roadmap task list tracking progress across gates (HALT-2 open)

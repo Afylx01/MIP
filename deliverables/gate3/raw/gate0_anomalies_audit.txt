@@ -1,0 +1,59 @@
+================================================================================
+PHASE 5.5 GATE 3 — GATE 0: ANOMALIES & QUARANTINED ROWS INGESTION
+Timestamp: 2026-09-24T19:32:36.814284+00:00
+================================================================================
+
+--- 1. Ingesting data/index_events.parquet ---
+Total raw index events in parquet: 9,121
+Total NIFTY500 events in parquet:   2,493
+
+--- 2. Ingesting Quarantine Manifest ---
+Total quarantined rows from Gate 1: 12
+Quarantined rows in Nifty 500 sheet: 2
+  Row 2136: 2017-09-05 | Reliance Capital Ltd. | OUT | Chronological anomaly embedded in 2017-09-29 rebalance block or duplicate pair
+  Row 2162: 2017-09-05 | Max Financial Services Ltd. | IN | Chronological anomaly embedded in 2017-09-29 rebalance block or duplicate pair
+
+--- 3. Replaying Unfiltered Workbook Events (IndexInclExcl.xls) ---
+Parsed 2495 raw events directly from 'Nifty 500' worksheet.
+
+--- Anomaly Detection Results ---
+Total Orphan OUT Events Detected: 15
+  [ 1/15] Row 1817 | 2015-09-28 | OUT | RattanIndia Power Ltd.
+  [ 2/15] Row 1871 | 2016-04-01 | OUT | Indiabulls Ventures Ltd.
+  [ 3/15] Row 2008 | 2016-09-30 | OUT | Castex Technologies Ltd.
+  [ 4/15] Row 2023 | 2016-09-30 | OUT | INEOS Styrolution India Ltd.
+  [ 5/15] Row 2087 | 2017-03-31 | OUT | Siti Networks Ltd.
+  [ 6/15] Row 2117 | 2017-06-23 | OUT | IIFL Holdings Ltd.
+  [ 7/15] Row 2136 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  [ 8/15] Row 2182 | 2018-02-05 | OUT | Strides Shasun Ltd.
+  [ 9/15] Row 2237 | 2018-06-29 | OUT | Arvind Ltd.
+  [10/15] Row 2249 | 2018-09-28 | OUT | Bajaj Hindusthan Sugar Ltd.
+  [11/15] Row 2299 | 2018-12-28 | OUT | Bharat Financial Inclusion Ltd.
+  [12/15] Row 2327 | 2019-03-29 | OUT | Johnson Controls - Hitachi Air Conditioning India Ltd.
+  [13/15] Row 2332 | 2019-03-29 | OUT | Reliance Naval and Engineering Ltd.
+  [14/15] Row 2416 | 2019-12-26 | OUT | CG Power and Industrial Solutions Ltd.
+  [15/15] Row 2493 | 2020-07-31 | OUT | Vedanta Ltd.
+
+Total Duplicate IN Events Detected: 1
+  [ 1/1]  Row 2162 | 2017-09-05 | IN  | Max Financial Services Ltd.
+
+--- Quarantined grp_2017_09_05 Detail ---
+Quarantined Rows in grp_2017_09_05 across all index sheets:
+  Sheet: Nifty 200                      | Row  348 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  Sheet: Nifty 200                      | Row  354 | 2017-09-05 | IN  | Max Financial Services Ltd.
+  Sheet: Nifty Midcap 100               | Row  392 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  Sheet: Nifty Midcap 100               | Row  397 | 2017-09-05 | IN  | Avenue Supermarts Ltd.
+  Sheet: Nifty 500                      | Row 2136 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  Sheet: Nifty 500                      | Row 2162 | 2017-09-05 | IN  | Max Financial Services Ltd.
+  Sheet: Nifty Midcap 50                | Row  287 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  Sheet: Nifty Midcap 50                | Row  289 | 2017-09-05 | IN  | Berger Paints India Ltd.
+  Sheet: Nifty High Beta 50             | Row  125 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  Sheet: Nifty High Beta 50             | Row  128 | 2017-09-05 | IN  | Jaiprakash Associates Ltd.
+  Sheet: Nifty Dividend Opportunities 50 | Row  130 | 2017-09-05 | OUT | Reliance Capital Ltd.
+  Sheet: Nifty Dividend Opportunities 50 | Row  131 | 2017-09-05 | IN  | National Aluminium Co. Ltd.
+
+Exported unresolved anomalies table: /sdcard/Documents/Project MIP/deliverables/gate3/data_csv/unresolved_anomalies.csv (16 rows)
+
+================================================================================
+GATE 0 AUDIT COMPLETE: EXACTLY 15 ORPHAN OUTS & 1 DUPLICATE IN CONFIRMED
+================================================================================

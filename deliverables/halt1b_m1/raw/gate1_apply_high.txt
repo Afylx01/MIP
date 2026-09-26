@@ -1,0 +1,30 @@
+================================================================================
+PHASE 5.5.M-1 — GATE 1: HIGH-CONFIDENCE TIER VETTING & APPLICATION
+Timestamp: 2026-09-24T16:54:16.807647+00:00
+================================================================================
+Loaded 299 pending NIFTY500 constituent scrips.
+Loaded 2,583 active ISINs from EQUITY_L.
+Loaded review_high: 563 candidate rows.
+
+Vetted and marked 70 high-confidence scrips as 'approved'.
+Saved updated review file: /sdcard/Documents/Project MIP/data/symbol_map_review_high.csv
+Exported vetted summary: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/gate1_vetted_high_summary.csv (70 rows)
+
+--- Executing scripts/apply_symbol_map_review.py ---
+================================================================================
+APPLY SYMBOL MAP REVIEW TOOL (HARDENED)
+================================================================================
+Reading review file: /sdcard/Documents/Project MIP/data/symbol_map_review_high.csv
+
+Created backup at: data/symbol_map_backup_20260924_165422.parquet
+Updated data/symbol_map.parquet successfully.
+Appended 70 change record(s) to data/symbol_map_changes.parquet.
+
+--- Changes Applied by Tier ---
+  HIGH: 70
+  MEDIUM: 0
+  LOW: 0
+
+================================================================================
+GATE 1 EXIT: SUCCESS — 70 HIGH-CONFIDENCE SCRIPS APPROVED AND APPLIED
+================================================================================

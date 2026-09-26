@@ -1,0 +1,53 @@
+================================================================================
+PHASE 5.5.M-1 — GATE 3: LOCAL PRICE EXTRACTION (ZERO NETWORK)
+Timestamp: 2026-09-24T17:14:12.238939+00:00
+================================================================================
+
+--- 1. Symbol Map Inspection ---
+Total mapped scrips in symbol_map: 763
+Unique target mapped symbols:       732
+
+--- 2. Existing Raw Bhavcopy Bars (Phase A-3) ---
+Existing raw bars rows:             459,194
+Existing symbols covered:           432
+Newly mapped symbols to extract:    300
+Sample needed symbols: ['20MICRONS', '63MOONS', 'ABNUVO', 'ADOR', 'ADSL', 'ADVENZYMES', 'AEGISLOG', 'AFFLE', 'AJANTPHARM', 'AKSHOPTFBR', 'AKZOINDIA', 'AMARAJABAT', 'AMTEKINDIA', 'ANSALAPI', 'APOLLOHOSP']...
+
+--- 3. Local Multi-Threaded Price Extraction from Bhavcopy Cache ---
+Found 1,154 Bhavcopy zip archives in /sdcard/Documents/Project MIP/data/bhavcopy_cache
+  Processed 250/1154 archives (63,609 bars extracted)...
+  Processed 500/1154 archives (127,266 bars extracted)...
+  Processed 750/1154 archives (190,931 bars extracted)...
+  Processed 1000/1154 archives (254,638 bars extracted)...
+  Processed 1154/1154 archives (293,852 bars extracted)...
+Extraction completed in 45.65 seconds.
+Total newly extracted raw bars: 293,852
+Newly extracted distinct symbols with valid bars: 279 / 300
+
+--- 4. Combining Raw Bars & Parquet Persistence ---
+Combined raw dataset:
+  Total rows:    753,046
+  Total symbols: 711
+  Total dates:   1,154 (2016-01-04 to 2020-09-14)
+Saved raw combined bars: /sdcard/Documents/Project MIP/data/verification/halt1b_m1/raw_bhavcopy_bars_v2.parquet (12,081,129 bytes)
+
+--- 5. Corporate Action Adjustment (Cumulative Backward) ---
+CA calendar SHA-256: 7661328ecfbf26828ce14950401474847de0f7919886b3085500eddc3b93b8d0
+Loaded CA calendar: 214 events across 192 symbols.
+Price adjustment completed in 26.91 seconds.
+
+--- 6. Invariance & Integrity Assertions ---
+Assertion 1 PASSED: Exact row count parity (753,046 == 753,046).
+Assertion 2 PASSED: Zero NaNs in adjusted close series.
+  Spot-check INFY     (Bonus 1:1): raw return -48.60% -> adj return +2.79% (PASS)
+  Spot-check TCS      (Bonus 1:1): raw return -50.46% -> adj return -0.91% (PASS)
+  Spot-check RELIANCE (Bonus 1:1): raw return -50.28% -> adj return -0.56% (PASS)
+  Spot-check WIPRO    (Bonus 1:3): raw return -23.69% -> adj return +1.74% (PASS)
+  Spot-check GRASIM   (Split 5:1): raw return -79.54% -> adj return +2.28% (PASS)
+
+Saved adjusted combined bars: /sdcard/Documents/Project MIP/data/verification/halt1b_m1/adjusted_bhavcopy_bars_v2.parquet (12,603,586 bytes)
+Saved extraction summary: /sdcard/Documents/Project MIP/deliverables/halt1b_m1/data_csv/gate3_extraction_summary.csv
+
+================================================================================
+GATE 3 EXTRACTION & ADJUSTMENT COMPLETE: ALL ASSERTIONS PASSED
+================================================================================

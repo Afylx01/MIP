@@ -1,0 +1,96 @@
+================================================================================
+PHASE 5.5.A-2 — GATE 0: CA ENDPOINT DISCOVERY
+Timestamp: 2026-09-24T14:35:35.230201+00:00
+================================================================================
+
+Probing: NSE Current API
+URL: https://www.nseindia.com/api/corporates-corporateActions?index=equities
+Status: HTTP 200 | Size: 1,187 bytes | Type: application/json; charset=utf-8 | Latency: 5.567262s
+First lines of response:
+  1. [{"bcEndDate":"-","bcStartDate":"-","caBroadcastDate":null,"comp":"Engineers India Limited","exDate":"24-Sep-2026","faceVal":"5","ind":"-","
+
+Probing: NSE Date-Filtered API (2016)
+URL: https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2016&to_date=31-12-2016
+Status: HTTP 200 | Size: 658,561 bytes | Type: application/json; charset=utf-8 | Latency: 6.399325s
+First lines of response:
+  1. [{"bcEndDate":"-","bcStartDate":"-","caBroadcastDate":null,"comp":"Kothari Products Limited","exDate":"05-Jan-2016","faceVal":"10","ind":"-"
+
+Probing: Archives CA_ACTION_2016
+URL: https://nsearchives.nseindia.com/content/equities/CA_ACTION_2016.csv
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.543908s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+Probing: Archives CA_ACTION_2018
+URL: https://nsearchives.nseindia.com/content/equities/CA_ACTION_2018.csv
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.785892s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+Probing: Archives CA_ACTION_2020
+URL: https://nsearchives.nseindia.com/content/equities/CA_ACTION_2020.csv
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.476918s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+Probing: Archives corp_actions_2016
+URL: https://nsearchives.nseindia.com/content/equities/corp_actions_2016.csv
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.843808s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+Probing: Archives corp_actions_2018
+URL: https://nsearchives.nseindia.com/content/equities/corp_actions_2018.csv
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.612724s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+Probing: Archives corp_actions_2020
+URL: https://nsearchives.nseindia.com/content/equities/corp_actions_2020.csv
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.890705s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+Probing: Archives Equities Directory Listing
+URL: https://nsearchives.nseindia.com/content/equities/
+Status: HTTP 404 | Size: 3,533 bytes | Type: text/html;charset=UTF-8 | Latency: 5.677857s
+First lines of response:
+  1. <!DOCTYPE html>
+  2. <html lang="en">
+  3. 
+  4. <head>
+  5. <meta charset="UTF-8">
+
+================================================================================
+GATE 0 DISCOVERY SUMMARY & EXIT DETERMINATION
+================================================================================
+USABLE HISTORICAL ENDPOINT IDENTIFIED: NSE Date-Filtered API (2016)
+Endpoint Pattern: https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=<DD-MM-YYYY>&to_date=<DD-MM-YYYY>
+Coverage: Supports full date range filtering across 2016-01-01 to 2020-09-14 with JSON records.
+
+GATE 0 EXIT: USABLE ENDPOINT FOUND -> PROCEED TO GATE 1 ON CA PATH 1.
+================================================================================

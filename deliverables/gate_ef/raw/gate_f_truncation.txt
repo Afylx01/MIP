@@ -1,0 +1,84 @@
+================================================================================
+PHASE 5.5 GATES E & F — GATE F: REPRODUCIBILITY & TRUNCATION INVARIANTS AUDIT
+Timestamp: 2026-09-25T16:21:46.882124+00:00
+================================================================================
+
+--- 1. Ingesting Bhavcopy Bars, Snapshots & Trading Calendar ---
+Loaded Bhavcopy price bars: 753,046 bars across 711 symbols
+Total trading calendar days: 4649 days (2007-09-17 to 2026-08-31)
+Loaded monthly rebalance snapshots: 57 snapshots (2016-01-04 to 2020-09-01)
+Computing indicators (high_252, ema_200, ret_252)...
+Clamped window days: 1154 days (2016-01-04 to 2020-09-14)
+Clamped rebalance snapshots: 57 snapshots
+
+--- 2. Dual-Pass Point-in-Time Backtest Reproducibility (Standing Rule R-6) ---
+Executing Run (b) Pass 1...
+Executing Run (b) Pass 2...
+Pass 1 Raw Output: deliverables/gate_ef/raw/gate_f_pass1.txt | SHA-256: 6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+Pass 2 Raw Output: deliverables/gate_ef/raw/gate_f_pass2.txt | SHA-256: 6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+SHA-256 Match: True
+Standing Rule R-6 PASSED: Backtest execution is 100% byte-identical bit-for-bit across independent passes.
+
+Rule R-3 Accounting Residual on Pass 1: -0.0000000037
+Standing Rule R-3 PASSED: Accounting identity strictly holds with residual == 0.00.
+
+--- 3. Out-of-Bounds Date Clamping & Warning Audit (Standing Rule R-4) ---
+
+Executing Test #1: Baseline In-Bounds Window
+  Requested: 2016-01-04 to 2020-09-14 | run_date = 2026-09-25
+  >> In-Bounds: No clamping warning necessary.
+  Clamped Window End:    2020-09-14
+  Trading Days Evaluated:1,154
+  Final Portfolio Value: Rs.  17,694,873.90
+  CAGR:                       12.92%
+  Accounting Residual:      -0.00000000
+  Output SHA-256:        6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+
+Executing Test #2: Out-of-Bounds Clamping (2021-01-01)
+  Requested: 2016-01-04 to 2021-01-01 | run_date = 2026-09-25
+  >> EMITTED HEADER: WARNING: Requested end date '2021-01-01' exceeds covered_end '2020-09-14'. Clamping to '2020-09-14'. Universe coverage: 1998-08-01 to 2020-09-14.
+  Clamped Window End:    2020-09-14
+  Trading Days Evaluated:1,154
+  Final Portfolio Value: Rs.  17,694,873.90
+  CAGR:                       12.92%
+  Accounting Residual:      -0.00000000
+  Output SHA-256:        6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+
+Executing Test #3: Out-of-Bounds Clamping (2022-12-31)
+  Requested: 2016-01-04 to 2022-12-31 | run_date = 2026-09-25
+  >> EMITTED HEADER: WARNING: Requested end date '2022-12-31' exceeds covered_end '2020-09-14'. Clamping to '2020-09-14'. Universe coverage: 1998-08-01 to 2020-09-14.
+  Clamped Window End:    2020-09-14
+  Trading Days Evaluated:1,154
+  Final Portfolio Value: Rs.  17,694,873.90
+  CAGR:                       12.92%
+  Accounting Residual:      -0.00000000
+  Output SHA-256:        6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+
+Executing Test #4: Run-Date Invariance (2024-01-01)
+  Requested: 2016-01-04 to 2021-01-01 | run_date = 2024-01-01
+  >> EMITTED HEADER: WARNING: Requested end date '2021-01-01' exceeds covered_end '2020-09-14'. Clamping to '2020-09-14'. Universe coverage: 1998-08-01 to 2020-09-14.
+  Clamped Window End:    2020-09-14
+  Trading Days Evaluated:1,154
+  Final Portfolio Value: Rs.  17,694,873.90
+  CAGR:                       12.92%
+  Accounting Residual:      -0.00000000
+  Output SHA-256:        6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+
+Executing Test #5: Run-Date Invariance (2020-09-15)
+  Requested: 2016-01-04 to 2021-01-01 | run_date = 2020-09-15
+  >> EMITTED HEADER: WARNING: Requested end date '2021-01-01' exceeds covered_end '2020-09-14'. Clamping to '2020-09-14'. Universe coverage: 1998-08-01 to 2020-09-14.
+  Clamped Window End:    2020-09-14
+  Trading Days Evaluated:1,154
+  Final Portfolio Value: Rs.  17,694,873.90
+  CAGR:                       12.92%
+  Accounting Residual:      -0.00000000
+  Output SHA-256:        6b473ca513d86f8c0cf98c49bb4db792cfe036c68addc12599d9f08e3b4175c4
+
+All 5 Clamping & Run-Date Invariance Test Cases PASSED with 100% Bit-for-Bit Identity!
+
+--- 4. Exporting Gate F Summary CSV ---
+Exported clamping summary: deliverables/gate_ef/data_csv/gate_f_clamping_summary.csv (5 records)
+
+================================================================================
+GATE F STEP 2 COMPLETE: REPRODUCIBILITY & TRUNCATION INVARIANTS AUDIT (PASS)
+================================================================================

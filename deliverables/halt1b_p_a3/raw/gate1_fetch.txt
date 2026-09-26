@@ -1,0 +1,35 @@
+================================================================================
+PHASE 5.5.A-3 — GATE 1: BHAVCOPY ACQUISITION & RAW PRICE INGESTION
+Timestamp: 2026-09-24T15:57:41.211237+00:00
+================================================================================
+Loaded 435 required target symbols from Gate 0.
+Loaded 1154 trading dates from Gate 0 (2016-01-04 to 2020-09-14).
+
+Starting concurrent acquisition with ThreadPoolExecutor (max_workers=6)...
+  [ 100/1154 (  8.7%)] Success: 100 (Cache: 11, Net: 89) | Holidays: 0 | Failed: 0 | Bars Extracted: 35,549 | Time: 30.1s
+  [ 200/1154 ( 17.3%)] Success: 200 (Cache: 11, Net: 189) | Holidays: 0 | Failed: 0 | Bars Extracted: 71,782 | Time: 54.0s
+  [ 300/1154 ( 26.0%)] Success: 300 (Cache: 11, Net: 289) | Holidays: 0 | Failed: 0 | Bars Extracted: 108,978 | Time: 77.5s
+  [ 400/1154 ( 34.7%)] Success: 400 (Cache: 11, Net: 389) | Holidays: 0 | Failed: 0 | Bars Extracted: 146,955 | Time: 101.3s
+  [ 500/1154 ( 43.3%)] Success: 500 (Cache: 22, Net: 478) | Holidays: 0 | Failed: 0 | Bars Extracted: 186,135 | Time: 127.1s
+  [ 600/1154 ( 52.0%)] Success: 600 (Cache: 33, Net: 567) | Holidays: 0 | Failed: 0 | Bars Extracted: 226,204 | Time: 153.1s
+  [ 700/1154 ( 60.7%)] Success: 700 (Cache: 44, Net: 656) | Holidays: 0 | Failed: 0 | Bars Extracted: 267,287 | Time: 180.1s
+  [ 800/1154 ( 69.3%)] Success: 800 (Cache: 55, Net: 745) | Holidays: 0 | Failed: 0 | Bars Extracted: 309,041 | Time: 209.7s
+  [ 900/1154 ( 78.0%)] Success: 900 (Cache: 55, Net: 845) | Holidays: 0 | Failed: 0 | Bars Extracted: 351,176 | Time: 236.0s
+  [1000/1154 ( 86.7%)] Success: 1000 (Cache: 55, Net: 945) | Holidays: 0 | Failed: 0 | Bars Extracted: 393,573 | Time: 261.4s
+  [1100/1154 ( 95.3%)] Success: 1100 (Cache: 55, Net: 1045) | Holidays: 0 | Failed: 0 | Bars Extracted: 436,190 | Time: 292.9s
+  [1154/1154 (100.0%)] Success: 1154 (Cache: 55, Net: 1099) | Holidays: 0 | Failed: 0 | Bars Extracted: 459,194 | Time: 305.8s
+
+Acquisition Completed in 305.8s (5.10 mins).
+Exported download summary table: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a3/data_csv/gate1_download_summary.csv (1154 dates, 43,908 bytes)
+
+--- 5. Persisting Raw Bhavcopy Bars Dataset ---
+Persisted Parquet: /sdcard/Documents/Project MIP/data/verification/halt1b_p_a3/raw_bhavcopy_bars.parquet
+  Total Raw Bars:       459,194
+  Distinct Symbols:     432
+  Distinct Dates:       1,154
+  Date Range:           2016-01-04 to 2020-09-14
+  Parquet File Size:    7,700,426 bytes (7.34 MB)
+
+================================================================================
+GATE 1 EXIT: SUCCESS — RAW BHAVCOPY BARS INGESTED AND PERSISTED
+================================================================================

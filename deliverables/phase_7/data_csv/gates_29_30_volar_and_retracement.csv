@@ -1,0 +1,7 @@
+gate_id,universe,experiment,r2_factor,cagr,max_dd,sharpe,sortino,turnover_pct,trades,metric_delta,gate_status
+Gate 29,NIFTY 500,Raw 252d Return Ranking,0.80 (20% Retracement),25.64,49.33,0.87,0.96,535.8313028592552,1308,Baseline,BASELINE
+Gate 29,NIFTY 500,Volar Ranking (Return/Sigma),0.80 (20% Retracement),27.11,45.81,1.08,1.22,530.3276554369246,1210,MaxDD diff: +3.52 pp | CAGR delta: +1.47 pp | Sharpe delta: +0.21,PASS
+Gate 30,NIFTY Midcap 150,20% Retracement (Baseline),0.80 (20% Retracement),21.96,38.55,1.03,1.2,1252.2237975467467,2590,Baseline 20%,BASELINE
+Gate 30,NIFTY Midcap 150,50% Retracement (Wider Buffer),0.50 (50% Retracement),22.76,40.19,1.04,1.22,1187.300368798831,2448,CAGR delta: +0.80 pp | MaxDD delta: +1.64 pp,FAIL
+Gate 30,NIFTY Smallcap 250,20% Retracement (Baseline),0.80 (20% Retracement),35.53,39.67,1.43,1.63,1040.3977323299691,2078,Baseline 20%,BASELINE
+Gate 30,NIFTY Smallcap 250,50% Retracement (Wider Buffer),0.50 (50% Retracement),39.31,38.56,1.54,1.76,978.1034587338925,1998,CAGR delta: +3.78 pp | MaxDD delta: -1.11 pp,PASS

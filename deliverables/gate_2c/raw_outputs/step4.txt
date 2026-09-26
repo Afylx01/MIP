@@ -1,0 +1,96 @@
+================================================================================
+PHASE 5.5 — GATE 2c: STEP 4 (GATE 1 CLEAN-UP & ANOMALY GROUPING)
+================================================================================
+
+================================================================================
+[4.1] DIVIDEND OPPORTUNITIES 50 (ROWS 124–134) AUDIT
+================================================================================
+Exported raw rows 124–134 to: deliverables/gate_2c/samples/divopp_2017_rows.csv
+
+Raw Rows 124–134 from 'Nifty Dividend Opportunities 50':
+  Row 124 | Date: 2016-11-15 (datetime) | Scrip: 'Reliance Capital Ltd.           ' | Action: Inclusion into Index
+  Row 125 | Date: 2016-11-15 (datetime) | Scrip: 'Tata Steel Ltd.                 ' | Action: Inclusion into Index
+  Row 126 | Date: 2016-11-15 (datetime) | Scrip: 'Tech Mahindra Ltd.              ' | Action: Inclusion into Index
+  Row 127 | Date: 2016-11-15 (datetime) | Scrip: 'Torrent Pharmaceuticals Ltd.    ' | Action: Inclusion into Index
+  Row 128 | Date: 2017-09-05 (datetime) | Scrip: 'Reliance Capital Ltd.           ' | Action: Exclusion from Index
+  Row 129 | Date: 2017-09-05 (datetime) | Scrip: 'National Aluminium Co. Ltd.     ' | Action: Inclusion into Index
+  Row 130 | Date: 2017-09-05 (datetime) | Scrip: 'Reliance Capital Ltd.           ' | Action: Exclusion from Index
+  Row 131 | Date: 2017-09-05 (datetime) | Scrip: 'National Aluminium Co. Ltd.     ' | Action: Inclusion into Index
+  Row 132 | Date: 2017-12-29 (datetime) | Scrip: 'ACC Ltd.                        ' | Action: Exclusion from Index
+  Row 133 | Date: 2017-12-29 (datetime) | Scrip: 'CARE Ratings Ltd.               ' | Action: Exclusion from Index
+  Row 134 | Date: 2017-12-29 (datetime) | Scrip: 'GHCL Ltd.                       ' | Action: Exclusion from Index
+
+Explicit Order & Deduplication Statement:
+  In sheet 'Nifty Dividend Opportunities 50', rows 124–134 are in STRICT DATE ORDER:
+    - Rows 124–127: 2016-11-15
+    - Rows 128–131: 2017-09-05 (42983.0 datetime)
+    - Rows 132–134: 2017-12-29
+  Chronological sequence is perfectly preserved: 2016-11-15 < 2017-09-05 < 2017-12-29.
+  The second pair (rows 130 and 131) was quarantined for being DUPLICATE copies of rows 128 and 129,
+  NOT for being out of order.
+
+================================================================================
+[4.2] ANOMALY GROUPING: grp_2017_09_05 (12 SUSPECT DATETIME ROWS)
+================================================================================
+Inspection of Neighbouring Rows Across Sheets:
+
+--- Sheet: Nifty 200 ---
+  Row  348: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Reliance Capital Ltd.          (OUT) | embedded inside 2017-09-29 rebalance block
+  Row  354: [2017-09-29] -> [2017-09-05] -> [2017-10-30] | Max Financial Services Ltd.    (IN) | at end of 2017-09-29 block (next: 2017-10-30)
+
+--- Sheet: Nifty Midcap 100 ---
+  Row  392: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Reliance Capital Ltd.          (OUT) | embedded inside 2017-09-29 rebalance block
+  Row  397: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Avenue Supermarts Ltd.         (IN) | embedded inside 2017-09-29 rebalance block
+
+--- Sheet: Nifty 500 ---
+  Row 2136: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Reliance Capital Ltd.          (OUT) | embedded inside 2017-09-29 rebalance block
+  Row 2162: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Max Financial Services Ltd.    (IN) | embedded inside 2017-09-29 rebalance block
+
+--- Sheet: Nifty Midcap 50 ---
+  Row  287: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Reliance Capital Ltd.          (OUT) | embedded inside 2017-09-29 rebalance block
+  Row  289: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Berger Paints India Ltd.       (IN) | embedded inside 2017-09-29 rebalance block
+
+--- Sheet: Nifty High Beta 50 ---
+  Row  125: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Reliance Capital Ltd.          (OUT) | embedded inside 2017-09-29 rebalance block
+  Row  128: [2017-09-29] -> [2017-09-05] -> [2017-09-29] | Jaiprakash Associates Ltd.     (IN) | embedded inside 2017-09-29 rebalance block
+
+--- Sheet: Nifty Dividend Opportunities 50 ---
+  Row  130: [2017-09-05] -> [2017-09-05] -> [2017-09-05] | Reliance Capital Ltd.          (OUT) | duplicate pair (prev: 2017-09-05, next: 2017-09-05)
+  Row  131: [2017-09-05] -> [2017-09-05] -> [2017-12-29] | National Aluminium Co. Ltd.    (IN) | duplicate pair (prev: 2017-09-05, next: 2017-12-29)
+
+Exported 12 quarantined rows with group_id to: deliverables/gate_2c/data_csv/quarantine_gate1.csv
+
+Placement Analysis:
+  - In 5 sheets (Nifty 200, Nifty Midcap 100, Nifty 500, Nifty Midcap 50, Nifty High Beta 50):
+    These 10 suspect rows are physically placed in the middle or end of the 2017-09-29 rebalance block.
+  - In 1 sheet (Nifty Dividend Opportunities 50):
+    The 2 suspect rows follow an earlier identical 2017-09-05 pair in date sequence.
+  - Gate 3 Policy: Correct effective date is NOT decided here; Gate 3 will propose resolution.
+
+================================================================================
+[4.3] FREE-FLOAT MERGE COMPONENT COUNTS (EXACT RECONCILIATION)
+================================================================================
+Component Counts Before Quarantine:
+  - Nifty Midcap 100   : 406 (Free Float) + 188 (Standard) = 594 total rows
+  - Nifty Smallcap 100 : 348 (Free Float) + 246 (Standard) = 594 total rows
+  Verification: Matches expected 406/188 and 348/246 exactly!
+
+Component Counts After Quarantine:
+  - Nifty Midcap 100   : 406 (Free Float) + 186 (Standard post-quarantine) = 592 rows
+  - Nifty Smallcap 100 : 348 (Free Float) + 246 (Standard post-quarantine) = 594 rows
+
+================================================================================
+[4.4] GATE 0 INVENTORY RELABELING (CML45722.pdf)
+================================================================================
+Gate 0 inventory entry corrected:
+  File: data/raw_bulletins/nifty_replacement_circular_sep_2020.pdf
+  Original URL: https://nsearchives.nseindia.com/content/circulars/CML45722.pdf
+  Previous Label : 'Nifty Replacement Circular Sep 2020' (Index Bulletin)
+  Corrected Label: 'Debt-Market Listing Circular (NSE Circular CML45722)' — NOT an index constituent bulletin.
+  Classification : Debt securities listing notice; contains no equity index rebalancing actions.
+
+Copied script to deliverables/gate_2c/scripts/step4_gate1_cleanup.py
+
+================================================================================
+STEP 4 COMPLETE
+================================================================================

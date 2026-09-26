@@ -1,0 +1,31 @@
+relative_path	file_size_bytes	sha256_checksum	what_it_proves
+DIGEST.md	18452	499a9b916c0a54f9d85f3dbcc8a8e811bb97a8f85aa4a0ac26493d72d1c83e68	Phase 8 Operations Manual, executive digest, and dual-date production simulation tearsheet
+NEXT_TASK.md	12778	8fa99ca9bc87034cc5c304964fd07a6804157881b236e837babf729aef05a134	Phase 8 active directive specifying the production screener, order generator, and ledger architecture
+PHASE_8_RULING.md	7326	1fbb51c104b9fcd44a9e6a9a4e7a0105125f56ac422d5fab0763e7f196c2b36d	Phase 8 deliverable file: PHASE_8_RULING.md
+data_csv/portfolio_ledger_20260824.csv	1488	f0e8eaf7ff320f57da6d2ed67bdf806798683fdfe6511e33e6c13ed2ef2c7e92	Run 1 executed holdings ledger as of Monday Open 2026-08-24
+data_csv/portfolio_ledger_20260831.csv	1613	01fa4c04b8a6bb7a74dc0d7612fd3771bed03ff8c36624ff0eb9299b257b5f98	Run 2 executed holdings ledger as of Monday Open 2026-08-31 (₹1.02 Cr valuation)
+data_csv/portfolio_ledger_sample.csv	1613	01fa4c04b8a6bb7a74dc0d7612fd3771bed03ff8c36624ff0eb9299b257b5f98	Standard portfolio holdings ledger breakdown with market values and weights
+data_csv/portfolio_state.json	3725	c1c11fbb5709dde3690b63e8331ee50ad1d5e6096c35f628eb64942b09879394	Persistent portfolio state JSON tracking cash balance, cost basis, and P&L
+data_csv/portfolio_state_20260824.json	3717	460cb20a0581891706e85eadb7b26052df83841818c18fd5326301b6045d5971	Run 1 persistent portfolio state JSON as of 2026-08-24
+data_csv/portfolio_state_20260831.json	3725	c1c11fbb5709dde3690b63e8331ee50ad1d5e6096c35f628eb64942b09879394	Run 2 persistent portfolio state JSON as of 2026-08-31
+data_csv/rebalance_orders_20260821.csv	2936	761359b588c2d837fe232ea29d7efcfa64a72a88461821a0b088cbde311286cb	Run 1 initial deployment order tickets seeding Top 20 scrips for ₹1 Crore AUM
+data_csv/rebalance_orders_20260828.csv	2643	e66bdc39096ee71197fbb75cf83b78ebce7891a823658b6b40f08591520ec2f6	Run 2 weekly rebalance orders confirming 100% exit buffer retention (20 HOLDs)
+data_csv/rebalance_orders_sample.csv	2643	e66bdc39096ee71197fbb75cf83b78ebce7891a823658b6b40f08591520ec2f6	Standard execution order tickets with whole shares and itemized statutory fees
+data_csv/screener_output_20260821.csv	73666	5ecec2d5d10727ca6eed6895a93ee854a6cc1e8e8a200942c500fa038a165fa8	Run 1 Friday 2026-08-21 screener output ranking 355 qualified momentum scrips
+data_csv/screener_output_20260828.csv	73608	d03f7a76889d71613d14b4e43f07d053d1ad0bd5047d0e87f1718ced4255b8c2	Run 2 Friday 2026-08-28 screener output ranking 360 qualified momentum scrips
+data_csv/screener_output_sample.csv	73666	5ecec2d5d10727ca6eed6895a93ee854a6cc1e8e8a200942c500fa038a165fa8	Standard production screener sample ranking all qualifying momentum candidates
+data_csv/trade_recommendations_20260821.md	4753	b865facb61641a5da3f9bf600d128aba8b253894635ccc197494e25295c56701	Run 1 investment desk trade recommendation memo for initial deployment
+data_csv/trade_recommendations_20260828.md	4012	7873b41c8291df9fcac544e98cc1202dfa48e303838f1b2333ee62a54d45864c	Run 2 investment desk trade recommendation memo for weekly rebalance
+data_csv/trade_recommendations_sample.md	4012	7873b41c8291df9fcac544e98cc1202dfa48e303838f1b2333ee62a54d45864c	Standard investment desk trade recommendation memo with fee breakdown
+raw/generate_execution_orders.log	5521	8097d285f4e2960b68dae2e3c5b10e9adc0b2d849287c8355a833b0f2b3cf24e	Task 3 raw execution log itemizing order quantities and regulatory fees
+raw/ingest_incremental_bhavcopy.log	2517	60104d70ca5e6631bb91ed7bfdbc48b6d18676b0c364c12f04617ee466dd75fa	Task 1 raw execution log verifying self-test, append idempotency, and master integrity
+raw/manage_portfolio_ledger.log	13857	a8c2634f394d70f1e7d31ab90404063c782e2ca4ca8e363ce58cae4624fe0d65	Task 4 raw execution log confirming fills, cash debits, and Rule R-3 0.00 residual
+raw/pipeline_execution_log.txt	2842	26aa222757e8356becfc5266ae14c2de89560e662231849f5d4b8cfb5a261f9e	Task 5 raw stdout log of the complete dual-date production simulation
+raw/screen_production_momentum.log	16593	de3fd63ab87c4382229c9f4138c2722fde602c286b46c62f3527f2309d09078f	Task 2 raw execution log recording market regime checks and filter funnel counts
+scripts/generate_evidence_index.py	6514	74bfe2ec2d44a283a62549250037c664ff5040eb184e659630cbde38b1730c14	Evidence index and SHA-256 manifest compilation script
+scripts/generate_execution_orders.py	23908	fc10bd7e2b478d2a3ac454b58fcd6b5a9240e6074f3883d4bfd23dd88c97bfd7	Task 3: Execution order generator applying 100% exit buffer and itemized fee schedule
+scripts/ingest_incremental_bhavcopy.py	13797	77b80707ef85a3dd99c6aedfd3799c31035571a33c2b192f3d28798f889e4ef1	Task 1: Incremental daily Bhavcopy ingestion engine with invariant auditing
+scripts/manage_portfolio_ledger.py	17169	69ae968d91603fdf30f546459c14d3f7b3b300d0e7085ece4304a0d5f135512a	Task 4: Persistent portfolio ledger manager enforcing Rule R-3 cash conservation
+scripts/run_production_pipeline.py	10552	70b65954e89c75467c50263aef11660a801aae4d0844dc6408f7c7ac52d61b48	Task 5: End-to-end production pipeline orchestrator and dual-date simulator
+scripts/screen_production_momentum.py	12860	f50817a6bb85dd88e7971ed46d61c061bea2514b00ede5e2b4fb6dd3d1416ea7	Task 2: Friday EOD production momentum screener and Volar ranker
+task_list.md	3389	154dc5d72b862a7d326bc0463dea2bae366fd578e0c840e99e0764ab6d5dea84	Phase 8 execution roadmap tracking Tasks 1-5 with Standing Gate HALT-9 open

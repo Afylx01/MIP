@@ -1,0 +1,15 @@
+path	bytes	sha256	what_it_proves
+data/corrections.parquet	9231	0edec75a63f4eadd271901d1023b34ef4f3ee32144669d497b0f6e991d06587e	Approved corrections table dynamically applied during replay (all 16 status = 'approved')
+data/corrections_backup_proposed.parquet	9231	dc4534e46a56eb31ef6716003fc6aa4927e07054de534eec3accabb74fff5b0b	Point-in-time backup of corrections table prior to approval transition
+deliverables/gate_ab/DIGEST.md	7452	c575f3de6225a9a6dbc1260e5fe3354509bcfb25ec03594129f7cc1cfa989837	Phase 5.5 Gates A & B executive summary digest with gate claims, continuity metrics, and evidence pointers
+deliverables/gate_ab/data_csv/gate_a_coverage_map.csv	5127	9fe9b3efbb4cc485137b9212a87467d14d1d73aba05791d8f247f648a6648274	Gate A point-in-time coverage metrics across all 57 monthly snapshots proving resolved >= 80% and median joint coverage >= 85%
+deliverables/gate_ab/data_csv/gate_b_snapshot_summary.csv	2353	0ae16b409ac024b1432a2342271340ed4941183270ee646130142c2c704ed55f	Gate B monthly constituent count summary proving all 57 snapshots strictly within [500, 501] (bounds [490, 515])
+deliverables/gate_ab/data_csv/snapshot_constituents_57.csv	1903061	f6ee5ad3447069ef1b380649e16b3757f57fd35f5f15db6750fb30ada07e1ec5	Gate B complete constituent manifest (28,554 rows) detailing symbol mapping and joint coverage for all 57 snapshots
+deliverables/gate_ab/raw/gate0_prerequisites.txt	1793	4d2b365caff7567fbf48d9c7d78db2e53b8b91c6bf97558ac156144c93487565	Gate 0 raw stdout: transition of corrections to approved, append-only assertion, and universe audit
+deliverables/gate_ab/raw/gate1_coverage_map.txt	2345	8ae0c81697ac481865189e3f5e557247bb99425bd739daac87c0664c5ba066f0	Gate 1 raw stdout: Gate A coverage map execution, R-5 resolution validation, and joint coverage PASS proof
+deliverables/gate_ab/raw/gate2_snapshot_sanity.txt	2267	11e689061ae263071be71b3270aba00a647fb4bb7f026239a5feaddb09c20c01	Gate 2 raw stdout: Gate B chronological replay proving 0 orphan OUTs, 0 duplicate INs, and [500, 501] constituent count
+deliverables/gate_ab/scripts/gate0_prerequisites.py	5298	16bd80657c5545442868d020f7ee7215dd3fc114502b3577ea6fb57925e2e26b	Gate 0 script validating prerequisites and transitioning corrections to approved status
+deliverables/gate_ab/scripts/gate1_coverage_map.py	12504	a321b0e54f0909e32228598ddbe6a9400ae5441682b91edf9ba223dc27dbf520	Gate 1 script executing point-in-time coverage re-measurement across all 57 snapshots
+deliverables/gate_ab/scripts/gate2_snapshot_sanity.py	11800	cede10a512a4bc824aa600d62dd79f7b8b0334a8039fc1c1e584a7d8de3847ea	Gate 2 script executing chronological replay and exporting complete constituent manifests
+deliverables/gate_ab/scripts/generate_evidence_index.py	3847	f1f44f5b556c538af5ac185a15657d679ec157129363c9ef831c56fbd80311ef	Script generating Phase 5.5 Gates A & B EVIDENCE_INDEX.tsv manifest
+deliverables/gate_ab/task_list.md	870	3f08427e087556c26730adfbb247e7a1b6bf6b22dea6f136915bd46b1fa54d25	Phase 5.5 Gates A & B roadmap task list tracking progress across gates (HALT-3 open)

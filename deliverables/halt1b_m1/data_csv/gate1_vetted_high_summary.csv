@@ -1,0 +1,71 @@
+scrip_name,symbol,isin,similarity,flags,approval_note
+Arvind Ltd,ARVIND,INE034A01011,1.0,first_token_mismatch;concurrent_alias_collision,Verified exact ISIN INE034A01011 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Automotive Axles Ltd.,AUTOAXLES,INE449A01011,1.0,listing_after_first_seen,Verified exact ISIN INE449A01011 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Bank of India,BANKINDIA,INE084A01016,1.0,concurrent_alias_collision,Verified exact ISIN INE084A01016 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Bharat Forge Ltd.,BHARATFORG,INE465A01025,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE465A01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Dalmia Bharat Ltd.,DALBHARAT,INE00R701025,1.0,listing_after_first_seen,Verified exact ISIN INE00R701025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Eicher Motors Ltd.,EICHERMOT,INE066A01021,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE066A01021 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Electrosteel Castings Ltd.,ELECTCAST,INE086A01029,1.0,listing_after_first_seen,Verified exact ISIN INE086A01029 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Eveready Industries India Ltd.,EVEREADY,INE128A01029,1.0,listing_after_first_seen,Verified exact ISIN INE128A01029 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Exide Industries Ltd.,EXIDEIND,INE302A01020,1.0,listing_after_first_seen,Verified exact ISIN INE302A01020 in EQUITY_L; name similarity 1.00; official NSE constituent.
+GHCL Ltd.,GHCL,INE539A01019,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE539A01019 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Gateway Distriparks Ltd.,GATEWAY,INE079J01017,1.0,listing_after_first_seen,Verified exact ISIN INE079J01017 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Gillette India Ltd.,GILLETTE,INE322A01010,1.0,listing_after_first_seen,Verified exact ISIN INE322A01010 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Glaxosmithkline Pharmaceuticals Ltd.,GLAXO,INE159A01016,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE159A01016 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Graphite India Ltd.,GRAPHITE,INE371A01025,1.0,listing_after_first_seen,Verified exact ISIN INE371A01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Gujarat Fluorochemicals Ltd.,FLUOROCHEM,INE09N301011,1.0,listing_after_first_seen,Verified exact ISIN INE09N301011 in EQUITY_L; name similarity 1.00; official NSE constituent.
+HMT Ltd.,HMT,INE262A01018,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE262A01018 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Hero MotoCorp Ltd.,HEROMOTOCO,INE158A01026,1.0,listing_after_first_seen,Verified exact ISIN INE158A01026 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Hexaware Technologies Ltd.,HEXT,INE093A01041,1.0,listing_after_first_seen,Verified exact ISIN INE093A01041 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Hindustan Construction Co. Ltd.,HCC,INE549A01026,1.0,listing_after_first_seen,Verified exact ISIN INE549A01026 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Hindustan Petroleum Corporation Ltd.,HINDPETRO,INE094A01015,1.0,listing_after_first_seen,Verified exact ISIN INE094A01015 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Hindustan Zinc Ltd.,HINDZINC,INE267A01025,1.0,listing_after_first_seen,Verified exact ISIN INE267A01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Honeywell Automation India Ltd.,HONAUT,INE671A01010,1.0,listing_after_first_seen,Verified exact ISIN INE671A01010 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Ingersoll Rand (India) Ltd.,INGERRAND,INE177A01018,1.0,listing_after_first_seen,Verified exact ISIN INE177A01018 in EQUITY_L; name similarity 1.00; official NSE constituent.
+JK Tyre & Industries Ltd..,JKTYRE,INE573A01042,1.0,listing_after_first_seen,Verified exact ISIN INE573A01042 in EQUITY_L; name similarity 1.00; official NSE constituent.
+JSW Steel Ltd.,JSWSTEEL,INE019A01038,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE019A01038 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Jindal Saw Ltd.,JINDALSAW,INE324A01032,1.0,listing_after_first_seen,Verified exact ISIN INE324A01032 in EQUITY_L; name similarity 1.00; official NSE constituent.
+KPIT Technologies Ltd.,KPITTECH,INE04I401011,1.0,listing_after_first_seen,Verified exact ISIN INE04I401011 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Kajaria Ceramics Ltd.,KAJARIACER,INE217B01036,1.0,listing_after_first_seen,Verified exact ISIN INE217B01036 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Kansai Nerolac Paints Ltd.,KANSAINER,INE531A01024,1.0,listing_after_first_seen,Verified exact ISIN INE531A01024 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Kennametal India Ltd.,KENNAMET,INE717A01029,1.0,listing_after_first_seen,Verified exact ISIN INE717A01029 in EQUITY_L; name similarity 1.00; official NSE constituent.
+LG Balakrishnan & Bros Ltd.,LGBBROSLTD,INE337A01034,1.0,listing_after_first_seen,Verified exact ISIN INE337A01034 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Linde India Ltd.,LINDEINDIA,INE473A01011,1.0,listing_after_first_seen,Verified exact ISIN INE473A01011 in EQUITY_L; name similarity 1.00; official NSE constituent.
+MMTC Ltd.,MMTC,INE123F01029,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE123F01029 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Mahanagar Telephone Nigam Ltd.,MTNL,INE153A01019,1.0,listing_after_first_seen,Verified exact ISIN INE153A01019 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Maharashtra Seamless Ltd.,MAHSEAMLES,INE271B01025,1.0,listing_after_first_seen,Verified exact ISIN INE271B01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Manappuram Finance Ltd.,MANAPPURAM,INE522D01027,1.0,listing_after_first_seen,Verified exact ISIN INE522D01027 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Mangalore Refinery & Petrochemicals Ltd.,MRPL,INE103A01014,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE103A01014 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Max India Ltd.,MAXIND,INE0CG601016,1.0,listing_after_first_seen,Verified exact ISIN INE0CG601016 in EQUITY_L; name similarity 1.00; official NSE constituent.
+MphasiS Ltd.,MPHASIS,INE356A01018,1.0,first_token_mismatch;listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE356A01018 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Munjal Showa Ltd.,MUNJALSHOW,INE577A01027,1.0,listing_after_first_seen,Verified exact ISIN INE577A01027 in EQUITY_L; name similarity 1.00; official NSE constituent.
+NIIT Ltd.,NIITLTD,INE161A01038,1.0,first_token_mismatch;listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE161A01038 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Pfizer Ltd.,PFIZER,INE182A01018,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE182A01018 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Procter & Gamble Hygiene & Health Care Ltd.,PGHH,INE179A01014,1.0,listing_after_first_seen,Verified exact ISIN INE179A01014 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Rico Auto Industries Ltd.,RICOAUTO,INE209B01025,1.0,listing_after_first_seen,Verified exact ISIN INE209B01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+SKF India Ltd.,SKFINDIA,INE640A01023,1.0,listing_after_first_seen,Verified exact ISIN INE640A01023 in EQUITY_L; name similarity 1.00; official NSE constituent.
+SRF Ltd.,SRF,INE647A01010,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE647A01010 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Sadbhav Engineering Ltd,SADBHAV,INE226H01026,1.0,concurrent_alias_collision,Verified exact ISIN INE226H01026 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Sanofi India Ltd.,SANOFI,INE058A01010,1.0,listing_after_first_seen,Verified exact ISIN INE058A01010 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Steel Authority of India Ltd.,SAIL,INE114A01011,1.0,concurrent_alias_collision,Verified exact ISIN INE114A01011 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Sundaram Clayton Ltd.,SUNCLAY,INE0Q3R01026,1.0,listing_after_first_seen,Verified exact ISIN INE0Q3R01026 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Sundram Fasteners Ltd.,SUNDRMFAST,INE387A01021,1.0,listing_after_first_seen,Verified exact ISIN INE387A01021 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Supreme Petrochem Ltd.,SPLPETRO,INE663A01033,1.0,listing_after_first_seen,Verified exact ISIN INE663A01033 in EQUITY_L; name similarity 1.00; official NSE constituent.
+TVS Motor Company Ltd.,TVSMOTOR,INE494B01023,1.0,concurrent_alias_collision,Verified exact ISIN INE494B01023 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Tata Chemicals Ltd.,TATACHEM,INE092A01019,1.0,listing_after_first_seen,Verified exact ISIN INE092A01019 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Tata Elxsi Ltd.,TATAELXSI,INE670A01012,1.0,listing_after_first_seen,Verified exact ISIN INE670A01012 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Tata Steel Ltd.,TATASTEEL,INE081A01020,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE081A01020 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Thomas Cook (India) Ltd.,THOMASCOOK,INE332A01027,1.0,listing_after_first_seen,Verified exact ISIN INE332A01027 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Torrent Pharmaceuticals Ltd.,TORNTPHARM,INE685A01028,1.0,listing_after_first_seen,Verified exact ISIN INE685A01028 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Trent Ltd.,TRENT,INE849A01020,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE849A01020 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Tube Investments of India Ltd.,TIINDIA,INE974X01010,1.0,listing_after_first_seen,Verified exact ISIN INE974X01010 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Unichem Laboratories Ltd.,UNICHEMLAB,INE351A01035,1.0,listing_after_first_seen,Verified exact ISIN INE351A01035 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Unitech Ltd.,UNITECH,INE694A01020,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE694A01020 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Usha Martin Ltd.,USHAMART,INE228A01035,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE228A01035 in EQUITY_L; name similarity 1.00; official NSE constituent.
+VST Industries Ltd.,VSTIND,INE710A01016,1.0,listing_after_first_seen,Verified exact ISIN INE710A01016 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Vardhman Textiles Ltd.,VTL,INE825A01020,1.0,listing_after_first_seen,Verified exact ISIN INE825A01020 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Venky's (India) Ltd.,VENKEYS,INE398A01010,1.0,listing_after_first_seen,Verified exact ISIN INE398A01010 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Vesuvius India Ltd.,VESUVIUS,INE386A01023,1.0,listing_after_first_seen,Verified exact ISIN INE386A01023 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Welspun Corp Ltd.,WELCORP,INE191B01025,1.0,listing_after_first_seen;concurrent_alias_collision,Verified exact ISIN INE191B01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Wockhardt Ltd.,WOCKPHARMA,INE049B01025,1.0,first_token_mismatch;listing_after_first_seen,Verified exact ISIN INE049B01025 in EQUITY_L; name similarity 1.00; official NSE constituent.
+Zee Entertainment Enterprises Ltd.,ZEEL,INE256A01028,1.0,listing_after_first_seen,Verified exact ISIN INE256A01028 in EQUITY_L; name similarity 1.00; official NSE constituent.

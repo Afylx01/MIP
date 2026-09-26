@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+scratch/
+
+# Environment and secrets
+.env
+.env.*
+*.env
+*token*.txt
+*Token*.txt
+
+# Local data caches
+data/bhavcopy_cache/
+data/yfinance_batches/
+tmp/
+.agents/
+
+

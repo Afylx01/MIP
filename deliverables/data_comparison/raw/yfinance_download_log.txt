@@ -1,0 +1,91 @@
+================================================================================
+TASK 3: HIGH-PERFORMANCE BATCHED YFINANCE INGESTION ENGINE
+Timestamp: 2026-09-25T18:41:18.050250+00:00
+================================================================================
+
+--- 1. Compiling Target Universe ---
+Symbols from symbol_map:        1,010
+Symbols from max Bhavcopy:      1,039
+Total Unique Target Symbols:    1,149
+Divided universe into 23 batches of up to 50 symbols each.
+
+--- 2. Downloading Historical OHLCV via YFinance ---
+  [Batch 1/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 27.0s | Parsed 145,954 bars -> batch_000.parquet
+  [Batch 2/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 34.3s | Parsed 158,068 bars -> batch_001.parquet
+  [Batch 3/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 33.5s | Parsed 187,333 bars -> batch_002.parquet
+  [Batch 4/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 19.4s | Parsed 160,497 bars -> batch_003.parquet
+  [Batch 5/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 17.9s | Parsed 162,841 bars -> batch_004.parquet
+  [Batch 6/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 15.5s | Parsed 187,377 bars -> batch_005.parquet
+  [Batch 7/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 18.8s | Parsed 164,191 bars -> batch_006.parquet
+  [Batch 8/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 15.6s | Parsed 172,374 bars -> batch_007.parquet
+  [Batch 9/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 8.9s | Parsed 188,072 bars -> batch_008.parquet
+  [Batch 10/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 10.8s | Parsed 155,818 bars -> batch_009.parquet
+  [Batch 11/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 8.7s | Parsed 152,731 bars -> batch_010.parquet
+  [Batch 12/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 10.4s | Parsed 175,996 bars -> batch_011.parquet
+  [Batch 13/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.3s | Parsed 153,621 bars -> batch_012.parquet
+  [Batch 14/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 10.0s | Parsed 160,979 bars -> batch_013.parquet
+  [Batch 15/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.2s | Parsed 168,356 bars -> batch_014.parquet
+  [Batch 16/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.6s | Parsed 156,955 bars -> batch_015.parquet
+  [Batch 17/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.1s | Parsed 160,436 bars -> batch_016.parquet
+  [Batch 18/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 8.9s | Parsed 159,731 bars -> batch_017.parquet
+  [Batch 19/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 8.8s | Parsed 150,550 bars -> batch_018.parquet
+  [Batch 20/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.7s | Parsed 181,899 bars -> batch_019.parquet
+  [Batch 21/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.5s | Parsed 165,685 bars -> batch_020.parquet
+  [Batch 22/23] Downloading 50 tickers from Yahoo Finance...
+    Completed in 9.3s | Parsed 181,067 bars -> batch_021.parquet
+  [Batch 23/23] Downloading 49 tickers from Yahoo Finance...
+    Completed in 9.4s | Parsed 171,073 bars -> batch_022.parquet
+
+--- 3. Consolidating All YFinance Batches ---
+Total raw YFinance bars downloaded: 3,821,604
+Persisted consolidated YFinance dataset: /storage/emulated/0/Documents/Project MIP/data/yfinance_ohlcv_2007_2026.parquet
+  Shape:     (3821604, 10)
+  Size:      105,248,348 bytes (100.37 MB)
+  SHA-256:   9ed8525ce416654563250575d5c16f3ebc953153ee731234cfc52d672804e54b
+  Symbols:   1,093
+  Dates:     2007-01-02 to 2026-08-31
+
+Exported coverage audit: /storage/emulated/0/Documents/Project MIP/deliverables/data_comparison/data_csv/coverage_comparison.csv (1149 symbols audited)
+
+--- 4. YFinance Survivorship Bias Audit ---
+Total Point-in-Time Universe Scrips: 1,149
+Found in YFinance:                  1,093 (95.1%)
+MISSING in YFinance (Purged/Dead):  56 (4.9%)
+
+Canary Check (Historical / Delisted / High-Profile Stocks):
+  PCJEWELLER  : FOUND (3,378 bars)
+  DHFL        : MISSING / PURGED
+  RCOM        : FOUND (4,852 bars)
+  UNITECH     : FOUND (4,853 bars)
+  RANBAXY     : MISSING / PURGED
+  SUZLON      : FOUND (4,853 bars)
+  JPASSOCIAT  : MISSING / PURGED
+  INFY        : FOUND (4,853 bars)
+  TCS         : FOUND (4,853 bars)
+  RELIANCE    : FOUND (4,853 bars)
+  WIPRO       : FOUND (4,853 bars)
+
+================================================================================
+TASK 3 COMPLETE: YFINANCE INGESTION & COVERAGE AUDIT FINISHED
+================================================================================

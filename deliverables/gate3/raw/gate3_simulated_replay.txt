@@ -1,0 +1,42 @@
+================================================================================
+PHASE 5.5 GATE 3 — GATE 3: SIMULATED REPLAY & CONTINUITY ASSERTION
+Timestamp: 2026-09-24T19:40:42.325555+00:00
+================================================================================
+
+--- 1. Loading Index Events and Proposed Corrections ---
+Loaded NIFTY500 events from parquet: 2,493 events
+Loaded proposed corrections: 16 rules (all status = 'proposed')
+Loaded quarantined row numbers from Gate 1 manifest: {2136, 2162}
+Constructed 14 rename linkages.
+
+--- 2. Simulated Replay on Raw Workbook Events (IndexInclExcl.xls) ---
+Results of Replay on Raw Workbook + Corrections:
+  Orphan OUT count:   0 (was 15)
+  Duplicate IN count: 0 (was 1)
+  -> Assertion 1 PASSED: Orphan OUTs dropped from 15 to EXACTLY 0.
+  -> Assertion 2 PASSED: Duplicate INs dropped from 1 to EXACTLY 0.
+
+--- 3. Simulated Replay on data/index_events.parquet + Corrections ---
+Results of Replay on index_events.parquet + Corrections:
+  Orphan OUT count:   0
+  Duplicate IN count: 0
+  -> Assertion 3 PASSED: Zero orphans and zero duplicates on index_events.parquet.
+
+--- 4. Evaluating Snapshot Constituent Counts across 57 Monthly Snapshots ---
+Loaded 57 monthly snapshot dates (2016-01-04 to 2020-09-01).
+Exported simulation rebalance counts: /sdcard/Documents/Project MIP/deliverables/gate3/data_csv/simulation_rebalance_counts.csv (57 snapshots)
+
+Corrected Constituent Count Distribution:
+  Min:    500
+  Median: 501.0
+  Max:    501
+  All within [490, 515]: True
+  -> Assertion 4 PASSED: All 57 snapshots strictly within statutory range [490, 515].
+
+Sample Milestone Snapshots:
+  Snapshot 2016-01-04 (Snap #1): uncorrected = 501, corrected = 500 (delta = -1)
+  Snapshot 2020-09-01 (Snap #57): uncorrected = 515, corrected = 501 (delta = -14)
+
+================================================================================
+GATE 3 SIMULATED REPLAY COMPLETE: ALL CONTINUITY ASSERTIONS PASSED
+================================================================================

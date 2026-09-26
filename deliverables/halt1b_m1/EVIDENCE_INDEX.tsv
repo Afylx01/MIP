@@ -1,0 +1,22 @@
+path	bytes	sha256	what_it_proves
+deliverables/halt1b_m1/DIGEST.md	8140	11e4b4e5ffa3e8c51f827be87f209def81670740386521b96f7363d9d0c85e84	Phase 5.5.M-1 executive summary digest with gate claims, coverage metrics, and evidence pointers
+deliverables/halt1b_m1/data_csv/approved_scrips_summary.csv	24273	1d5a1ac8de5a4cd4bce38cce49206e8ca9687ea4ea4c3deeac069e2121123d21	Gate 2 comprehensive audit of 192 approved scrips across Gates 1 and 2
+deliverables/halt1b_m1/data_csv/gate1_vetted_high_summary.csv	12211	28eb19a70008e4452fa9c5c06112cb69968f861e4b4c4e77b38d5f6b3086183a	Gate 1 summary of 70 high-confidence candidate scrips vetted against EQUITY_L and approved
+deliverables/halt1b_m1/data_csv/gate2_curated_review.csv	27298	2c71b30977409c83fa059be36416242479f125759e937db2a5d24699661f98cf	Gate 2 review batch of 122 curated corporate rename and medium-tier constituent mappings
+deliverables/halt1b_m1/data_csv/gate3_extraction_summary.csv	375	7588e4388392839031567d3e53b0dd569e0c5ab91f46dadf4a60a062cee0afbf	Gate 3 local Bhavcopy price extraction and corporate action adjustment summary metrics
+deliverables/halt1b_m1/data_csv/monthly_coverage_comparison_v2.csv	5106	48f3fb4b990cf40aca034173dae1e3938c184c02167fd9239d3df40c87b8c445	Gate 4 comparative monthly coverage across 57 snapshots proving 86.25% median joint coverage (PASS)
+deliverables/halt1b_m1/data_csv/nifty500_pending_scrips_ranked.csv	29075	bf8f52f1a5cb7acc7cd618a53cbc3fb3dd55a522925ea3cb03bc83b7e2fea880	Gate 0 ranking of 299 pending NIFTY500 constituent scrips by snapshot occurrence frequency
+deliverables/halt1b_m1/raw/gate0_triage.txt	1916	8d5cda745c2d5b23951b95644d8b0f667791e0d2d3dd48c66130b20e6651f9b2	Gate 0 raw stdout: pending constituent triage and frequency ranking
+deliverables/halt1b_m1/raw/gate1_apply_high.txt	1497	29e0baf3eeecd0a8412edb3986ad0fcb01ece8380357b51a25fd8978b67cb68c	Gate 1 raw stdout: application of 70 high-confidence scrip approvals via apply_symbol_map_review.py
+deliverables/halt1b_m1/raw/gate2_apply_medium.txt	1587	018ccad30932da60e08059206a92f548aab22b5278759448626857676f498551	Gate 2 raw stdout: application of 122 curated scrip approvals via apply_symbol_map_review.py
+deliverables/halt1b_m1/raw/gate3_price_extraction.txt	2960	8f1352aace32f2e03af7dfd8daa707e5479c23645533a1c8e618b7972dbc589c	Gate 3 raw stdout: multi-threaded local price extraction across 1,154 Bhavcopies and CA adjustment
+deliverables/halt1b_m1/raw/gate4_coverage.txt	2523	3bcfdbd8e75de21f9d0b69a227bfcfa11782d7c8b22233574a8fc65a672ecefd	Gate 4 raw stdout: joint coverage re-measurement across 57 snapshots achieving PASS verdict
+deliverables/halt1b_m1/scripts/gate0_triage.py	7901	6383d7893e836440d7baea6d108efac21fb8b1539a4e8aaa6cfcdf74b335ccb1	Gate 0 script triaging and ranking pending constituent scrips
+deliverables/halt1b_m1/scripts/gate1_vet_high.py	4348	bf465a204a7f27a57f3ae26926ab49da310fbd0dfc80104fc221b2b8e12bebb2	Gate 1 script vetting high-confidence candidate mappings against EQUITY_L
+deliverables/halt1b_m1/scripts/gate2_curate_mappings.py	30757	6f749916104b2842eef8d53441115c3bff5a8f6e3c676adeb196ec295db02d2d	Gate 2 script curating corporate rename and medium-tier constituent mappings
+deliverables/halt1b_m1/scripts/gate3_price_extraction.py	13713	9e5c0fa0a583dc67f109ed19ff5d71dbbbe533093967f6321ff365ecad1b15d4	Gate 3 script extracting series EQ/BE bars from local Bhavcopy cache and executing CA adjustment
+deliverables/halt1b_m1/scripts/gate4_coverage_remeasurement.py	11993	4acac7e2e3614bd4278ec4a4e4d0f05864577e4b0c3ccb8dc50541b8730667c8	Gate 4 script re-measuring joint coverage metrics and validating >=85.0% PASS threshold
+deliverables/halt1b_m1/scripts/generate_evidence_index.py	4718	882792599c3462569b239a0ad074649c2755caeb446eded2d911653e100d42ef	Script compiling Phase 5.5.M-1 EVIDENCE_INDEX.tsv manifest
+deliverables/halt1b_m1/task_list.md	867	f83f50719c73dfa9693eea79866621547cd72d2323957c8df0f0f5c068dd6b40	Phase 5.5.M-1 roadmap task list tracking progress across gates (HALT-1b-M-1 open)
+data/verification/halt1b_m1/adjusted_bhavcopy_bars_v2.parquet	12603586	d85441dd47b8bfb2cb59a962bde528a92e6444d06cefa5ad2a6334746ca9de25	Gate 3 corporate action adjusted OHLCV price series (753,046 bars across 711 symbols)
+data/verification/halt1b_m1/raw_bhavcopy_bars_v2.parquet	12081129	52210c2671b09fe0060b667d267649c3ad1fb9a27c5143d90bb37c4dd804ffd5	Gate 3 expanded raw unadjusted OHLCV price series (753,046 bars across 711 symbols)

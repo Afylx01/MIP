@@ -1,0 +1,6 @@
+schedule_label,rebalance_rule,total_snapshots,strategy_cagr_pct,benchmark_cagr_pct,excess_cagr_pp,max_drawdown_pct,sharpe_ratio,trades_count,rule_r3_residual
+1st Trading Day (Baseline),1st,128,22.97,11.14,11.83,45.92,0.82,557,-1.4901161193847656e-08
+5th Trading Day,5th,128,27.32,11.14,16.18,47.34,0.91,497,-1.4901161193847656e-08
+10th Trading Day,10th,128,27.89,11.14,16.75,41.16,1.02,497,0.0
+15th Trading Day,15th,128,22.98,11.14,11.84,43.08,0.88,492,1.4901161193847656e-08
+Last Trading Day,last,128,20.07,11.14,8.93,54.25,0.72,521,-2.9802322387695312e-08

@@ -1,0 +1,132 @@
+================================================================================
+PHASE 5.5 GATES C & D — GATE C: MULTI-INDEX CONTINUITY AUDIT
+Timestamp: 2026-09-25T09:26:44.388151+00:00
+================================================================================
+
+--- 1. Ingesting Events, Approved Corrections & Symbol Map ---
+Loaded raw index events: 9,121 events across 37 indices
+Loaded corrections: 16 rules (all status = 'approved')
+Constructed 14 reverse rename linkages and 14 forward rename linkages.
+Loaded symbol map: 1,448 scrips (763 active: auto/approved)
+
+--- 2. Continuity Audit across All 7 Broad Market Indices ---
+
+Index: NIFTY500
+  Date Range:            1998-08-01 to 2020-09-14
+  Total Events:          2,493 (IN: 1,497, OUT: 996)
+  Seed Batch Present:    True (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           0
+  Duplicate INs:         0
+  Final Active Count:    501
+  Blocked Approved Evts: 0
+  >> NIFTY500 Invariants Verified: 0 orphan OUTs, 0 duplicate INs, 501 active constituents. (PASS)
+
+Index: NIFTY50
+  Date Range:            1996-09-18 to 2020-07-31
+  Total Events:          196 (IN: 98, OUT: 98)
+  Seed Batch Present:    False (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           51
+  Duplicate INs:         0
+  Final Active Count:    51
+  Blocked Approved Evts: 0
+  >> Structural Context: Event-log only without initial seed batch.
+     Orphan OUTs (51) reflect removal of unseeded initial constituents.
+
+Index: NIFTYNEXT50
+  Date Range:            2000-01-12 to 2020-07-31
+  Total Events:          382 (IN: 191, OUT: 191)
+  Seed Batch Present:    False (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           75
+  Duplicate INs:         1
+  Final Active Count:    74
+  Blocked Approved Evts: 0
+  >> Structural Context: Event-log only without initial seed batch.
+     Orphan OUTs (75) reflect removal of unseeded initial constituents.
+     Duplicate INs (1):
+       - 2012-09-28 | Steel Authority of India Ltd. (Row 218)
+
+Index: NIFTY100
+  Date Range:            2003-03-19 to 2020-07-31
+  Total Events:          336 (IN: 168, OUT: 168)
+  Seed Batch Present:    False (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           82
+  Duplicate INs:         0
+  Final Active Count:    82
+  Blocked Approved Evts: 0
+  >> Structural Context: Event-log only without initial seed batch.
+     Orphan OUTs (82) reflect removal of unseeded initial constituents.
+
+Index: NIFTY200
+  Date Range:            2011-11-22 to 2020-07-31
+  Total Events:          464 (IN: 232, OUT: 232)
+  Seed Batch Present:    False (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           111
+  Duplicate INs:         0
+  Final Active Count:    111
+  Blocked Approved Evts: 0
+  >> Structural Context: Event-log only without initial seed batch.
+     Orphan OUTs (111) reflect removal of unseeded initial constituents.
+
+Index: NIFTYMIDCAP100
+  Date Range:            2005-12-08 to 2020-06-26
+  Total Events:          592 (IN: 296, OUT: 296)
+  Seed Batch Present:    False (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           105
+  Duplicate INs:         1
+  Final Active Count:    104
+  Blocked Approved Evts: 0
+  >> Structural Context: Event-log only without initial seed batch.
+     Orphan OUTs (105) reflect removal of unseeded initial constituents.
+     Duplicate INs (1):
+       - 2012-04-27 | Indiabulls Real Estate Ltd. (Row 171)
+
+Index: NIFTYSMALLCAP100
+  Date Range:            2011-05-03 to 2020-06-26
+  Total Events:          594 (IN: 297, OUT: 297)
+  Seed Batch Present:    False (500 INs on 1998-08-01 for NIFTY500)
+  Orphan OUTs:           102
+  Duplicate INs:         0
+  Final Active Count:    102
+  Blocked Approved Evts: 0
+  >> Structural Context: Event-log only without initial seed batch.
+     Orphan OUTs (102) reflect removal of unseeded initial constituents.
+
+Exported continuity summary: deliverables/gate_cd/data_csv/gate_c_continuity_summary.csv (7 rows, 629 bytes)
+
+================================================================================
+INDEX-SPECIFIC STRUCTURAL ANOMALIES & AUDIT FINDINGS
+================================================================================
+1. NIFTY500:
+   - Primary index with full 500-stock seed batch on 1998-08-01.
+   - Approved corrections (data/corrections.parquet) successfully resolve all 15 historical orphan OUTs
+     and 1 duplicate IN via corporate renames and quarantine of 2 suspect rows (2136, 2162).
+   - Replay continuity: Exactly 0 orphan OUTs, 0 duplicate INs, 501 constituents at 2020-09-14.
+
+2. NIFTY50, NIFTY100, NIFTY200, NIFTYNEXT50, NIFTYMIDCAP100, NIFTYSMALLCAP100:
+   - Absence of Seed Batches: Unlike NIFTY500, these 6 sheets contain replacement change events only.
+     For every rebalance date, an exclusion (OUT) is matched with an inclusion (IN), resulting in total INs == total OUTs.
+     Because the initial constituents (at index inception in 1996, 2000, 2003, 2005, 2011) were never entered
+     into IndexInclExcl.xls as IN events, when those pre-existing members are excluded, they emerge as orphan OUTs
+     in any naive forward replay started from an empty set. This is a structural property of the source spreadsheet,
+     confirming the Phase 5.5 Gate 2b ruling: 'event log only, not reconstructable' for non-NIFTY500 indices.
+
+3. Identified Sheet-Level Event Anomalies:
+   - NIFTYNEXT50: 'Steel Authority of India Ltd.' (Row 48 on 2003-03-19) was excluded as 'Steel Authority of India Ltd'
+     without trailing period (Row 68 on 2003-08-04). Under exact string matching, this left the dotted name active,
+     causing a duplicate IN when SAIL was re-included on 2012-09-28 (Row 218). Under symbol mapping or token stripping,
+     both resolve to SAIL / INE114A01011, eliminating the duplicate.
+   - NIFTYMIDCAP100: 'Indiabulls Real Estate Ltd.' recorded consecutive IN events on 2011-10-10 (Row 156) and
+     2012-04-27 (Row 171) without an intervening OUT event. This is an uncorrected source-log anomaly.
+
+4. Blocked Events for Approved Scrips:
+   - Exactly 0 blocked events across all 7 broad market indices.
+
+--- Acceptance Assertions ---
+Assertion 1 PASSED: NIFTY500 full history orphan OUTs == 0.
+Assertion 2 PASSED: NIFTY500 full history duplicate INs == 0.
+Assertion 3 PASSED: Zero blocked events for approved scrips across all 7 indices.
+Assertion 4 PASSED: Multi-index continuity statistics and structural anomalies documented for all 6 other indices.
+
+================================================================================
+GATE C COMPLETE: MULTI-INDEX CONTINUITY AUDIT VERIFIED (PASS)
+================================================================================

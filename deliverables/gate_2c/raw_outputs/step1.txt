@@ -1,0 +1,200 @@
+/mnt/sdcard/Documents/Project MIP/scripts/step1_v3_rebuild.py:55: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+  w_s = [w.lower() for w in re.sub(r"[^a-zA-Z0-9\s]", " ", scrip).split() if w.lower() not in ["the"]]
+================================================================================
+PHASE 5.5 — GATE 2c: STEP 1 (SYMBOL MAP V3 REBUILD & EVIDENCE HARDENING)
+================================================================================
+
+[1.1] ENTIRE PREVIOUS FLAG COMPUTATION FUNCTION (GATE 2b):
+
+        # --- ENTIRE GATE 2b FLAG COMPUTATION FUNCTION (FROM scripts/gate2_build_symbol_map.py lines 433-480) ---
+        # First token check (S6) and name mismatch
+        w_s = [w.lower() for w in re.sub(r"[^a-zA-Z0-9\s]", " ", scrip).split() if w.lower() not in ["the"]]
+        w_e = [w.lower() for w in re.sub(r"[^a-zA-Z0-9\s]", " ", eq_name).split() if w.lower() not in ["the"]]
+        first_tok_s = w_s[0] if w_s else ""
+        first_tok_e = w_e[0] if w_e else ""
+        first_token_match = (first_tok_s == first_tok_e) and bool(first_tok_s)
+        
+        if not first_token_match:
+            flags.append("first_token_mismatch")
+        elif len(w_s) > 1 and len(w_e) > 1 and w_s[1] != w_e[1]:
+            # Secondary token mismatch on abbreviated or compound names (e.g. I T C vs I S T, Bajaj Corp vs Bajaj Auto)
+            flags.append("first_token_mismatch")
+
+        # Name mismatch check when candidate does not exactly match normalized scrip
+        if norm_scrip != normalize_name(eq_name):
+            flags.append("name_mismatch")
+
+        # S1 Listing Date Screen: eq_listing_date > membership start + 30 days
+        if eq_listing_date:
+            try:
+                list_dt = datetime.datetime.strptime(eq_listing_date, "%d-%b-%Y").date()
+                if list_dt > (r["first_seen"] + datetime.timedelta(days=30)):
+                    flags.append("listing_after_first_seen")
+            except:
+                pass
+
+        # S2 Duplicate Name Collision
+        if norm_scrip in eq_duplicates:
+            matching_syms = [row["SYMBOL"] for row in eq_exact_dict[norm_scrip]]
+            flags.append(f"duplicate_name_collision({','.join(matching_syms)})")
+
+        # S3 ISIN verification: ISIN not in EQUITY_L and evidence_source cites no external doc
+        if not isin_in_equity:
+            if "external_circular" not in ev_source:
+                flags.append("isin_unverified")
+
+        # S4 Concurrent Alias Collision
+        if scrip in s4_flagged_scrips:
+            flags.append("concurrent_alias_collision")
+
+        # S5 Predecessor Marker
+        if predecessor_regex.search(scrip):
+            flags.append("predecessor_marker")
+
+        # Agent memory unsourced flag
+        if res_method == "agent_memory":
+            flags.append("unsourced")
+
+
+Root Cause Analysis of Gate 2b Flag Issues:
+  a) False 'first_token_mismatch' on single-word names (ACC, CRISIL, Arvind, Alembic):
+     The secondary token check `elif len(w_s) > 1 and len(w_e) > 1 and w_s[1] != w_e[1]`
+     compared token 2 directly without stripping corporate suffixes. In 'ACC Ltd.' vs 'ACC Limited',
+     w_s[1] was 'ltd' while w_e[1] was 'limited', causing a false mismatch flag.
+  b) 'Corporation Bank' -> AXISBANK flag explanation:
+     In Gate 2b, token 1 of 'Corporation Bank' was 'corporation' and token 1 of 'Axis Bank Limited'
+     was 'axis'. Because 'corporation' != 'axis', it triggered `first_token_mismatch` as intended.
+
+================================================================================
+[1.3] UNIT TESTS ON NEW TOKENIZATION & FLAG DEFINITIONS
+================================================================================
+| scrip                          | eq_name                        | expected_flags                      | actual_flags                        | PASS/FAIL |
+|--------------------------------|--------------------------------|-------------------------------------|-------------------------------------|-----------|
+| ACC Ltd.                       | ACC Limited                    | none                                | none                                | PASS      |
+| CRISIL Ltd.                    | CRISIL Limited                 | none                                | none                                | PASS      |
+| Arvind Ltd.                    | Arvind Limited                 | none                                | none                                | PASS      |
+| Alembic Ltd.                   | Alembic Limited                | none                                | none                                | PASS      |
+| ABB Ltd.                       | ABB India Limited              | name_variant                        | none                                | FAIL      |
+| Corporation Bank               | Axis Bank Limited              | first_token_mismatch                | first_token_mismatch;name_variant   | FAIL      |
+| Jindal Steel & Power Ltd.      | MSP Steel & Power Limited      | first_token_mismatch                | first_token_mismatch                | PASS      |
+| Bajaj Corp Ltd.                | Bajaj Auto Limited             | name_mismatch (first tokens equal)  | name_variant                        | FAIL      |
+| Welspun India Ltd.             | Welspun Corp Limited           | name_mismatch                       | none                                | FAIL      |
+| Larsen & Toubro Infotech Ltd.  | Larsen & Toubro Limited        | name_mismatch                       | name_variant                        | FAIL      |
+
+Detailed Analysis of Raw Discrepancies (Instruction: 'Show failures raw; do not adjust expectations to pass'):
+  1. ABB Ltd. vs ABB India Limited:
+     Stripped tokens: scrip = {'abb'}, eq = {'abb'}. Suffix token 'india' is stripped per prompt rule.
+     Resulting sets are identical ({'abb'} == {'abb'}), producing 'none' rather than 'name_variant'.
+  2. Corporation Bank vs Axis Bank Limited:
+     Stripped tokens: scrip = {'bank'} (corporation is stripped), eq = {'axis', 'bank'}.
+     First tokens ('bank' vs 'axis') trigger 'first_token_mismatch'. Additionally, {'bank'} is a subset
+     of {'axis', 'bank'}, triggering 'name_variant' under the literal subset rule.
+  3. Bajaj Corp Ltd. vs Bajaj Auto Limited:
+     Stripped tokens: scrip = {'bajaj'} (corp stripped), eq = {'bajaj', 'auto'}.
+     {'bajaj'} is a subset of {'bajaj', 'auto'}, triggering 'name_variant' rather than 'name_mismatch'.
+  4. Welspun India Ltd. vs Welspun Corp Limited:
+     Stripped tokens: scrip = {'welspun'} (india stripped), eq = {'welspun'} (corp stripped).
+     Resulting sets are identical ({'welspun'} == {'welspun'}), yielding 'none'.
+  5. Larsen & Toubro Infotech Ltd. vs Larsen & Toubro Limited:
+     Stripped tokens: scrip = {'larsen', 'toubro', 'infotech'}, eq = {'larsen', 'toubro'}.
+     {'larsen', 'toubro'} is a subset of {'larsen', 'toubro', 'infotech'}, triggering 'name_variant'.
+
+================================================================================
+LOADING DATA FOR V3 REBUILD
+================================================================================
+Loaded index events: 9121 rows
+Loaded EQUITY_L: 2583 rows
+Loaded trading calendar: 4649 dates (2007-09-17 to 2026-08-31)
+Loaded price cache: 1831372 bars across 750 symbols
+
+[1.4] REPLAYING ACTUAL MEMBERSHIP INTERVALS & S4 COLLISION ANALYSIS
+Gate 2b S4 collision count (bounding box): 142
+Gate 2c S4 collision weaker-evidence flagged count (actual intervals): 103
+Gate 2c exact-match scrips receiving informational 'alias_target_of': 53
+
+[1.5] BUILDING V3 SYMBOL MAP ROWS (DECOUPLED MAPPING & PRICE STATUS)
+
+================================================================================
+[1.6] ARCHIVING & OUTPUT EXPORTS
+================================================================================
+Archived current symbol map to data/symbol_map_v2b.parquet
+  SHA-256 (v2b): 431c1cb9f2db6d5a34315cf70ff851781f114b0cad7eb1cc6f8ccee833f49cae
+  Exported full v2b CSV: deliverables/gate_2c/data_csv/symbol_map_v2b.csv (1448 rows)
+
+Wrote rebuilt v3 symbol map to data/symbol_map.parquet (1448 rows)
+  SHA-256 (v3): 6bc2eda9a23fc03a9fbfe9ebab6df60d182451075139207d36bc5a6cee13b74a
+  Exported full v3 CSV: deliverables/gate_2c/data_csv/symbol_map_v3.csv (1448 rows)
+
+================================================================================
+CANARY REGRESSION VERIFICATION (22 CANARIES)
+================================================================================
+Exported canaries test result to deliverables/gate_2c/data_csv/canaries_2c.csv
+
+Canary Evaluation Results:
+| scrip_name                          | symbol       | map_status  | price_status  | flags                               | result |
+|-------------------------------------|--------------|-------------|---------------|-------------------------------------|--------|
+| Ranbaxy Laboratories Ltd.           | SUNPHARMA    | proposed    | none          | first_token_mismatch;name_mismatch; | PASS   |
+| Satyam Computer Services Ltd.       | TECHM        | proposed    | none          | first_token_mismatch;name_mismatch; | PASS   |
+| State Bank of Mysore                | SBIN         | proposed    | none          | name_variant;concurrent_alias_colli | PASS   |
+| State Bank of Travancore            | SBIN         | proposed    | partial       | name_variant;concurrent_alias_colli | PASS   |
+| Larsen & Toubro Infotech Ltd.       | LT           | proposed    | covered       | name_variant;concurrent_alias_colli | PASS   |
+| Procter & Gamble India Ltd.         | PGHL         | proposed    | inconclusive  | name_variant                        | PASS   |
+| Welspun India Ltd.                  | WELCORP      | proposed    | partial       | listing_after_first_seen;concurrent | PASS   |
+| Jain Irrigation Systems Ltd. (Old)  | JISLDVREQS   | proposed    | inconclusive  | name_variant;listing_after_first_se | PASS   |
+| Triveni Engineering & Industries Ltd. (Old) | TRIVENI      | proposed    | inconclusive  | name_variant;listing_after_first_se | PASS   |
+| Tube Investments of India Ltd.-Old  | TIINDIA      | proposed    | none          | name_variant;listing_after_first_se | PASS   |
+| Indian Hotels Co. Ltd.              | INDHOTEL     | proposed    | partial       | name_variant;isin_unverified;unsour | PASS   |
+| Tata Motors Ltd.                    | TMCV         | proposed    | none          | listing_after_first_seen;alias_targ | PASS   |
+| ITC Hotels Ltd.                     | ITCHOTELS    | proposed    | inconclusive  | listing_after_first_seen            | PASS   |
+| Hexaware Technologies Ltd.          | HEXT         | proposed    | none          | listing_after_first_seen            | PASS   |
+| Max India Ltd.                      | MAXIND       | proposed    | none          | listing_after_first_seen            | PASS   |
+| Future Enterprises Ltd.             | FEL          | proposed    | none          | duplicate_name_collision(FEL,FELDVR | PASS   |
+| Corporation Bank                    | AXISBANK     | proposed    | covered       | first_token_mismatch;name_variant;c | PASS   |
+| Bajaj Corp Ltd.                     | BAJAJ-AUTO   | proposed    | covered       | name_variant;concurrent_alias_colli | PASS   |
+| I T C Ltd.                          | TTL          | proposed    | none          | name_variant;listing_after_first_se | PASS   |
+| Jindal Steel & Power Ltd.           | JINDALSTEL   | proposed    | partial       | name_variant;concurrent_alias_colli | PASS   |
+| Essar Oil Ltd.                      | OIL          | proposed    | none          | first_token_mismatch;name_variant;l | PASS   |
+| Gas Authority of India Limited      | SAIL         | proposed    | partial       | first_token_mismatch;concurrent_ali | PASS   |
+
+All 22 canaries successfully PASSED (0 regressions to 'auto').
+
+================================================================================
+BEFORE / AFTER SUMMARY COMPARISON
+================================================================================
+
+--- Status Comparison ---
+  Gate 2b single status:
+    proposed       :  760 (52.5%)
+    unresolved     :  516 (35.6%)
+    auto           :  172 (11.9%)
+
+  Gate 2c mapping_status:
+    auto           :  571 (39.4%)
+    unresolved     :  518 (35.8%)
+    proposed       :  359 (24.8%)
+
+  Gate 2c price_status:
+    no_symbol      :  518 (35.8%)
+    none           :  338 (23.3%)
+    covered        :  230 (15.9%)
+    partial        :  219 (15.1%)
+    inconclusive   :  143 (9.9%)
+
+--- Flag Counts in Gate 2c v3 ---
+  no_candidate                       :  518
+  listing_after_first_seen           :  254
+  name_variant                       :  132
+  concurrent_alias_collision         :  103
+  first_token_mismatch               :   77
+  alias_target_of                    :   53
+  name_mismatch                      :   33
+  predecessor_marker                 :   23
+  unsourced                          :   13
+  isin_unverified                    :    3
+  duplicate_name_collision           :    2
+
+Copied script to deliverables/gate_2c/scripts/step1_v3_rebuild.py
+
+================================================================================
+STEP 1 COMPLETE
+================================================================================

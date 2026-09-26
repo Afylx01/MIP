@@ -1,0 +1,17 @@
+index,row,effective_date,scrip_name,action,anomaly_type,source
+NIFTY500,1817,2015-09-28,RattanIndia Power Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,1871,2016-04-01,Indiabulls Ventures Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2008,2016-09-30,Castex Technologies Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2023,2016-09-30,INEOS Styrolution India Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2087,2017-03-31,Siti Networks Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2117,2017-06-23,IIFL Holdings Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2136,2017-09-05,Reliance Capital Ltd.,OUT,orphan_out,raw_xls_embedded_duplicate
+NIFTY500,2162,2017-09-05,Max Financial Services Ltd.,IN,duplicate_in,raw_xls_embedded_block
+NIFTY500,2182,2018-02-05,Strides Shasun Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2237,2018-06-29,Arvind Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2249,2018-09-28,Bajaj Hindusthan Sugar Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2299,2018-12-28,Bharat Financial Inclusion Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2327,2019-03-29,Johnson Controls - Hitachi Air Conditioning India Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2332,2019-03-29,Reliance Naval and Engineering Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2416,2019-12-26,CG Power and Industrial Solutions Ltd.,OUT,orphan_out,raw_xls_corporate_rename
+NIFTY500,2493,2020-07-31,Vedanta Ltd.,OUT,orphan_out,raw_xls_corporate_rename

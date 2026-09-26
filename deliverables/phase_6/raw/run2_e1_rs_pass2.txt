@@ -1,0 +1,77 @@
+================================================================================
+MIP-RETURN-10Y / PODCAST MOMENTUM STRATEGY TEARSHEET: RUN 2: MOMENTUM + E1 RS RANKING
+================================================================================
+Backtest Period: 2016-01-04 to 2026-08-31 (10.6557 years)
+Universe: Point-in-Time NIFTY 500 Constituents (Zero Survivorship Bias)
+Portfolio Constraints: N=20, Rebalance=Monthly, Execution=Next-Day Open, ExitRank=40
+
+[PERFORMANCE METRICS]
+  Initial Capital:       Rs.  10,000,000.00
+  Final Portfolio Value: Rs. 256,537,533.71
+  Net Profit:            Rs. 246,537,533.71
+  CAGR:                             35.59%
+  Max Drawdown:                     45.20%
+  Sharpe Ratio:                      1.45
+  Sortino Ratio:                     1.72
+  Calmar Ratio:                      0.79
+
+[TRADE & ACTIVITY STATISTICS]
+  Total Closed Trades:                578
+  Winning Trades:                     288 (49.8%)
+  Losing Trades:                      290
+  Profit Factor:                     2.36
+  Avg Holding Period:               129.8 calendar days
+
+[ACCOUNTING IDENTITY BLOCK (Standing Rule R-3)]
+  Initial Capital:       Rs.  10,000,000.00
+  + Realized PnL:        Rs. 179,431,748.42
+  - Tax:                 Rs.           0.00
+  + Dividends:           Rs.           0.00
+  + Unrealized PnL:      Rs.  67,105,785.29
+  = Final Value:         Rs. 256,537,533.71
+  Residual:                        0.00000003 (assert == 0.00)
+
+[SAMPLE CLOSED TRADES (First 20 executions)]
+  2016-02-02 | GSFC       |  7461 shs | Entry: 2016-01-05 @   67.01 -> Exit:   54.41 | PnL:  -94036.11 (r3_exit)
+  2016-02-02 | SUNTECK    |  4278 shs | Entry: 2016-01-05 @  116.85 -> Exit:  114.05 | PnL:  -12017.34 (r3_exit)
+  2016-02-02 | KANSAINER  |  3001 shs | Entry: 2016-01-05 @  166.60 -> Exit:  163.16 | PnL:  -10336.73 (r3_exit)
+  2016-02-02 | SUZLON     | 23675 shs | Entry: 2016-01-05 @   21.12 -> Exit:   17.12 | PnL:  -94563.45 (r3_exit)
+  2016-02-02 | KSCL       |  1445 shs | Entry: 2016-01-05 @  345.90 -> Exit:  338.38 | PnL:  -10865.81 (rank_exit)
+  2016-02-02 | RENUKA     | 34722 shs | Entry: 2016-01-05 @   14.40 -> Exit:   12.60 | PnL:  -62499.57 (r3_exit)
+  2016-02-02 | OIL        |  6457 shs | Entry: 2016-01-05 @   77.43 -> Exit:   69.95 | PnL:  -48335.50 (r3_exit)
+  2016-02-02 | BIOCON     |  5681 shs | Entry: 2016-01-05 @   88.01 -> Exit:   78.90 | PnL:  -51745.45 (r3_exit)
+  2016-02-02 | ATUL       |   305 shs | Entry: 2016-01-05 @ 1634.77 -> Exit: 1398.88 | PnL:  -71947.96 (r3_exit)
+  2016-02-02 | SUNDARMFIN |   483 shs | Entry: 2016-01-05 @ 1034.15 -> Exit:  997.95 | PnL:  -17484.16 (rank_exit)
+  2016-02-02 | JMFINANCIL | 13366 shs | Entry: 2016-01-05 @   37.41 -> Exit:   33.91 | PnL:  -46737.95 (rank_exit)
+  2016-02-02 | HINDPETRO  |  6633 shs | Entry: 2016-01-05 @   75.38 -> Exit:   70.97 | PnL:  -29242.99 (r3_exit)
+  2016-02-02 | NHPC       | 39900 shs | Entry: 2016-01-05 @   12.53 -> Exit:   12.21 | PnL:  -12760.92 (rank_exit)
+  2016-02-02 | ASHOKLEY   | 13106 shs | Entry: 2016-01-05 @   38.15 -> Exit:   37.66 | PnL:   -6451.58 (rank_exit)
+  2016-02-02 | GNFC       |  7647 shs | Entry: 2016-01-05 @   65.38 -> Exit:   63.02 | PnL:  -18047.03 (r3_exit)
+  2016-03-02 | GPPL       |  4874 shs | Entry: 2016-01-05 @  102.58 -> Exit:   99.37 | PnL:  -15623.89 (rank_exit)
+  2016-03-02 | BRIGADE    |  6932 shs | Entry: 2016-01-05 @   72.13 -> Exit:   65.48 | PnL:  -46103.29 (r3_exit)
+  2016-03-02 | MUTHOOTFIN |  2800 shs | Entry: 2016-02-02 @  164.60 -> Exit:  146.77 | PnL:  -49927.66 (r3_exit)
+  2016-03-02 | IGL        |  9433 shs | Entry: 2016-02-02 @   48.86 -> Exit:   46.31 | PnL:  -24038.18 (r3_exit)
+  2016-03-02 | PRAJIND    |  5713 shs | Entry: 2016-02-02 @   80.67 -> Exit:   65.84 | PnL:  -84707.18 (r2_exit)
+
+[OPEN POSITIONS AT END (2026-08-31)]
+  HELD: ACUTAAS      |   6943 shs | Entry: 2025-02-03 @ 1204.90
+  HELD: ADANIENSOL   |   6418 shs | Entry: 2026-08-04 @ 1650.00
+  HELD: ADANIPOWER   |  38846 shs | Entry: 2026-06-02 @ 230.00
+  HELD: AEGISLOG     |   7674 shs | Entry: 2026-08-04 @ 1380.00
+  HELD: ATHERENERG   |  13491 shs | Entry: 2026-03-04 @ 699.05
+  HELD: BELRISE      |  47551 shs | Entry: 2026-01-02 @ 184.00
+  HELD: BHARATFORG   |   4785 shs | Entry: 2026-08-04 @ 2213.20
+  HELD: CHENNPETRO   |   8235 shs | Entry: 2026-08-04 @ 1285.92
+  HELD: CPPLUS       |   3593 shs | Entry: 2026-05-05 @ 2394.71
+  HELD: HFCL         |  49637 shs | Entry: 2026-06-02 @ 180.00
+  HELD: IDEA         | 638190 shs | Entry: 2026-06-02 @ 14.00
+  HELD: KIRLOSENG    |   6864 shs | Entry: 2026-03-04 @ 1374.00
+  HELD: LAURUSLABS   |   8972 shs | Entry: 2025-08-04 @ 847.81
+  HELD: NATIONALUM   |  28464 shs | Entry: 2026-08-04 @ 372.05
+  HELD: NETWEB       |   2181 shs | Entry: 2026-05-05 @ 3943.54
+  HELD: PFOCUS       |  35189 shs | Entry: 2026-08-04 @ 300.95
+  HELD: POWERINDIA   |    302 shs | Entry: 2026-04-02 @ 24919.05
+  HELD: RRKABEL      |   3986 shs | Entry: 2026-07-02 @ 2391.10
+  HELD: SYRMA        |  12543 shs | Entry: 2026-02-03 @ 849.13
+  HELD: WELCORP      |   6207 shs | Entry: 2026-08-04 @ 1706.00
+================================================================================

@@ -1,0 +1,6 @@
+snapshot_idx,snapshot_date,period_end,scrip_name,symbol,period_trading_days,present_trading_days,missing_trading_days,missing_pct
+8,2016-08-01,2016-09-01,Siti Cable Network Ltd.,SITICABLE,21,10,11,52.38
+15,2017-03-01,2017-04-03,State Bank of Bikaner & Jaipur Ltd.,SBBJ,22,10,12,54.55
+29,2018-05-02,2018-06-01,Prism Cement Ltd.,PRISMCEM,22,2,20,90.91
+42,2019-06-03,2019-07-01,Merck Ltd.,MERCK,19,5,14,73.68
+56,2020-08-03,2020-09-01,NIIT Technologies Ltd.,NIITTECH,21,13,8,38.1

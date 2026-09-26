@@ -1,0 +1,22 @@
+metric,run1_baseline,run2_e1_rs,run3_full_strategy
+Strategy Description,Baseline Momentum (Return 252),Momentum + E1 RS Ranking,Full Strategy (E1 RS + E4 Regime Filter + Friction)
+Relative Strength (E1),Disabled (Raw 252d Return),ENABLED (RS vs NIFTY 500),ENABLED (RS vs NIFTY 500)
+Market Regime Filter (E4),Disabled (100% Invested),Disabled (100% Invested),ENABLED (200 EMA Cash Filter)
+Friction & Slippage,0.0 bps,0.0 bps,10 bps slippage + Statutory charges
+Backtest Start Date,2016-01-04,2016-01-04,2016-01-04
+Backtest End Date,2026-08-31,2026-08-31,2026-08-31
+Elapsed Years,10.6557,10.6557,10.6557
+Initial Capital (INR),10000000.0,10000000.0,10000000.0
+Final Portfolio Value (INR),256537533.70815438,256537533.70815438,135730629.32084572
+Net Profit (INR),246537533.70815438,246537533.70815438,125730629.32084572
+CAGR (%),35.59,35.59,27.73
+Max Drawdown (%),45.2,45.2,39.74
+Sharpe Ratio,1.45,1.45,1.3
+Sortino Ratio,1.72,1.72,1.49
+Calmar Ratio,0.79,0.79,0.7
+Total Closed Trades,578,578,469
+Win Rate (%),49.83,49.83,47.76
+Profit Factor,2.36,2.36,2.43
+Avg Holding Period (Days),129.8,129.8,137.9
+Rule R-3 Residual,2.9802322387695312e-08,2.9802322387695312e-08,0.0
+Rule R-6 Reproducibility SHA-256,31fce98e1309137ef153414297021881428744fb8c776ed8dd8196d082235536,0170784bc90564e6d64980e274a293e037a1777eb1bb7675c1be6117b522c48d,779baa7ff01ce78e56a0cac8b3e36772136ddc69e615d5116fc3f5521059136a

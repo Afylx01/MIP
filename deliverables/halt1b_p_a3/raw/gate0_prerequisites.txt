@@ -1,0 +1,38 @@
+================================================================================
+PHASE 5.5.A-3 — GATE 0: SNAPSHOT & UNIVERSE PREREQUISITE AUDIT
+Timestamp: 2026-09-24T15:56:42.476828+00:00
+================================================================================
+
+--- 1. Loading Index Events & Trading Calendar ---
+Loaded NIFTY500 index events: 2,493 events
+Loaded trading calendar: 4,649 dates total (2007-09-17 to 2026-08-31)
+Phase A-3 Window Trading Dates: 1,154 dates (2016-01-04 to 2020-09-14)
+
+--- 2. Deriving the 57 Monthly Snapshots ---
+Monthly Snapshot Count: 57 snapshots
+Snapshot Range: 2016-01-04 to 2020-09-01
+  -> Snapshot dates EXACT MATCH with Gate 2c baseline (57/57).
+
+--- 3. Replaying Index Events & Auditing Constituent Mapping ---
+Loaded symbol map: 1,448 scrips total
+  mapping_status value counts:
+    - auto: 571
+    - unresolved: 518
+    - proposed: 359
+
+Constituent Audit Across All 57 Snapshots:
+  Total unique constituent scrips in universe: 734
+  Unique mapped constituent scrips:            435 (59.3%)
+  Unique unmapped constituent scrips:          299 (40.7%)
+  Unique valid target symbols required:        435
+  Snapshot constituent count range:            501 to 515
+  Mapped constituent fraction range:           54.69% to 65.44% (median: 60.51%)
+
+--- 4. Exporting Required Symbols & Dates Artifacts ---
+Exported required symbols manifest: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a3/data_csv/required_symbols_dates.csv (435 symbols, 34,044 bytes)
+Exported snapshot prerequisite table: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a3/data_csv/snapshot_prerequisite_audit.csv (57 rows, 1,911 bytes)
+Exported window trading dates: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a3/data_csv/window_trading_dates.csv (1154 dates, 12,707 bytes)
+
+================================================================================
+GATE 0 EXIT: PREREQUISITES VERIFIED — 57 SNAPSHOTS, 435 SYMBOLS, 1,154 DATES CONFIRMED
+================================================================================

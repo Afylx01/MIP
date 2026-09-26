@@ -1,0 +1,14 @@
+metric,run_a_bhavcopy,run_b_yfinance,delta,interpretation
+Data Source,Official NSE Bhavcopy,Yahoo Finance (yfinance),N/A,Ground truth vs Public web source
+Initial Capital (INR),"10,000,000.00","10,000,000.00",0.00,Identical initial conditions
+Final Portfolio Value (INR),"81,398,942.93","130,557,680.53","49,158,737.60",Wealth accumulation delta
+Net Profit (INR),"71,398,942.93","120,557,680.53","49,158,737.60",Absolute profit delta
+CAGR (%),21.75%,27.27%,+5.52 pp,Survivorship / dividend distortion in CAGR
+Max Drawdown (%),48.72%,38.79%,-9.93 pp,Downside risk discrepancy
+Sharpe Ratio,1.02,1.28,+0.26,Risk-adjusted return delta
+Sortino Ratio,1.06,1.46,+0.40,Downside volatility ratio delta
+Total Closed Trades,497,486,-11,Trade count divergence due to missing scrips
+Win Rate (%),45.47%,47.33%,+1.86 pp,Trade outcome accuracy
+Profit Factor,2.14,2.37,+0.23,Gross profit / loss ratio
+Avg Holding Period (Days),129.9,133.2,+3.3,Holding duration alignment
+Rule R-3 Residual,0.0000000000,0.0000000298,0.00,Strict accounting identity satisfied

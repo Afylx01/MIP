@@ -1,0 +1,44 @@
+================================================================================
+PHASE 5.5.A-3 — GATE 2: CORPORATE ACTION ADJUSTMENT EXECUTION
+Timestamp: 2026-09-24T16:05:11.944679+00:00
+================================================================================
+
+--- 1. CA Calendar Integrity Verification ---
+Calendar path: /sdcard/Documents/Project MIP/data/verification/halt1b_p_a2/ca_calendar_raw.parquet
+Expected SHA-256: 7661328ecfbf26828ce14950401474847de0f7919886b3085500eddc3b93b8d0
+Actual SHA-256:   7661328ecfbf26828ce14950401474847de0f7919886b3085500eddc3b93b8d0
+  -> Calendar integrity VERIFIED (SHA-256 exact match).
+Loaded CA calendar: 214 corporate actions across 192 symbols.
+
+--- 2. Loading Raw Bhavcopy Bars ---
+Loaded raw bars from /sdcard/Documents/Project MIP/data/verification/halt1b_p_a3/raw_bhavcopy_bars.parquet:
+  Total bars:        459,194
+  Distinct symbols:  432
+  Distinct dates:    1,154
+  Date range:        2016-01-04 to 2020-09-14
+  Memory usage:      67.91 MB
+
+--- 3. Executing adjust_ohlc() Cumulative Backward Adjustment ---
+Adjustment completed in 6.67s.
+  Adjusted rows:     459,194
+
+--- 4. Assertions & Invariance Verification ---
+Assertion 1 PASSED: Exact row count parity (459,194 == 459,194).
+Assertion 2 PASSED: Column structure strictly preserved.
+Assertion 3 PASSED: NaN preservation verified (0 NaNs).
+
+--- 5. Spot-Checking Continuity on 5 Reference Events ---
+  INFY       | 2018-09-04 (BONUS) | Raw Ret: -48.60% (Exp: -50%) | Adj Ret: +2.79% | PASS
+  TCS        | 2018-05-31 (BONUS) | Raw Ret: -50.46% (Exp: -50%) | Adj Ret: -0.91% | PASS
+  RELIANCE   | 2017-09-07 (BONUS) | Raw Ret: -50.28% (Exp: -50%) | Adj Ret: -0.56% | PASS
+  WIPRO      | 2019-03-06 (BONUS) | Raw Ret: -23.69% (Exp: -25%) | Adj Ret: +1.74% | PASS
+  GRASIM     | 2016-10-06 (SPLIT) | Raw Ret: -79.54% (Exp: -80%) | Adj Ret: +2.28% | PASS
+Assertion 4 PASSED: All 5 reference events verified continuous on reconstructed dataset.
+
+--- 6. Persisting Adjusted Price Dataset ---
+Persisted Parquet: /sdcard/Documents/Project MIP/data/verification/halt1b_p_a3/adjusted_bhavcopy_bars.parquet (8,048,124 bytes, 7.68 MB)
+Exported spot-check summary: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a3/data_csv/gate2_spot_check_summary.csv
+
+================================================================================
+GATE 2 EXIT: SUCCESS — CA ADJUSTMENT COMPLETED AND VERIFIED
+================================================================================

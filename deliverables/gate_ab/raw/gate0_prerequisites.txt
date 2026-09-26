@@ -1,0 +1,35 @@
+================================================================================
+PHASE 5.5 GATES A & B — GATE 0: PREREQUISITES & DATASET AUDIT
+Timestamp: 2026-09-25T05:45:56.707271+00:00
+================================================================================
+
+--- 1. Transitioning data/corrections.parquet to 'approved' ---
+Total corrections rows: 16
+Prior status distribution: {'proposed': 16}
+Saved pre-approval backup to: data/corrections_backup_proposed.parquet
+Updated data/corrections.parquet with status = 'approved'.
+Assertion 1 PASSED: 100% of corrections (16/16) transitioned to 'approved'.
+
+--- 2. Verifying Append-Only Event Architecture ---
+data/index_events.parquet rows: 9,121
+data/index_events.parquet SHA256: 7a15cfae88c53c6a4d79c5fe28dc3642a999728855d29329a892e11261d2d54a
+Assertion 2 PASSED: data/index_events.parquet unaltered (exact 9,121 rows).
+
+--- 3. Verifying Symbol Map Universe ---
+data/symbol_map.parquet total rows: 1,448
+Status distribution: {'auto': 571, 'unresolved': 481, 'proposed': 204, 'approved': 192}
+Auto-mapped scrips: 571 (expected 571)
+Approved scrips:    192 (expected 192)
+Total active scrips: 763 (expected 763)
+Assertion 3 PASSED: Exact match on 571 auto + 192 approved scrips.
+
+--- 4. Verifying Point-in-Time Adjusted Bhavcopy Price Dataset ---
+Price dataset: data/verification/halt1b_m1/adjusted_bhavcopy_bars_v2.parquet
+Total bars:    753,046 (expected 753,046)
+Unique symbols: 711 (expected 711)
+Date range:    2016-01-04 to 2020-09-14
+Assertion 4 PASSED: Exact match on 753,046 bars and 711 symbols.
+
+================================================================================
+GATE 0 AUDIT COMPLETE: ALL PREREQUISITES VERIFIED & HALT-2 RESOLVED
+================================================================================

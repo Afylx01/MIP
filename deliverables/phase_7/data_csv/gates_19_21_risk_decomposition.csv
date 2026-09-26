@@ -1,0 +1,13 @@
+gate_id,metric,value,threshold,status
+Gate 19,Annualized Jensen's Alpha (%),13.03,> +3.00%,PASS
+Gate 19,Portfolio Beta,0.796,Market Relative,INFO
+Gate 19,Annualized Tracking Error (%),20.43,Informational,INFO
+Gate 19,Information Ratio (IR),0.578,> 0.500,PASS
+Gate 19,Treynor Ratio,21.3,Informational,INFO
+Gate 20,Annualized Sharpe Ratio,0.82,>= 0.80,PASS
+Gate 20,Annualized Sortino Ratio,0.89,> 0.80,PASS
+Gate 20,Calmar Ratio,0.5,>= 0.50,PASS
+Gate 20,Maximum Drawdown (%),45.92,< 50.0%,PASS
+Gate 21,Max Recovery Duration from Trough (Years),1.6,< 3.00y,PASS
+Gate 21,Average Episode Duration (Months),1.5,< 12.0m,PASS
+Gate 21,Max Peak-to-Peak Underwater Duration (Years),3.39,Informational,INFO

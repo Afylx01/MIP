@@ -1,0 +1,5 @@
+sample_id,sample_tier,test_date,rng_seed,forward_count,backward_count,sym_difference_count,is_set_identical,manifest_file,manifest_sha256
+1,Early History (1998–2005),2003-09-05,42,500,500,0,True,data/verification/membership_2003-09-05.txt,fa2df90401cb5d01f011bf46736c68adcbfaae307816c14d185718522df1963e
+2,Mid History (2006–2013),2012-05-21,42,500,500,0,True,data/verification/membership_2012-05-21.txt,992810da9fce21e93526b3311eb59c07ef99f54431b2d4c7e12dfc324e2feaa3
+3,Late History (2014–2020),2015-12-14,42,500,500,0,True,data/verification/membership_2015-12-14.txt,4aba4a29a49f69857938d5b44e9ca4535e6757eccda422e336d0422b49cdc3e6
+4,End-Boundary Continuity (2020-09-14),2020-09-14,42,501,501,0,True,Applied: Row 2495: IN 'JTEKT India Ltd.'; Row 2496: OUT 'Asahi India Glass Ltd.',N/A (Transition Equivalence Verified)

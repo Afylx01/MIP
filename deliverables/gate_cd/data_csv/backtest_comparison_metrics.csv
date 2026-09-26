@@ -1,0 +1,16 @@
+metric,run_a_survivor_baseline,run_b_point_in_time,delta_b_minus_a
+Universe Description,Current Constituents (Fixed as of 2020-09),Point-in-Time Dynamic Membership,Dynamic PIT Reconstructed Universe
+Coverage Line,Survivor-biased current constituents (458 symbols as of 2020-09-01),Point-in-time dynamic membership (median joint coverage 87.03%),Disclosed per Rule R-5
+Clamped Window Start,2016-01-04,2016-01-04,Identical
+Clamped Window End,2020-09-14,2020-09-14,Identical
+Years Elapsed,4.6954,4.6954,0.0
+Initial Capital (INR),10000000.0,10000000.0,0.0
+Final Value (INR),20585753.1,17694873.9,-2890879.2
+Net Profit (INR),10585753.1,7694873.9,-2890879.2
+CAGR (%),16.62,12.92,-3.7
+Max Drawdown (%),44.36,48.03,3.67
+Sharpe Ratio,0.8,0.68,-0.13
+Total Trades Executed,300,309,9
+Closed Trades,280,289,9
+Open Positions at End,20,20,0
+Accounting Residual,-0.0,-0.0,0.0

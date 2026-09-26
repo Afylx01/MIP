@@ -1,0 +1,31 @@
+seq,url,pattern,requested_at_iso,status_code,bytes_received,latency_ms,retry_count,content_type,error
+1,https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/FEB/cm08FEB2016bhav.csv.zip,csv_zip,2026-09-24T14:02:08.898323+00:00,200,58245,8776,0,application/zip,
+2,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_08022016.csv,sec_bhavdata,2026-09-24T14:02:18.875250+00:00,404,3533,7375,0,text/html;charset=UTF-8,HTTP 404
+3,https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/APR/cm22APR2016bhav.csv.zip,csv_zip,2026-09-24T14:02:27.483291+00:00,200,58798,10631,0,application/zip,
+4,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_22042016.csv,sec_bhavdata,2026-09-24T14:02:39.314740+00:00,404,3533,11164,0,text/html;charset=UTF-8,HTTP 404
+5,https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/JUN/cm15JUN2016bhav.csv.zip,csv_zip,2026-09-24T14:02:51.701600+00:00,200,59793,5736,0,application/zip,
+6,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_15062016.csv,sec_bhavdata,2026-09-24T14:02:58.638200+00:00,404,3533,5646,0,text/html;charset=UTF-8,HTTP 404
+7,https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/SEP/cm09SEP2016bhav.csv.zip,csv_zip,2026-09-24T14:03:05.493560+00:00,200,62496,5610,0,application/zip,
+8,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_09092016.csv,sec_bhavdata,2026-09-24T14:03:12.304443+00:00,404,3533,5603,0,text/html;charset=UTF-8,HTTP 404
+9,https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/NOV/cm23NOV2016bhav.csv.zip,csv_zip,2026-09-24T14:03:19.153392+00:00,200,61156,5816,0,application/zip,
+10,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_23112016.csv,sec_bhavdata,2026-09-24T14:03:26.170472+00:00,404,3533,5862,0,text/html;charset=UTF-8,HTTP 404
+11,https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/FEB/cm06FEB2018bhav.csv.zip,csv_zip,2026-09-24T14:03:33.287772+00:00,200,69515,5820,0,application/zip,
+12,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06022018.csv,sec_bhavdata,2026-09-24T14:03:40.308761+00:00,404,3533,5732,0,text/html;charset=UTF-8,HTTP 404
+13,https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/APR/cm20APR2018bhav.csv.zip,csv_zip,2026-09-24T14:03:47.262940+00:00,200,68571,6162,0,application/zip,
+14,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_20042018.csv,sec_bhavdata,2026-09-24T14:03:54.625565+00:00,404,3533,5928,0,text/html;charset=UTF-8,HTTP 404
+15,https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/JUN/cm29JUN2018bhav.csv.zip,csv_zip,2026-09-24T14:04:01.775753+00:00,200,68329,5780,0,application/zip,
+16,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_29062018.csv,sec_bhavdata,2026-09-24T14:04:08.756788+00:00,404,3533,5717,0,text/html;charset=UTF-8,HTTP 404
+17,https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/SEP/cm10SEP2018bhav.csv.zip,csv_zip,2026-09-24T14:04:15.705206+00:00,200,69239,10240,0,application/zip,
+18,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_10092018.csv,sec_bhavdata,2026-09-24T14:04:27.145908+00:00,404,3533,8787,0,text/html;charset=UTF-8,HTTP 404
+19,https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/NOV/cm26NOV2018bhav.csv.zip,csv_zip,2026-09-24T14:04:37.160250+00:00,200,67603,7235,0,application/zip,
+20,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_26112018.csv,sec_bhavdata,2026-09-24T14:04:45.596600+00:00,404,3533,5773,0,text/html;charset=UTF-8,HTTP 404
+21,https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/FEB/cm05FEB2020bhav.csv.zip,csv_zip,2026-09-24T14:04:52.583715+00:00,200,69304,5854,0,application/zip,
+22,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_05022020.csv,sec_bhavdata,2026-09-24T14:04:59.638791+00:00,200,213585,5925,0,text/csv,
+23,https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/APR/cm23APR2020bhav.csv.zip,csv_zip,2026-09-24T14:05:06.764326+00:00,200,68064,5781,0,application/zip,
+24,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_23042020.csv,sec_bhavdata,2026-09-24T14:05:13.746435+00:00,200,210153,5840,0,text/csv,
+25,https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm06JUL2020bhav.csv.zip,csv_zip,2026-09-24T14:05:20.787429+00:00,200,72001,5716,0,application/zip,
+26,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06072020.csv,sec_bhavdata,2026-09-24T14:05:27.704056+00:00,200,219819,6047,0,text/csv,
+27,https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/SEP/cm14SEP2020bhav.csv.zip,csv_zip,2026-09-24T14:05:34.952024+00:00,200,71668,5842,0,application/zip,
+28,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_14092020.csv,sec_bhavdata,2026-09-24T14:05:41.994693+00:00,200,220495,6062,0,text/csv,
+29,https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/NOV/cm25NOV2020bhav.csv.zip,csv_zip,2026-09-24T14:05:49.257116+00:00,200,73256,5653,0,application/zip,
+30,https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_25112020.csv,sec_bhavdata,2026-09-24T14:05:56.111329+00:00,200,223830,5671,0,text/csv,

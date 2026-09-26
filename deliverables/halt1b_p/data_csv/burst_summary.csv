@@ -1,0 +1,7 @@
+pattern,year,requests_sent,requests_200,requests_rate_limited,requests_failed,median_latency_ms,median_bytes,content_valid_count
+csv_zip,2016,5,5,0,0,5816.0,59793.0,5
+csv_zip,2018,5,5,0,0,6162.0,68571.0,5
+csv_zip,2020,5,5,0,0,5781.0,71668.0,5
+sec_bhavdata,2016,5,0,0,5,0.0,0.0,0
+sec_bhavdata,2018,5,0,0,5,0.0,0.0,0
+sec_bhavdata,2020,5,5,0,0,5925.0,219819.0,5

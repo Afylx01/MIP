@@ -1,0 +1,51 @@
+================================================================================
+PHASE 5.5.A-3 — GATE 3: JOINT COVERAGE RE-MEASUREMENT
+Timestamp: 2026-09-24T16:06:21.012789+00:00
+================================================================================
+
+--- 1. Loading Datasets ---
+Loaded index events: 2,493 events
+Loaded symbol map: 1,448 scrips
+Loaded adjusted bars: 459,194 bars across 432 symbols and 1154 dates.
+Constructed price lookup table: 459,194 valid (symbol, date) entries.
+Loaded Gate 2c baseline table: 57 snapshots.
+
+--- 2. Re-Measuring Coverage across 57 Monthly Snapshots ---
+Exported monthly coverage comparison table: /sdcard/Documents/Project MIP/deliverables/halt1b_p_a3/data_csv/monthly_coverage_comparison.csv (57 rows, 4,041 bytes)
+
+================================================================================
+PHASE 5.5.A-3 SUMMARY STATISTICS & THRESHOLD EVALUATION
+================================================================================
+Snapshots Analyzed:            57
+Gate 2c Baseline Median Both:  24.56%
+Phase A-3 Reconstructed:
+  Mapped Fraction Median:      60.51% (min: 54.69%, max: 65.44%)
+  Price-Covered Median:        59.92% (min: 54.09%, max: 64.85%)
+  Joint Coverage Median:       59.92%
+  Joint Coverage Min:          54.09% (Snapshot 2016-01-04)
+  Joint Coverage Max:          64.66% (Snapshot 2020-08-03)
+  Median Coverage Delta:       +35.36 percentage points
+
+Acceptance Evaluation against §1 Thresholds:
+  PASS:       Median Joint Coverage >= 85.0%
+  INDICATIVE: Median Joint Coverage 60.0% - 84.9%
+  REJECT:     Median Joint Coverage < 60.0%
+
+RULING: REJECT
+Note:   Median coverage below 60.0% threshold.
+
+Milestone Snapshots Comparison:
+  Snapshot 2016-01-04:
+    Constituents:       501
+    Gate 2c Baseline:   74/501 (14.77%)
+    Phase A-3 Joint:    271/501 (54.09%)
+    Improvement:        +39.32 percentage points
+  Snapshot 2020-09-01:
+    Constituents:       515
+    Gate 2c Baseline:   154/515 (29.9%)
+    Phase A-3 Joint:    333/515 (64.66%)
+    Improvement:        +34.76 percentage points
+
+================================================================================
+GATE 3 EXIT: COVERAGE RE-MEASUREMENT COMPLETE — RULING: REJECT (MEDIAN: 59.92%)
+================================================================================

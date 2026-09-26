@@ -1,0 +1,103 @@
+================================================================================
+PHASE 5.5.A-1 — GATE 1: NETWORK BURST TEST
+Timestamp: 2026-09-24T14:02:08.897341+00:00
+Target User-Agent: MIP-research/0.1
+================================================================================
+Prepared schedule of 30 requests across 2016, 2018, 2020.
+Beginning execution with minimum 1.0s floor between requests...
+
+[01/30] Year=2016 | Pattern=csv_zip       | Date=2016-02-08
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/FEB/cm08FEB2016bhav.csv.zip
+        Result: HTTP 200 | Latency: 8776 ms | Bytes: 58245 | Error: None
+[02/30] Year=2016 | Pattern=sec_bhavdata  | Date=2016-02-08
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_08022016.csv
+        Result: HTTP 404 | Latency: 7375 ms | Bytes: 3533 | Error: HTTP 404
+[03/30] Year=2016 | Pattern=csv_zip       | Date=2016-04-22
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/APR/cm22APR2016bhav.csv.zip
+        Result: HTTP 200 | Latency: 10631 ms | Bytes: 58798 | Error: None
+[04/30] Year=2016 | Pattern=sec_bhavdata  | Date=2016-04-22
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_22042016.csv
+        Result: HTTP 404 | Latency: 11164 ms | Bytes: 3533 | Error: HTTP 404
+[05/30] Year=2016 | Pattern=csv_zip       | Date=2016-06-15
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/JUN/cm15JUN2016bhav.csv.zip
+        Result: HTTP 200 | Latency: 5736 ms | Bytes: 59793 | Error: None
+[06/30] Year=2016 | Pattern=sec_bhavdata  | Date=2016-06-15
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_15062016.csv
+        Result: HTTP 404 | Latency: 5646 ms | Bytes: 3533 | Error: HTTP 404
+[07/30] Year=2016 | Pattern=csv_zip       | Date=2016-09-09
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/SEP/cm09SEP2016bhav.csv.zip
+        Result: HTTP 200 | Latency: 5610 ms | Bytes: 62496 | Error: None
+[08/30] Year=2016 | Pattern=sec_bhavdata  | Date=2016-09-09
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_09092016.csv
+        Result: HTTP 404 | Latency: 5603 ms | Bytes: 3533 | Error: HTTP 404
+[09/30] Year=2016 | Pattern=csv_zip       | Date=2016-11-23
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2016/NOV/cm23NOV2016bhav.csv.zip
+        Result: HTTP 200 | Latency: 5816 ms | Bytes: 61156 | Error: None
+[10/30] Year=2016 | Pattern=sec_bhavdata  | Date=2016-11-23
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_23112016.csv
+        Result: HTTP 404 | Latency: 5862 ms | Bytes: 3533 | Error: HTTP 404
+[11/30] Year=2018 | Pattern=csv_zip       | Date=2018-02-06
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/FEB/cm06FEB2018bhav.csv.zip
+        Result: HTTP 200 | Latency: 5820 ms | Bytes: 69515 | Error: None
+[12/30] Year=2018 | Pattern=sec_bhavdata  | Date=2018-02-06
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06022018.csv
+        Result: HTTP 404 | Latency: 5732 ms | Bytes: 3533 | Error: HTTP 404
+[13/30] Year=2018 | Pattern=csv_zip       | Date=2018-04-20
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/APR/cm20APR2018bhav.csv.zip
+        Result: HTTP 200 | Latency: 6162 ms | Bytes: 68571 | Error: None
+[14/30] Year=2018 | Pattern=sec_bhavdata  | Date=2018-04-20
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_20042018.csv
+        Result: HTTP 404 | Latency: 5928 ms | Bytes: 3533 | Error: HTTP 404
+[15/30] Year=2018 | Pattern=csv_zip       | Date=2018-06-29
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/JUN/cm29JUN2018bhav.csv.zip
+        Result: HTTP 200 | Latency: 5780 ms | Bytes: 68329 | Error: None
+[16/30] Year=2018 | Pattern=sec_bhavdata  | Date=2018-06-29
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_29062018.csv
+        Result: HTTP 404 | Latency: 5717 ms | Bytes: 3533 | Error: HTTP 404
+[17/30] Year=2018 | Pattern=csv_zip       | Date=2018-09-10
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/SEP/cm10SEP2018bhav.csv.zip
+        Result: HTTP 200 | Latency: 10240 ms | Bytes: 69239 | Error: None
+[18/30] Year=2018 | Pattern=sec_bhavdata  | Date=2018-09-10
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_10092018.csv
+        Result: HTTP 404 | Latency: 8787 ms | Bytes: 3533 | Error: HTTP 404
+[19/30] Year=2018 | Pattern=csv_zip       | Date=2018-11-26
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2018/NOV/cm26NOV2018bhav.csv.zip
+        Result: HTTP 200 | Latency: 7235 ms | Bytes: 67603 | Error: None
+[20/30] Year=2018 | Pattern=sec_bhavdata  | Date=2018-11-26
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_26112018.csv
+        Result: HTTP 404 | Latency: 5773 ms | Bytes: 3533 | Error: HTTP 404
+[21/30] Year=2020 | Pattern=csv_zip       | Date=2020-02-05
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/FEB/cm05FEB2020bhav.csv.zip
+        Result: HTTP 200 | Latency: 5854 ms | Bytes: 69304 | Error: None
+[22/30] Year=2020 | Pattern=sec_bhavdata  | Date=2020-02-05
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_05022020.csv
+        Result: HTTP 200 | Latency: 5925 ms | Bytes: 213585 | Error: None
+[23/30] Year=2020 | Pattern=csv_zip       | Date=2020-04-23
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/APR/cm23APR2020bhav.csv.zip
+        Result: HTTP 200 | Latency: 5781 ms | Bytes: 68064 | Error: None
+[24/30] Year=2020 | Pattern=sec_bhavdata  | Date=2020-04-23
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_23042020.csv
+        Result: HTTP 200 | Latency: 5840 ms | Bytes: 210153 | Error: None
+[25/30] Year=2020 | Pattern=csv_zip       | Date=2020-07-06
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm06JUL2020bhav.csv.zip
+        Result: HTTP 200 | Latency: 5716 ms | Bytes: 72001 | Error: None
+[26/30] Year=2020 | Pattern=sec_bhavdata  | Date=2020-07-06
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06072020.csv
+        Result: HTTP 200 | Latency: 6047 ms | Bytes: 219819 | Error: None
+[27/30] Year=2020 | Pattern=csv_zip       | Date=2020-09-14
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/SEP/cm14SEP2020bhav.csv.zip
+        Result: HTTP 200 | Latency: 5842 ms | Bytes: 71668 | Error: None
+[28/30] Year=2020 | Pattern=sec_bhavdata  | Date=2020-09-14
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_14092020.csv
+        Result: HTTP 200 | Latency: 6062 ms | Bytes: 220495 | Error: None
+[29/30] Year=2020 | Pattern=csv_zip       | Date=2020-11-25
+        URL: https://nsearchives.nseindia.com/content/historical/EQUITIES/2020/NOV/cm25NOV2020bhav.csv.zip
+        Result: HTTP 200 | Latency: 5653 ms | Bytes: 73256 | Error: None
+[30/30] Year=2020 | Pattern=sec_bhavdata  | Date=2020-11-25
+        URL: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_25112020.csv
+        Result: HTTP 200 | Latency: 5671 ms | Bytes: 223830 | Error: None
+
+Wrote per-request log to: /sdcard/Documents/Project MIP/deliverables/halt1b_p/samples/burst_log.csv
+Total requests executed: 30 / 30
+Total bytes downloaded: 2,121,250 bytes
+================================================================================

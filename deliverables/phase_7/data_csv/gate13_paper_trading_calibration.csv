@@ -1,0 +1,2 @@
+calibration_period,trading_days,ideal_theoretical_cagr_pct,executed_model_cagr_pct,benchmark_cagr_pct,tracking_error_pp,total_turnover_inr,total_slippage_inr,total_fees_inr,total_frictional_drag_inr,frictional_drag_bps,trades_executed,tracking_error_pass,drag_ratio_pass,gate13_status,rule_r3_residual
+2025-09-01 to 2026-08-31,251,21.78,20.46,-2.51,1.32,44143447.81,44143.45,68733.71,112877.16,25.6,92,PASS,PASS,PASS,1.862645149230957e-09

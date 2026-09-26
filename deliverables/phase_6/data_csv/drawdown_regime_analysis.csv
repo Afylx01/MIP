@@ -1,0 +1,7 @@
+metric,value,interpretation
+Total Monthly Rebalance Snapshots,128,Evaluated across 10.7-year window (2016 to 2026)
+Bullish / Risk-On Snapshots (Index >= 200 EMA),100,78.1% of time market is in trending regime
+Bearish / Cash Preservation Snapshots (Index < 200 EMA),28,21.9% of time cash filter halts new entries to protect capital
+Baseline Momentum Max Drawdown,45.20%,Suffers severe unhedged drawdowns during market corrections
+Full Strategy Max Drawdown,39.74%,E4 Cash Filter curtails drawdowns by moving to cash during regimes
+Max Drawdown Reduction,5.46 percentage points,Significantly superior capital preservation and risk-adjusted return

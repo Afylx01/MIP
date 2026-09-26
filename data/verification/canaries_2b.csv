@@ -1,0 +1,23 @@
+scrip_name,mapped_symbol,mapped_isin,status,resolution_method,coverage_pct,flags,expected_reason,test_result
+Ranbaxy Laboratories Ltd.,SUNPHARMA,INE044A01036,proposed,agent_memory,0.0,first_token_mismatch;name_mismatch;concurrent_alias_collision;unsourced,"successor ISIN, no price bars before merger",PASS
+Satyam Computer Services Ltd.,TECHM,INE669C01036,proposed,agent_memory,0.0,first_token_mismatch;name_mismatch;listing_after_first_seen;concurrent_alias_collision;unsourced,successor ISIN,PASS
+State Bank of Mysore,SBIN,INE062A01020,proposed,token_match,23.49,name_mismatch;concurrent_alias_collision,concurrent alias collision,PASS
+State Bank of Travancore,SBIN,INE062A01020,proposed,token_match,37.1,name_mismatch;concurrent_alias_collision,concurrent alias collision,PASS
+Larsen & Toubro Infotech Ltd.,LT,INE018A01030,proposed,token_match,100.0,name_mismatch;concurrent_alias_collision,first-token/name mismatch,PASS
+Procter & Gamble India Ltd.,PGHL,INE199A01012,proposed,token_match,0.0,name_mismatch,name mismatch (eq_name is Procter & Gamble Health),PASS
+Welspun India Ltd.,WELCORP,INE191B01025,proposed,token_match,72.87,first_token_mismatch;name_mismatch;listing_after_first_seen;concurrent_alias_collision,name mismatch,PASS
+Jain Irrigation Systems Ltd. (Old),JISLDVREQS,IN9175A01010,proposed,token_match,0.0,name_mismatch;listing_after_first_seen;predecessor_marker,"predecessor marker, DVR series",PASS
+Triveni Engineering & Industries Ltd. (Old),TRIVENI,INE256C01024,proposed,token_match,0.0,name_mismatch;listing_after_first_seen;predecessor_marker,predecessor marker,PASS
+Tube Investments of India Ltd.-Old,TIINDIA,INE974X01010,proposed,token_match,0.0,name_mismatch;listing_after_first_seen;predecessor_marker,predecessor marker,PASS
+Indian Hotels Co. Ltd.,INDHOTEL,INE053A01032,proposed,agent_memory,44.0,name_mismatch;isin_unverified;unsourced,isin_unverified (EQUITY_L has INE053A01029),PASS
+Tata Motors Ltd.,TMCV,INE1TAE01010,proposed,equity_l_exact,0.0,listing_after_first_seen;concurrent_alias_collision,"S1 listing date 2025-11-12, no earlier bars",PASS
+ITC Hotels Ltd.,ITCHOTELS,INE379A01028,proposed,equity_l_exact,0.0,listing_after_first_seen,S1 listing date 2025-01-29,PASS
+Hexaware Technologies Ltd.,HEXT,INE093A01041,proposed,equity_l_exact,0.0,listing_after_first_seen,S1 listing date 2025-02-19,PASS
+Max India Ltd.,MAXIND,INE0CG601016,proposed,equity_l_exact,0.0,listing_after_first_seen,S1 listing 2020,PASS
+Future Enterprises Ltd.,FEL,INE623B01027,proposed,token_match,0.0,"duplicate_name_collision(FEL,FELDVR)",S2 duplicate-name collision,PASS
+Corporation Bank,AXISBANK,INE238A01034,proposed,token_match,100.0,first_token_mismatch;name_mismatch;concurrent_alias_collision,first-token mismatch,PASS
+Bajaj Corp Ltd.,BAJAJ-AUTO,INE917I01010,proposed,token_match,100.0,first_token_mismatch;name_mismatch;concurrent_alias_collision,first-token mismatch,PASS
+I T C Ltd.,ISTLTD,INE684B01029,proposed,token_match,0.0,first_token_mismatch;name_mismatch;listing_after_first_seen,first-token mismatch,PASS
+Jindal Steel & Power Ltd.,MSPL,INE752G01015,proposed,token_match,0.0,first_token_mismatch;name_mismatch;listing_after_first_seen,first-token mismatch,PASS
+Essar Oil Ltd.,OIL,INE274J01014,proposed,token_match,3.21,first_token_mismatch;name_mismatch;listing_after_first_seen;concurrent_alias_collision,first-token mismatch,PASS
+Gas Authority of India Limited,SAIL,INE114A01011,proposed,token_match,43.45,first_token_mismatch;name_mismatch;concurrent_alias_collision,first-token mismatch,PASS

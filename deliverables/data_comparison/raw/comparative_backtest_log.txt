@@ -1,0 +1,172 @@
+================================================================================
+TASK 5: COMPARATIVE MOMENTUM BACKTEST (BHAVCOPY VS YFINANCE)
+Timestamp: 2026-09-25T19:16:32.066484+00:00
+================================================================================
+Trading Days:         2,626 days (2016-01-04 to 2026-08-31)
+Rebalance Snapshots:  128 monthly snapshots
+
+--- Executing RUN A: Official NSE Consolidated Bhavcopy ---
+================================================================================
+MIP-RETURN-10Y / PODCAST MOMENTUM STRATEGY TEARSHEET: Run A: Official NSE Bhavcopy
+================================================================================
+Backtest Period: 2016-01-04 to 2026-08-31 (10.6557 years)
+Universe: Point-in-Time NIFTY 500 Constituents (Zero Survivorship Bias)
+Portfolio Constraints: N=20, Rebalance=Monthly, Execution=Next-Day Open, ExitRank=40
+
+[PERFORMANCE METRICS]
+  Initial Capital:       Rs.  10,000,000.00
+  Final Portfolio Value: Rs.  81,398,942.93
+  Net Profit:            Rs.  71,398,942.93
+  CAGR:                             21.75%
+  Max Drawdown:                     48.72%
+  Sharpe Ratio:                      1.02
+  Sortino Ratio:                     1.06
+  Calmar Ratio:                      0.45
+
+[TRADE & ACTIVITY STATISTICS]
+  Total Closed Trades:                497
+  Winning Trades:                     226 (45.5%)
+  Losing Trades:                      271
+  Profit Factor:                     2.14
+  Avg Holding Period:               129.9 calendar days
+
+[ACCOUNTING IDENTITY BLOCK (Standing Rule R-3)]
+  Initial Capital:       Rs.  10,000,000.00
+  + Realized PnL:        Rs.  58,810,588.99
+  - Tax:                 Rs.           0.00
+  + Dividends:           Rs.           0.00
+  + Unrealized PnL:      Rs.  12,588,353.94
+  = Final Value:         Rs.  81,398,942.93
+  Residual:                        0.00000000 (assert == 0.00)
+
+[SAMPLE CLOSED TRADES (First 20 executions)]
+  2016-06-02 | VEDL       |  4459 shs | Entry: 2016-05-03 @  112.11 -> Exit:  103.30 | PnL:  -40896.04 (rank_exit)
+  2016-06-02 | 3MINDIA    |    37 shs | Entry: 2016-05-03 @ 13413.40 -> Exit: 12487.50 | PnL:  -35845.49 (rank_exit)
+  2016-06-02 | HINDZINC   |  2857 shs | Entry: 2016-05-03 @  174.92 -> Exit:  168.73 | PnL:  -19330.51 (rank_exit)
+  2016-06-02 | NATIONALUM | 10626 shs | Entry: 2016-05-03 @   47.05 -> Exit:   42.16 | PnL:  -53513.03 (rank_exit)
+  2016-07-04 | MINDACORP  |  4307 shs | Entry: 2016-05-03 @  116.07 -> Exit:  119.63 | PnL:   13643.00 (rank_exit)
+  2016-08-02 | ELGIEQUIP  |  3093 shs | Entry: 2016-05-03 @  161.61 -> Exit:  174.58 | PnL:   38334.23 (rank_exit)
+  2016-08-02 | COROMANDEL |  2171 shs | Entry: 2016-05-03 @  230.23 -> Exit:  258.24 | PnL:   59004.69 (rank_exit)
+  2016-09-02 | BALRAMCHIN |  4573 shs | Entry: 2016-05-03 @  109.31 -> Exit:  103.30 | PnL:  -29109.67 (r2_exit)
+  2016-09-02 | UPL        |  1259 shs | Entry: 2016-05-03 @  397.06 -> Exit:  416.32 | PnL:   22511.84 (rank_exit)
+  2016-09-02 | SHRIRAMFIN |  2709 shs | Entry: 2016-05-03 @  184.48 -> Exit:  204.57 | PnL:   52617.82 (rank_exit)
+  2016-09-02 | SRTRANSFIN |   458 shs | Entry: 2016-05-03 @ 1091.29 -> Exit: 1204.39 | PnL:   50013.34 (rank_exit)
+  2016-09-02 | IBREALEST  |  4580 shs | Entry: 2016-06-02 @  100.65 -> Exit:   78.82 | PnL: -101303.11 (r2_exit)
+  2016-10-04 | TATASTEEL  |  1432 shs | Entry: 2016-05-03 @  349.10 -> Exit:  385.61 | PnL:   50500.05 (rank_exit)
+  2016-10-04 | FINPIPE    |  1369 shs | Entry: 2016-05-03 @  365.16 -> Exit:  454.50 | PnL:  120349.24 (rank_exit)
+  2016-10-04 | BAJFINANCE |    97 shs | Entry: 2016-08-02 @ 5655.65 -> Exit: 1090.91 | PnL: -443643.22 (r2_exit)
+  2016-11-02 | JSWSTEEL   |   365 shs | Entry: 2016-05-03 @ 1366.42 -> Exit: 1653.30 | PnL:  102809.95 (rank_exit)
+  2016-11-02 | M&MFIN     |  1586 shs | Entry: 2016-05-03 @  315.16 -> Exit:  351.05 | PnL:   55111.86 (rank_exit)
+  2016-12-02 | MANAPPURAM | 12485 shs | Entry: 2016-05-03 @   40.04 -> Exit:   73.18 | PnL:  411127.08 (r2_exit)
+  2016-12-02 | CHOLAFIN   |  2937 shs | Entry: 2016-05-03 @  170.17 -> Exit:  192.11 | PnL:   62614.92 (r2_exit)
+  2016-12-02 | HEIDELBERG |  5202 shs | Entry: 2016-05-03 @   96.10 -> Exit:  112.89 | PnL:   85479.89 (r2_exit)
+
+[OPEN POSITIONS AT END (2026-08-31)]
+  HELD: ACUTAAS      |   2753 shs | Entry: 2025-05-05 @ 1187.98
+  HELD: ADANIENSOL   |   2118 shs | Entry: 2026-08-04 @ 1651.65
+  HELD: ADANIPOWER   |  16428 shs | Entry: 2026-08-04 @ 213.01
+  HELD: AEGISLOG     |   2533 shs | Entry: 2026-08-04 @ 1381.38
+  HELD: ATHERENERG   |   2606 shs | Entry: 2026-08-04 @ 1342.54
+  HELD: BELRISE      |  17641 shs | Entry: 2026-01-02 @ 184.18
+  HELD: BHARATFORG   |   1579 shs | Entry: 2026-08-04 @ 2215.41
+  HELD: CHENNPETRO   |   2718 shs | Entry: 2026-08-04 @ 1287.21
+  HELD: CPPLUS       |   1020 shs | Entry: 2026-08-04 @ 3428.63
+  HELD: FEDERALBNK   |   9622 shs | Entry: 2026-08-04 @ 363.67
+  HELD: GRANULES     |   4163 shs | Entry: 2026-08-04 @ 840.54
+  HELD: HFCL         |  17272 shs | Entry: 2026-08-04 @ 202.60
+  HELD: KIRLOSENG    |   1572 shs | Entry: 2026-08-04 @ 2225.22
+  HELD: LAURUSLABS   |   3276 shs | Entry: 2025-08-04 @ 848.65
+  HELD: NATIONALUM   |   9396 shs | Entry: 2026-08-04 @ 372.43
+  HELD: NETWEB       |    758 shs | Entry: 2026-08-04 @ 4610.74
+  HELD: PFOCUS       |  11616 shs | Entry: 2026-08-04 @ 301.25
+  HELD: RRKABEL      |   1324 shs | Entry: 2026-08-04 @ 2642.14
+  HELD: SYRMA        |   2572 shs | Entry: 2026-08-04 @ 1360.57
+  HELD: WELCORP      |   2049 shs | Entry: 2026-08-04 @ 1707.71
+================================================================================
+
+--- Executing RUN B: Yahoo Finance OHLCV ---
+================================================================================
+MIP-RETURN-10Y / PODCAST MOMENTUM STRATEGY TEARSHEET: Run B: Yahoo Finance OHLCV
+================================================================================
+Backtest Period: 2016-01-04 to 2026-08-31 (10.6557 years)
+Universe: Point-in-Time NIFTY 500 Constituents (Zero Survivorship Bias)
+Portfolio Constraints: N=20, Rebalance=Monthly, Execution=Next-Day Open, ExitRank=40
+
+[PERFORMANCE METRICS]
+  Initial Capital:       Rs.  10,000,000.00
+  Final Portfolio Value: Rs. 130,557,680.53
+  Net Profit:            Rs. 120,557,680.53
+  CAGR:                             27.27%
+  Max Drawdown:                     38.79%
+  Sharpe Ratio:                      1.28
+  Sortino Ratio:                     1.46
+  Calmar Ratio:                      0.70
+
+[TRADE & ACTIVITY STATISTICS]
+  Total Closed Trades:                486
+  Winning Trades:                     230 (47.3%)
+  Losing Trades:                      256
+  Profit Factor:                     2.37
+  Avg Holding Period:               133.2 calendar days
+
+[ACCOUNTING IDENTITY BLOCK (Standing Rule R-3)]
+  Initial Capital:       Rs.  10,000,000.00
+  + Realized PnL:        Rs.  99,854,841.55
+  - Tax:                 Rs.           0.00
+  + Dividends:           Rs.           0.00
+  + Unrealized PnL:      Rs.  20,702,838.98
+  = Final Value:         Rs. 130,557,680.53
+  Residual:                        0.00000003 (assert == 0.00)
+
+[SAMPLE CLOSED TRADES (First 20 executions)]
+  2016-06-02 | VEDL       |  4459 shs | Entry: 2016-05-03 @  112.11 -> Exit:  103.30 | PnL:  -40896.04 (rank_exit)
+  2016-06-02 | 3MINDIA    |    37 shs | Entry: 2016-05-03 @ 13413.40 -> Exit: 12487.50 | PnL:  -35845.49 (rank_exit)
+  2016-06-02 | KESORAMIND |  5349 shs | Entry: 2016-05-03 @   93.45 -> Exit:   89.06 | PnL:  -25105.78 (rank_exit)
+  2016-06-02 | HINDZINC   |  2857 shs | Entry: 2016-05-03 @  174.92 -> Exit:  168.73 | PnL:  -19330.53 (rank_exit)
+  2016-06-02 | NATIONALUM | 10626 shs | Entry: 2016-05-03 @   47.05 -> Exit:   42.16 | PnL:  -53513.02 (rank_exit)
+  2016-07-04 | MINDACORP  |  4307 shs | Entry: 2016-05-03 @  116.07 -> Exit:  119.63 | PnL:   13643.01 (rank_exit)
+  2016-08-02 | ELGIEQUIP  |  6186 shs | Entry: 2016-05-03 @   80.81 -> Exit:   87.29 | PnL:   38334.24 (rank_exit)
+  2016-09-02 | BALRAMCHIN |  4573 shs | Entry: 2016-05-03 @  109.31 -> Exit:  103.30 | PnL:  -29109.65 (r2_exit)
+  2016-09-02 | UPL        |  1259 shs | Entry: 2016-05-03 @  397.06 -> Exit:  416.32 | PnL:   22511.85 (rank_exit)
+  2016-09-02 | SHRIRAMFIN |  2350 shs | Entry: 2016-05-03 @  212.66 -> Exit:  234.70 | PnL:   50007.43 (rank_exit)
+  2016-09-02 | COROMANDEL |  2171 shs | Entry: 2016-05-03 @  230.23 -> Exit:  266.73 | PnL:   77399.16 (rank_exit)
+  2016-10-04 | TATASTEEL  | 15030 shs | Entry: 2016-05-03 @   33.26 -> Exit:   36.74 | PnL:   50498.79 (rank_exit)
+  2016-10-04 | DCMSHRIRAM |  2400 shs | Entry: 2016-06-02 @  193.19 -> Exit:  211.39 | PnL:   42019.59 (rank_exit)
+  2016-10-04 | CENTRALBK  |  4784 shs | Entry: 2016-07-04 @  107.11 -> Exit:   96.15 | PnL:  -54001.56 (rank_exit)
+  2016-11-02 | JSWSTEEL   |  3658 shs | Entry: 2016-05-03 @  136.64 -> Exit:  165.33 | PnL:  103035.25 (rank_exit)
+  2016-11-02 | M&MFIN     |  2601 shs | Entry: 2016-05-03 @  192.16 -> Exit:  214.03 | PnL:   55105.71 (rank_exit)
+  2016-12-02 | MANAPPURAM | 12485 shs | Entry: 2016-05-03 @   40.04 -> Exit:   73.18 | PnL:  411127.08 (r2_exit)
+  2016-12-02 | CHOLAFIN   |  2937 shs | Entry: 2016-05-03 @  170.17 -> Exit:  192.11 | PnL:   62614.93 (r2_exit)
+  2016-12-02 | HEIDELBERG |  5202 shs | Entry: 2016-05-03 @   96.10 -> Exit:  112.89 | PnL:   85479.89 (r2_exit)
+  2016-12-02 | VGUARD     |  4775 shs | Entry: 2016-06-02 @   97.10 -> Exit:  118.45 | PnL:  100196.57 (r2_exit)
+
+[OPEN POSITIONS AT END (2026-08-31)]
+  HELD: ACUTAAS      |   4342 shs | Entry: 2025-05-05 @ 1189.19
+  HELD: ADANIENSOL   |   3384 shs | Entry: 2026-08-04 @ 1651.65
+  HELD: ADANIPOWER   |  26244 shs | Entry: 2026-08-04 @ 213.01
+  HELD: AEGISLOG     |   4046 shs | Entry: 2026-08-04 @ 1381.38
+  HELD: ATHERENERG   |   4164 shs | Entry: 2026-08-04 @ 1342.54
+  HELD: BELRISE      |  30659 shs | Entry: 2025-12-02 @ 163.97
+  HELD: BHARATFORG   |   2523 shs | Entry: 2026-08-04 @ 2215.41
+  HELD: CHENNPETRO   |   4161 shs | Entry: 2026-08-04 @ 1343.34
+  HELD: CPPLUS       |   1630 shs | Entry: 2026-08-04 @ 3428.63
+  HELD: FEDERALBNK   |  15319 shs | Entry: 2026-08-04 @ 364.91
+  HELD: GRANULES     |   6651 shs | Entry: 2026-08-04 @ 840.54
+  HELD: HFCL         |  27593 shs | Entry: 2026-08-04 @ 202.60
+  HELD: KIRLOSENG    |   2512 shs | Entry: 2026-08-04 @ 2225.22
+  HELD: LAURUSLABS   |   5405 shs | Entry: 2025-08-04 @ 850.20
+  HELD: NATIONALUM   |  14972 shs | Entry: 2026-08-04 @ 373.37
+  HELD: NETWEB       |   1211 shs | Entry: 2026-08-04 @ 4613.61
+  HELD: PFOCUS       |  18557 shs | Entry: 2026-08-04 @ 301.25
+  HELD: RRKABEL      |   2115 shs | Entry: 2026-08-04 @ 2642.14
+  HELD: SYRMA        |   4104 shs | Entry: 2026-08-04 @ 1361.96
+  HELD: WELCORP      |   3273 shs | Entry: 2026-08-04 @ 1707.71
+================================================================================
+
+--- Performance Divergence & Delta Analysis ---
+
+Exported comparative backtest delta table: /storage/emulated/0/Documents/Project MIP/deliverables/data_comparison/data_csv/comparative_backtest_delta.csv
+
+================================================================================
+TASK 5 COMPLETE: COMPARATIVE BACKTEST FINISHED (PASS)
+================================================================================

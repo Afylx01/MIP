@@ -1,0 +1,300 @@
+scrip_name,snapshot_frequency,pct_snapshots,mapping_status,symbol,isin,confidence,flags,source_tier
+Titan Industries Ltd.,57,100.0,unresolved,,,low,no_candidate,review_medium
+Akzo Nobel India Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Hexaware Technologies Ltd.,57,100.0,proposed,HEXT,INE093A01041,high,listing_after_first_seen,review_high
+Kajaria Ceramics Ltd.,57,100.0,proposed,KAJARIACER,INE217B01036,high,listing_after_first_seen,review_high
+Zee Entertainment Enterprises Ltd.,57,100.0,proposed,ZEEL,INE256A01028,high,listing_after_first_seen,review_high
+GMR Infrastructure Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Welspun Corp Ltd.,57,100.0,proposed,WELCORP,INE191B01025,high,listing_after_first_seen;alias_target_of(Welspun India Ltd.),review_high
+Torrent Pharmaceuticals Ltd.,57,100.0,proposed,TORNTPHARM,INE685A01028,high,listing_after_first_seen,review_high
+SKF India Ltd.,57,100.0,proposed,SKFINDIA,INE640A01023,high,listing_after_first_seen,review_high
+TVS Motor Company Ltd.,57,100.0,proposed,TVSMOTOR,INE494B01023,high,concurrent_alias_collision,review_high
+Hindustan Petroleum Corporation Ltd.,57,100.0,proposed,HINDPETRO,INE094A01015,high,listing_after_first_seen,review_high
+South Indian Bank Ltd.,57,100.0,proposed,SOUTHBANK,INE683A01023,high,,review_high
+Trent Ltd.,57,100.0,proposed,TRENT,INE849A01020,high,listing_after_first_seen,review_high
+Karnataka Bank Ltd.,57,100.0,proposed,KTKBANK,INE614B01018,high,,review_medium
+Prism Cement Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Jindal Steel & Power Ltd.,57,100.0,proposed,JINDALSTEL,INE749A01030,medium,name_variant;concurrent_alias_collision,review_medium
+Bharat Forge Ltd.,57,100.0,proposed,BHARATFORG,INE465A01025,high,listing_after_first_seen;concurrent_alias_collision,review_high
+Idea Cellular Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Shriram Transport Finance Co. Ltd.,57,100.0,proposed,SHRIRAMFIN,INE721A01047,medium,name_variant;concurrent_alias_collision,review_medium
+Arvind Ltd,57,100.0,proposed,ARVIND,INE034A01011,high,concurrent_alias_collision,review_high
+Bank of India,57,100.0,proposed,BANKINDIA,INE084A01016,high,"concurrent_alias_collision;alias_target_of(Bank of Punjab Ltd.,Bank of Rajasthan Ltd.,Centurion Bank of Punjab Ltd.,Industrial Development Bank of India Limited,Oriental Bank of Commerce,United Bank of India)",review_high
+Amtek India Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Federal Bank Ltd.,57,100.0,proposed,FEDERALBNK,INE171A01029,high,,review_medium
+Bajaj Corp Ltd.,57,100.0,proposed,BAJAJ-AUTO,INE917I01010,medium,name_variant;concurrent_alias_collision,review_medium
+JSW Steel Ltd.,57,100.0,proposed,JSWSTEEL,INE019A01038,high,listing_after_first_seen;alias_target_of(JSW ISPAT Steel Ltd.),review_high
+Indiabulls Power Ltd.,57,100.0,proposed,IBULLSLTD,INE126M01010,medium,name_variant;concurrent_alias_collision,review_medium
+Apollo Hospitals Enterprises Ltd.,57,100.0,proposed,APOLLOHOSP,INE437A01024,medium,concurrent_alias_collision,review_medium
+Phoenix Mills Ltd.,57,100.0,proposed,PHOENIXLTD,INE211B01039,high,,review_medium
+Pipavav Defence and Offshore Engineering Company Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Redington (India) Ltd.,57,100.0,proposed,REDINGTON,INE891D01026,high,,review_high
+Cadila Healthcare Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Indiabulls Housing Finance Ltd.,57,100.0,proposed,AADHARHFC,INE883F01010,medium,first_token_mismatch;listing_after_first_seen;concurrent_alias_collision,review_medium
+SRF Ltd.,57,100.0,proposed,SRF,INE647A01010,high,listing_after_first_seen,review_high
+Escorts Ltd.,57,100.0,proposed,ESCORTS,INE042A01014,medium,name_variant,review_medium
+Pfizer Ltd.,57,100.0,proposed,PFIZER,INE182A01018,high,listing_after_first_seen,review_high
+Bajaj Hindusthan Ltd.,57,100.0,proposed,BAJAJHIND,INE306A01021,medium,name_variant;concurrent_alias_collision,review_medium
+Gillette India Ltd.,57,100.0,proposed,GILLETTE,INE322A01010,high,listing_after_first_seen,review_high
+Tata Motors Ltd.,57,100.0,proposed,TMCV,INE1TAE01010,high,listing_after_first_seen;alias_target_of(Tata Motors Ltd DVR),review_high
+MphasiS Ltd.,57,100.0,proposed,MPHASIS,INE356A01018,high,listing_after_first_seen;alias_target_of(Mphasis BFL Ltd.),review_high
+Justdial Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Jammu & Kashmir Bank Ltd.,57,100.0,proposed,J&KBANK,INE168A01041,high,,review_high
+Motherson Sumi Systems Ltd.,57,100.0,proposed,MSUMI,INE0FS801015,medium,listing_after_first_seen,review_medium
+Housing Development Finance Corporation Ltd.,57,100.0,proposed,AADHARHFC,INE883F01010,medium,first_token_mismatch;listing_after_first_seen;concurrent_alias_collision,review_medium
+Wockhardt Ltd.,57,100.0,proposed,WOCKPHARMA,INE049B01025,high,listing_after_first_seen,review_high
+DCM Shriram Consolidated Ltd.,57,100.0,proposed,DCMSHRIRAM,INE499A01024,medium,name_variant,review_medium
+NIIT Technologies Ltd.,57,100.0,proposed,NIITLTD,INE161A01038,medium,name_variant;concurrent_alias_collision,review_medium
+Alstom India Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Glaxosmithkline Pharmaceuticals Ltd.,57,100.0,proposed,GLAXO,INE159A01016,high,listing_after_first_seen;alias_target_of(Glaxo (India) Ltd.),review_high
+JK Tyre & Industries Ltd..,57,100.0,proposed,JKTYRE,INE573A01042,high,listing_after_first_seen,review_high
+Ajanta Pharmaceuticals Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+J.B. Chemicals & Pharmaceuticals Ltd.,57,100.0,proposed,BIOFILCHEM,INE829A01014,low,first_token_mismatch;name_mismatch;concurrent_alias_collision,review_medium
+Procter & Gamble Hygiene & Health Care Ltd.,57,100.0,proposed,PGHH,INE179A01014,high,name_variant;listing_after_first_seen,review_high
+Jyothy Laboratories Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Havell's India Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Tata Global Beverages Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Shriram City Union Finance Ltd.,57,100.0,proposed,SHRIRAMFIN,INE721A01047,medium,name_variant;concurrent_alias_collision,review_medium
+National Buildings Construction Corporation Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Sesa Sterlite Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Mangalore Refinery & Petrochemicals Ltd.,57,100.0,proposed,MRPL,INE103A01014,high,name_variant;listing_after_first_seen;alias_target_of(Bongaigaon Refinery & Petrochemicals Ltd.),review_high
+PVR Ltd.,57,100.0,proposed,PVRINOX,INE191H01014,medium,name_variant,review_medium
+Indian Hotels Co. Ltd.,57,100.0,proposed,INDHOTEL,INE053A01032,low,name_variant;isin_unverified;unsourced,review_low
+Hero MotoCorp Ltd.,57,100.0,proposed,HEROMOTOCO,INE158A01026,high,listing_after_first_seen,review_high
+J.K. Cement Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Lakshmi Machine Works Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+India Cements Ltd.,57,100.0,proposed,INDIACEM,INE383A01012,high,listing_after_first_seen;concurrent_alias_collision,review_medium
+Rural Electrification Corporation Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Sundram Fasteners Ltd.,57,100.0,proposed,SUNDRMFAST,INE387A01021,high,listing_after_first_seen,review_high
+Gujarat State Petronet Ltd.,57,100.0,proposed,GSFC,INE026A01025,low,name_mismatch;concurrent_alias_collision,unresolved
+WABCO India Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Swan Energy Ltd.,57,100.0,proposed,SWANCORP,INE665A01038,medium,name_variant,review_medium
+Alstom T&D India Ltd.,57,100.0,proposed,GVT&D,INE200A01026,low,first_token_mismatch;name_mismatch;listing_after_first_seen,review_medium
+Inox Leisure Ltd.,57,100.0,proposed,INOXINDIA,INE616N01034,medium,name_variant;listing_after_first_seen,review_medium
+Vardhman Textiles Ltd.,57,100.0,proposed,VTL,INE825A01020,high,listing_after_first_seen,review_high
+Bombay Burmah Trading Corporation Ltd.,57,100.0,proposed,BBTC,INE050A01025,high,,review_high
+Exide Industries Ltd.,57,100.0,proposed,EXIDEIND,INE302A01020,high,listing_after_first_seen,review_high
+Strides Arcolab Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Berger Paints India Ltd.,57,100.0,proposed,BERGEPAINT,INE463A01038,low,listing_after_first_seen;unsourced,review_low
+Amara Raja Batteries Ltd.,57,100.0,proposed,ARE&M,INE885A01032,low,name_mismatch;listing_after_first_seen,unresolved
+E.I.D. Parry (India) Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+TV18 Broadcast Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Whirlpool of India Ltd.,57,100.0,proposed,WHIRLPOOL,INE716A01013,high,listing_after_first_seen,unknown
+MindTree Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Development Credit Bank Ltd,57,100.0,unresolved,,,low,no_candidate,unresolved
+Kansai Nerolac Paints Ltd.,57,100.0,proposed,KANSAINER,INE531A01024,high,listing_after_first_seen,review_high
+Infotech Enterprises Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Tata Elxsi Ltd.,57,100.0,proposed,TATAELXSI,INE670A01012,high,listing_after_first_seen,review_high
+Eicher Motors Ltd.,57,100.0,proposed,EICHERMOT,INE066A01021,high,listing_after_first_seen;alias_target_of(Eicher Ltd.),review_high
+Steel Authority of India Ltd.,57,100.0,proposed,SAIL,INE114A01011,high,concurrent_alias_collision;alias_target_of(Gas Authority of India Limited),review_high
+Piramal Enterprises Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+MMTC Ltd.,57,100.0,proposed,MMTC,INE123F01029,high,listing_after_first_seen,review_high
+Astral Poly Technik Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Vakrangee Software Ltd.,57,100.0,proposed,VAKRANGEE,INE051B01021,medium,name_variant,review_medium
+Siti Cable Network Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+L&T Finance Holdings Ltd.,57,100.0,proposed,LTF,INE498L01015,high,name_variant,review_high
+JK Lakshmi Cement Ltd.,57,100.0,proposed,JKLAKSHMI,INE786A01032,high,listing_after_first_seen,unknown
+Bombay Dyeing & Manufacturing Co. Ltd.,57,100.0,proposed,BOMDYEING,INE032A01023,low,name_mismatch,review_medium
+Himachal Fut Com Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Fag Bearings India Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Sobha Developers Ltd.,57,100.0,proposed,SOBHA,INE671H01015,medium,name_variant;concurrent_alias_collision,review_medium
+Sadbhav Engineering Ltd,57,100.0,proposed,SADBHAV,INE226H01026,high,concurrent_alias_collision,review_high
+SKS Microfinance Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Great Eastern Shipping Co. Ltd.,57,100.0,proposed,GESHIP,INE017A01032,high,name_variant;listing_after_first_seen,review_high
+CARE Ltd.,57,100.0,proposed,CARERATING,INE752H01013,medium,name_variant;concurrent_alias_collision,review_medium
+Indiabulls Real Estate Ltd.,57,100.0,proposed,TREL,INE0O3901029,medium,first_token_mismatch;listing_after_first_seen,review_medium
+Bharti Infratel Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+V.I.P. Industries Ltd.,57,100.0,proposed,VGUARD,INE951I01027,medium,listing_after_first_seen;concurrent_alias_collision,review_low
+Kalpataru Power Transmission Ltd.,57,100.0,proposed,OMPOWER,INE25E901019,medium,first_token_mismatch;listing_after_first_seen,review_medium
+I T C Ltd.,57,100.0,proposed,TTL,INE592B01024,medium,name_variant;listing_after_first_seen,review_medium
+Welspun India Ltd.,57,100.0,proposed,WELCORP,INE191B01025,high,listing_after_first_seen;concurrent_alias_collision,review_high
+Jubilant Life Sciences Ltd.,57,100.0,proposed,ALIVUS,INE03Q201024,medium,first_token_mismatch;listing_after_first_seen,review_medium
+Greaves Cotton Ltd.,57,100.0,proposed,GREAVESCOT,INE224A01026,high,listing_after_first_seen,unknown
+Neyveli Lignite Corporation Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+India Infoline Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Merck Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Indiabulls Securities Ltd.,57,100.0,proposed,IBULLSLTD,INE126M01010,medium,name_variant;listing_after_first_seen;concurrent_alias_collision,review_medium
+Tata Steel Ltd.,57,100.0,proposed,TATASTEEL,INE081A01020,high,listing_after_first_seen;alias_target_of(Tata Steel BSL Ltd.),review_high
+Hindustan Zinc Ltd.,57,100.0,proposed,HINDZINC,INE267A01025,high,listing_after_first_seen,review_high
+Future Consumer Enterprise Ltd.,57,100.0,unresolved,,,low,no_candidate,unresolved
+Sanofi India Ltd.,57,100.0,proposed,SANOFI,INE058A01010,high,listing_after_first_seen,review_high
+Magma Fincorp Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+Jain Irrigation Systems Ltd.,54,94.74,proposed,JISLDVREQS,IN9175A01010,low,"listing_after_first_seen;duplicate_name_collision(JISLDVREQS,JISLJALEQS)",review_low
+Dewan Housing Finance Corporation Ltd.,54,94.74,proposed,AADHARHFC,INE883F01010,medium,first_token_mismatch;listing_after_first_seen;concurrent_alias_collision,review_medium
+Lakshmi Vilas Bank Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+Tata Motors Ltd DVR,54,94.74,proposed,TMCV,INE1TAE01010,medium,name_variant;listing_after_first_seen;concurrent_alias_collision,review_medium
+Styrolution ABS (India) Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+IDFC Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+Take Solutions Ltd.,54,94.74,proposed,TAKE,INE142I01023,medium,name_variant,review_medium
+Hitachi Home & Life Solutions (India) Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+Mahindra CIE Automotive Ltd.,54,94.74,proposed,CIEINDIA,INE536H01010,medium,first_token_mismatch;name_variant,review_medium
+Gujarat Gas Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+CCL Products (I) Ltd.,54,94.74,proposed,CCL,INE421D01022,high,,review_medium
+Manappuram Finance Ltd.,54,94.74,proposed,MANAPPURAM,INE522D01027,high,listing_after_first_seen,review_high
+Adani Transmission Ltd.,54,94.74,unresolved,,,low,no_candidate,unresolved
+Honeywell Automation India Ltd.,51,89.47,proposed,HONAUT,INE671A01010,high,listing_after_first_seen,review_high
+Zensar Technolgies Ltd.,51,89.47,unresolved,,,low,no_candidate,unresolved
+Reliance Capital Ltd.,49,85.96,proposed,RELCAPITAL,INE013A01015,low,first_token_mismatch;name_variant;isin_unverified;unsourced,review_low
+Oriental Bank of Commerce,48,84.21,proposed,BANKINDIA,INE084A01016,medium,first_token_mismatch;name_variant;concurrent_alias_collision,review_medium
+Allahabad Bank,48,84.21,unresolved,,,low,no_candidate,unresolved
+Andhra Bank,48,84.21,unresolved,,,low,no_candidate,unresolved
+ITD Cementation India Ltd.,48,84.21,unresolved,,,low,no_candidate,unresolved
+Syndicate Bank,48,84.21,unresolved,,,low,no_candidate,unresolved
+Tata Chemicals Ltd.,48,84.21,proposed,TATACHEM,INE092A01019,high,listing_after_first_seen,review_high
+IDFC Bank Ltd.,48,84.21,proposed,IDFCFIRSTB,INE092T01019,medium,name_variant,review_medium
+Equitas Holdings Ltd.,48,84.21,unresolved,,,low,no_candidate,unresolved
+Crompton Greaves Ltd.,48,84.21,proposed,CROMPTON,INE299U01018,medium,name_variant;listing_after_first_seen;concurrent_alias_collision,review_medium
+Infibeam Incorporation Ltd.,48,84.21,unresolved,,,low,no_candidate,unresolved
+GHCL Ltd.,45,78.95,proposed,GHCL,INE539A01019,high,listing_after_first_seen,review_high
+Jaiprakash Associates Ltd.,45,78.95,proposed,JPASSOCIAT,INE451D01028,low,first_token_mismatch;name_variant;isin_unverified;unsourced,review_low
+Gruh Finance Ltd.,45,78.95,unresolved,,,low,no_candidate,unresolved
+Tata Coffee Ltd.,45,78.95,unresolved,,,low,no_candidate,unresolved
+GlaxoSmithkline Consumer Healthcare Ltd.,45,78.95,proposed,SANOFICONR,INE0UOS01011,medium,first_token_mismatch;listing_after_first_seen;concurrent_alias_collision,review_medium
+Gateway Distriparks Ltd.,45,78.95,proposed,GATEWAY,INE079J01017,high,listing_after_first_seen,review_high
+Deepak Fertilisers & Petrochemicals Corp. Ltd.,45,78.95,proposed,DEEPAKFERT,INE501A01019,low,name_mismatch;listing_after_first_seen,review_medium
+Essel Propack Ltd.,45,78.95,unresolved,,,low,no_candidate,unresolved
+Thomas Cook (India) Ltd.,45,78.95,proposed,THOMASCOOK,INE332A01027,high,listing_after_first_seen,review_high
+AstraZenca Pharma India Ltd.,45,78.95,unresolved,,,low,no_candidate,unresolved
+KPIT Technologies Ltd.,45,78.95,proposed,KPITTECH,INE04I401011,high,listing_after_first_seen,review_high
+SREI Infrastructure Finance Ltd.,45,78.95,unresolved,,,low,no_candidate,unresolved
+Gujarat Fluorochemicals Ltd.,45,78.95,proposed,FLUOROCHEM,INE09N301011,high,listing_after_first_seen,review_high
+Nava Bharat Ventures Ltd.,45,78.95,unresolved,,,low,no_candidate,unresolved
+Tube Investments of India Ltd.,44,77.19,proposed,TIINDIA,INE974X01010,high,listing_after_first_seen,review_high
+Advanced Enzyme Tech Ltd.,44,77.19,proposed,ADVENZYMES,INE837H01020,medium,,review_medium
+Ujjivan Financial Services Ltd.,44,77.19,proposed,AFSL,INE00ZE01026,medium,first_token_mismatch;listing_after_first_seen,review_medium
+Jet Airways (India) Ltd.,42,73.68,unresolved,,,low,no_candidate,unresolved
+Minda Industries Ltd.,42,73.68,proposed,MINDACORP,INE842C01021,medium,name_variant;concurrent_alias_collision,review_medium
+Larsen & Toubro Infotech Ltd.,42,73.68,proposed,LT,INE018A01030,medium,name_variant;concurrent_alias_collision,review_high
+Jindal Saw Ltd.,40,70.18,proposed,JINDALSAW,INE324A01032,high,listing_after_first_seen,review_high
+Cox & Kings Ltd.,39,68.42,unresolved,,,low,no_candidate,unresolved
+Eveready Industries India Ltd.,39,68.42,proposed,EVEREADY,INE128A01029,high,listing_after_first_seen,review_high
+Century Textile & Industries Ltd.,39,68.42,unresolved,,,low,no_candidate,unresolved
+PTC India Fin Serv Ltd.,39,68.42,unresolved,,,low,no_candidate,unresolved
+Eros Intl Media Ltd.,39,68.42,unresolved,,,low,no_candidate,unresolved
+Hindustan Construction Co. Ltd.,39,68.42,proposed,HCC,INE549A01026,high,name_variant;listing_after_first_seen,review_high
+GVK Power & Infrastructures Ltd.,39,68.42,proposed,GENUSPOWER,INE955D01029,medium,first_token_mismatch,review_medium
+Unichem Laboratories Ltd.,39,68.42,proposed,UNICHEMLAB,INE351A01035,high,listing_after_first_seen,review_high
+Linde India Ltd.,39,68.42,proposed,LINDEINDIA,INE473A01011,high,listing_after_first_seen,review_high
+Tata Sponge Iron Ltd.,39,68.42,unresolved,,,low,no_candidate,unresolved
+VST Industries Ltd.,39,68.42,proposed,VSTIND,INE710A01016,high,listing_after_first_seen,review_high
+Dalmia Bharat Ltd.,39,68.42,proposed,DALBHARAT,INE00R701025,high,listing_after_first_seen,review_high
+Corporation Bank,38,66.67,proposed,AXISBANK,INE238A01034,medium,first_token_mismatch;name_variant;concurrent_alias_collision,review_medium
+Dena Bank,37,64.91,unresolved,,,low,no_candidate,unresolved
+Vijaya Bank,37,64.91,unresolved,,,low,no_candidate,unresolved
+Monsanto India Ltd.,36,63.16,unresolved,,,low,no_candidate,unresolved
+Capital First Ltd.,36,63.16,unresolved,,,low,no_candidate,unresolved
+HSIL Ltd.,36,63.16,unresolved,,,low,no_candidate,unresolved
+Texmaco Rail & Eng. Ltd.,36,63.16,proposed,TEXRAIL,INE621L01012,medium,,review_medium
+Manpasand Beverages Ltd.,36,63.16,unresolved,,,low,no_candidate,unresolved
+8K Miles Soft Services Ltd.,36,63.16,unresolved,,,low,no_candidate,unresolved
+Jindal Stainless (Hisar) Ltd.,36,63.16,proposed,JSL,INE220G01021,medium,name_variant;concurrent_alias_collision,review_medium
+Indiabulls Ventures Ltd.,36,63.16,proposed,IBULLSLTD,INE126M01010,medium,name_variant;concurrent_alias_collision,review_medium
+Future Retail Ltd.,34,59.65,unresolved,,,low,no_candidate,unresolved
+Gati Ltd.,33,57.89,unresolved,,,low,no_candidate,unresolved
+Graphite India Ltd.,33,57.89,proposed,GRAPHITE,INE371A01025,high,listing_after_first_seen,review_high
+H.E.G. Ltd.,33,57.89,proposed,HGINFRA,INE926X01010,low,name_mismatch;listing_after_first_seen,review_low
+Ballarpur Industries Ltd.,33,57.89,unresolved,,,low,no_candidate,unresolved
+JBF Industries Ltd.,33,57.89,unresolved,,,low,no_candidate,unresolved
+Bhushan Steel Ltd.,33,57.89,unresolved,,,low,no_candidate,unresolved
+Unitech Ltd.,33,57.89,proposed,UNITECH,INE694A01020,high,listing_after_first_seen,review_high
+D B Realty Ltd.,33,57.89,proposed,DBCORP,INE950I01011,medium,name_variant;concurrent_alias_collision,review_medium
+Max India Ltd.,33,57.89,proposed,MAXIND,INE0CG601016,high,listing_after_first_seen,review_high
+Techno Elt & Eng Co. Ltd.,32,56.14,unresolved,,,low,no_candidate,unresolved
+TI Financial Holdings Ltd.,31,54.39,proposed,CHOLAHLDNG,INE149A01033,medium,first_token_mismatch,review_medium
+Mahanagar Telephone Nigam Ltd.,30,52.63,proposed,MTNL,INE153A01019,high,listing_after_first_seen,review_high
+Kwality Ltd.,30,52.63,proposed,KPL,INE552U01010,medium,name_variant;listing_after_first_seen,review_medium
+SML Isuzu Ltd.,30,52.63,unresolved,,,low,no_candidate,unresolved
+Security and Intelligence Services (India) Ltd.,30,52.63,unresolved,,,low,no_candidate,unresolved
+Videocon Industries Ltd.,27,47.37,unresolved,,,low,no_candidate,unresolved
+Aster DM Healthcare Ltd.,27,47.37,proposed,ASTERDM,INE914M01019,low,name_mismatch,review_low
+Ingersoll Rand (India) Ltd.,24,42.11,proposed,INGERRAND,INE177A01018,high,listing_after_first_seen,review_high
+Bombay Rayon Fashions Ltd.,24,42.11,unresolved,,,low,no_candidate,unresolved
+ICICI Securities Ltd.,24,42.11,unresolved,,,low,no_candidate,unresolved
+Phillips Carbon Black Ltd.,24,42.11,unresolved,,,low,no_candidate,unresolved
+HDFC Standard Life Insurance Company Ltd.,24,42.11,proposed,HDFCLIFE,INE795G01014,high,name_variant;concurrent_alias_collision,review_high
+Reliance Nippon Life Asset Management Ltd.,24,42.11,proposed,NAM-INDIA,INE298J01013,high,first_token_mismatch;name_variant,review_high
+Venky's (India) Ltd.,24,42.11,proposed,VENKEYS,INE398A01010,high,listing_after_first_seen,review_high
+Polaris Consulting & Services Ltd.,23,40.35,unresolved,,,low,no_candidate,unresolved
+Punj Lloyd Ltd.,21,36.84,unresolved,,,low,no_candidate,unresolved
+Orissa Min Dev Co Ltd.,21,36.84,unresolved,,,low,no_candidate,unresolved
+Rolta India Ltd.,21,36.84,unresolved,,,low,no_candidate,unresolved
+Maharashtra Seamless Ltd.,21,36.84,proposed,MAHSEAMLES,INE271B01025,high,listing_after_first_seen,review_high
+Nitin Fire Protection Industries Ltd.,21,36.84,unresolved,,,low,no_candidate,unresolved
+Amtek Auto Ltd.,21,36.84,unresolved,,,low,no_candidate,unresolved
+Ruchi Soya Industries Ltd.,21,36.84,unresolved,,,low,no_candidate,unresolved
+Kirloskar Oil Eng Ltd.,21,36.84,proposed,KIRLOSENG,INE146L01010,medium,,review_medium
+Hindustan Media Vent Ltd.,18,31.58,proposed,HMVL,INE871K01015,medium,,review_medium
+JMT Auto Ltd.,18,31.58,unresolved,,,low,no_candidate,unresolved
+State Trading Corporation of India Ltd.,18,31.58,proposed,STCINDIA,INE655A01013,high,,review_high
+Tide Water Oil (India) Ltd.,18,31.58,unresolved,,,low,no_candidate,unresolved
+Sintex Plastics Technology Ltd.,18,31.58,unresolved,,,low,no_candidate,unresolved
+TCNS Clothing Co. Ltd.,18,31.58,unresolved,,,low,no_candidate,unresolved
+Lanco Infratech Ltd.,15,26.32,unresolved,,,low,no_candidate,unresolved
+Jaypee Infratech Ltd.,15,26.32,unresolved,,,low,no_candidate,unresolved
+State Bank of Bikaner & Jaipur Ltd.,15,26.32,proposed,SBIN,INE062A01020,medium,name_variant;concurrent_alias_collision,review_medium
+Sintex Industries Ltd.,15,26.32,unresolved,,,low,no_candidate,unresolved
+Indiabulls Integrated Services Ltd.,15,26.32,proposed,KRYSTAL,INE0QN801017,medium,first_token_mismatch;listing_after_first_seen,review_medium
+Sundaram Clayton Ltd.,14,24.56,proposed,SUNCLAY,INE0Q3R01026,high,listing_after_first_seen,review_high
+Dishman Pharmaceuticals & Chemicals Ltd.,13,22.81,proposed,BIOFILCHEM,INE829A01014,medium,first_token_mismatch;concurrent_alias_collision,review_medium
+Vesuvius India Ltd.,12,21.05,proposed,VESUVIUS,INE386A01023,high,listing_after_first_seen,review_high
+International Paper APPM Ltd.,12,21.05,unresolved,,,low,no_candidate,unresolved
+Johnson Controls - Hitachi Air Conditioning India Ltd.,12,21.05,unresolved,,,low,no_candidate,unresolved
+Orient Refractories Ltd.,12,21.05,unresolved,,,low,no_candidate,unresolved
+Adani Gas Ltd.,12,21.05,proposed,ATGL,INE399L01023,medium,name_variant,review_medium
+Cairn India Ltd.,11,19.3,unresolved,,,low,no_candidate,unresolved
+Supreme Petrochem Ltd.,9,15.79,proposed,SPLPETRO,INE663A01033,high,listing_after_first_seen,review_high
+Clariant Chemicals (India) Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Electrosteel Castings Ltd.,9,15.79,proposed,ELECTCAST,INE086A01029,high,listing_after_first_seen,review_high
+KSK Energy Ventures Ltd,9,15.79,unresolved,,,low,no_candidate,unresolved
+ABG Shipyard Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Puravankara Projects Ltd.,9,15.79,proposed,PURVA,INE323I01011,medium,name_variant,review_medium
+KSB Pumps Ltd.,9,15.79,proposed,KSB,INE999A01023,medium,name_variant,review_medium
+State Bank of Travancore,9,15.79,proposed,SBIN,INE062A01020,high,name_variant;concurrent_alias_collision,review_high
+Financial Technologies (India) Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Ess Dee Aluminium Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Parsvnath Developer Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Sequent Scientific Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+IIFL Holdings Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Westlife Development Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Affle (India) Ltd.,9,15.79,proposed,AFFLE,INE00WC01027,medium,name_variant,review_medium
+Spicejet Ltd.,9,15.79,unresolved,,,low,no_candidate,unresolved
+Aditya Birla Nuvo Ltd.,8,14.04,proposed,ABCAPITAL,INE674K01013,medium,listing_after_first_seen,review_medium
+Shilpi Cable Tech Ltd.,8,14.04,unresolved,,,low,no_candidate,unresolved
+Tata Steel BSL Ltd.,8,14.04,proposed,TATASTEEL,INE081A01020,medium,name_variant;concurrent_alias_collision,review_medium
+Excel Crop Care Ltd.,7,12.28,unresolved,,,low,no_candidate,unresolved
+HMT Ltd.,6,10.53,proposed,HMT,INE262A01018,high,listing_after_first_seen,review_high
+Hotel Leela Venture Ltd.,6,10.53,unresolved,,,low,no_candidate,unresolved
+Global Offshore Services Ltd.,6,10.53,proposed,DATAMATICS,INE365B01017,medium,first_token_mismatch,review_medium
+State Bank of Mysore,6,10.53,proposed,SBIN,INE062A01020,high,name_variant;concurrent_alias_collision,review_high
+United Bank of India,6,10.53,proposed,BANKINDIA,INE084A01016,medium,first_token_mismatch;name_variant;concurrent_alias_collision,review_medium
+Kennametal India Ltd.,6,10.53,proposed,KENNAMET,INE717A01029,high,listing_after_first_seen,review_high
+Sterling And Wilson Solar Ltd.,6,10.53,proposed,SWSOLAR,INE00M201021,medium,,review_medium
+Advanta Ltd.,4,7.02,unresolved,,,low,no_candidate,unresolved
+Star Ferro & Cement Ltd.,4,7.02,proposed,STARCEMENT,INE460H01021,medium,name_variant;listing_after_first_seen,review_medium
+OCL India Ltd.,4,7.02,unresolved,,,low,no_candidate,unresolved
+Rico Auto Industries Ltd.,3,5.26,proposed,RICOAUTO,INE209B01025,high,listing_after_first_seen,review_high
+Munjal Showa Ltd.,3,5.26,proposed,MUNJALSHOW,INE577A01027,high,listing_after_first_seen,review_high
+S.E. Investments Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Automotive Axles Ltd.,3,5.26,proposed,AUTOAXLES,INE449A01011,high,listing_after_first_seen,review_high
+NIIT Ltd.,3,5.26,proposed,NIITLTD,INE161A01038,high,listing_after_first_seen;alias_target_of(NIIT Technologies Ltd.),review_high
+LG Balakrishnan & Bros Ltd.,3,5.26,proposed,LGBBROSLTD,INE337A01034,high,listing_after_first_seen,review_high
+Sona Koyo Steering Systems Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Oswal Chemicals & Fertilizers Ltd.,3,5.26,proposed,CHAMBLFERT,INE085A01013,medium,first_token_mismatch;concurrent_alias_collision,review_medium
+Gitanjali Gems Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Gammon Infrastructure Projects Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+MBL Infrastructures Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Geojit BNP Paribas Financial Services Ltd.,3,5.26,proposed,GEOJITFSL,INE007B01023,medium,name_variant,review_medium
+Mercator Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Agro Tech Foods Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Opto Circuits (I) Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Adlabs Entertainment Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Metalyst Forgings Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Uttam Galva Steels Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Flexituff International Ltd.,3,5.26,proposed,FLEXITUFF,INE060J01017,medium,name_variant,review_medium
+Geometric Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Shrenuj & Co. Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+NDTV Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Usha Martin Ltd.,3,5.26,proposed,USHAMART,INE228A01035,high,listing_after_first_seen;alias_target_of(Usha (India) Ltd.),review_high
+IVRCL Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+Srikalahasthi Pipes Ltd.,3,5.26,unresolved,,,low,no_candidate,unresolved
+IIFL Wealth Management Ltd.,3,5.26,proposed,NUVAMA,INE531F01023,medium,first_token_mismatch;listing_after_first_seen,review_medium

@@ -1,0 +1,46 @@
+================================================================================
+PHASE 5.5 GATES C & D — GATE D: UNIVERSE RECONSTRUCTION & PRICE GAP AUDIT
+Timestamp: 2026-09-25T09:50:51.491267+00:00
+================================================================================
+
+--- 1. Point-in-Time NIFTY500 Universe Reconstruction ---
+As-of Window Start (2016-01-04): 500 constituents
+As-of Covered End  (2020-09-14):   501 constituents
+Start constituents removed by end:  163
+End constituents added since start: 164
+Retained / Common constituents:     337
+
+Mapped Symbol Set Level:
+  Start Unique Mapped Symbols: 437
+  End Unique Mapped Symbols:   480
+  Symbols Removed:             101
+  Symbols Added:               144
+  Symbols Common:              336
+Gross Constituent Turnover: 32.67% across the 4.7-year clamped window
+Exported turnover summary to: deliverables/gate_cd/data_csv/reconstructed_turnover.csv
+
+--- 2. Bhavcopy Price Coverage & Price Gap Audit across 57 Snapshots ---
+Auditing price coverage across 57 snapshots (2016-01-04 to 2020-09-01)...
+Total calendar trading days in clamped window: 1154
+Exported price gap records: deliverables/gate_cd/data_csv/price_gaps.csv (5 records, 476 bytes)
+
+Price Coverage Audit Findings:
+  Total Evaluated Run (b) Holdings Periods: 57 snapshots
+  Total Identified Price Gap Instances (>30% missing bars): 5
+  Max Symbols with >30% Missing Bars in Any Single Snapshot: 1 (threshold: <= 20)
+  Snapshots with >20 Symbols with >30% Missing Bars: 0 (expected: 0)
+
+Detailed Manifest of Price Gap Instances (>30% missing bars):
+  Snapshot #8 (2016-08-01): SITICABLE (Siti Cable Network Ltd.) — present 10/21 days (52.38% missing)
+  Snapshot #15 (2017-03-01): SBBJ (State Bank of Bikaner & Jaipur Ltd.) — present 10/22 days (54.55% missing)
+  Snapshot #29 (2018-05-02): PRISMCEM (Prism Cement Ltd.) — present 2/22 days (90.91% missing)
+  Snapshot #42 (2019-06-03): MERCK (Merck Ltd.) — present 5/19 days (73.68% missing)
+  Snapshot #56 (2020-08-03): NIITTECH (NIIT Technologies Ltd.) — present 13/21 days (38.1% missing)
+
+--- Acceptance Assertions ---
+Assertion 1 PASSED: Start count 500 == 500, End count 501 == 501.
+Assertion 2 PASSED: Zero snapshots have > 20 symbols with > 30% missing bars (max observed: 1 <= 20).
+
+================================================================================
+GATE D STEP 2 COMPLETE: UNIVERSE RECONSTRUCTION & PRICE GAP AUDIT (PASS)
+================================================================================

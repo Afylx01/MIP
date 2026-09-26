@@ -1,0 +1,229 @@
+================================================================================
+PHASE 5.5.A-1 — GATE 0: PREREQUISITE INVENTORY
+Timestamp: 2026-09-24T13:43:32.714299+00:00
+================================================================================
+
+================================================================================
+### Q1. Corporate-action adjuster contract
+================================================================================
+Searching for Phase 6 build prompt §2.3 corporate-action adjustment module...
+Directories searched: ['.', 'scripts', 'indian_backtest', 'data', '/storage/emulated/0/Documents', '/storage/emulated/0/MIP1_Scanner']
+Candidate files found matching naming pattern: []
+
+Inspecting scanner watchdog in /storage/emulated/0/Documents/MIP1_Scanner_v5_5_0.py:
+
+$ sed -n '1329,1355p' /storage/emulated/0/Documents/MIP1_Scanner_v5_5_0.py
+# ── v5.4.5: corporate-action watchdog ──────────────────────────────
+    def _detect_basis_changes(self, cache: pl.DataFrame, fresh: pl.DataFrame) -> List[str]:
+        """Compare overlapping (symbol,date) closes: a stable ratio != 1
+        (split/dividend re-basis by yfinance) or unstable ratio (restatement
+        / mixed-source rows) → symbol needs full-history refetch.
+        F4: detects 2+ session variance or 1-session >1% action."""
+        if cache is None or cache.is_empty() or fresh is None or fresh.is_empty():
+            return []
+        overlap = (fresh.select(["symbol","date","close"])
+                        .join(cache.select(["symbol","date","close"]),
+                              on=["symbol","date"], how="inner", suffix="_old"))
+        if overlap.is_empty(): return []
+        overlap = overlap.with_columns((pl.col("close")/pl.col("close_old")).alias("_r"))
+        flags = (overlap.group_by("symbol").agg([
+                    pl.col("_r").min().alias("_mn"), pl.col("_r").max().alias("_mx"),
+                    pl.col("_r").median().alias("_med"), pl.len().alias("_n")])
+                 .filter(((pl.col("_n") >= 2) &
+                          ( ((pl.col("_mx")-pl.col("_mn")) < 0.01) &
+                            ((pl.col("_med")-1.0).abs() > 0.005)
+                            | ((pl.col("_mx")-pl.col("_mn")) >= 0.01) ))
+                         | ((pl.col("_n") == 1) & ((pl.col("_med")-1.0).abs() > 0.01)))
+                 ["symbol"].to_list())
+        if flags:
+            _dp_logger.info(f"Adjustment watchdog: basis change in {len(flags)} symbol(s) — "
+                            f"refetching full history: {', '.join(flags[:12])}")
+        return flags
+
+Evaluation against Gate 0 Q1 specifications:
+- Module file path: NOT FOUND
+- __file__: NOT FOUND
+- Entry point signature: NOT FOUND
+- Input shape / docstring: NOT FOUND
+- Corporate-action calendar schema: NOT FOUND
+- Auto-detects discontinuities: MIP1_Scanner_v5_5_0.py has an internal basis watchdog (_detect_basis_changes) that compares fresh vs cached yfinance rows and flags symbols for full refetch if ratio != 1.0, but NO standalone corporate-action adjustment calculation module exists in this workspace.
+
+RESULT: UNANSWERED — adjuster not present
+
+================================================================================
+### Q2. price_status provenance
+================================================================================
+Reading symbol map from: data/symbol_map.parquet
+
+[Covered Symbol Row - All 13 Evidence Columns + Identifiers]:
+  scrip_name          : 3M India Ltd.
+  symbol              : 3MINDIA
+  isin                : INE470A01017
+  first_seen          : 1998-08-01
+  last_seen           : 2018-09-28
+  resolution_method   : equity_l_exact
+  confidence          : high
+  mapping_status      : auto
+  price_status        : covered
+  status              : auto
+  eq_name             : 3M India Limited
+  eq_series           : EQ
+  eq_listing_date     : 13-AUG-2004
+  isin_in_equity_l    : True
+  name_similarity     : 1.0
+  first_token_match   : True
+  price_first_bar     : 2007-01-02
+  price_last_bar      : 2026-08-31
+  bars_expected       : 3177
+  bars_present        : 3177
+  coverage_pct        : 100.0
+  flags               : listing_after_first_seen
+  evidence_source     : EQUITY_L
+
+[Partial Symbol Row - All 13 Evidence Columns + Identifiers]:
+  scrip_name          : Adani Power Ltd.
+  symbol              : ADANIPOWER
+  isin                : INE814H01029
+  first_seen          : 2010-04-08
+  last_seen           : 2019-12-27
+  resolution_method   : equity_l_exact
+  confidence          : high
+  mapping_status      : auto
+  price_status        : partial
+  status              : auto
+  eq_name             : Adani Power Limited
+  eq_series           : EQ
+  eq_listing_date     : 20-AUG-2009
+  isin_in_equity_l    : True
+  name_similarity     : 1.0
+  first_token_match   : True
+  price_first_bar     : 2009-08-20
+  price_last_bar      : 2026-08-31
+  bars_expected       : 3177
+  bars_present        : 2707
+  coverage_pct        : 85.21
+  flags               : 
+  evidence_source     : EQUITY_L
+
+[Provenance Tracking - Code writing bars_present and price_status]:
+Code location: scripts/step1_v3_rebuild.py
+Lines 30-34, 290-302 (Input price file):
+
+$ sed -n '30,34p' scripts/step1_v3_rebuild.py
+# File Paths
+EVENTS_PATH = "data/index_events.parquet"
+EQUITY_L_PATH = "data/raw_reference/EQUITY_L.csv"
+PRICE_EXPORT_PATH = "data/price_cache_export.parquet"
+TRADING_CALENDAR_TXT = "data/trading_calendar.txt"
+
+$ sed -n '290,302p' scripts/step1_v3_rebuild.py
+price_df = pd.read_parquet(PRICE_EXPORT_PATH)
+    print(f"Loaded price cache: {len(price_df)} bars across {price_df['symbol'].nunique()} symbols")
+
+    # Index price bars
+    price_symbol_dates = {}
+    for sym, grp in price_df.groupby("symbol"):
+        price_symbol_dates[sym] = set(grp["date"].values)
+
+    price_symbol_ranges = {}
+    for sym, grp in price_df.groupby("symbol"):
+        price_symbol_ranges[sym] = (grp["date"].min(), grp["date"].max())
+
+    # Build EQUITY_L lookups
+
+Lines 638-652 (price_status logic):
+
+$ sed -n '638,652p' scripts/step1_v3_rebuild.py
+# ---------------------------------------------------------------------
+        # Determine price_status:
+        # covered (>= 90% AND >= 60 bars), partial (30-90%), none (< 30%), inconclusive (< 60 bars), no_symbol
+        # ---------------------------------------------------------------------
+        if not sym:
+            price_status = "no_symbol"
+        elif bars_expected < 60:
+            price_status = "inconclusive"
+        elif coverage_pct >= 90.0:
+            price_status = "covered"
+        elif coverage_pct >= 30.0:
+            price_status = "partial"
+        else:
+            price_status = "none"
+
+Price file identified: data/price_cache_export.parquet
+
+[Spot Checking Bar Values for ADANIPOWER on 3 Sample Dates]:
+    symbol       date  open  high  low  close      volume
+ADANIPOWER 2015-01-02  8.84  9.06 8.84   8.99  14630215.0
+ADANIPOWER 2018-01-01  8.32  9.04 8.18   8.52 171844240.0
+ADANIPOWER 2020-09-14  7.54  7.56 7.42   7.45   7074820.0
+
+================================================================================
+### Q3. Network path
+================================================================================
+
+$ uname -a
+Linux localhost 6.17.0-PRoot-Distro #1 SMP PREEMPT_DYNAMIC Fri, 10 Oct 2025 00:00:00 +0000 aarch64 GNU/Linux
+
+$ hostname
+localhost
+
+$ ip route get 1.1.1.1
+Not a route: 00000024 00000002 00000000
+An error :-)
+
+$ curl -s https://ifconfig.me
+2409:40e5:11ba:97d3:a811:ba8c:fad:d9ae
+
+Checking for VPS.md, servers.md, hosts.md in workspace and ~/ :
+Files found: ['/root/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/mcp_servers.md']
+
+--- Contents of /root/.gemini/antigravity-cli/builtin/skills/agy-customizations/docs/mcp_servers.md ---
+# MCP Servers (`mcp_config.json`)
+
+The Model Context Protocol (MCP) is an open standard that enables developers to
+build secure, two-way integrations between AI models and their data/tools. In
+Antigravity, configuring MCP servers allows you to expose custom tools,
+resources, and prompts to the agent.
+
+MCP servers can be configured globally or packaged within plugins.
+
+--------------------------------------------------------------------------------
+
+## Configuration File (`mcp_config.json`)
+
+MCP 
+
+================================================================================
+### Q4. Storage headroom
+================================================================================
+
+$ df -h '/sdcard/Documents/Project MIP'
+Filesystem           Size  Used Avail Use% Mounted on
+/storage/emulated/0  104G   74G   30G  72% /sdcard
+
+$ du -sh '/sdcard/Documents/Project MIP'
+126M	/sdcard/Documents/Project MIP
+
+$ du -sh '/storage/emulated/0/MIP1_Scanner/data/'
+182M	/storage/emulated/0/MIP1_Scanner/data/
+
+Files under data/ larger than 10 MB:
+
+$ find data/ -type f -size +10M -exec ls -lh {} +
+-rw-rw---- 1 10315 1023 64M Sep 24 11:02 data/price_cache_export.parquet
+
+Headroom Classification: Headroom is ABOVE 1 GB (30 GB available on /storage/emulated/0).
+
+================================================================================
+### Q5. User's goal (auditor's question to the user)
+================================================================================
+> AUDITOR QUESTION TO USER — unanswered:
+> Which of the following is the goal of the MIP-1 baseline backtest?
+>   (a) Reproduce the podcast's 29.6% CAGR as closely as possible.
+>   (b) Determine whether MIP-1 has a real edge over NIFTY500 Total
+>       Return on a survivorship-free sample.
+>   (c) Validate the engine end-to-end; the number itself is not the
+>       point.
+> The answer changes what "done" means and which sub-phases of A are
+> required. The user must answer in writing before A-2 begins.
+================================================================================

@@ -1,0 +1,8 @@
+test_name,cost_multiplier,slippage_bps,cagr_pct,max_dd_pct,sharpe,excess_over_benchmark_pp,gate_status
+Gate 5: Base Institutional Cost (1x),1.0,10.0,22.97,45.92,0.82,11.830055651734824,PASS
+Gate 6: 2x Cost Stress Test,2.0,20.0,21.42,47.39,0.78,10.280055651734827,PASS
+Gate 7: 3x Cost Stress Test,3.0,30.0,19.9,48.79,0.74,8.760055651734824,PASS
+Gate 8: Slippage Ladder (0.10%),1.0,10.0,22.97,45.92,0.82,11.830055651734824,PASS
+Gate 8: Slippage Ladder (0.25%),1.0,25.0,21.23,47.55,0.77,10.090055651734826,PASS
+Gate 8: Slippage Ladder (0.50%),1.0,50.0,18.4,50.15,0.7,7.260055651734824,PASS
+Gate 8: Slippage Ladder (1.00%),1.0,100.0,12.98,54.92,0.55,1.8400556517348257,PASS

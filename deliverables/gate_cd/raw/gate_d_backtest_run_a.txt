@@ -1,0 +1,76 @@
+================================================================================
+MIP-RETURN-10Y BASELINE BACKTEST EXECUTION: RUN (a) PASS 1 (Current Constituents)
+================================================================================
+Universe coverage: Survivor-biased current constituents (458 symbols as of 2020-09-01)
+Clamped Backtest Window: 2016-01-04 to 2020-09-14 (4.6954 years, 1,154 trading days)
+Portfolio Rules: N=20, Rebalance=Monthly (1st trading day), Execution=Next-Day Open, ExitRank=40
+
+[METRICS BLOCK]
+  Initial Capital:      Rs.  10,000,000.00
+  Final Portfolio Value:Rs.  20,585,753.10
+  Net Profit:           Rs.  10,585,753.10
+  CAGR:                            16.62%
+  Max Drawdown:                    44.36%
+  Sharpe Ratio:                     0.80
+  Total Closed Trades:               280
+  Open Positions at End:              20
+
+[ACCOUNTING IDENTITY BLOCK (Rule R-3)]
+  Initial Capital:      Rs.  10,000,000.00
+  + Realized PnL:       Rs.   4,692,068.00
+  - Tax:                Rs.           0.00
+  + Dividends:          Rs.           0.00
+  + Unrealized PnL:     Rs.   5,893,685.10
+  = Final Value:        Rs.  20,585,753.10
+  Residual:                      -0.00000000 (assert == 0.00)
+
+[TRADE LOG SUMMARY (Sample first 25 trades)]
+  BUY : 2016-01-05 | JAICORPLTD   |   5512 shs @    90.70 | Cost:   499938.40
+  BUY : 2016-01-05 | TORNTPOWER   |   2498 shs @   200.15 | Cost:   499974.70
+  BUY : 2016-01-05 | GSFC         |   5841 shs @    85.60 | Cost:   499989.60
+  BUY : 2016-01-05 | SUNTECK      |   4109 shs @   121.67 | Cost:   499962.58
+  BUY : 2016-01-05 | ESABINDIA    |    757 shs @   660.00 | Cost:   499620.00
+  BUY : 2016-01-05 | KANSAINER    |   1813 shs @   275.70 | Cost:   499844.10
+  BUY : 2016-01-05 | SUZLON       |  21739 shs @    23.00 | Cost:   499997.00
+  BUY : 2016-01-05 | DELTACORP    |   5952 shs @    84.00 | Cost:   499968.00
+  BUY : 2016-01-05 | KSCL         |   1358 shs @   368.00 | Cost:   499744.00
+  BUY : 2016-01-05 | IFBIND       |   1031 shs @   484.95 | Cost:   499983.45
+  BUY : 2016-01-05 | RENUKA       |  34722 shs @    14.40 | Cost:   499996.80
+  BUY : 2016-01-05 | OIL          |   2500 shs @   200.00 | Cost:   500000.00
+  BUY : 2016-01-05 | BIOCON       |   5524 shs @    90.50 | Cost:   499922.00
+  BUY : 2016-01-05 | GPPL         |   3125 shs @   160.00 | Cost:   500000.00
+  BUY : 2016-01-05 | JSWSTEEL     |    473 shs @  1056.10 | Cost:   499535.30
+  BUY : 2016-01-05 | ALKEM        |    325 shs @  1538.00 | Cost:   499850.00
+  BUY : 2016-01-05 | CGCL         |   2808 shs @   178.00 | Cost:   499824.00
+  BUY : 2016-01-05 | ATUL         |    292 shs @  1710.00 | Cost:   499320.00
+  BUY : 2016-01-05 | SUNDARMFIN   |    357 shs @  1397.00 | Cost:   498729.00
+  BUY : 2016-01-05 | JMFINANCIL   |  10869 shs @    46.00 | Cost:   499974.00
+  SELL: 2016-02-02 | JAICORPLTD   |   5512 shs @    67.30 | PnL:  -128980.80 (r2_exit)
+  SELL: 2016-02-02 | GSFC         |   5841 shs @    69.50 | PnL:   -94040.10 (r3_exit)
+  SELL: 2016-02-02 | SUNTECK      |   4109 shs @   118.75 | PnL:   -12018.83 (r3_exit)
+  SELL: 2016-02-02 | ESABINDIA    |    757 shs @   540.00 | PnL:   -90840.00 (r3_exit)
+  SELL: 2016-02-02 | KANSAINER    |   1813 shs @   270.00 | PnL:   -10334.10 (r3_exit)
+  ... [555 additional trade executions omitted for brevity]
+
+[OPEN POSITIONS AT CLAMPED END (2020-09-14)]
+  HELD: ABBOTINDIA   |     50 shs | Entry: 2020-04-03 @ 15775.00
+  HELD: ADANIGREEN   |   1728 shs | Entry: 2020-09-02 @ 508.95
+  HELD: AFFLE        |    327 shs | Entry: 2020-09-02 @ 2690.00
+  HELD: ALKYLAMINE   |    317 shs | Entry: 2020-05-05 @ 1815.00
+  HELD: AMBER        |    607 shs | Entry: 2020-06-02 @ 1350.00
+  HELD: BHARATRAS    |    118 shs | Entry: 2020-06-02 @ 6915.00
+  HELD: COROMANDEL   |    945 shs | Entry: 2020-08-04 @ 787.00
+  HELD: DEEPAKNTR    |   1170 shs | Entry: 2020-05-05 @ 492.90
+  HELD: DHANUKA      |   1120 shs | Entry: 2020-07-02 @ 742.00
+  HELD: DIXON        |    124 shs | Entry: 2020-05-05 @ 4646.00
+  HELD: ESCORTS      |    843 shs | Entry: 2020-06-02 @ 972.40
+  HELD: GMMPFAUDLR   |    160 shs | Entry: 2020-05-05 @ 3599.00
+  HELD: GRANULES     |   3891 shs | Entry: 2020-07-02 @ 213.70
+  HELD: INDIAMART    |    250 shs | Entry: 2020-05-05 @ 2301.00
+  HELD: IPCALAB      |    564 shs | Entry: 2020-04-03 @ 1413.45
+  HELD: JBCHEPHARM   |   1631 shs | Entry: 2020-04-03 @ 489.00
+  HELD: LAURUSLABS   |    736 shs | Entry: 2020-08-04 @ 1011.00
+  HELD: MUTHOOTFIN   |    577 shs | Entry: 2020-08-04 @ 1289.50
+  HELD: NAVINFLUOR   |    377 shs | Entry: 2020-05-05 @ 1528.10
+  HELD: POLYMED      |   1792 shs | Entry: 2020-08-04 @ 415.20
+================================================================================

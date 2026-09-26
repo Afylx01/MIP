@@ -1,0 +1,13 @@
+gate_id,metric,value,threshold,status
+Gate 23,Annualized Alpha Intercept (%),13.03,> +3.00%,PASS
+Gate 23,Newey-West HAC t-statistic (lag=6),1.833,> 1.500,PASS
+Gate 23,Newey-West HAC p-value (lag=6),0.0668,< 0.100,PASS
+Gate 23,Andrews Optimal Lag t-stat (lag=4),1.868,Informational,INFO
+Gate 24,Bootstrap 5th Percentile Excess Alpha (pp),0.75,> 0.00 pp,PASS
+Gate 24,Bootstrap Median Excess Alpha (pp),11.55,> +3.00 pp,PASS
+Gate 24,Paired Bootstrap Win Rate vs Bench (%),96.21,>= 95.0%,PASS
+Gate 24,Strategy 5th Percentile CAGR (%),7.91,Informational,INFO
+Gate 24,Benchmark 5th Percentile CAGR (%),3.78,Informational,INFO
+Gate 25,Deflated Sharpe Ratio (DSR),1.0,> 0.500,PASS
+Gate 25,DSR Z-Score,5.37,> 0.000,PASS
+Gate 25,H0 Expected Maximum Sharpe Ratio,0.1415,Informational,INFO

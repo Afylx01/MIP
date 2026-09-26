@@ -1,0 +1,3 @@
+gate_id,test_name,pass_threshold,fail_threshold,actual_value,test_status,details
+Gate 9,Execution Delay & Timing Sensitivity,t+1 VWAP CAGR within 20% relative to t+1 Open; positive alpha under t+2 Open,Strategy collapses or requires zero-delay execution,VWAP CAGR 23.11% (rel delta 0.61% <= 20%); t+2 Open CAGR 24.07% (excess +12.93 pp > 0%),PASS,t+1 Open: 22.97% | t+1 VWAP: 23.11% | t+2 Open: 24.07%
+Gate 10,Circuit Limit & Tradability Guard,> 80% of intended trades fully executable on scheduled rebalance date,> 20% of rebalance trades permanently blocked by circuit locks,99.30% executable on scheduled rebalance date (1132/1140 orders),PASS,"Audited 1140 orders; 3 UC blocks, 5 LC blocks"

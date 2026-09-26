@@ -1,0 +1,21 @@
+metric,value,threshold,status
+Total Closed Trades,557,Informational,INFO
+Winning Trades Count,253,Informational,INFO
+Losing Trades Count,304,Informational,INFO
+Win Rate (%),45.42,> 40.0%,PASS
+Loss Rate (%),54.58,Informational,INFO
+Profit Factor,1.98,> 1.50,PASS
+Gross Realized Profits (INR),124555976.63,Informational,INFO
+Gross Realized Losses (INR),62978236.95,Informational,INFO
+Net Realized PnL (INR),61577739.68,> 0.00,PASS
+Average Win Return (%),40.56,Informational,INFO
+Average Loss Return (%),13.58,Informational,INFO
+Win/Loss Payoff Ratio,2.99,> 1.00,PASS
+Expectancy Return per Trade (%),11.02,> 0.00%,PASS
+Expectancy PnL per Trade (INR),110552.49,> 0.00,PASS
+Gain-to-Pain Ratio,0.98,> 0.50,PASS
+Average Holding Period (Days),119.7,Informational,INFO
+Median Holding Period (Days),91.0,Informational,INFO
+Max Winning Trade Return (%),566.93,Informational,INFO
+Max Losing Trade Return (%),-88.13,Informational,INFO
+Gate 22 Compliance Status,PASS,Win Rate > 40% & PF > 1.50,PASS

@@ -1,0 +1,49 @@
+================================================================================
+PHASE 5.5 GATES A & B — GATE 1: POST-APPROVAL COVERAGE MAP EXECUTION
+Timestamp: 2026-09-25T05:50:22.625008+00:00
+================================================================================
+
+--- 1. Ingesting Approved Datasets ---
+Loaded raw index events: 2,493 NIFTY500 events
+Loaded approved corrections: 16 rules (all status = 'approved')
+Loaded symbol map: 1,448 scrips (Active: 763 scrips)
+Loaded price dataset: 753,046 bars; 753,046 valid (symbol, date) pairs
+Loaded 57 monthly snapshot dates (2016-01-04 to 2020-09-01)
+
+--- 2. Computing Point-in-Time Coverage Metrics ---
+Exported coverage map: deliverables/gate_ab/data_csv/gate_a_coverage_map.csv (57 snapshots, 5,127 bytes)
+
+================================================================================
+GATE A STATISTICAL SUMMARY & ACCEPTANCE ASSERTIONS
+================================================================================
+Constituent Count Distribution:
+  Min: 500, Median: 501.0, Max: 501
+Resolved Fraction Distribution (Standing Rule R-5 Target: >= 80.0%):
+  Min:    86.40% (Snapshot #1 on 2016-01-04)
+  Median: 91.02%
+  Max:    94.81%
+  All >= 80.0%: True (100% of snapshots pass)
+
+Joint Universe Coverage Distribution (PASS Target: Median >= 85.0%):
+  Min:    82.00%
+  Median: 87.03% (PASS threshold: 85.0%)
+  Max:    91.62%
+
+Comparative Gains:
+  Phase M-1 Median Joint Coverage: 86.25%
+  Gate A Post-Approval Median:     87.03% (gain: +0.78 pp)
+  Gate 2c Baseline Median:        24.56% (gain: +62.47 pp)
+
+--- Assertion Verifications ---
+Assertion 1 PASSED: Resolved fraction >= 80.0% on 100% of snapshots (min: 86.40% >= 80.0%).
+Assertion 2 PASSED: Median joint coverage 87.03% >= 85.0% PASS threshold.
+Assertion 3 PASSED: Zero blocked events for approved scrips.
+
+Sample Milestone Snapshots:
+Snapshot        Idx   Total   Resolved     PriceCov     JointCov     Delta vs M-1
+2016-01-04      #1    500     86.40      % 82.00      % 82.00      % +-0.04      pp
+2020-09-01      #57   501     94.81      % 91.42      % 91.42      % +1.13       pp
+
+================================================================================
+GATE A COMPLETE: COVERAGE MAP EXECUTED & ALL ASSERTIONS VERIFIED (PASS)
+================================================================================
