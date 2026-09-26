@@ -16,6 +16,7 @@ Implements the Julius de Kempenaer (JdK) Relative Rotation Graph model:
 
 import sys
 from pathlib import Path
+from typing import Optional, List, Dict
 import pandas as pd
 import numpy as np
 

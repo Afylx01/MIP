@@ -34,6 +34,7 @@ if str(PROD_DIR) not in sys.path:
     sys.path.insert(0, str(PROD_DIR))
 
 from plugins.rrg_filter import RRGFilterPlugin
+from breadth import MarketBreadthEngine
 
 UNIVERSE_PARQUET = DATA_DIR / "universe/nifty500_pit_universe.parquet"
 BENCHMARK_CSV = BASE_DIR / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"
@@ -54,6 +55,10 @@ class ProductionScanner:
         self.plugins = [
             RRGFilterPlugin(enabled=enable_rrg)
         ]
+        self.breadth_engine = MarketBreadthEngine(
+            universe_parquet=self.universe_parquet,
+            benchmark_csv=self.benchmark_csv
+        )
 
     def log(self, msg: str):
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -129,12 +134,21 @@ class ProductionScanner:
         bars = bars.sort_values(by=["symbol", "date"]).reset_index(drop=True)
 
         # 4. Technical Indicators
-        self.log("Computing technical indicators (52w High, 200 EMA, Volar, RS Ratio)...")
+        self.log("Computing technical indicators (52w High/Low, EMAs 200/50/20, Volar, RS Ratio)...")
         bars["high_252"] = bars.groupby("symbol")["high"].transform(
             lambda s: s.rolling(252, min_periods=50).max()
         )
+        bars["low_252"] = bars.groupby("symbol")["low"].transform(
+            lambda s: s.rolling(252, min_periods=50).min()
+        )
         bars["ema_200"] = bars.groupby("symbol")["close"].transform(
             lambda s: s.ewm(span=200, adjust=True, min_periods=50).mean()
+        )
+        bars["ema_50"] = bars.groupby("symbol")["close"].transform(
+            lambda s: s.ewm(span=50, adjust=True, min_periods=20).mean()
+        )
+        bars["ema_20"] = bars.groupby("symbol")["close"].transform(
+            lambda s: s.ewm(span=20, adjust=True, min_periods=10).mean()
         )
         bars["ret_252"] = bars.groupby("symbol")["close"].transform(
             lambda s: s / s.shift(252) - 1.0
@@ -152,7 +166,7 @@ class ProductionScanner:
         )
         bars["rs_pass"] = bars["rs_ratio"] > bars["rs_ema_200"]
 
-        # 5. Evaluate Plugins
+        # 5. Evaluate Plugins (including RRG)
         for plugin in self.plugins:
             self.log(f"Applying plugin: {plugin.name} (enabled={plugin.enabled})...")
             bars = plugin.evaluate(bars, as_of_date=as_of_date)
@@ -160,8 +174,14 @@ class ProductionScanner:
         # 6. Extract Target Date Snapshot
         snapshot = bars[bars["date"] == as_of_date].copy()
         snapshot["high_252"] = snapshot["high_252"].fillna(snapshot["close"])
+        snapshot["low_252"] = snapshot["low_252"].fillna(snapshot["close"])
         snapshot["distance_52wh_pct"] = (snapshot["close"] / snapshot["high_252"] - 1.0) * 100.0
         snapshot["ema_200_ratio"] = snapshot["close"] / snapshot["ema_200"]
+
+        # 6b. Market Breadth & RRG Analytics
+        breadth_data = self.breadth_engine.compute_breadth(as_of_date=as_of_date, snapshot_df=snapshot)
+        self.breadth_engine.export_json(breadth_data)
+        self.breadth_engine.print_summary(breadth_data)
 
         # Core 3 Filters
         snapshot["filter1_pass"] = snapshot["close"] >= (0.80 * snapshot["high_252"])
@@ -232,12 +252,16 @@ class ProductionScanner:
         self.log(f"SCREENING SUMMARY: Active: {n_act:,} | Qualified Candidates: {n_qual:,} ({n_qual/n_act*100:.1f}%)")
         self.log("------------------------------------------------------------------")
 
-        top20 = qual.head(20)[[
-            "rank", "symbol", "close", "distance_52wh_pct", "ret_252", "volar_score"
-        ]].copy()
-        top20["ret_252"] = top20["ret_252"].astype(str) + "%"
-        top20["distance_52wh_pct"] = top20["distance_52wh_pct"].astype(str) + "%"
-        top20["close"] = "₹" + top20["close"].astype(str)
+        top20_raw = qual.head(20).copy()
+        top20 = pd.DataFrame({
+            "rank": top20_raw["rank"],
+            "symbol": top20_raw["symbol"],
+            "close": "₹" + top20_raw["close"].round(2).astype(str),
+            "distance_52wh_pct": top20_raw["distance_52wh_pct"].round(2).astype(str) + "%",
+            "volar_score": top20_raw["volar_score"].round(4),
+            "rrg_quadrant": top20_raw["rrg_quadrant"] if "rrg_quadrant" in top20_raw.columns else "N/A",
+            "rrg_rs_ratio": top20_raw["rrg_rs_ratio"].round(2) if "rrg_rs_ratio" in top20_raw.columns else 100.0,
+        })
         self.log("\n" + top20.to_string(index=False))
         self.log("==================================================================\n")
 

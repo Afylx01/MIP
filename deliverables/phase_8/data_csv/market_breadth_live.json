@@ -1,0 +1,62 @@
+{
+  "as_of_date": "2026-08-28",
+  "universe_size": 750,
+  "trend_participation": {
+    "pct_above_200_ema": 59.07,
+    "pct_above_50_ema": 52.0,
+    "pct_above_20_ema": 45.47,
+    "count_above_200_ema": 443,
+    "count_above_50_ema": 390,
+    "count_above_20_ema": 341
+  },
+  "high_proximity": {
+    "pct_within_20pct_52wh": 57.2,
+    "pct_within_5pct_52wh": 15.2,
+    "count_within_20pct_52wh": 429,
+    "count_within_5pct_52wh": 114
+  },
+  "net_new_highs": {
+    "new_52w_highs": 16,
+    "new_52w_lows": 16,
+    "net_highs_lows": 0
+  },
+  "regime": {
+    "key": "NEUTRAL",
+    "classification": "NEUTRAL",
+    "label": "\ud83d\udfe1 SELECTIVE / NEUTRAL",
+    "emoji": "\ud83d\udfe1",
+    "description": "Selective leadership; strict risk-adjusted criteria required"
+  },
+  "rrg_distribution": {
+    "LEADING": {
+      "count": 217,
+      "pct": 28.93,
+      "bias": "\ud83d\udfe2 OUTPERFORM"
+    },
+    "IMPROVING": {
+      "count": 191,
+      "pct": 25.47,
+      "bias": "\ud83d\udfe2 ACCELERATING"
+    },
+    "WEAKENING": {
+      "count": 170,
+      "pct": 22.67,
+      "bias": "\ud83d\udfe1 DECELERATING"
+    },
+    "LAGGING": {
+      "count": 172,
+      "pct": 22.93,
+      "bias": "\ud83d\udd34 UNDERPERFORM"
+    }
+  },
+  "pct_above_200_ema": 59.07,
+  "pct_above_50_ema": 52.0,
+  "pct_above_20_ema": 45.47,
+  "pct_within_20pct_52wh": 57.2,
+  "pct_within_5pct_52wh": 15.2,
+  "new_52w_highs": 16,
+  "new_52w_lows": 16,
+  "net_highs_lows": 0,
+  "breadth_regime": "\ud83d\udfe1 SELECTIVE / NEUTRAL",
+  "timestamp": "2026-09-26T16:22:13.968084"
+}

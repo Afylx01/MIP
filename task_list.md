@@ -116,3 +116,9 @@
 - [x] Task 4: Institutional Interactive HTML Performance Tearsheet (`reports/mip_institutional_tearsheet.html`, mirrored to `/sdcard/Documents/deliverables/mip_institutional_tearsheet.html`)
 - [x] **Standing Gate HALT-10: Final Auditor Inspection & Production Certification (CLEARED & CLOSED in PHASE_9_RULING.md)**
 
+## Directive DIR-PROD-BREADTH-RRG-01: Market Breadth & Automated RRG Dispatch
+- [x] Task 1: Create Market Breadth Engine (`production/breadth.py`, `deliverables/phase_8/data_csv/market_breadth_live.json`)
+- [x] Task 2: Refactor Scanner to Always Run Breadth & RRG (`production/scanner.py`, `screener_output_live.csv`)
+- [x] Task 3: Upgrade Telegram Alert Formatter & Dispatcher (`production/telegram_alerts.py`, Breadth + RRG + Top 20 table)
+- [x] Task 4: End-to-End Test & Verification (`--dry-run` PASS, live Telegram alert dispatched, Msg ID 174)
+- [ ] **Standing Gate HALT-11: Final Auditor Review on Market Breadth & RRG Alert Suite (UNTICKED, OPEN)**
