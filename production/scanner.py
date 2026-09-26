@@ -35,6 +35,8 @@ if str(PROD_DIR) not in sys.path:
 
 from plugins.rrg_filter import RRGFilterPlugin
 from breadth import MarketBreadthEngine
+from sector_rotation import SectorRotationEngine
+from sector_map import get_sector
 
 UNIVERSE_PARQUET = DATA_DIR / "universe/nifty500_pit_universe.parquet"
 BENCHMARK_CSV = BASE_DIR / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"
@@ -56,6 +58,10 @@ class ProductionScanner:
             RRGFilterPlugin(enabled=enable_rrg)
         ]
         self.breadth_engine = MarketBreadthEngine(
+            universe_parquet=self.universe_parquet,
+            benchmark_csv=self.benchmark_csv
+        )
+        self.sector_engine = SectorRotationEngine(
             universe_parquet=self.universe_parquet,
             benchmark_csv=self.benchmark_csv
         )
@@ -153,6 +159,13 @@ class ProductionScanner:
         bars["ret_252"] = bars.groupby("symbol")["close"].transform(
             lambda s: s / s.shift(252) - 1.0
         )
+        bars["ret_21"] = bars.groupby("symbol")["close"].transform(
+            lambda s: s / s.shift(21) - 1.0
+        )
+        bars["ret_63"] = bars.groupby("symbol")["close"].transform(
+            lambda s: s / s.shift(63) - 1.0
+        )
+        bars["sector"] = bars["symbol"].map(get_sector)
         bars["ret_1d"] = bars.groupby("symbol")["close"].pct_change().fillna(0.0)
         bars["vol_252"] = bars.groupby("symbol")["ret_1d"].transform(
             lambda s: s.rolling(252, min_periods=20).std() * np.sqrt(252)
@@ -218,7 +231,7 @@ class ProductionScanner:
         full_df = pd.concat([qual, non_qual], ignore_index=True)
 
         cols = [
-            "rank", "symbol", "close", "high_252", "distance_52wh_pct",
+            "rank", "symbol", "sector", "close", "high_252", "distance_52wh_pct",
             "ema_200", "ema_200_ratio", "ret_252", "vol_252", "volar_score",
             "volume", "is_delisted", "filter1_pass", "filter2_pass", "filter3_pass",
             "is_qualified"
@@ -245,6 +258,16 @@ class ProductionScanner:
         export_df.to_csv(dest_csv, index=False)
         self.log(f"Exported live screener results ({len(export_df)} scrips) to {dest_csv}")
 
+        # 6c. Sector Rotation Analytics
+        top20_symbols = qual.head(20)["symbol"].tolist()
+        sector_data = self.sector_engine.compute_rotation(
+            as_of_date=as_of_date,
+            snapshot_df=snapshot,
+            top20_symbols=top20_symbols
+        )
+        self.sector_engine.export_json(sector_data)
+        self.sector_engine.print_summary(sector_data)
+
         # Summary
         n_act = len(snapshot)
         n_qual = len(qual)
@@ -256,6 +279,7 @@ class ProductionScanner:
         top20 = pd.DataFrame({
             "rank": top20_raw["rank"],
             "symbol": top20_raw["symbol"],
+            "sector": top20_raw["sector"],
             "close": "₹" + top20_raw["close"].round(2).astype(str),
             "distance_52wh_pct": top20_raw["distance_52wh_pct"].round(2).astype(str) + "%",
             "volar_score": top20_raw["volar_score"].round(4),

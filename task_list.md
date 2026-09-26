@@ -122,3 +122,12 @@
 - [x] Task 3: Upgrade Telegram Alert Formatter & Dispatcher (`production/telegram_alerts.py`, Breadth + RRG + Top 20 table)
 - [x] Task 4: End-to-End Test & Verification (`--dry-run` PASS, live Telegram alert dispatched, Msg ID 174)
 - [x] **Standing Gate HALT-11: Final Auditor Review on Market Breadth & RRG Alert Suite (CLEARED & CLOSED in HALT_11_RULING.md)**
+
+## Directive DIR-PROD-SECTOR-ROTATION-01: Sector Rotation Engine & Telegram Broadcast
+- [x] Task 1: Sector Taxonomy & Mapping Database (`production/sector_map.py`, 100% of 1,039 symbols mapped across 12 sectors, `symbol_sector_map.json`)
+- [x] Task 2: Build Sector Rotation Engine (`production/sector_rotation.py`, 5 quantitative metrics, composite ranking, `sector_rotation_live.json`)
+- [x] Task 3: Scanner Integration (`production/scanner.py`, `sector` column in universe snapshot and `screener_output_live.csv`, terminal summary)
+- [x] Task 4: Telegram Alert Formatting (`production/telegram_alerts.py`, `<pre>` Sector Rotation Table, Top Inflowing/Lagging callouts, character limit invariance)
+- [x] Task 5: End-to-End Verification & Live Dispatch (Full scanner execution, `--dry-run` character count 3,831 / 4,096, live Telegram dispatch SUCCESS)
+- [ ] **Standing Gate HALT-12: Mandatory Pause for Auditor Review and Ruling on Sector Rotation Engine (ACTIVE / UNTICKED)**
+

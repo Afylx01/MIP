@@ -35,6 +35,7 @@ import numpy as np
 BASE_DIR = Path("/storage/emulated/0/Documents/Project MIP")
 DEFAULT_SCREENER_CSV = BASE_DIR / "deliverables/phase_8/data_csv/screener_output_live.csv"
 DEFAULT_BREADTH_JSON = BASE_DIR / "deliverables/phase_8/data_csv/market_breadth_live.json"
+DEFAULT_SECTOR_JSON = BASE_DIR / "deliverables/phase_8/data_csv/sector_rotation_live.json"
 BENCHMARK_CSV = BASE_DIR / "deliverables/phase_7/data_csv/nifty_500_benchmark_proxy.csv"
 TELEGRAM_NOTIFY_BIN = Path("/usr/local/bin/telegram-notify")
 
@@ -46,6 +47,11 @@ try:
     from breadth import MarketBreadthEngine
 except ImportError:
     MarketBreadthEngine = None
+
+try:
+    from sector_rotation import SectorRotationEngine
+except ImportError:
+    SectorRotationEngine = None
 
 
 def get_market_regime(as_of_date: str) -> Dict:
@@ -113,11 +119,32 @@ def load_breadth_data(as_of_date: str, breadth_json_path: Path) -> Dict:
     }
 
 
+def load_sector_data(as_of_date: str, sector_json_path: Path) -> Dict:
+    """Loads sector rotation JSON or computes on the fly if missing."""
+    if sector_json_path.exists():
+        try:
+            with open(sector_json_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if data.get("as_of_date") == as_of_date:
+                return data
+        except Exception:
+            pass
+
+    if SectorRotationEngine is not None:
+        engine = SectorRotationEngine()
+        data = engine.compute_rotation(as_of_date=as_of_date)
+        engine.export_json(data, output_path=sector_json_path)
+        return data
+
+    return {}
+
+
 def format_telegram_html(
     screener_df: pd.DataFrame,
     as_of_date: str,
     regime: Dict,
     breadth_data: Dict,
+    sector_data: Optional[Dict] = None,
     top_n: int = 20
 ) -> str:
     """Formats institutional HTML message for Telegram."""
@@ -181,7 +208,27 @@ def format_telegram_html(
         html.append(f"Universe Scanned: {breadth_data.get('universe_size', 750):,} scrips")
         html.append("</pre>\n")
 
-    # 4. Top 20 Candidates Table
+    # 4. Sector Rotation & Leadership Table
+    if sector_data and "ranked_sectors" in sector_data:
+        top_in = ", ".join(sector_data.get("top_inflowing_sectors", []))
+        lag_sec = ", ".join(sector_data.get("top_lagging_sectors", []))
+        html.append("🏭 <b>SECTOR ROTATION & LEADERSHIP DYNAMICS</b>")
+        html.append(f"<b>Inflowing</b>: {top_in} | <b>Lagging</b>: {lag_sec}")
+        html.append("<pre>")
+        html.append(f"{'SECTOR':<12}{'1M-ALPHA':<11}{'BREADTH':<9}{'RRG':<6}{'PICKS'}")
+        html.append("-" * 43)
+        quad_abbr = {"LEADING": "LEAD", "IMPROVING": "IMPR", "WEAKENING": "WEAK", "LAGGING": "LAGG"}
+        for s in sector_data["ranked_sectors"]:
+            sec_name = str(s.get("sector", ""))[:11]
+            a1m = f"{float(s.get('alpha_1m', 0.0)):>+5.1f}%"
+            br = f"{float(s.get('breadth_200', 0.0)):>5.1f}%"
+            q = quad_abbr.get(str(s.get("rrg_quadrant", "")), str(s.get("rrg_quadrant", ""))[:4])
+            cnt = int(s.get("candidate_count", 0))
+            picks = f"{cnt:>2d}" if cnt > 0 else " -"
+            html.append(f"{sec_name:<12}{a1m:<11}{br:<9}{q:<6}{picks}")
+        html.append("</pre>\n")
+
+    # 5. Top 20 Candidates Table
     quad_abbrev = {
         "LEADING": "LEAD",
         "IMPROVING": "IMPR",
@@ -207,13 +254,13 @@ def format_telegram_html(
 
     html.append("</pre>\n")
 
-    # 5. Position Sizing Recommendations
+    # 6. Position Sizing Recommendations
     html.append("🎯 <b>TARGET POSITION SIZING (TOP 20 EQUAL-WEIGHT)</b>")
     html.append("<b>Tier 1: ₹10 Lakhs Portfolio (₹50,000 / Slot)</b>")
     html.append("<pre>")
     html.append(f"{'SYMBOL':<11}{'SHARES':<8}{'EST. OUTLAY'}")
     html.append("-" * 31)
-    for _, r in qual.head(7).iterrows():
+    for _, r in qual.head(5).iterrows():
         sym = str(r["symbol"])[:10]
         px = float(r["close"])
         shs = int(50_000 // px) if px > 0 else 0
@@ -226,7 +273,7 @@ def format_telegram_html(
     html.append("<pre>")
     html.append(f"{'SYMBOL':<11}{'SHARES':<8}{'EST. OUTLAY'}")
     html.append("-" * 31)
-    for _, r in qual.head(7).iterrows():
+    for _, r in qual.head(5).iterrows():
         sym = str(r["symbol"])[:10]
         px = float(r["close"])
         shs = int(500_000 // px) if px > 0 else 0
@@ -235,7 +282,7 @@ def format_telegram_html(
     html.append("... [See tearsheet for full 20 slots]")
     html.append("</pre>\n")
 
-    # 6. Execution Rules Reminder
+    # 7. Execution Rules Reminder
     html.append("🛡️ <b>Execution Rules Reminder</b>:")
     html.append("• 100% Exit Buffer: Retain existing holdings up to Rank 40.")
     html.append("• Zero Look-Ahead: Signals Friday Close -> Monday Open execution.")
@@ -247,10 +294,11 @@ def format_telegram_html(
 def dispatch_telegram_alert(
     screener_csv: Path,
     breadth_json: Path = DEFAULT_BREADTH_JSON,
+    sector_json: Path = DEFAULT_SECTOR_JSON,
     as_of_date: Optional[str] = None,
     dry_run: bool = False
 ) -> str:
-    """Loads screener and breadth data, formats HTML alert, and dispatches via telegram-notify."""
+    """Loads screener, breadth, and sector rotation data, formats HTML alert, and dispatches via telegram-notify."""
     if not screener_csv.exists():
         raise FileNotFoundError(f"Screener CSV not found: {screener_csv}")
 
@@ -258,12 +306,14 @@ def dispatch_telegram_alert(
     date_str = as_of_date or str(df["date"].iloc[0] if "date" in df.columns else datetime.date.today())
     regime = get_market_regime(date_str)
     breadth_data = load_breadth_data(date_str, breadth_json)
+    sector_data = load_sector_data(date_str, sector_json)
 
     msg = format_telegram_html(
         screener_df=df,
         as_of_date=date_str,
         regime=regime,
-        breadth_data=breadth_data
+        breadth_data=breadth_data,
+        sector_data=sector_data
     )
 
     if dry_run:
@@ -288,9 +338,10 @@ def dispatch_telegram_alert(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="MIP Telegram Momentum Alert Dispatcher with Market Breadth & RRG")
+    parser = argparse.ArgumentParser(description="MIP Telegram Momentum Alert Dispatcher with Sector Rotation, Market Breadth & RRG")
     parser.add_argument("--screener-csv", type=str, default=str(DEFAULT_SCREENER_CSV), help="Path to live screener CSV")
     parser.add_argument("--breadth-json", type=str, default=str(DEFAULT_BREADTH_JSON), help="Path to live breadth JSON")
+    parser.add_argument("--sector-json", type=str, default=str(DEFAULT_SECTOR_JSON), help="Path to live sector rotation JSON")
     parser.add_argument("--as-of-date", type=str, default="2026-08-28", help="Screener as-of date (YYYY-MM-DD)")
     parser.add_argument("--dry-run", action="store_true", help="Print message to terminal without sending")
 
@@ -298,6 +349,7 @@ def main():
     dispatch_telegram_alert(
         screener_csv=Path(args.screener_csv),
         breadth_json=Path(args.breadth_json),
+        sector_json=Path(args.sector_json),
         as_of_date=args.as_of_date,
         dry_run=args.dry_run
     )
