@@ -311,8 +311,18 @@ def main():
     parser.add_argument("--as-of-date", type=str, default="2026-08-28", help="Target EOD date (YYYY-MM-DD)")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_CSV), help="Output CSV path")
     parser.add_argument("--enable-rrg", action="store_true", help="Enable Relative Rotation Graph (RRG) filter")
+    parser.add_argument("--sync-market-data", action="store_true", help="Sync latest Bhavcopy & Corporate Actions from NSE before scanning")
 
     args = parser.parse_args()
+
+    if args.sync_market_data:
+        try:
+            from auto_fetch_market_data import MarketDataSyncEngine
+            sync_engine = MarketDataSyncEngine()
+            sync_engine.sync_universe_to_date(target_date=args.as_of_date)
+        except Exception as e:
+            print(f"[Warning] Auto-sync encountered issue: {e}. Continuing with existing database.")
+
     scanner = ProductionScanner(enable_rrg=args.enable_rrg)
     scanner.run_scan(as_of_date=args.as_of_date, output_csv=Path(args.output))
 

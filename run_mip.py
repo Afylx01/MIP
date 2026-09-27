@@ -73,9 +73,9 @@ MENU_ITEMS = {
         "desc": "Computes trade tickets, whole share sizing, statutory friction, and portfolio ledger."
     },
     "5": {
-        "title": "Ingest Daily Bhavcopy & Update Master Universe Database",
-        "cmd": [PYTHON_EXE, str(BASE_DIR / "scripts/update_universe.py")],
-        "desc": "Ingests daily price bars, maintains survivorship-free database and updates metadata."
+        "title": "Ingest Daily Bhavcopy & Update Master Universe (Auto-Fetch from NSE)",
+        "cmd": [PYTHON_EXE, str(BASE_DIR / "scripts/update_universe.py"), "--auto-fetch"],
+        "desc": "Automatically detects date gaps, downloads Bhavcopies from NSE, adjusts CAs & updates database."
     },
 
     # Strategy Backtesting Lab
@@ -211,7 +211,27 @@ def execute_option(opt: str):
         return
 
     item = MENU_ITEMS[opt]
-    cmd = item["cmd"]
+    cmd = list(item["cmd"])
+
+    # Interactive sub-options for Option [5]
+    if opt == "5" and sys.stdin.isatty():
+        print(f"\n{CYAN}{BOLD}📥 OPTION [5] DATA SYNCHRONIZATION MENU:{RESET}")
+        print(f"  {BOLD}[1]{RESET} 🌐 Auto-fetch latest Bhavcopies & Corporate Actions from NSE (Default)")
+        print(f"  {BOLD}[2]{RESET} 📁 Ingest local Bhavcopy CSV file")
+        try:
+            sub = input(f"\n{BOLD}Select sync mode [1/2, Default: 1]: {RESET}").strip()
+            if sub == "2":
+                local_f = input(f"{BOLD}Enter path to local Bhavcopy CSV: {RESET}").strip()
+                if local_f:
+                    cmd = [PYTHON_EXE, str(BASE_DIR / "scripts/update_universe.py"), "--new-bhavcopy", local_f]
+                else:
+                    print(f"{YELLOW}No path provided. Defaulting to auto-fetch from NSE.{RESET}")
+                    cmd = [PYTHON_EXE, str(BASE_DIR / "scripts/update_universe.py"), "--auto-fetch"]
+            else:
+                cmd = [PYTHON_EXE, str(BASE_DIR / "scripts/update_universe.py"), "--auto-fetch"]
+        except KeyboardInterrupt:
+            print(f"\n{YELLOW}Returning to menu...{RESET}")
+            return
 
     print("\n" + "=" * 80)
     print(f"{GREEN}{BOLD}EXECUTING OPTION [{opt}]: {item['title']}{RESET}")

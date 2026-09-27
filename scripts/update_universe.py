@@ -56,6 +56,16 @@ SYMBOL_MAP_PARQUET = DATA_DIR / "symbol_map.parquet"
 
 REQUIRED_COLUMNS = ["date", "symbol", "open", "high", "low", "close", "volume", "is_delisted"]
 
+PROD_DIR = BASE_DIR / "production"
+if str(PROD_DIR) not in sys.path:
+    sys.path.insert(0, str(PROD_DIR))
+
+try:
+    from auto_fetch_market_data import MarketDataSyncEngine
+except ImportError:
+    MarketDataSyncEngine = None
+
+
 
 def compute_sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -297,9 +307,19 @@ def main():
     parser.add_argument("--build-initial", action="store_true", help="Build master universe database")
     parser.add_argument("--verify-only", action="store_true", help="Audit database invariants")
     parser.add_argument("--new-bhavcopy", type=str, default=None, help="Path to new daily Bhavcopy CSV")
+    parser.add_argument("--auto-fetch", action="store_true", help="Auto-fetch missing Bhavcopies & Corporate Actions from NSE")
+    parser.add_argument("--target-date", type=str, default=None, help="Target synchronization date (YYYY-MM-DD)")
 
     args = parser.parse_args()
     mgr = UniverseManager()
+
+    if args.auto_fetch:
+        if MarketDataSyncEngine is None:
+            print("Error: MarketDataSyncEngine could not be loaded from production/auto_fetch_market_data.py")
+            sys.exit(1)
+        engine = MarketDataSyncEngine()
+        res = engine.sync_universe_to_date(target_date=args.target_date)
+        sys.exit(0 if res.get("status") in ["SUCCESS", "UP_TO_DATE"] else 1)
 
     if args.build_initial:
         mgr.build_initial_universe()

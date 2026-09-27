@@ -145,7 +145,15 @@
 - [x] Task 3: Windows One-Click Batch Launcher (`run_mip.bat`, Python PATH detection, auto-install `requirements.txt`, cross-platform console clearing)
 - [x] Task 4: Standard Dependency Manifest (`requirements.txt`, pandas, pyarrow, numpy, requests, python-dotenv)
 - [x] Task 5: Comprehensive Operator Runbook Updates (`HOW_TO_RUN.md`, Sections 1.1 & 1.2 added, Termux:Widget 1-tap setup guide, Windows 10/11 double-click guide, mirrored to shared storage)
-- [x] **Standing Gate HALT-14: Final Auditor Review on Cross-Platform Portability & Bootstrapper Suite (CLEARED & CLOSED in HALT_14_RULING.md)**
+- [x] **Standing Gate HALT-14: Final Auditor Review on Cross-Platform Portability & Bootstrapper Suite (CLEARED & CLOSED)**
+
+## Directive DIR-PROD-LIVE-DATA-SYNC-01: Automated Dynamic Market Data Fetcher & Corporate Action Adjuster
+- [x] Task 1: Build Automated Market Data Fetcher (`production/auto_fetch_market_data.py`, gap detection, Bhavcopy fetch from official NSE archives, live corporate actions parsing & backward adjustment, invariant validation, atomic update)
+- [x] Task 2: Integrate into Universe Manager (`scripts/update_universe.py`, added `--auto-fetch` and `--target-date` CLI flags calling `MarketDataSyncEngine`)
+- [x] Task 3: Integrate into Workstation Menu (`run_mip.py`, Option `[5]` updated to default to NSE auto-fetch with interactive sub-menu, added `--sync-market-data` to `scanner.py`)
+- [x] Task 4: End-to-End Verification & Dry-Run Testing (`--dry-run` PASS, live sync test added 8,901 bars across 989 scrips, Option `[18]` verified 100% invariants pass with SHA-256 match)
+- [ ] **Standing Gate HALT-15: Final Auditor Review on Dynamic Market Data Fetcher & Corporate Action Suite (ACTIVE — Awaiting Auditor Ruling)**
+
 
 
 

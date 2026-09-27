@@ -1,13 +1,13 @@
 {
   "universe_name": "NIFTY 500 Point-in-Time Survivorship-Free Database",
   "file_name": "nifty500_pit_universe.parquet",
-  "sha256_hash": "4191ec63ba21b2d9c7a3e0d8a91b21c68353cfa7a1fbbe40d17229c7b43123f1",
-  "total_bars": 2137630,
+  "sha256_hash": "03fa590c0ee8369913962901915cb1cbde7aa51aa90b61c23d246461e9a097f6",
+  "total_bars": 2146531,
   "unique_symbols": 1039,
   "active_symbols": 972,
   "delisted_symbols": 67,
   "start_date": "2007-01-02",
-  "end_date": "2026-08-31",
+  "end_date": "2026-09-11",
   "schema": {
     "date": "string (YYYY-MM-DD)",
     "symbol": "string (NSE Ticker)",
@@ -24,5 +24,5 @@
     "zero_null_prices",
     "positive_prices_guaranteed"
   ],
-  "last_updated": "2026-09-26 15:23:18"
+  "last_updated": "2026-09-27 08:18:34"
 }
