@@ -152,7 +152,7 @@
 - [x] Task 2: Integrate into Universe Manager (`scripts/update_universe.py`, added `--auto-fetch` and `--target-date` CLI flags calling `MarketDataSyncEngine`)
 - [x] Task 3: Integrate into Workstation Menu (`run_mip.py`, Option `[5]` updated to default to NSE auto-fetch with interactive sub-menu, added `--sync-market-data` to `scanner.py`)
 - [x] Task 4: End-to-End Verification & Dry-Run Testing (`--dry-run` PASS, live sync test added 8,901 bars across 989 scrips, Option `[18]` verified 100% invariants pass with SHA-256 match)
-- [ ] **Standing Gate HALT-15: Final Auditor Review on Dynamic Market Data Fetcher & Corporate Action Suite (ACTIVE — Awaiting Auditor Ruling)**
+- [x] **Standing Gate HALT-15: Final Auditor Review on Dynamic Market Data Fetcher & Corporate Action Suite (CLEARED & CLOSED in HALT_15_RULING.md)**
 
 
 
