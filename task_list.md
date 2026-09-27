@@ -154,6 +154,15 @@
 - [x] Task 4: End-to-End Verification & Dry-Run Testing (`--dry-run` PASS, live sync test added 8,901 bars across 989 scrips, Option `[18]` verified 100% invariants pass with SHA-256 match)
 - [x] **Standing Gate HALT-15: Final Auditor Review on Dynamic Market Data Fetcher & Corporate Action Suite (CLEARED & CLOSED in HALT_15_RULING.md)**
 
+## Directive DIR-PROD-PYDROID3-PORT-01: Standalone Pydroid 3 Quantitative Workstation
+- [x] Task 1: Parquet-to-SQLite Bridge (`scripts/export_universe_to_sqlite.py`, 2,146,531 rows, 1,039 symbols, 3 compound indices, 262.82 MB `data/universe.db`, 0 nulls, 100% positive prices)
+- [x] Task 2: Pydroid 3 Data Access Engine (`pydroid_core/data_engine.py`, sub-15ms indexed lookups, cached connection, mmap support, zero pyarrow dependency)
+- [x] Task 3: Quantitative Core Adaptations (`breadth.py`, `rrg.py`, `sector_rotation.py`, `scanner.py`, `backtest.py`, `visuals.py`, `telegram_sender.py`)
+- [x] Task 4: Test-Driven Development (TDD) Lifecycle (`01_test_environment.py`, `02_test_data_engine.py`, `03_test_scanner.py`, `04_test_visuals.py` 100% PASS)
+- [x] Task 5: Master Single-Tap Launcher & Operator Runbook (`main_pydroid.py`, `PYDROID_SETUP.md`, `DIGEST_PYDROID3_PORT.md`)
+- [ ] **Standing Gate HALT-16: Mandatory Pause for Auditor Review & Mobile Verification in Pydroid 3 (ACTIVE — PAUSED)**
+
+
 
 
 
