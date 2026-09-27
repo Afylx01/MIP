@@ -170,7 +170,10 @@
 - [x] Step 5: Git Setup & Remote Push to GitHub (`Afylx01/Project_MIP_Pydroid3` public repo, .gitignore excludes universe.db/pycache/.env, commit `257f919`, pushed to origin/main)
 - [ ] **Standing Gate HALT-17: Mandatory Pause for Auditor Review on Pydroid 3 Feature Parity (ACTIVE — PAUSED)**
 
-
-
-
+## Directive DIR-PROD-PYDROID3-HARDENING-01: System Hardening & Invariant Certification
+- [x] Task 1: Refactor `tests/02_test_data_engine.py` with Dynamic Invariants (monotonic growth `total_rows >= 2,146,531`, `max_date >= 2026-09-11`, dynamic `get_latest_date()` benchmark snapshot, zero-compiler invariant preserved)
+- [x] Task 2: Harden `pydroid_core/auto_fetch.py` with Atomic Ingestion (parameterized `INSERT OR REPLACE INTO prices`, pre-commit transaction safety via `validate_database(write_conn)`, rollback on error)
+- [x] Task 3: Synchronize Workstation UI and Documentation (`PYDROID_SETUP.md` updated to 2,155,428 rows, Latest EOD: 2026-09-25, 12-item menu layout; `main_pydroid.py` verified dynamic banner resolution)
+- [x] Task 4: Complete TDD Protocol Certification (Sequential execution of Tests 01, 02, 03, 04 all reporting `Failures: 0`)
+- [ ] **Standing Gate HALT-18: Mandatory Pause for Architect Certification on System Hardening (ACTIVE — PAUSED)**
 
