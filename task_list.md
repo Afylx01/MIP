@@ -162,6 +162,13 @@
 - [x] Task 5: Master Single-Tap Launcher & Operator Runbook (`main_pydroid.py`, `PYDROID_SETUP.md`, `DIGEST_PYDROID3_PORT.md`)
 - [ ] **Standing Gate HALT-16: Mandatory Pause for Auditor Review & Mobile Verification in Pydroid 3 (ACTIVE — PAUSED)**
 
+## Directive DIR-PROD-PYDROID3-PARITY-01: Pydroid 3 Feature Parity & GitHub Launch
+- [x] Step 1: Automated Dynamic Universe Update (`pydroid_core/auto_fetch.py`, NSE Bhavcopy sync via curl_cffi, corporate action backward-adjustment via parameterized SQL UPDATE, trading calendar sync)
+- [x] Step 2: Official NSE Sector Taxonomy Sync (`pydroid_core/sync_sectors.py`, NIFTY Total Market CSV download, 12-sector mapping, 300+ explicit overrides, NLP fallback classifier)
+- [x] Step 3: Portfolio Rebalancing & Order Ledger (`pydroid_core/portfolio.py`, equal-weight allocation, statutory frictions STT/Exchange/GST/Stamp Duty, CSV+TXT export)
+- [x] Step 4: Expand main_pydroid.py to 12-item Mobile Trading Desk (v2.0.0, Options 1-12 covering scanner, Telegram, portfolio, auto-fetch, sector sync, breadth, sector rotation, database audit)
+- [x] Step 5: Git Setup & Remote Push to GitHub (`Afylx01/Project_MIP_Pydroid3` public repo, .gitignore excludes universe.db/pycache/.env, commit `257f919`, pushed to origin/main)
+- [ ] **Standing Gate HALT-17: Mandatory Pause for Auditor Review on Pydroid 3 Feature Parity (ACTIVE — PAUSED)**
 
 
 
