@@ -145,7 +145,7 @@
 - [x] Task 3: Windows One-Click Batch Launcher (`run_mip.bat`, Python PATH detection, auto-install `requirements.txt`, cross-platform console clearing)
 - [x] Task 4: Standard Dependency Manifest (`requirements.txt`, pandas, pyarrow, numpy, requests, python-dotenv)
 - [x] Task 5: Comprehensive Operator Runbook Updates (`HOW_TO_RUN.md`, Sections 1.1 & 1.2 added, Termux:Widget 1-tap setup guide, Windows 10/11 double-click guide, mirrored to shared storage)
-- [ ] **Standing Gate HALT-14: Final Auditor Review on Cross-Platform Portability & Bootstrapper Suite (ACTIVE — Awaiting Auditor Ruling)**
+- [x] **Standing Gate HALT-14: Final Auditor Review on Cross-Platform Portability & Bootstrapper Suite (CLEARED & CLOSED in HALT_14_RULING.md)**
 
 
 
